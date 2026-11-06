@@ -1,0 +1,22 @@
+name: Validate literature records
+on:
+  push:
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/validate_papers.py
+      - run: python scripts/check_duplicates.py
+      - run: python scripts/test_validation.py
+      - run: python scripts/check_release.py
+      - run: python scripts/generate_readme.py
+      - run: python scripts/export_bibtex.py
+      - run: python scripts/generate_audit_report.py
+      - run: git diff --exit-code -- README.md data docs/papers.md docs/literature-report.md

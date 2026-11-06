@@ -1,0 +1,848 @@
+{
+  "schema_version": 2,
+  "task": "CCF 2026 seventh-edition verification",
+  "checked_on": "2026-11-07",
+  "directory": {
+    "name": "中国计算机学会推荐国际学术会议和期刊目录",
+    "year": 2026,
+    "edition": 7,
+    "status": "verified-from-CCF-authored-formal-directory-in-institutional-mirror",
+    "release_date": "2026-03-31",
+    "correction_date": "2026-04-09",
+    "announcement_url": "https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml",
+    "official_landing_url": "https://www.ccf.org.cn/Academic_Evaluation/By_category/",
+    "official_download_url_candidate": "https://www.ccf.org.cn/ccf/contentcore/resource/download?ID=112CF3BF7E1140ACEB271ADAED12A67ADFABB8FF099E40C2759502A85C8A281F",
+    "download_link_discovery": "The ccf.org.cn download URL was exposed by the original-PDF link at https://ccfcfp.com/journals/; this third-party page was used only to locate the CCF-hosted resource, never to assign ranks.",
+    "announcement_retrieval": "Full indexed text of CCF official announcement retrieved through web search; direct web open returned HTTP 405.",
+    "direct_download_result": "HTTP 200 with text/html access-verification page, not PDF bytes. PDF not saved and captcha not bypassed.",
+    "static_category_caution": "https://www.ccf.org.cn/Academic_Evaluation/AI/ retrieved via search contains an older-looking list without ICLR and no verified 2026 version label. It is not used to assign 2026 ranks.",
+    "institutional_mirror": {
+      "host": "丽水学院科研处 / Lishui University Research Office",
+      "announcement_url": "https://kyc.lsu.edu.cn/2026/0518/c1772a367789/page.htm",
+      "announcement_title": "第七版中国计算机学会推荐国际学术会议和期刊目录（正式版）",
+      "announcement_displayed_date": "2026-04-01",
+      "announcement_url_date_component": "2026/0518",
+      "announcement_provenance": "The university announcement identifies the attachment as the formal seventh edition and states that CCF released it on 2026-03-31.",
+      "pdf_url": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "local_pdf_temporary_path": "Local evidence retained privately; see source URL and checksum.",
+      "sha256": "271b630b576bf8a4f802e767f5694caded93680e22b3a19bef7902591c45c1d3",
+      "bytes": 346777,
+      "pages": 72,
+      "pdf_creation_date_raw": "D:20260409111327+08'00'",
+      "pdf_modification_date_raw": "D:20260409111327+08'00'",
+      "version_checks": [
+        "Cover explicitly says 2026.",
+        "University provenance explicitly identifies the formal seventh edition.",
+        "PDF creation and modification dates are 2026-04-09, consistent with the correction date in the official CCF release notice.",
+        "Rank headings and all 25 listed target entries visually inspected."
+      ],
+      "limitation": "The CCF-hosted download endpoint remained behind an access-verification page; byte identity between that endpoint and the institutional mirror could not be checked. The source used for ranks is the CCF-authored PDF itself, not a third-party inferred ranking table."
+    },
+    "rejected_source": {
+      "url": "https://lib.ecnu.edu.cn/_upload/article/files/e2/d9/dd45764345088869915f6b3617a4/28891f1f-eb8a-4000-a279-6e7141d92488.pdf",
+      "reason": "The file metadata is dated 2026-03-06, before formal publication, and the file contains colored draft/change annotations. It was not used as formal-edition evidence."
+    }
+  },
+  "publication_scope": {
+    "included": [
+      "full paper",
+      "regular paper"
+    ],
+    "excluded": [
+      "short paper",
+      "demo paper",
+      "technical brief",
+      "summary",
+      "Findings",
+      "accompanying workshop"
+    ],
+    "source": "https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml",
+    "status": "verified-from-official-2026-announcement",
+    "paper_level_rule": "A listed parent venue rank must not be inherited by an excluded publication type. Verify the individual paper track before applying a rank.",
+    "workshop_precision": "The official exclusion covers accompanying workshops. Do not blanket-exclude a separately listed venue merely because its proper name contains Workshop.",
+    "interpretation": "A venue recommendation category is not an evaluation of the quality of an individual paper."
+  },
+  "unknown_policy": {
+    "ccf_rank": null,
+    "verification_status": "pending-verification",
+    "unknown_is_not_none": true,
+    "None_policy": "Use None only for a verified excluded publication type or a verified absence from the complete chosen directory.",
+    "preprints": "The project brief separately requires arXiv-only items to be None and marked Preprint."
+  },
+  "counts": {
+    "requested_venues": 33,
+    "verified_listed_venue_rank": 26,
+    "verified_excluded_type": 1,
+    "verified_not_listed": 6,
+    "pending_venue_rank": 0,
+    "rank_counts": {
+      "A": 17,
+      "B": 6,
+      "None": 7,
+      "C": 3
+    }
+  },
+  "venues": [
+    {
+      "venue_abbreviation": "ICML",
+      "candidate_full_name": "International Conference on Machine Learning",
+      "publication_type": "conference",
+      "ccf_rank": "A",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 6,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank."
+    },
+    {
+      "venue_abbreviation": "NeurIPS",
+      "candidate_full_name": "Conference on Neural Information Processing Systems",
+      "publication_type": "conference",
+      "ccf_rank": "A",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 2,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank."
+    },
+    {
+      "venue_abbreviation": "ICLR",
+      "candidate_full_name": "International Conference on Learning Representations",
+      "publication_type": "conference",
+      "ccf_rank": "A",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 7,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank."
+    },
+    {
+      "venue_abbreviation": "CVPR",
+      "candidate_full_name": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+      "publication_type": "conference",
+      "ccf_rank": "A",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 4,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank.",
+      "official_directory_title": "IEEE/CVF Computer Vision and Pattern Recognition Conference"
+    },
+    {
+      "venue_abbreviation": "ICCV",
+      "candidate_full_name": "International Conference on Computer Vision",
+      "publication_type": "conference",
+      "ccf_rank": "A",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 5,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank."
+    },
+    {
+      "venue_abbreviation": "ECCV",
+      "candidate_full_name": "European Conference on Computer Vision",
+      "publication_type": "conference",
+      "ccf_rank": "B",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the B-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 58,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 4,
+        "category": "人工智能",
+        "table_rank": "B"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank."
+    },
+    {
+      "venue_abbreviation": "ACL",
+      "candidate_full_name": "Annual Meeting of the Association for Computational Linguistics",
+      "publication_type": "conference",
+      "ccf_rank": "A",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 3,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank."
+    },
+    {
+      "venue_abbreviation": "EMNLP",
+      "candidate_full_name": "Conference on Empirical Methods in Natural Language Processing",
+      "publication_type": "conference",
+      "ccf_rank": "B",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the B-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 58,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 2,
+        "category": "人工智能",
+        "table_rank": "B"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank."
+    },
+    {
+      "venue_abbreviation": "NAACL",
+      "candidate_full_name": "Conference of the North American Chapter of the Association for Computational Linguistics",
+      "publication_type": "conference",
+      "ccf_rank": "B",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the B-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 58,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 13,
+        "category": "人工智能",
+        "table_rank": "B"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank.",
+      "official_directory_title": "North American Chapter of the Association for Computational Linguistics"
+    },
+    {
+      "venue_abbreviation": "Findings of EMNLP",
+      "candidate_full_name": "Findings of the Association for Computational Linguistics: EMNLP",
+      "publication_type": "findings",
+      "ccf_rank": "None",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-excluded-publication-type",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml",
+      "evidence": "The official formal-release announcement explicitly excludes Findings. EMNLP main-conference rank B must not be inherited by Findings of EMNLP.",
+      "locator": "Opening scope paragraph of the official 2026-03-31 announcement"
+    },
+    {
+      "venue_abbreviation": "AAAI",
+      "candidate_full_name": "AAAI Conference on Artificial Intelligence",
+      "publication_type": "conference",
+      "ccf_rank": "A",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 1,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank."
+    },
+    {
+      "venue_abbreviation": "IJCAI",
+      "candidate_full_name": "International Joint Conference on Artificial Intelligence",
+      "publication_type": "conference",
+      "ccf_rank": "B",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the B-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 58,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 14,
+        "category": "人工智能",
+        "table_rank": "B"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank."
+    },
+    {
+      "venue_abbreviation": "KDD",
+      "candidate_full_name": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+      "publication_type": "conference",
+      "ccf_rank": "A",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 35,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 2,
+        "category": "数据库/数据挖掘/内容检索",
+        "table_rank": "A"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank.",
+      "official_abbreviation": "SIGKDD"
+    },
+    {
+      "venue_abbreviation": "WWW",
+      "candidate_full_name": "The Web Conference",
+      "publication_type": "conference",
+      "ccf_rank": "A",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 70,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 1,
+        "category": "交叉/综合/新兴",
+        "table_rank": "A"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank.",
+      "name_disambiguation": "The Web Conference (formerly International World Wide Web Conference), not the World Wide Web journal."
+    },
+    {
+      "venue_abbreviation": "SIGIR",
+      "candidate_full_name": "International ACM SIGIR Conference on Research and Development in Information Retrieval",
+      "publication_type": "conference",
+      "ccf_rank": "A",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 35,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 4,
+        "category": "数据库/数据挖掘/内容检索",
+        "table_rank": "A"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank."
+    },
+    {
+      "venue_abbreviation": "ICDE",
+      "candidate_full_name": "IEEE International Conference on Data Engineering",
+      "publication_type": "conference",
+      "ccf_rank": "A",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 35,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 3,
+        "category": "数据库/数据挖掘/内容检索",
+        "table_rank": "A"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank."
+    },
+    {
+      "venue_abbreviation": "NDSS",
+      "candidate_full_name": "Network and Distributed System Security Symposium",
+      "publication_type": "conference",
+      "ccf_rank": "A",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 20,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 6,
+        "category": "网络与信息安全",
+        "table_rank": "A"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank."
+    },
+    {
+      "venue_abbreviation": "USENIX Security",
+      "candidate_full_name": "USENIX Security Symposium",
+      "publication_type": "conference",
+      "ccf_rank": "A",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 20,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 5,
+        "category": "网络与信息安全",
+        "table_rank": "A"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank."
+    },
+    {
+      "venue_abbreviation": "CCS",
+      "candidate_full_name": "ACM SIGSAC Conference on Computer and Communications Security",
+      "publication_type": "conference",
+      "ccf_rank": "A",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 20,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 1,
+        "category": "网络与信息安全",
+        "table_rank": "A"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank.",
+      "official_directory_title": "ACM Conference on Computer and Communications Security"
+    },
+    {
+      "venue_abbreviation": "S&P",
+      "candidate_full_name": "IEEE Symposium on Security and Privacy",
+      "publication_type": "conference",
+      "ccf_rank": "A",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 20,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 3,
+        "category": "网络与信息安全",
+        "table_rank": "A"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank."
+    },
+    {
+      "venue_abbreviation": "AISTATS",
+      "candidate_full_name": "International Conference on Artificial Intelligence and Statistics",
+      "publication_type": "conference",
+      "ccf_rank": "C",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the C-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 59,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 1,
+        "category": "人工智能",
+        "table_rank": "C"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank."
+    },
+    {
+      "venue_abbreviation": "TMLR",
+      "candidate_full_name": "Transactions on Machine Learning Research",
+      "publication_type": "journal",
+      "ccf_rank": "None",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-not-listed-in-complete-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "No acronym or full-name match in all 72 text-extracted pages of the formal directory, after case-folding and removal of whitespace/punctuation.",
+      "locator": {
+        "pdf_pages_checked": "1-72",
+        "nonempty_text_pages": 72,
+        "search_terms": [
+          "TMLR",
+          "Transactions on Machine Learning Research"
+        ],
+        "matching_pages": {
+          "TMLR": [],
+          "Transactions on Machine Learning Research": []
+        }
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office"
+    },
+    {
+      "venue_abbreviation": "TNNLS",
+      "candidate_full_name": "IEEE Transactions on Neural Networks and Learning Systems",
+      "publication_type": "journal",
+      "ccf_rank": "B",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the B-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 52,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 12,
+        "category": "人工智能",
+        "table_rank": "B"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office"
+    },
+    {
+      "venue_abbreviation": "TKDE",
+      "candidate_full_name": "IEEE Transactions on Knowledge and Data Engineering",
+      "publication_type": "journal",
+      "ccf_rank": "A",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 32,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 3,
+        "category": "数据库/数据挖掘/内容检索",
+        "table_rank": "A"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office"
+    },
+    {
+      "venue_abbreviation": "TIST",
+      "candidate_full_name": "ACM Transactions on Intelligent Systems and Technology",
+      "publication_type": "journal",
+      "ccf_rank": "C",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the C-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 34,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 15,
+        "category": "数据库/数据挖掘/内容检索",
+        "table_rank": "C"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office"
+    },
+    {
+      "venue_abbreviation": "FGCS",
+      "candidate_full_name": "Future Generation Computer Systems",
+      "publication_type": "journal",
+      "ccf_rank": "C",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the C-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 4,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 4,
+        "category": "计算机体系结构/并行与分布计算/存储系统",
+        "table_rank": "C"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office"
+    },
+    {
+      "venue_abbreviation": "IJMLC",
+      "candidate_full_name": "International Journal of Machine Learning and Cybernetics",
+      "publication_type": "journal",
+      "ccf_rank": "None",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-not-listed-in-complete-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "No acronym or full-name match in all 72 text-extracted pages of the formal directory, after case-folding and removal of whitespace/punctuation.",
+      "locator": {
+        "pdf_pages_checked": "1-72",
+        "nonempty_text_pages": 72,
+        "search_terms": [
+          "IJMLC",
+          "International Journal of Machine Learning and Cybernetics"
+        ],
+        "matching_pages": {
+          "IJMLC": [],
+          "International Journal of Machine Learning and Cybernetics": []
+        }
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office"
+    },
+    {
+      "venue_abbreviation": "Information Fusion",
+      "candidate_full_name": "Information Fusion",
+      "publication_type": "journal",
+      "ccf_rank": "None",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-not-listed-in-complete-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "No acronym or full-name match in all 72 text-extracted pages of the formal directory, after case-folding and removal of whitespace/punctuation.",
+      "locator": {
+        "pdf_pages_checked": "1-72",
+        "nonempty_text_pages": 72,
+        "search_terms": [
+          "Information Fusion"
+        ],
+        "matching_pages": {
+          "Information Fusion": []
+        }
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office"
+    },
+    {
+      "venue_abbreviation": "JMLR",
+      "candidate_full_name": "Journal of Machine Learning Research",
+      "publication_type": "journal",
+      "ccf_rank": "A",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "locator": {
+        "pdf_page_1_based": 51,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 4,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office"
+    },
+    {
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "venue_abbreviation": "RAID",
+      "candidate_full_name": "International Symposium on Research in Attacks, Intrusions and Defenses",
+      "official_directory_title": "International Symposium on Recent Advances in Intrusion Detection",
+      "publication_type": "conference",
+      "ccf_rank": "B",
+      "verification_status": "verified-in-formal-directory",
+      "evidence": "The CCF 2026 formal directory places RAID in the B-class network and information security conference table; text and rendered page checked. The directory retains the historical venue title and DBLP RAID series URL.",
+      "locator": {
+        "pdf_page_1_based": 21,
+        "page_numbering": "PDF page including cover",
+        "table_row": 9,
+        "category": "网络与信息安全",
+        "table_rank": "B"
+      },
+      "paper_scope": "Only eligible full/regular papers; check actual track."
+    },
+    {
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "venue_abbreviation": "CSUR",
+      "candidate_full_name": "ACM Computing Surveys",
+      "publication_type": "journal",
+      "ccf_rank": "None",
+      "verification_status": "verified-not-listed-in-complete-directory",
+      "evidence": "No acronym or full-name match in all 72 text-extracted pages of the formal directory, after case-folding and removal of whitespace/punctuation.",
+      "locator": {
+        "pdf_pages_checked": "1-72",
+        "nonempty_text_pages": 72,
+        "search_terms": [
+          "CSUR",
+          "ACM Computing Surveys",
+          "Computing Surveys"
+        ],
+        "matching_pages": {
+          "CSUR": [],
+          "ACM Computing Surveys": [],
+          "Computing Surveys": []
+        }
+      }
+    },
+    {
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "venue_abbreviation": "PACLIC",
+      "candidate_full_name": "Pacific Asia Conference on Language, Information and Computation",
+      "publication_type": "conference",
+      "ccf_rank": "None",
+      "verification_status": "verified-not-listed-in-complete-directory",
+      "evidence": "No acronym or full-name match in all 72 text-extracted pages of the formal directory, after case-folding and removal of whitespace/punctuation.",
+      "locator": {
+        "pdf_pages_checked": "1-72",
+        "nonempty_text_pages": 72,
+        "search_terms": [
+          "PACLIC",
+          "Pacific Asia Conference on Language Information and Computation"
+        ],
+        "matching_pages": {
+          "PACLIC": [],
+          "Pacific Asia Conference on Language Information and Computation": []
+        }
+      }
+    },
+    {
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "venue_abbreviation": "NMI",
+      "candidate_full_name": "Nature Machine Intelligence",
+      "publication_type": "journal",
+      "ccf_rank": "None",
+      "verification_status": "verified-not-listed-in-complete-directory",
+      "evidence": "No acronym or full-name match in all 72 text-extracted pages of the formal directory, after case-folding and removal of whitespace/punctuation.",
+      "locator": {
+        "pdf_pages_checked": "1-72",
+        "nonempty_text_pages": 72,
+        "search_terms": [
+          "Nature Machine Intelligence",
+          "NMI"
+        ],
+        "matching_pages": {
+          "Nature Machine Intelligence": [],
+          "NMI": []
+        }
+      }
+    }
+  ],
+  "access_attempts": [
+    {
+      "target": "https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml",
+      "method": "web search",
+      "result": "official indexed text retrieved, including release date, correction note, and publication scope"
+    },
+    {
+      "target": "https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml",
+      "method": "web open",
+      "result": "405 Method Not Allowed"
+    },
+    {
+      "target": "https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml",
+      "method": "urllib direct GET with ordinary browser User-Agent",
+      "result": "200 text/html access-verification page"
+    },
+    {
+      "target": "https://www.ccf.org.cn/ccf/contentcore/resource/download?ID=112CF3BF7E1140ACEB271ADAED12A67ADFABB8FF099E40C2759502A85C8A281F",
+      "method": "web click from an original-PDF link",
+      "result": "405 Method Not Allowed"
+    },
+    {
+      "target": "https://www.ccf.org.cn/ccf/contentcore/resource/download?ID=112CF3BF7E1140ACEB271ADAED12A67ADFABB8FF099E40C2759502A85C8A281F",
+      "method": "urllib direct GET with ordinary browser User-Agent",
+      "result": "200 text/html access-verification page, 16124 bytes; no PDF"
+    },
+    {
+      "target": "https://ccfdirectory.ccf.org.cn/",
+      "method": "web open",
+      "result": "not accessible"
+    },
+    {
+      "target": "https://www.ccf.org.cn/Academic_Evaluation/AI/",
+      "method": "web search",
+      "result": "unversioned static list found; not accepted as 2026 evidence"
+    }
+  ],
+  "validation": {
+    "complete_pdf_text_extraction_pages": 72,
+    "visually_checked_pdf_pages": [
+      1,
+      4,
+      20,
+      21,
+      32,
+      34,
+      35,
+      51,
+      52,
+      57,
+      58,
+      59,
+      70
+    ],
+    "all_listed_target_entries_visually_checked": true,
+    "all_requested_venues_have_evidence": true,
+    "no_2022_rank_substitution": true,
+    "no_inferred_third_party_ranking_table_used": true
+  },
+  "publication_track_audit": [
+    {
+      "venue": "KDD",
+      "track": "Applied Data Science",
+      "ccf_rank": null,
+      "verification_status": "pending-track-applicability",
+      "evidence": "CCF 2026 KDD A row, PDF p.35 row2, has no track-specific footnote. General scope includes full/regular papers but does not explicitly discuss ADS.",
+      "sources": [
+        "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+        "https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml",
+        "https://kdd.org/kdd2024/applied-data-science-track-papers/"
+      ]
+    },
+    {
+      "venue": "EMNLP",
+      "track": "Industry 2024",
+      "ccf_rank": null,
+      "verification_status": "pending-track-applicability",
+      "evidence": "Official Industry CFP permits up to six pages but does not label the track Short. CCF scope does not explicitly resolve Industry.",
+      "sources": [
+        "https://2024.emnlp.org/calls/industry_track/",
+        "https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml"
+      ]
+    }
+  ]
+}

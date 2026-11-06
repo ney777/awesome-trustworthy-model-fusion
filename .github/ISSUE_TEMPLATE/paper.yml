@@ -1,0 +1,30 @@
+name: Suggest a paper
+description: Propose an evidence-backed addition or a metadata correction.
+title: "[Paper] "
+body:
+  - type: textarea
+    id: metadata
+    attributes:
+      label: Bibliographic metadata
+      description: Full title, authors, final venue, year, publication track, DOI and official URL.
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Research relevance and primary category
+      description: Explain the inter-model knowledge exchange, fusion decision, trust requirement or collaborative evolution studied.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and limits
+      description: State what you read, section/page locators, assumptions, limitations, and official code provenance. Do not upload copyrighted full text.
+    validations:
+      required: true
+  - type: textarea
+    id: ccf
+    attributes:
+      label: CCF 2026 seventh-edition evidence
+      description: Provide venue/track matching and official directory page. Unknown rank remains pending, not None.

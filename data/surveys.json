@@ -1,0 +1,1024 @@
+{
+  "generated_from": "papers.json",
+  "papers": [
+    {
+      "id": "li2026deepfusion",
+      "title": "Deep Model Fusion: A Survey",
+      "authors": [
+        "Weishi Li",
+        "Yong Peng",
+        "Miao Zhang",
+        "Liang Ding",
+        "Han Hu",
+        "Li Shen"
+      ],
+      "venue_full_name": "IEEE Transactions on Neural Networks and Learning Systems",
+      "venue_abbreviation": "TNNLS",
+      "year": 2026,
+      "publication_type": "journal",
+      "publication_status": "published",
+      "ccf_rank": "B",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "doi": "10.1109/tnnls.2025.3628666",
+      "official_url": "https://ieeexplore.ieee.org/document/11268959",
+      "pdf_url": "https://arxiv.org/pdf/2309.15698",
+      "code_url": null,
+      "primary_category": "surveys",
+      "secondary_tags": [],
+      "mandatory_seed": true,
+      "verification_status": "verified",
+      "checked_on": "2026-11-07",
+      "bibtex_key": "li2026deepfusion",
+      "bibtex_export_source": "https://api.crossref.org/works/10.1109/tnnls.2025.3628666/transform/application/x-bibtex",
+      "evidence_source": [
+        {
+          "url": "https://arxiv.org/pdf/2309.15698",
+          "locator": "Sections 2–6; pp. 27–29",
+          "paraphrase": "Geometry and mechanisms organize the review; repeated fusion and forgetting already appear."
+        },
+        {
+          "url": "https://ieeexplore.ieee.org/document/11268959",
+          "locator": "Abstract; publication metadata",
+          "paraphrase": "Final abstract retains four mechanism families."
+        }
+      ],
+      "metadata_notes": [
+        "Final issue is 37(5), May 2026; IEEE reports online publication on 2025-11-25. Detailed reading used the older 2023 author version, not the final 17-page article."
+      ],
+      "reproduction_status": "not-applicable",
+      "volume": "37",
+      "issue": "5",
+      "pages": "2008-2024",
+      "metadata_sources": [
+        "https://api.crossref.org/works/10.1109/tnnls.2025.3628666",
+        "https://ieeexplore.ieee.org/document/11268959"
+      ],
+      "year_online": 2025,
+      "related_versions": [
+        "https://arxiv.org/abs/2309.15698v1"
+      ],
+      "primary_scope": "Deep parameter and prediction fusion.",
+      "taxonomy": "Weight averaging, mode connectivity, alignment, ensembles.",
+      "representation_coverage": "Alignment, loss geometry, averaging and output combination.",
+      "governance_coverage": "Robustness and privacy motivations; final-version breadth remains unassessed.",
+      "dynamic_evolution_coverage": "Author version discusses repeated collaborative descent and forgetting.",
+      "federated_or_decentralized_setting": "FL is an application alongside fine-tuning and distillation.",
+      "evaluation_framework": "Method-specific comparisons; no new unified benchmark claimed here.",
+      "limitations": "Reading of the 2023 author version cannot establish omissions in the 2026 version.",
+      "distinction_from_proposed_survey": "Compare governance decisions and persistent collaboration without claiming these are absent from the final article.",
+      "review_depth": "section-reviewed",
+      "reviewed_version": "arXiv:2309.15698v1; final metadata/abstract",
+      "research_problem": "Deep parameter and prediction fusion.",
+      "key_idea": "Weight averaging, mode connectivity, alignment, ensembles.",
+      "main_contribution": "Alignment, loss geometry, averaging and output combination. Robustness and privacy motivations; final-version breadth remains unassessed.",
+      "technical_mechanism": "Survey synthesis; not a new fusion algorithm.",
+      "assumptions": "Coverage statements apply only to the explicitly inspected version and sections.",
+      "original_review_depth": "targeted-author-full-text-plus-final-abstract",
+      "full_text_locators": [
+        "Sections 2–6; pp. 27–29",
+        "Abstract; publication metadata"
+      ],
+      "record_type": "survey",
+      "subcategory": "Scope and Taxonomy Comparisons",
+      "publication_track": "journal-article",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 52,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 12,
+        "category": "人工智能",
+        "table_rank": "B"
+      },
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the B-class table. Both extracted text and rendered PDF page were checked.",
+      "number": "5"
+    },
+    {
+      "id": "cai2026parameters",
+      "title": "From Parameters to Behaviors: A Survey of Model Fusion for Large Language Models",
+      "authors": [
+        "Shuo Cai",
+        "Yanggan Gu",
+        "Zihao Wang",
+        "Yuanyi Wang",
+        "Yibo Yan",
+        "Wenjun Wang",
+        "Yuhang Liu",
+        "Guanghao Zhu",
+        "Sirui Huang",
+        "Ming Li",
+        "Hongxia Yang"
+      ],
+      "venue_full_name": "Findings of the Association for Computational Linguistics: EMNLP 2026",
+      "venue_abbreviation": "Findings of EMNLP",
+      "year": 2026,
+      "publication_type": "conference",
+      "publication_status": "published",
+      "ccf_rank": "None",
+      "ccf_verification_source": "https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml",
+      "doi": "10.18653/2026.findings-emnlp.722",
+      "official_url": "https://aclanthology.org/2026.findings-emnlp.722/",
+      "pdf_url": "https://aclanthology.org/2026.findings-emnlp.722.pdf",
+      "code_url": null,
+      "primary_category": "surveys",
+      "secondary_tags": [],
+      "mandatory_seed": true,
+      "verification_status": "verified",
+      "checked_on": "2026-11-07",
+      "bibtex_key": "cai2026parameters",
+      "bibtex_export_source": "https://aclanthology.org/2026.findings-emnlp.722.bib",
+      "evidence_source": [
+        {
+          "url": "https://aclanthology.org/2026.findings-emnlp.722.pdf",
+          "locator": "§2, pp.15179–15180",
+          "paraphrase": "Inference independence excludes ensembles and per-query model selection."
+        },
+        {
+          "url": "https://aclanthology.org/2026.findings-emnlp.722.pdf",
+          "locator": "§5 p.15186; Tables 8–9 p.15202",
+          "paraphrase": "Screening, provenance, attribution and safety evaluation are already discussed."
+        }
+      ],
+      "metadata_notes": [
+        "Author-name conflict: landing page and raw BibTeX say Li Ming (Ming, Li); authoritative PDF p.1 says Ming Li. Canonical authors here follow PDF. Preserve and correct raw export before manuscript use."
+      ],
+      "reproduction_status": "not-applicable",
+      "pages": "15178–15202",
+      "metadata_sources": [
+        "https://aclanthology.org/2026.findings-emnlp.722/",
+        "https://aclanthology.org/2026.findings-emnlp.722.pdf"
+      ],
+      "primary_scope": "Fusion producing one target independent of complete source models at inference.",
+      "taxonomy": "Parameter, representation and behavior signals.",
+      "representation_coverage": "Alignment and source compatibility across all three signals.",
+      "governance_coverage": "Risk transfer, privacy, ownership, screening and safety metrics.",
+      "dynamic_evolution_coverage": "Continual fusion and forgetting are discussed.",
+      "federated_or_decentralized_setting": "Not restricted to federated protocols.",
+      "evaluation_framework": "Sections 3.4–4; Tables 8–9 compare resources, access, retention, cost and safety.",
+      "limitations": "Explicitly excludes ordinary source-retaining ensembles and routing.",
+      "distinction_from_proposed_survey": "Our collaboration scope includes persistent source models; governance/lifecycle synthesis must add more than listing covered risks.",
+      "review_depth": "section-reviewed",
+      "reviewed_version": "ACL final PDF, 25 pages",
+      "research_problem": "Fusion producing one target independent of complete source models at inference.",
+      "key_idea": "Parameter, representation and behavior signals.",
+      "main_contribution": "Alignment and source compatibility across all three signals. Risk transfer, privacy, ownership, screening and safety metrics.",
+      "technical_mechanism": "Survey synthesis; not a new fusion algorithm.",
+      "assumptions": "Coverage statements apply only to the explicitly inspected version and sections.",
+      "original_review_depth": "targeted-final-full-text",
+      "full_text_locators": [
+        "§2, pp.15179–15180",
+        "§5 p.15186; Tables 8–9 p.15202"
+      ],
+      "record_type": "survey",
+      "subcategory": "Scope and Taxonomy Comparisons",
+      "publication_track": "findings",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_basis": "Explicitly excluded publication track"
+    },
+    {
+      "id": "zhang2024trustfl",
+      "title": "A Survey of Trustworthy Federated Learning: Issues, Solutions, and Challenges",
+      "authors": [
+        "Yifei Zhang",
+        "Dun Zeng",
+        "Jinglong Luo",
+        "Xinyu Fu",
+        "Guanzhong Chen",
+        "Zenglin Xu",
+        "Irwin King"
+      ],
+      "venue_full_name": "ACM Transactions on Intelligent Systems and Technology",
+      "venue_abbreviation": "TIST",
+      "year": 2024,
+      "publication_type": "journal",
+      "publication_status": "published",
+      "ccf_rank": "C",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "doi": "10.1145/3678181",
+      "official_url": "https://dl.acm.org/doi/10.1145/3678181",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3678181",
+      "code_url": null,
+      "primary_category": "surveys",
+      "secondary_tags": [],
+      "mandatory_seed": true,
+      "verification_status": "verified",
+      "checked_on": "2026-11-07",
+      "bibtex_key": "zhang2024trustfl",
+      "bibtex_export_source": "https://api.crossref.org/works/10.1145/3678181/transform/application/x-bibtex",
+      "evidence_source": [
+        {
+          "url": "https://dl.acm.org/doi/10.1145/3678181",
+          "locator": "§§3–6",
+          "paraphrase": "Privacy/security, robustness, fairness and explainability receive separate analyses."
+        },
+        {
+          "url": "https://dl.acm.org/doi/10.1145/3678181",
+          "locator": "§4 future directions; §5 contribution fairness",
+          "paraphrase": "Changing threats and dynamic credibility incentives are not absent."
+        }
+      ],
+      "metadata_notes": [],
+      "reproduction_status": "not-applicable",
+      "volume": "15",
+      "issue": "6",
+      "pages": "1-47",
+      "metadata_sources": [
+        "https://api.crossref.org/works/10.1145/3678181",
+        "https://dl.acm.org/doi/10.1145/3678181"
+      ],
+      "primary_scope": "Trustworthiness throughout federated learning.",
+      "taxonomy": "Privacy/security, robustness, fairness, explainability.",
+      "representation_coverage": "FL actors, gradients and model interfaces support the threat analysis.",
+      "governance_coverage": "Detailed threats, defenses and fairness notions.",
+      "dynamic_evolution_coverage": "Dynamic clients and changing threats appear in discussions.",
+      "federated_or_decentralized_setting": "Direct FL focus; decentralized incentives also appear.",
+      "evaluation_framework": "Attribute-specific metrics and benchmarking challenges.",
+      "limitations": "Publisher HTML sections inspected; PDF fetch denied. No exhaustive absence claim.",
+      "distinction_from_proposed_survey": "Compare transferring these guarantees to reusable model assets and source-retaining collaboration.",
+      "review_depth": "section-reviewed",
+      "reviewed_version": "ACM final publisher HTML indexed sections",
+      "research_problem": "Trustworthiness throughout federated learning.",
+      "key_idea": "Privacy/security, robustness, fairness, explainability.",
+      "main_contribution": "FL actors, gradients and model interfaces support the threat analysis. Detailed threats, defenses and fairness notions.",
+      "technical_mechanism": "Survey synthesis; not a new fusion algorithm.",
+      "assumptions": "Coverage statements apply only to the explicitly inspected version and sections.",
+      "original_review_depth": "targeted-publisher-full-html-excerpts",
+      "full_text_locators": [
+        "§§3–6",
+        "§4 future directions; §5 contribution fairness"
+      ],
+      "record_type": "survey",
+      "subcategory": "Scope and Taxonomy Comparisons",
+      "publication_track": "journal-article",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 34,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 15,
+        "category": "数据库/数据挖掘/内容检索",
+        "table_rank": "C"
+      },
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the C-class table. Both extracted text and rendered PDF page were checked.",
+      "number": "6"
+    },
+    {
+      "id": "qi2024aggregation",
+      "title": "Model aggregation techniques in federated learning: A comprehensive survey",
+      "authors": [
+        "Pian Qi",
+        "Diletta Chiaro",
+        "Antonella Guzzo",
+        "Michele Ianni",
+        "Giancarlo Fortino",
+        "Francesco Piccialli"
+      ],
+      "venue_full_name": "Future Generation Computer Systems",
+      "venue_abbreviation": "FGCS",
+      "year": 2024,
+      "publication_type": "journal",
+      "publication_status": "published",
+      "ccf_rank": "C",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "doi": "10.1016/j.future.2023.09.008",
+      "official_url": "https://www.sciencedirect.com/science/article/pii/S0167739X23003333",
+      "pdf_url": null,
+      "code_url": null,
+      "primary_category": "surveys",
+      "secondary_tags": [],
+      "mandatory_seed": true,
+      "verification_status": "verified",
+      "checked_on": "2026-11-07",
+      "bibtex_key": "qi2024aggregation",
+      "bibtex_export_source": "https://api.crossref.org/works/10.1016/j.future.2023.09.008/transform/application/x-bibtex",
+      "evidence_source": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0167739X23003333",
+          "locator": "Abstract and highlights",
+          "paraphrase": "The review concerns aggregation selection, heterogeneity, malicious models and applications."
+        }
+      ],
+      "metadata_notes": [],
+      "reproduction_status": "not-applicable",
+      "volume": "150",
+      "issue": null,
+      "pages": "272-293",
+      "metadata_sources": [
+        "https://api.crossref.org/works/10.1016/j.future.2023.09.008",
+        "https://www.sciencedirect.com/science/article/pii/S0167739X23003333"
+      ],
+      "primary_scope": "Federated aggregation methods and applications.",
+      "taxonomy": "Detailed taxonomy not extracted from accessible abstract.",
+      "representation_coverage": "Aggregation and data heterogeneity are explicit scope.",
+      "governance_coverage": "Low-quality/malicious contributions and privacy/security are explicit.",
+      "dynamic_evolution_coverage": "Not assessed beyond abstract.",
+      "federated_or_decentralized_setting": "Direct FL focus.",
+      "evaluation_framework": "Reports a literature review of 201 studies; framework details unassessed.",
+      "limitations": "Publisher abstract only; full text retrieval failed. Unknown coverage is not absence.",
+      "distinction_from_proposed_survey": "Contrast training-time aggregation with model-asset reuse only after full-text comparison.",
+      "review_depth": "abstract-reviewed",
+      "reviewed_version": "Final publisher abstract and Crossref metadata",
+      "research_problem": "Federated aggregation methods and applications.",
+      "key_idea": "Detailed taxonomy not extracted from accessible abstract.",
+      "main_contribution": "Aggregation and data heterogeneity are explicit scope. Low-quality/malicious contributions and privacy/security are explicit.",
+      "technical_mechanism": "Survey synthesis; not a new fusion algorithm.",
+      "assumptions": "Coverage statements apply only to the explicitly inspected version and sections.",
+      "original_review_depth": "abstract-reviewed",
+      "full_text_locators": [],
+      "record_type": "survey",
+      "subcategory": "Scope and Taxonomy Comparisons",
+      "publication_track": "journal-article",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 4,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 4,
+        "category": "计算机体系结构/并行与分布计算/存储系统",
+        "table_rank": "C"
+      },
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the C-class table. Both extracted text and rendered PDF page were checked."
+    },
+    {
+      "id": "ji2024emerging",
+      "title": "Emerging trends in federated learning: from model fusion to federated X learning",
+      "authors": [
+        "Shaoxiong Ji",
+        "Yue Tan",
+        "Teemu Saravirta",
+        "Zhiqin Yang",
+        "Yixin Liu",
+        "Lauri Vasankari",
+        "Shirui Pan",
+        "Guodong Long",
+        "Anwar Walid"
+      ],
+      "venue_full_name": "International Journal of Machine Learning and Cybernetics",
+      "venue_abbreviation": "IJMLC",
+      "year": 2024,
+      "publication_type": "journal",
+      "publication_status": "published",
+      "ccf_rank": "None",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "doi": "10.1007/s13042-024-02119-1",
+      "official_url": "https://link.springer.com/article/10.1007/s13042-024-02119-1",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s13042-024-02119-1.pdf",
+      "code_url": null,
+      "primary_category": "surveys",
+      "secondary_tags": [],
+      "mandatory_seed": true,
+      "verification_status": "verified",
+      "checked_on": "2026-11-07",
+      "bibtex_key": "ji2024emerging",
+      "bibtex_export_source": "https://api.crossref.org/works/10.1007/s13042-024-02119-1/transform/application/x-bibtex",
+      "evidence_source": [
+        {
+          "url": "https://link.springer.com/content/pdf/10.1007/s13042-024-02119-1.pdf",
+          "locator": "§1.1 and Table 1, pp.3770–3771",
+          "paraphrase": "Two branches organize aggregation improvements and FL intersections."
+        },
+        {
+          "url": "https://link.springer.com/content/pdf/10.1007/s13042-024-02119-1.pdf",
+          "locator": "§3.7; §5.2; §6.5",
+          "paraphrase": "Fairness, privacy and benchmarking limitations are already represented."
+        }
+      ],
+      "metadata_notes": [],
+      "reproduction_status": "not-applicable",
+      "volume": "15",
+      "issue": "9",
+      "pages": "3769-3790",
+      "metadata_sources": [
+        "https://api.crossref.org/works/10.1007/s13042-024-02119-1",
+        "https://link.springer.com/article/10.1007/s13042-024-02119-1"
+      ],
+      "primary_scope": "FL aggregation and intersections with other learning paradigms.",
+      "taxonomy": "Federated model fusion plus federated X learning.",
+      "representation_coverage": "Adaptive weighting, attention, clustering and Bayesian correspondence.",
+      "governance_coverage": "Fairness and privacy/security receive explicit sections.",
+      "dynamic_evolution_coverage": "Meta-, transfer- and reinforcement-learning intersections; these are not automatically lifecycle governance.",
+      "federated_or_decentralized_setting": "Direct FL focus.",
+      "evaluation_framework": "Section 6.5 discusses comparison difficulties across heterogeneous settings.",
+      "limitations": "Its learning-paradigm taxonomy should not be mislabeled as trust-blind.",
+      "distinction_from_proposed_survey": "Organize accepted/rejected collaboration decisions and lifecycle evidence across federated and non-federated settings.",
+      "review_depth": "section-reviewed",
+      "reviewed_version": "Springer final PDF, 22 pages",
+      "research_problem": "FL aggregation and intersections with other learning paradigms.",
+      "key_idea": "Federated model fusion plus federated X learning.",
+      "main_contribution": "Adaptive weighting, attention, clustering and Bayesian correspondence. Fairness and privacy/security receive explicit sections.",
+      "technical_mechanism": "Survey synthesis; not a new fusion algorithm.",
+      "assumptions": "Coverage statements apply only to the explicitly inspected version and sections.",
+      "original_review_depth": "targeted-final-full-text",
+      "full_text_locators": [
+        "§1.1 and Table 1, pp.3770–3771",
+        "§3.7; §5.2; §6.5"
+      ],
+      "record_type": "survey",
+      "subcategory": "Scope and Taxonomy Comparisons",
+      "publication_track": "journal-article",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_pages_checked": "1-72",
+        "nonempty_text_pages": 72,
+        "search_terms": [
+          "IJMLC",
+          "International Journal of Machine Learning and Cybernetics"
+        ],
+        "matching_pages": {
+          "IJMLC": [],
+          "International Journal of Machine Learning and Cybernetics": []
+        }
+      },
+      "ccf_basis": "No acronym or full-name match in all 72 text-extracted pages of the formal directory, after case-folding and removal of whitespace/punctuation.",
+      "number": "9"
+    },
+    {
+      "id": "fan2026transmission",
+      "title": "Knowledge transmission and fusion in large models: research advances and challenges",
+      "authors": [
+        "Yan Fan",
+        "Yu Wang",
+        "Junran Yang",
+        "Yifei Xu",
+        "Zhichao Zhang",
+        "Pengfei Zhu",
+        "Weiping Ding",
+        "Qinghua Hu"
+      ],
+      "venue_full_name": "Information Fusion",
+      "venue_abbreviation": "Information Fusion",
+      "year": 2026,
+      "publication_type": "journal",
+      "publication_status": "early-access-metadata-conflict",
+      "ccf_rank": "None",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "doi": "10.1016/j.inffus.2026.104819",
+      "official_url": "https://www.sciencedirect.com/science/article/pii/S1566253526006950",
+      "pdf_url": null,
+      "code_url": null,
+      "primary_category": "surveys",
+      "secondary_tags": [],
+      "mandatory_seed": true,
+      "verification_status": "partial",
+      "checked_on": "2026-11-07",
+      "bibtex_key": "fan2026transmission",
+      "bibtex_export_source": "https://api.crossref.org/works/10.1016/j.inffus.2026.104819/transform/application/x-bibtex",
+      "evidence_source": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S1566253526006950",
+          "locator": "Introduction, numbered contributions (1)–(3)",
+          "paraphrase": "The framework already connects states, transmission decisions, fusion diagnostics, decisions and feedback."
+        },
+        {
+          "url": "https://weiping-ding.github.io/",
+          "locator": "Publication entry for DOI 104819",
+          "paraphrase": "Author record lists nine authors and scheduled 2027 volume."
+        }
+      ],
+      "metadata_notes": [
+        "Title/DOI match. Publisher indexed page reports available online 2026-09-29, journal pre-proof; Crossref schedules volume 139 in March 2027. Publisher and author homepage list Haonan Wu, absent from Crossref. Keep as candidate pending authoritative final author reconciliation."
+      ],
+      "reproduction_status": "not-applicable",
+      "volume": "139",
+      "issue": null,
+      "pages": "104819",
+      "metadata_sources": [
+        "https://api.crossref.org/works/10.1016/j.inffus.2026.104819",
+        "https://www.sciencedirect.com/science/article/pii/S1566253526006950"
+      ],
+      "year_online": 2026,
+      "scheduled_print_year": 2027,
+      "authors_publisher": [
+        "Yan Fan",
+        "Yu Wang",
+        "Junran Yang",
+        "Haonan Wu",
+        "Yifei Xu",
+        "Zhichao Zhang",
+        "Pengfei Zhu",
+        "Weiping Ding",
+        "Qinghua Hu"
+      ],
+      "authors_crossref": [
+        "Yan Fan",
+        "Yu Wang",
+        "Junran Yang",
+        "Yifei Xu",
+        "Zhichao Zhang",
+        "Pengfei Zhu",
+        "Weiping Ding",
+        "Qinghua Hu"
+      ],
+      "primary_scope": "Knowledge transmission and fusion across six learning paradigms.",
+      "taxonomy": "Carrier/flow/mechanism and objective/timing/mechanism; coupled state–decision–diagnostic loop.",
+      "representation_coverage": "Knowledge states and heterogeneous carriers.",
+      "governance_coverage": "Privacy, unreliable sources, resources and constrained decisions.",
+      "dynamic_evolution_coverage": "Closed-loop interactions and dynamic deployment are explicit.",
+      "federated_or_decentralized_setting": "Distributed clients are in scope; complete protocol coverage unassessed.",
+      "evaluation_framework": "Announces a framework-aware benchmark map, checklist and lookup template.",
+      "limitations": "Only publisher abstract/introduction excerpts inspected; metadata conflict unresolved.",
+      "distinction_from_proposed_survey": "Strong overlap: a unified feedback loop or constraint-aware taxonomy alone is insufficient differentiation.",
+      "review_depth": "section-reviewed",
+      "reviewed_version": "Publisher pre-proof indexed preview; Crossref metadata",
+      "research_problem": "Knowledge transmission and fusion across six learning paradigms.",
+      "key_idea": "Carrier/flow/mechanism and objective/timing/mechanism; coupled state–decision–diagnostic loop.",
+      "main_contribution": "Knowledge states and heterogeneous carriers. Privacy, unreliable sources, resources and constrained decisions.",
+      "technical_mechanism": "Survey synthesis; not a new fusion algorithm.",
+      "assumptions": "Coverage statements apply only to the explicitly inspected version and sections.",
+      "original_review_depth": "publisher-abstract-and-introduction-excerpts",
+      "full_text_locators": [
+        "Introduction, numbered contributions (1)–(3)",
+        "Publication entry for DOI 104819"
+      ],
+      "record_type": "survey",
+      "subcategory": "Scope and Taxonomy Comparisons",
+      "publication_track": "journal-article",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_pages_checked": "1-72",
+        "nonempty_text_pages": 72,
+        "search_terms": [
+          "Information Fusion"
+        ],
+        "matching_pages": {
+          "Information Fusion": []
+        }
+      },
+      "ccf_basis": "No acronym or full-name match in all 72 text-extracted pages of the formal directory, after case-folding and removal of whitespace/punctuation."
+    },
+    {
+      "id": "yadav2025moerging",
+      "title": "A Survey on Model MoErging: Recycling and Routing Among Specialized Experts for Collaborative Learning",
+      "authors": [
+        "Prateek Yadav",
+        "Colin Raffel",
+        "Mohammed Muqeeth",
+        "Lucas Caccia",
+        "Haokun Liu",
+        "Tianlong Chen",
+        "Mohit Bansal",
+        "Leshem Choshen",
+        "Alessandro Sordoni"
+      ],
+      "venue_full_name": "Transactions on Machine Learning Research",
+      "venue_abbreviation": "TMLR",
+      "year": 2025,
+      "publication_type": "journal",
+      "publication_status": "published",
+      "ccf_rank": "None",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "doi": null,
+      "official_url": "https://openreview.net/forum?id=u0azVc9Y0y",
+      "pdf_url": "https://arxiv.org/pdf/2408.07057",
+      "code_url": null,
+      "primary_category": "surveys",
+      "secondary_tags": [],
+      "mandatory_seed": false,
+      "verification_status": "verified",
+      "checked_on": "2026-11-07",
+      "bibtex_key": "yadav2025moerging",
+      "bibtex_export_source": null,
+      "evidence_source": [
+        {
+          "url": "https://arxiv.org/pdf/2408.07057",
+          "locator": "§2 pp.2–8",
+          "paraphrase": "Expert access and routing assumptions are explicit taxonomy dimensions."
+        },
+        {
+          "url": "https://arxiv.org/pdf/2408.07057",
+          "locator": "§7 pp.23–24",
+          "paraphrase": "Malicious contributions, addition/removal and repeated closed-loop development are open questions."
+        }
+      ],
+      "metadata_notes": [
+        "Author PDF header confirms TMLR 04/2025 and links OpenReview. OpenReview direct access challenged; current arXiv PDF has 32 pages although abstract-page comment says 26."
+      ],
+      "reproduction_status": "not-applicable",
+      "metadata_sources": [
+        "https://arxiv.org/abs/2408.07057v2",
+        "https://research.ibm.com/publications/a-survey-on-model-moerging-recycling-and-routing-among-specialized-experts-for-collaborative-learning",
+        "https://arxiv.org/pdf/2408.07057"
+      ],
+      "primary_scope": "Recycling and routing among pretrained expert models.",
+      "taxonomy": "Expert design, routing design and application choices.",
+      "representation_coverage": "Data access, granularity, selection and aggregation interfaces.",
+      "governance_coverage": "Malicious additions and access assumptions are discussed.",
+      "dynamic_evolution_coverage": "Model addition/removal and closed-loop continual development explicitly proposed.",
+      "federated_or_decentralized_setting": "Decentralized development; FL related setting in §5.4.",
+      "evaluation_framework": "Calls for shared benchmarks and rigorous cross-method comparisons.",
+      "limitations": "Proposed continual infrastructure is not evidence it is already implemented.",
+      "distinction_from_proposed_survey": "Extend design-choice analysis with property-specific acceptance evidence and revalidation; acknowledge existing lifecycle agenda.",
+      "review_depth": "section-reviewed",
+      "reviewed_version": "arXiv:2408.07057v2, TMLR header",
+      "research_problem": "Recycling and routing among pretrained expert models.",
+      "key_idea": "Expert design, routing design and application choices.",
+      "main_contribution": "Data access, granularity, selection and aggregation interfaces. Malicious additions and access assumptions are discussed.",
+      "technical_mechanism": "Survey synthesis; not a new fusion algorithm.",
+      "assumptions": "Coverage statements apply only to the explicitly inspected version and sections.",
+      "original_review_depth": "targeted-published-author-full-text",
+      "full_text_locators": [
+        "§2 pp.2–8",
+        "§7 pp.23–24"
+      ],
+      "record_type": "survey",
+      "subcategory": "Scope and Taxonomy Comparisons",
+      "publication_track": "journal-article",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_pages_checked": "1-72",
+        "nonempty_text_pages": 72,
+        "search_terms": [
+          "TMLR",
+          "Transactions on Machine Learning Research"
+        ],
+        "matching_pages": {
+          "TMLR": [],
+          "Transactions on Machine Learning Research": []
+        }
+      },
+      "ccf_basis": "No acronym or full-name match in all 72 text-extracted pages of the formal directory, after case-folding and removal of whitespace/punctuation."
+    },
+    {
+      "id": "yang2026merging",
+      "title": "Model Merging in LLMs, MLLMs, and Beyond: Methods, Theories, Applications, and Opportunities",
+      "authors": [
+        "Enneng Yang",
+        "Li Shen",
+        "Guibing Guo",
+        "Xingwei Wang",
+        "Xiaochun Cao",
+        "Jie Zhang",
+        "Dacheng Tao"
+      ],
+      "venue_full_name": "ACM Computing Surveys",
+      "venue_abbreviation": "CSUR",
+      "year": 2026,
+      "publication_type": "journal",
+      "publication_status": "published",
+      "ccf_rank": "None",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "doi": "10.1145/3787849",
+      "official_url": "https://dl.acm.org/doi/10.1145/3787849",
+      "pdf_url": "https://arxiv.org/pdf/2408.07666",
+      "code_url": null,
+      "primary_category": "surveys",
+      "secondary_tags": [],
+      "mandatory_seed": false,
+      "verification_status": "verified",
+      "checked_on": "2026-11-07",
+      "bibtex_key": "yang2026merging",
+      "bibtex_export_source": "https://api.crossref.org/works/10.1145/3787849/transform/application/x-bibtex",
+      "evidence_source": [
+        {
+          "url": "https://arxiv.org/pdf/2408.07666",
+          "locator": "§§2–3, pp.4–14",
+          "paraphrase": "Phase-based mechanisms, theoretical analysis and benchmark comparisons."
+        },
+        {
+          "url": "https://arxiv.org/pdf/2408.07666",
+          "locator": "§5.1 p.21; §5.6 pp.27–28; §6 p.29",
+          "paraphrase": "Continual learning, attacks and owner/combiner trust issues are covered."
+        }
+      ],
+      "metadata_notes": [
+        "Formal CSUR 2026 record confirmed by Crossref and DBLP; detailed reading used the 2025-12-31 author version with template placeholders, not final typeset text."
+      ],
+      "reproduction_status": "not-applicable",
+      "volume": "58",
+      "issue": "8",
+      "pages": "1-41",
+      "metadata_sources": [
+        "https://api.crossref.org/works/10.1145/3787849",
+        "https://dl.acm.org/doi/10.1145/3787849"
+      ],
+      "related_versions": [
+        "https://arxiv.org/abs/2408.07666v5"
+      ],
+      "primary_scope": "Model-merging mechanisms, theory and cross-domain applications.",
+      "taxonomy": "Pre-merging and during-merging methods; application families.",
+      "representation_coverage": "Architecture transformation, alignment, subspaces and routing.",
+      "governance_coverage": "Adversarial learning, ownership and trustworthy merging explicit.",
+      "dynamic_evolution_coverage": "Continual learning has a dedicated application subsection.",
+      "federated_or_decentralized_setting": "FL application subsection.",
+      "evaluation_framework": "Benchmark table and empirical comparisons in §3.2.",
+      "limitations": "Final-version differences remain unassessed; trustworthy merging is already a named agenda.",
+      "distinction_from_proposed_survey": "Compare guarantees across operators and changes in model ownership/access; do not claim first trust or continual coverage.",
+      "review_depth": "section-reviewed",
+      "reviewed_version": "arXiv:2408.07666v5; CSUR metadata",
+      "research_problem": "Model-merging mechanisms, theory and cross-domain applications.",
+      "key_idea": "Pre-merging and during-merging methods; application families.",
+      "main_contribution": "Architecture transformation, alignment, subspaces and routing. Adversarial learning, ownership and trustworthy merging explicit.",
+      "technical_mechanism": "Survey synthesis; not a new fusion algorithm.",
+      "assumptions": "Coverage statements apply only to the explicitly inspected version and sections.",
+      "original_review_depth": "targeted-author-full-text-plus-final-metadata",
+      "full_text_locators": [
+        "§§2–3, pp.4–14",
+        "§5.1 p.21; §5.6 pp.27–28; §6 p.29"
+      ],
+      "record_type": "survey",
+      "subcategory": "Scope and Taxonomy Comparisons",
+      "publication_track": "journal-article",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_pages_checked": "1-72",
+        "nonempty_text_pages": 72,
+        "search_terms": [
+          "CSUR",
+          "ACM Computing Surveys",
+          "Computing Surveys"
+        ],
+        "matching_pages": {
+          "CSUR": [],
+          "ACM Computing Surveys": [],
+          "Computing Surveys": []
+        }
+      },
+      "ccf_basis": "No acronym or full-name match in all 72 text-extracted pages of the formal directory, after case-folding and removal of whitespace/punctuation.",
+      "number": "8"
+    },
+    {
+      "id": "song2026fuse",
+      "title": "Model Merging in the Era of Large Language Models: Methods, Applications, and Future Directions",
+      "authors": [
+        "Mingyang Song",
+        "Mao Zheng"
+      ],
+      "venue_full_name": "arXiv",
+      "venue_abbreviation": "arXiv",
+      "year": 2026,
+      "publication_type": "preprint",
+      "publication_status": "preprint",
+      "ccf_rank": "None",
+      "ccf_verification_source": "https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml",
+      "doi": "10.48550/arXiv.2603.09938",
+      "official_url": "https://arxiv.org/abs/2603.09938",
+      "pdf_url": "https://arxiv.org/pdf/2603.09938",
+      "code_url": null,
+      "primary_category": "surveys",
+      "secondary_tags": [],
+      "mandatory_seed": false,
+      "verification_status": "verified",
+      "checked_on": "2026-11-07",
+      "bibtex_key": "song2026fuse",
+      "bibtex_export_source": null,
+      "evidence_source": [
+        {
+          "url": "https://arxiv.org/pdf/2603.09938",
+          "locator": "§6.2 p.37; §§7.3–7.5 pp.46–49",
+          "paraphrase": "Safety, diagnostics, dynamic merging and safety-preserving guarantees appear explicitly."
+        }
+      ],
+      "metadata_notes": [
+        "No formal publication verified in this pass; retain Preprint."
+      ],
+      "reproduction_status": "not-applicable",
+      "primary_scope": "LLM-era parameter merging and supporting ecosystem.",
+      "taxonomy": "FUSE: foundations, unification strategies, scenarios, ecosystem.",
+      "representation_coverage": "Geometry, compatibility, alignment and representation-guided methods.",
+      "governance_coverage": "Safety, bias, failure diagnostics and alignment preservation.",
+      "dynamic_evolution_coverage": "Dynamic/continual merging and runtime feedback explicit.",
+      "federated_or_decentralized_setting": "FL is an application scenario.",
+      "evaluation_framework": "Benchmarks, costs, failure modes and diagnostics.",
+      "limitations": "Preprint; cited method claims require primary-paper checks.",
+      "distinction_from_proposed_survey": "Our synthesis must add a defensible decision/evidence contract beyond its existing safety and dynamic agenda.",
+      "review_depth": "section-reviewed",
+      "reviewed_version": "arXiv:2603.09938v2",
+      "research_problem": "LLM-era parameter merging and supporting ecosystem.",
+      "key_idea": "FUSE: foundations, unification strategies, scenarios, ecosystem.",
+      "main_contribution": "Geometry, compatibility, alignment and representation-guided methods. Safety, bias, failure diagnostics and alignment preservation.",
+      "technical_mechanism": "Survey synthesis; not a new fusion algorithm.",
+      "assumptions": "Coverage statements apply only to the explicitly inspected version and sections.",
+      "metadata_sources": [
+        "https://arxiv.org/abs/2603.09938"
+      ],
+      "original_review_depth": "targeted-preprint-full-text",
+      "full_text_locators": [
+        "§6.2 p.37; §§7.3–7.5 pp.46–49"
+      ],
+      "record_type": "survey",
+      "subcategory": "Scope and Taxonomy Comparisons",
+      "publication_track": "preprint",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_basis": "Preprint without a listed formal venue"
+    },
+    {
+      "id": "ruan2025unified",
+      "title": "From Task-Specific Models to Unified Systems: A Review of Model Merging Approaches",
+      "authors": [
+        "Wei Ruan",
+        "Tianze Yang",
+        "Yifan Zhou",
+        "Tianming Liu",
+        "Jin Lu"
+      ],
+      "venue_full_name": "arXiv",
+      "venue_abbreviation": "arXiv",
+      "year": 2025,
+      "publication_type": "preprint",
+      "publication_status": "preprint",
+      "ccf_rank": "None",
+      "ccf_verification_source": "https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml",
+      "doi": "10.48550/arXiv.2503.08998",
+      "official_url": "https://arxiv.org/abs/2503.08998",
+      "pdf_url": "https://arxiv.org/pdf/2503.08998",
+      "code_url": null,
+      "primary_category": "surveys",
+      "secondary_tags": [],
+      "mandatory_seed": false,
+      "verification_status": "verified",
+      "checked_on": "2026-11-07",
+      "bibtex_key": "ruan2025unified",
+      "bibtex_export_source": null,
+      "evidence_source": [
+        {
+          "url": "https://arxiv.org/pdf/2503.08998",
+          "locator": "§2 pp.2–7; §3 p.7",
+          "paraphrase": "Taxonomy is mechanism-oriented; challenges include interference, scaling and heuristic selection."
+        }
+      ],
+      "metadata_notes": [
+        "No formal publication verified in this pass; retain Preprint."
+      ],
+      "reproduction_status": "not-applicable",
+      "primary_scope": "Parameter merging approaches.",
+      "taxonomy": "Permutation, direct, pruning, optimization and LoRA families.",
+      "representation_coverage": "Parameter correspondence and interference.",
+      "governance_coverage": "No dedicated multi-property governance analysis established in inspected text.",
+      "dynamic_evolution_coverage": "Continual interference appears among challenges.",
+      "federated_or_decentralized_setting": "FL is motivation/background.",
+      "evaluation_framework": "Method descriptions; evaluation framework not established in inspected sections.",
+      "limitations": "Short preprint; negative coverage judgments remain limited to inspected sections.",
+      "distinction_from_proposed_survey": "Add operator/access/guarantee comparisons with explicit source-retaining collaboration scope.",
+      "review_depth": "section-reviewed",
+      "reviewed_version": "arXiv:2503.08998v1",
+      "research_problem": "Parameter merging approaches.",
+      "key_idea": "Permutation, direct, pruning, optimization and LoRA families.",
+      "main_contribution": "Parameter correspondence and interference. No dedicated multi-property governance analysis established in inspected text.",
+      "technical_mechanism": "Survey synthesis; not a new fusion algorithm.",
+      "assumptions": "Coverage statements apply only to the explicitly inspected version and sections.",
+      "metadata_sources": [
+        "https://arxiv.org/abs/2503.08998"
+      ],
+      "original_review_depth": "targeted-preprint-full-text",
+      "full_text_locators": [
+        "§2 pp.2–7; §3 p.7"
+      ],
+      "record_type": "survey",
+      "subcategory": "Scope and Taxonomy Comparisons",
+      "publication_track": "preprint",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_basis": "Preprint without a listed formal venue"
+    },
+    {
+      "id": "wang2025slmcollaboration",
+      "title": "A Survey on Collaborating Small and Large Language Models for Performance, Cost-effectiveness, Cloud-edge Privacy, and Trustworthiness",
+      "authors": [
+        "Fali Wang",
+        "Jihai Chen",
+        "Shuhua Yang",
+        "Ali Al-Lawati",
+        "Linli Tang",
+        "Hui Liu",
+        "Suhang Wang"
+      ],
+      "venue_full_name": "arXiv",
+      "venue_abbreviation": "arXiv",
+      "year": 2025,
+      "publication_type": "preprint",
+      "publication_status": "preprint",
+      "ccf_rank": "None",
+      "ccf_verification_source": "https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml",
+      "doi": "10.48550/arXiv.2510.13890",
+      "official_url": "https://arxiv.org/abs/2510.13890",
+      "pdf_url": "https://arxiv.org/pdf/2510.13890",
+      "code_url": null,
+      "primary_category": "surveys",
+      "secondary_tags": [],
+      "mandatory_seed": false,
+      "verification_status": "verified",
+      "checked_on": "2026-11-07",
+      "bibtex_key": "wang2025slmcollaboration",
+      "bibtex_export_source": null,
+      "evidence_source": [
+        {
+          "url": "https://arxiv.org/pdf/2510.13890",
+          "locator": "§§2–5 pp.3–13; §7 p.14",
+          "paraphrase": "Four objectives include privacy and trust, with safety-guided decoding and guardians."
+        }
+      ],
+      "metadata_notes": [
+        "No formal publication verified in this pass; retain Preprint."
+      ],
+      "reproduction_status": "not-applicable",
+      "primary_scope": "Small/large language-model collaboration.",
+      "taxonomy": "Performance, cost, cloud-edge privacy and trustworthiness objectives.",
+      "representation_coverage": "Role allocation, guidance and fusion architectures.",
+      "governance_coverage": "Privacy, safety-guided decoding and guardian–generator designs.",
+      "dynamic_evolution_coverage": "Interoperable ecosystems and adaptive collaboration are research directions.",
+      "federated_or_decentralized_setting": "Cloud-edge collaboration; not all examples are federated.",
+      "evaluation_framework": "Representative methods/datasets and system-level benchmark agenda.",
+      "limitations": "Preprint explicitly marked under review; no publication inferred.",
+      "distinction_from_proposed_survey": "Trustworthy collaboration already has objective-based coverage; broader operators and lifecycle obligations need substantiated synthesis.",
+      "review_depth": "section-reviewed",
+      "reviewed_version": "arXiv:2510.13890v2",
+      "research_problem": "Small/large language-model collaboration.",
+      "key_idea": "Performance, cost, cloud-edge privacy and trustworthiness objectives.",
+      "main_contribution": "Role allocation, guidance and fusion architectures. Privacy, safety-guided decoding and guardian–generator designs.",
+      "technical_mechanism": "Survey synthesis; not a new fusion algorithm.",
+      "assumptions": "Coverage statements apply only to the explicitly inspected version and sections.",
+      "metadata_sources": [
+        "https://arxiv.org/abs/2510.13890"
+      ],
+      "original_review_depth": "targeted-preprint-full-text",
+      "full_text_locators": [
+        "§§2–5 pp.3–13; §7 p.14"
+      ],
+      "record_type": "survey",
+      "subcategory": "Scope and Taxonomy Comparisons",
+      "publication_track": "preprint",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_basis": "Preprint without a listed formal venue"
+    },
+    {
+      "id": "li2025edgecloud",
+      "title": "Collaborative Inference and Learning between Edge SLMs and Cloud LLMs: A Survey of Algorithms, Execution, and Open Challenges",
+      "authors": [
+        "Senyao Li",
+        "Haozhao Wang",
+        "Wenchao Xu",
+        "Rui Zhang",
+        "Song Guo",
+        "Jingling Yuan",
+        "Xian Zhong",
+        "Tianwei Zhang",
+        "Ruixuan Li"
+      ],
+      "venue_full_name": "arXiv",
+      "venue_abbreviation": "arXiv",
+      "year": 2025,
+      "publication_type": "preprint",
+      "publication_status": "preprint",
+      "ccf_rank": "None",
+      "ccf_verification_source": "https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml",
+      "doi": "10.48550/arXiv.2507.16731",
+      "official_url": "https://arxiv.org/abs/2507.16731",
+      "pdf_url": "https://arxiv.org/pdf/2507.16731",
+      "code_url": null,
+      "primary_category": "surveys",
+      "secondary_tags": [],
+      "mandatory_seed": false,
+      "verification_status": "verified",
+      "checked_on": "2026-11-07",
+      "bibtex_key": "li2025edgecloud",
+      "bibtex_export_source": null,
+      "evidence_source": [
+        {
+          "url": "https://arxiv.org/pdf/2507.16731",
+          "locator": "§3.3; §3.5; §§4–5 pp.19–25",
+          "paraphrase": "Compatibility, dynamic transfer, benchmarks and privacy/security receive explicit treatment."
+        }
+      ],
+      "metadata_notes": [
+        "No formal publication verified in this pass; retain Preprint."
+      ],
+      "reproduction_status": "not-applicable",
+      "primary_scope": "Edge/cloud language-model inference and learning.",
+      "taxonomy": "Inference assignment/division/mixtures; collaborative learning architectures.",
+      "representation_coverage": "Task/token interfaces, parameter compatibility and bidirectional transfer.",
+      "governance_coverage": "Privacy/security mechanisms and resource constraints.",
+      "dynamic_evolution_coverage": "Dynamic transfer, scheduling and feedback examples.",
+      "federated_or_decentralized_setting": "Federated edge-cloud datasets and deployments included.",
+      "evaluation_framework": "Datasets, dual-model benchmarks and execution frameworks in §4.",
+      "limitations": "Preprint; edge-cloud scope does not establish general model-network guarantees.",
+      "distinction_from_proposed_survey": "Compare these system constraints with merging/distillation and property-specific revalidation across model lifecycles.",
+      "review_depth": "section-reviewed",
+      "reviewed_version": "arXiv:2507.16731v1",
+      "research_problem": "Edge/cloud language-model inference and learning.",
+      "key_idea": "Inference assignment/division/mixtures; collaborative learning architectures.",
+      "main_contribution": "Task/token interfaces, parameter compatibility and bidirectional transfer. Privacy/security mechanisms and resource constraints.",
+      "technical_mechanism": "Survey synthesis; not a new fusion algorithm.",
+      "assumptions": "Coverage statements apply only to the explicitly inspected version and sections.",
+      "metadata_sources": [
+        "https://arxiv.org/abs/2507.16731"
+      ],
+      "original_review_depth": "targeted-preprint-full-text",
+      "full_text_locators": [
+        "§3.3; §3.5; §§4–5 pp.19–25"
+      ],
+      "record_type": "survey",
+      "subcategory": "Scope and Taxonomy Comparisons",
+      "publication_track": "preprint",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_basis": "Preprint without a listed formal venue"
+    }
+  ]
+}

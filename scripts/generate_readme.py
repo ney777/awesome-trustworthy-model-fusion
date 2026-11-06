@@ -1,0 +1,48 @@
+"""Generate catalogue, detailed notes, CSV, and survey view from one source."""
+import json
+from library import ROOT, CATEGORIES, load, formal, write_csv, digest
+
+def main():
+    data=load(); rows=data['papers']; ready=[p for p in rows if formal(p)]
+    lines=['# Awesome Trustworthy Model Fusion and Collaboration','',
+           'A curated research collection on how existing models are represented, governed under explicit trust constraints, and updated through collaboration.','',
+           '**Representation → Governance → Evolution**','',
+           '[Scope](docs/scope-and-definitions.md) · [Taxonomy](docs/taxonomy.md) · [Detailed records](docs/papers.md) · [Related surveys](docs/prior-surveys.md) · [Benchmarks](docs/benchmarks.md) · [Search protocol](docs/search-protocol.md) · [Audit](docs/reference-audit.md) · [Report](docs/literature-report.md) · [Contributing](CONTRIBUTING.md)','',
+           '## Collection status','',
+           f"Curation snapshot: {data.get('curation_date','not recorded')}. The database contains {len(rows)} records; {len(ready)} satisfy both metadata and CCF-edition verification for the ranked catalogue. Remaining records are retained as pending, not classified as CCF-None by default.",'',
+           'This is a staged, evidence-tracked collection, not a claim of exhaustive coverage. Venue ranks use the **CCF 2026 seventh edition** only. Findings, workshop and other excluded tracks do not inherit the main-conference rank. Publication status and review depth are separate fields.','',
+           'The unpublished survey manuscript is maintained locally and is not distributed in this repository.','']
+    for cat, heading in CATEGORIES.items():
+        lines += ['## '+heading,'']
+        group=sorted([p for p in ready if p['primary_category']==cat],key=lambda p:(-p['year'],p['title'].casefold()))
+        if not group:lines += ['No entries have completed all required checks for this section yet.','']
+        subs=list(dict.fromkeys(p.get('subcategory','General') for p in group))
+        for sub in subs:
+            lines += ['### '+sub,'']
+            for p in [p for p in group if p.get('subcategory','General')==sub]:
+                link=f"[Paper]({p['official_url']})"
+                if p.get('code_url'):link+=f" · [Code]({p['code_url']})"
+                pre=' · Preprint' if p['publication_type']=='preprint' else ' · Accepted; proceedings pending' if p.get('publication_status')=='accepted' else ' · Workshop' if p['publication_type']=='workshop' else ''
+                lines += [f"- **{p['title']}** — {p['venue_abbreviation']}, {p['year']}, CCF-{p['ccf_rank']}{pre}. {link}"]
+            lines += ['']
+    lines += ['## Verification and maintenance','',
+              'Bibliographic facts, review depth, source locators, assumptions and boundaries are stored in [data/papers.json](data/papers.json). The [CSV](data/papers.csv), [BibTeX](data/references.bib), README and detailed notes are generated views. Edit the JSON source, not the generated outputs.','',
+              '```sh','python scripts/validate_papers.py','python scripts/check_duplicates.py','python scripts/generate_readme.py','python scripts/export_bibtex.py','```','',
+              'See [CONTRIBUTING.md](CONTRIBUTING.md) for inclusion and verification rules. Original repository materials are released under the [MIT license](LICENSE); linked publications and third-party tools retain their respective rights.','',
+              '<!-- source-sha256: '+digest()+' -->','']
+    (ROOT/'README.md').write_text('\n'.join(lines),encoding='utf-8')
+    notes=['# Literature records','', 'Generated from `data/papers.json`. Pending ranks and incomplete reading are explicit; inclusion here is not a universal trustworthiness endorsement.','']
+    for p in sorted(rows,key=lambda p:(p['primary_category'],-p['year'],p['title'])):
+        notes += ['## '+p['title'],'',f"{p['venue_full_name']}, {p['year']}. [Official source]({p['official_url']})",'',
+                  f"Status: {p['verification_status']}; publication: {p.get('publication_status',p['publication_type'])}; CCF: {p['ccf_rank'] if p.get('ccf_rank') is not None else 'pending'}; reading: {p['review_depth']}.",'']
+        for k,label in [('research_problem','Problem'),('technical_mechanism','Mechanism'),('main_contribution','Contribution'),('assumptions','Assumptions'),('limitations','Evidence boundary')]:
+            v=p.get(k)
+            if isinstance(v,list):v='; '.join(v)
+            notes += [f'**{label}.** {v or "Not yet assessed."}','']
+        notes += ['**Evidence.** '+ '; '.join(f"[{e.get('locator','source')}]({e['url']})" if isinstance(e,dict) else str(e) for e in p['evidence_source']), '']
+    (ROOT/'docs/papers.md').write_text('\n'.join(notes),encoding='utf-8')
+    write_csv(ROOT/'data/papers.csv',rows)
+    (ROOT/'data/surveys.json').write_text(json.dumps({'generated_from':'papers.json','papers':[p for p in rows if p['record_type']=='survey']},ensure_ascii=False,indent=2)+'\n')
+    print(f'Generated {len(ready)} ranked entries and {len(rows)} detailed records.')
+
+if __name__=='__main__':main()
