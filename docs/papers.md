@@ -87,6 +87,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | The policy optimizes a one-step reward rather than long-term collaboration consequences. Latency and privacy preferences remain future work. |
 | Evidence | [Official publication metadata and abstract](https://ijcai.org/proceedings/2026/673); [§4.1–4.2, PDF pp.3–4; §6 Conclusion, PDF p.7](https://ijcai.org/proceedings/2026/0673.pdf) |
 
+## MoFedNet: Semantic Link is All Models Need
+
+| Field | Details |
+| --- | --- |
+| Venue / year | Journal of Computer Science and Technology, 2026 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | B |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://jcst.ict.ac.cn/en/article/doi/10.1007/s11390-025-5684-5) |
+| Problem | Coordinate heterogeneous models while balancing task quality and orchestration cost. |
+| Mechanism | L2L composes hypergraph workflows; CoMER retrieves structured memories; EvoLOM updates collaboration paths using performance, latency and cost feedback. |
+| Contribution | A model-collaboration system with semantic contracts, memory and adaptive path optimization. |
+| Assumptions | Models expose capability descriptions and interfaces; a centralized orchestration layer monitors a distributed model network. |
+| Evidence boundary | Evaluation includes synthetic MCP tasks and LLM-judged ophthalmic VQA; it does not establish patient-level clinical benefit. Memory upkeep adds overhead, and aggressive forgetting may lose useful knowledge. Privacy-aware contracts are not themselves a differential-privacy guarantee. |
+| Evidence | [Official citation and complete author list; final issue is March 2026, not the DOI year 2025.](https://jcst.ict.ac.cn/en/article/doi/10.1007/s11390-025-5684-5); [PDF pp.2–3 (printed475–476): metadata, regular-paper track and architecture; p.7 (480), Sections3.2.1–3.2.2; p.10 (483), Section3.4; p.13 (486), Sections5.1–5.2; p.16 (489), Section5.5.4; p.18 (491), references11–12.](https://jcst.ict.ac.cn/en/article/pdf/preview/10.1007/s11390-025-5684-5.pdf) |
+
 ## Null-Space Filtering for Data-Free Continual Model Merging: Preserving Stability, Promoting Plasticity
 
 | Field | Details |
@@ -529,6 +546,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | Cross-family architectures and broader multilingual transfer remain outside the established core evidence. |
 | Evidence | [Official publication metadata and abstract](https://aclanthology.org/2025.acl-long.1055/); [PDF pp.1–5 method and setup; p.10 Section 6](https://aclanthology.org/2025.acl-long.1055.pdf) |
 
+## MAP: Low-compute Model Merging with Amortized Pareto Fronts via Quadratic Approximation
+
+| Field | Details |
+| --- | --- |
+| Venue / year | International Conference on Learning Representations, 2025 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://proceedings.iclr.cc/paper_files/paper/2025/hash/a3724221b623bf1966e92cd266ac6177-Abstract-Conference.html) |
+| Problem | Repeatedly evaluating candidate merges makes multi-task trade-off search expensive. |
+| Mechanism | Fit quadratic surrogates from sampled merge coefficients and observed task metrics, then search their Pareto front; Bayesian and nested variants reduce evaluation cost. |
+| Contribution | Provides a family of coefficient choices rather than optimizing only average task accuracy. |
+| Assumptions | Compatible task vectors around a shared reference; access to task evaluations; local approximation assumes sufficiently small parameter changes and smooth metric behavior. |
+| Evidence boundary | Surrogate error can shift the true frontier; metric evaluations remain data-dependent. Task trade-offs alone do not establish privacy or group fairness. |
+| Evidence | [Official proceedings metadata and abstract](https://proceedings.iclr.cc/paper_files/paper/2025/hash/a3724221b623bf1966e92cd266ac6177-Abstract-Conference.html); [Final PDF pp.2–5, Figure 1 and §§2–3.1; Assumption 1 and surrogate fitting](https://proceedings.iclr.cc/paper_files/paper/2025/file/a3724221b623bf1966e92cd266ac6177-Paper-Conference.pdf) |
+
 ## MergePrint: Merge-Resistant Fingerprints for Robust Black-box Ownership Verification of Large Language Models
 
 | Field | Details |
@@ -579,6 +613,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Assumptions | Assumptions beyond the official abstract have not yet been extracted. |
 | Evidence boundary | Abstract-only technical review; comparative numerical claims are not transcribed. |
 | Evidence | [Official publication metadata and abstract](https://proceedings.neurips.cc/paper_files/paper/2025/hash/a3948805bc5220206f5bfc465de0b1b7-Abstract-Conference.html) |
+
+## Pareto Merging: Multi-Objective Optimization for Preference-Aware Model Merging
+
+| Field | Details |
+| --- | --- |
+| Venue / year | International Conference on Machine Learning, 2025 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://proceedings.mlr.press/v267/chen25af.html) |
+| Problem | One merged checkpoint can conceal competing task preferences. |
+| Mechanism | Combine a preference-independent merged base with a low-rank tensor component conditioned on task preferences; formulate parameter-distance or prediction-entropy objectives. |
+| Contribution | Constructs multiple trade-offs from one learned parameter-efficient structure. |
+| Assumptions | Models fine-tuned from a common base; the entropy-based setting uses unlabeled task inputs, while a separate parameter-distance setting does not. |
+| Evidence boundary | Parameter distance and entropy are surrogate objectives, not guarantees of true task Pareto optimality, calibrated prediction or demographic fairness; model-family learning has optimization cost. |
+| Evidence | [Official proceedings metadata and abstract](https://proceedings.mlr.press/v267/chen25af.html); [Final PDF pp.2–4, §§2.1 and 3.1–3.2; data-free versus unlabeled-data settings](https://raw.githubusercontent.com/mlresearch/v267/main/assets/chen25af/chen25af.pdf) |
 
 ## Personalized Language Models via Privacy-Preserving Evolutionary Model Merging
 
@@ -722,16 +773,16 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | 2024 IEEE 40th International Conference on Data Engineering (ICDE), 2024 |
 | Publication status | Published |
-| Bibliographic verification | partial |
+| Bibliographic verification | verified |
 | CCF 2026 | A |
-| Reading depth | metadata-only |
+| Reading depth | abstract-reviewed |
 | Links | [Paper](https://doi.org/10.1109/icde60146.2024.00177) |
-| Problem | Privacy and fairness in cross-federation model fusion. |
-| Mechanism | Technical content not yet re-extracted from the final version in this pass. |
-| Contribution | Privacy and fairness in cross-federation model fusion. |
-| Assumptions | Not yet fully extracted in this pass. |
-| Evidence boundary | Candidate: title and publication confirmed; actual cross-federation protocol and evidence require review. |
-| Evidence | [Publisher-deposited bibliographic metadata](https://api.crossref.org/works/10.1109/icde60146.2024.00177) |
+| Problem | Reuse federation-pretrained healthcare models across federations while addressing privacy, population shift, fairness, and data dependency. |
+| Mechanism | Publisher/institutional abstract: cross-federation model fusion combined with multi-objective quantification and optimization. The detailed fusion operator, privacy mechanism, fairness objective, and optimization protocol were not verified from the full text. |
+| Contribution | A privacy-and-fairness-oriented cross-federation model-fusion framework (FairFusion), evaluated according to the abstract on three public healthcare datasets across model structures and sensitive-attribute subgroups. |
+| Assumptions | Cross-federation access to pretrained models is part of the stated setting. Precise trust, architecture compatibility, calibration-data, sensitive-attribute, and privacy-accounting assumptions remain pending full-text review. |
+| Evidence boundary | Abstract reviewed only: neither exact datasets/splits, threat model, privacy guarantees, fairness definitions, quantitative results, nor deployed multi-institutional federation execution are verified. The coauthor-provided code URL https://github.com/beiyuouo/ModelTrip returned HTTP 404 on 2026-11-07; no usable public code or full-text link was established. |
+| Evidence | [Publisher-deposited final title, 11 authors, ICDE 2024, pp.2231–2244, DOI; published-print 13 May 2024.](https://api.crossref.org/works/10.1109/icde60146.2024.00177); [IEEE abstract/metadata retrieved in search index; FairFusion, multi-objective privacy/utility/fairness; three public healthcare datasets; Date Added to IEEE Xplore 23 July 2024.](https://doi.org/10.1109/ICDE60146.2024.00177); [Institutional publication record and abstract; final title, authors, pages, DOI, method name, broad study scope.](https://researchportal.hkust.edu.hk/en/publications/model-trip-enhancing-privacy-and-fairness-in-model-fusion-across--2/); [Coauthor selected-publication entry: Model Trip/FairFusion; publisher Paper link and unavailable ModelTrip Code link.](https://www.bj-yan.top/) |
 
 ## PrivFusion: Privacy-Preserving Model Fusion via Decentralized Federated Graph Matching
 
@@ -739,16 +790,16 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | IEEE Transactions on Knowledge and Data Engineering, 2024 |
 | Publication status | Published |
-| Bibliographic verification | partial |
+| Bibliographic verification | verified |
 | CCF 2026 | A |
-| Reading depth | metadata-only |
+| Reading depth | section-reviewed |
 | Links | [Paper](https://doi.org/10.1109/tkde.2024.3430819) |
-| Problem | Privacy-preserving model fusion through decentralized matching. |
-| Mechanism | Technical content not yet re-extracted from the final version in this pass. |
-| Contribution | Privacy-preserving model fusion through decentralized matching. |
-| Assumptions | Not yet fully extracted in this pass. |
-| Evidence boundary | Candidate: metadata confirmed; method assumptions and guarantees remain pending full-text review. |
-| Evidence | [Publisher-deposited bibliographic metadata](https://api.crossref.org/works/10.1109/tkde.2024.3430819) |
+| Problem | Fuse independently trained models while limiting disclosure of model activations and weights to other model owners. |
+| Mechanism | Author preprint arXiv:2311.03396v1, Sections III–IV: represent neurons/channels as nodes and weights as edges; perturb activation features with Laplace noise and bounded weight features with a multi-bit mechanism; combine activation/weight affinities for graph matching; align neurons, apply Gaussian perturbation and smoothing, and average aligned weights. |
+| Contribution | A decentralized privacy-aware graph-matching fusion procedure, with author-stated local-DP mechanisms and privacy–utility experiments on image tasks and a two-party healthcare construction. |
+| Assumptions | Author preprint: honest-but-curious model owners; agreed tasks and compatible public architectures; aligned input/output neurons; a few inference examples to obtain activation features; bounded weight features and calibrated sensitivities/privacy budgets. The fusion stage avoids retraining but is not strictly data-free. |
+| Evidence boundary | Content reviewed in arXiv:2311.03396v1 only; the final TKDE text was not accessed. Small-network evaluations and graph-matching memory cost limit scalability evidence. The healthcare data originate from 17 hospitals but the reported experiment groups 15 regions into two parties; this is not evidence of a live 17-hospital federation. Strong regional heterogeneity can degrade fusion substantially (preprint Table IV). Privacy unit, sensitivity calibration, approximate-DP delta, and composition across releases require explicit accounting before asserting end-to-end patient-level privacy. |
+| Evidence | [Publisher-deposited final bibliographic metadata; TKDE 36(12), 9051–9064; published-print December 2024; 10 authors.](https://api.crossref.org/works/10.1109/tkde.2024.3430819); [Author preprint, submitted 5 November 2023; different title and 8 authors; uses the method name PrivFusion.](https://arxiv.org/abs/2311.03396v1); [Author-preprint PDF pp.4–8, Sections III–IV (threat model, assumptions, mechanisms); pp.8–13, Section V and Table IV (experimental setup and limitations).](https://arxiv.org/pdf/2311.03396v1); [Coauthor publication list identifies final PrivFusion and summarizes the same decentralized matching/local-DP/perturbation-filter components; this supports association, not exact version equivalence.](https://www.bj-yan.top/publications) |
 
 ## WARM: On the Benefits of Weight Averaged Reward Models
 
@@ -784,6 +835,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | The DP analysis explicitly covers only the scoring mechanism; communicating client models adds a separate privacy cost. Formal journal metadata are verified, but section reading used the author preprint. |
 | Evidence | [Official publication metadata and abstract](https://doi.org/10.1109/tnnls.2021.3129371); [Author preprint PDF pp.3–5 §3: auxiliary-data distillation, certainty weights and scoped privacy analysis](https://arxiv.org/pdf/2102.02514) |
 
+## Rewarded soups: towards Pareto-optimal alignment by interpolating weights fine-tuned on diverse rewards
+
+| Field | Details |
+| --- | --- |
+| Venue / year | Advances in Neural Information Processing Systems, 2023 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://proceedings.neurips.cc/paper_files/paper/2023/hash/e12a3b98b67e8395f639fde4c2b03168-Abstract-Conference.html) |
+| Problem | A single reward weighting cannot express diverse user preferences. |
+| Mechanism | Fine-tune one policy per proxy reward from a shared initialization, then interpolate weights and select coefficients using validation rewards. |
+| Contribution | Evaluates weight interpolation as a cheaper alternative to separately training policies for many scalarized rewards. |
+| Assumptions | Compatible architecture and common pretrained initialization; training resources for reward specialists and samples for coefficient selection. |
+| Evidence boundary | Linear connectivity and Pareto coverage are working hypotheses with restricted theoretical support; proxy-reward alignment is not demographic fairness or a universal safety guarantee. |
+| Evidence | [Official proceedings metadata and abstract](https://proceedings.neurips.cc/paper_files/paper/2023/hash/e12a3b98b67e8395f639fde4c2b03168-Abstract-Conference.html); [Final PDF pp.2–4, Figure 1 and §§2.1–2.2; working hypotheses and training/selection phases](https://proceedings.neurips.cc/paper_files/paper/2023/file/e12a3b98b67e8395f639fde4c2b03168-Paper-Conference.pdf) |
+
 ## RoFL: Robustness of Secure Federated Learning
 
 | Field | Details |
@@ -817,6 +885,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Assumptions | Server access to client updates and a validation dataset defining coalition utility; compatible models in iterative FL. |
 | Evidence boundary | The estimated score is a training/validation-dependent surrogate, not exact global Shapley attribution, demographic fairness or cryptographically verifiable provenance. |
 | Evidence | [Official publication metadata and abstract](https://doi.org/10.1145/3580305.3599500); [PDF p.4 §4.1: validation utility, partial and surrogate federated Shapley values](https://par.nsf.gov/servlets/purl/10448787) |
+
+## Cronus: Robust and Heterogeneous Collaborative Learning with Black-Box Knowledge Transfer
+
+| Field | Details |
+| --- | --- |
+| Venue / year | NeurIPS Workshop on New Frontiers in Federated Learning: Privacy, Fairness, Robustness, Personalization and Data Ownership, 2021 |
+| Publication status | Workshop |
+| Bibliographic verification | verified |
+| CCF 2026 | None |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://neurips2021workshopfl.github.io/NFFL-2021/paper.html) |
+| Problem | Parameter exchange exposes heterogeneous collaboration to poisoning and inference risks. |
+| Mechanism | Clients predict on unlabeled public data; the server applies RobustFilter per sample; clients retrain on private data and aggregated public predictions. |
+| Contribution | Connects heterogeneous knowledge transfer with robust aggregation and membership-inference evaluation. |
+| Assumptions | Shared classification task, unlabeled public data, and malicious-client/covariance conditions required by robust mean estimation. |
+| Evidence boundary | Privacy evidence is empirical, not standalone differential privacy. Robust mean bounds do not certify every downstream model or arbitrary attacks. Public-data and robust-estimation assumptions matter. |
+| Evidence | [Official publication metadata / workshop program](https://neurips2021workshopfl.github.io/NFFL-2021/paper.html); [Workshop PDF pp.1–5, §§1–4, threat models and Algorithm 1.](https://neurips2021workshopfl.github.io/NFFL-2021/papers/2021/Chang2021.pdf) |
 
 ## Ditto: Fair and Robust Federated Learning Through Personalization
 
@@ -1090,6 +1175,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | The method targets small supervised fine-tuning deltas from homologous models; experiments explicitly avoid merging checkpoints with different base initializations. Hyperparameter search and evaluation access must be accounted for separately. |
 | Evidence | [Official publication metadata and abstract](https://proceedings.mlr.press/v235/yu24p.html); [§3 Methodology, PDF pp.3–4; §4.2 setup, PDF p.6](https://raw.githubusercontent.com/mlresearch/v235/main/assets/yu24p/yu24p.pdf) |
 
+## MetaFed: Federated Learning Among Federations With Cyclic Knowledge Distillation for Personalized Healthcare
+
+| Field | Details |
+| --- | --- |
+| Venue / year | IEEE Transactions on Neural Networks and Learning Systems, 2024 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | B |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://ieeexplore.ieee.org/document/10197230/) · [Code](https://github.com/microsoft/PersonalizedFL) |
+| Problem | Combine knowledge across independent federations without a higher-level aggregation server. |
+| Mechanism | Pass models around a cycle; minimize local classification loss plus feature-distillation loss. Validation performance controls model inheritance and the personalization distillation weight. |
+| Contribution | Serverless cross-federation knowledge transfer with adaptive personalization and an extensible grouped MetaFed++ topology. |
+| Assumptions | The stated problem uses shared input/output spaces and local training and validation data; feature distillation requires compatible representations. |
+| Evidence boundary | This is training-based knowledge fusion, not training-free parameter merging. Keeping data local does not establish differential privacy. Evaluations and assumptions should not be generalized to arbitrary incompatible architectures. |
+| Evidence | [IEEE-deposited Crossref metadata: complete author list, DOI, final volume35 issue11, pages16671–16682 and publication November2024.](https://api.crossref.org/works/10.1109/TNNLS.2023.3297103); [Author manuscript v3; accepted TNNLS comment and author list; earlier preprint/workshop are versions of this work, not extra papers.](https://arxiv.org/abs/2206.08516); [SectionsIII-A–III-D, equations2–4, Algorithms1–2; SectionIII-F MetaFed++; SectionIV evaluation setup.](https://arxiv.org/html/2206.08516v3) |
+
 ## Representation Surgery for Multi-Task Model Merging
 
 | Field | Details |
@@ -1175,6 +1277,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | Elementwise operations require matching architectures; shared initialization and the fine-tuning trajectory constrain the demonstrated behavior. |
 | Evidence | [Official publication metadata and abstract](https://openreview.net/forum?id=6t0Kwf8-jrj); [§2; §§3–5; §6 Limitations, PDF pp.2–8](https://arxiv.org/pdf/2212.04089); [Final conference bibliographic record; six-author list](https://dblp.org/rec/conf/iclr/IlharcoRWSHF23.html) |
 
+## FedTAM: Decentralized Federated Learning with a Feature Attention Based Multi-teacher Knowledge Distillation for Healthcare
+
+| Field | Details |
+| --- | --- |
+| Venue / year | IEEE International Conference on Parallel and Distributed Systems, 2023 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | Pending verification |
+| Reading depth | abstract-reviewed |
+| Links | [Paper](https://ieeexplore.ieee.org/document/10476260/) |
+| Problem | Transfer useful knowledge across non-IID clients without a trusted central server. |
+| Mechanism | The abstract describes selecting relevant teacher knowledge for each student using feature attention; detailed objectives and update rules have not been inspected. |
+| Contribution | Personalized decentralized knowledge fusion evaluated on healthcare and feature-shift image benchmarks. |
+| Assumptions | Decentralized non-IID federated learning; architecture compatibility and precise data-access assumptions require full-text checking. |
+| Evidence boundary | Abstract reviewed only. Formal privacy guarantees, attack resistance, fairness outcomes and detailed ablations are not verified; retaining local data alone is not evidence of differential privacy. |
+| Evidence | [IEEE-deposited metadata: title, nine authors, ICPADS2023, pages1246–1253 and DOI.](https://api.crossref.org/works/10.1109/ICPADS60453.2023.00180); [Indexed paper abstract; DBLP-imported record, not a peer-review acceptance record.](https://openreview.net/forum?id=6OKD4xshNb); [Coauthor publication entry FedTAM (2023): cyclic transfer and feature-attention multi-teacher distillation.](https://www.bj-yan.top/publications) |
+
 ## Git Re-Basin: Merging Models modulo Permutation Symmetries
 
 | Field | Details |
@@ -1225,6 +1344,40 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Assumptions | Models share architecture and pretrained initialization. |
 | Evidence boundary | Appendix A notes incomplete theory, dependence on shared initialization, and a remaining gap to joint multi-task training. Choosing suitable checkpoints is also unresolved. |
 | Evidence | [Official publication metadata and abstract](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1644c9af28ab7916874f6fd6228a9bcf-Abstract-Conference.html); [§§3–4; Appendix A Limitations and Future Works, PDF p.17](https://proceedings.neurips.cc/paper_files/paper/2023/file/1644c9af28ab7916874f6fd6228a9bcf-Paper-Conference.pdf) |
+
+## Deep Neural Network Fusion via Graph Matching with Applications to Model Ensemble and Federated Learning
+
+| Field | Details |
+| --- | --- |
+| Venue / year | International Conference on Machine Learning, 2022 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://proceedings.mlr.press/v162/liu22k.html) · [Code](https://github.com/Thinklab-SJTU/GAMF) |
+| Problem | Layerwise linear matching misses structural relations across neural channels. |
+| Mechanism | Quadratic graph matching with graduated assignment, sparse slice-and-scan updates and cycle-consistent multi-model permutations precedes weight fusion. |
+| Contribution | GAMF adds second-order structural matching to model fusion and federated aggregation. |
+| Assumptions | Accessible compatible layer weights; input/output order is fixed and cross-layer matches are excluded. Multi-model fusion assumes equal model importance. |
+| Evidence boundary | The matching problem remains combinatorial and uses an approximate solver. Data-free alignment is not a privacy guarantee, and does not imply all local training or downstream fine-tuning is data-free. |
+| Evidence | [Official publication metadata / workshop program](https://proceedings.mlr.press/v162/liu22k.html); [Final proceedings PDF pp.2–5, §2 and §§3.1–3.3, Algorithms 1–2.](https://proceedings.mlr.press/v162/liu22k/liu22k.pdf) |
+
+## Federated Learning With Position-Aware Neurons
+
+| Field | Details |
+| --- | --- |
+| Venue / year | IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2022 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://openaccess.thecvf.com/content/CVPR2022/html/Li_Federated_Learning_With_Position-Aware_Neurons_CVPR_2022_paper.html) |
+| Problem | Non-IID local training misaligns neurons before coordinate averaging. |
+| Mechanism | Add or multiply fixed sinusoidal encodings at hidden neurons/channels, controlling permutation sensitivity before federated averaging. |
+| Contribution | PANs complements post-hoc matching with training-time pre-alignment. |
+| Assumptions | Clients use compatible architectures, shared position encodings and a training process that can be modified. |
+| Evidence boundary | Not a general merger for existing arbitrary checkpoints. Encoding strength trades alignment against trainability; the paper notes activation/gradient scale and optimizer issues. No privacy mechanism is established. |
+| Evidence | [Official publication metadata / workshop program](https://openaccess.thecvf.com/content/CVPR2022/html/Li_Federated_Learning_With_Position-Aware_Neurons_CVPR_2022_paper.html); [Final CVF PDF pp.2–4 (printed 10083–10085), §§2–4; p.8 (10089), Disadvantages and Conclusions.](https://openaccess.thecvf.com/content/CVPR2022/papers/Li_Federated_Learning_With_Position-Aware_Neurons_CVPR_2022_paper.pdf) |
 
 ## Merging Models with Fisher-Weighted Averaging
 
@@ -1277,6 +1430,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | Data-free does not mean information-free or a formal privacy guarantee; the generator is auxiliary, not a generative target model. |
 | Evidence | [Official publication metadata and abstract](https://proceedings.mlr.press/v139/zhu21b.html); [PDF pp.1–2: abstract and method overview](https://proceedings.mlr.press/v139/zhu21b/zhu21b.pdf) |
 
+## FedBE: Making Bayesian Model Ensemble Applicable to Federated Learning
+
+| Field | Details |
+| --- | --- |
+| Venue / year | International Conference on Learning Representations, 2021 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://openreview.net/forum?id=dgtpE6gKjHn) · [Code](https://github.com/hongyouc/FedBE) |
+| Problem | Averaging local weights loses ensemble information under non-IID client data. |
+| Mechanism | Fit Gaussian weights or Dirichlet mixing coefficients; ensemble sampled/client/averaged models and distill to a global student using stochastic weight averaging. |
+| Contribution | Combines Bayesian ensemble aggregation with multi-round federated distillation. |
+| Assumptions | Compatible weight architectures, local weight access, common initialization and unlabeled server data. |
+| Evidence boundary | Requires server data/computation. Robustness concerns non-IID aggregation, not a general Byzantine defense; §6 acknowledges malicious-server privacy vulnerabilities. |
+| Evidence | [Official publication metadata / workshop program](https://openreview.net/forum?id=dgtpE6gKjHn); [Author arXiv PDF v4 pp.2–6, §§2–4 and Algorithm 1; p.9, §6.](https://arxiv.org/pdf/2009.01974); [Indexed official PDF first page: Published as a conference paper at ICLR 2021](https://openreview.net/pdf?id=dgtpE6gKjHn) |
+
 ## LogME: Practical Assessment of Pre-trained Models for Transfer Learning
 
 | Field | Details |
@@ -1311,6 +1481,40 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | Model exchange can leak information; privacy protections are extensions, not a guarantee of the base algorithm. |
 | Evidence | [PDF pp.3–4, §3 algorithm and privacy discussion; §4.1 experimental setup](https://proceedings.neurips.cc/paper/2020/file/18df51b97ccd68128e994804f3eccc87-Paper.pdf) |
 
+## Federated Learning with Matched Averaging
+
+| Field | Details |
+| --- | --- |
+| Venue / year | International Conference on Learning Representations, 2020 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://openreview.net/forum?id=BkluqlSFDS) · [Code](https://github.com/IBM/FedMA) |
+| Problem | Coordinate averaging ignores hidden-unit permutations in federated CNNs and LSTMs. |
+| Mechanism | Bayesian matching aligns channels/hidden states; broadcast and freeze each fused layer while clients retrain later layers, then aggregate the output layer. |
+| Contribution | Extends matching-based aggregation beyond PFNM-style fully connected networks. |
+| Assumptions | Local weights and retraining data are available; layer types and input/output semantics must support the matching construction. |
+| Evidence boundary | Requires layerwise communication and retraining; it is not arbitrary architecture fusion or a model-only one-shot method. No formal privacy mechanism is supplied. |
+| Evidence | [Official publication metadata / workshop program](https://openreview.net/forum?id=BkluqlSFDS); [Author arXiv PDF v1 pp.1–5, §§1–2; header states ICLR 2020.](https://arxiv.org/pdf/2002.06440); [Conference paper, ICLR 2020; complete author list; publication/code links](https://research.ibm.com/publications/federated-learning-with-matched-averaging) |
+
+## Group Knowledge Transfer: Federated Learning of Large CNNs at the Edge
+
+| Field | Details |
+| --- | --- |
+| Venue / year | Conference on Neural Information Processing Systems, 2020 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://proceedings.neurips.cc/paper/2020/hash/a1d4c20b182ad7137ab3606f0e3fc8a4-Abstract.html) |
+| Problem | Small edge devices cannot train a large shared CNN. |
+| Mechanism | Alternating optimization combines supervised loss with bidirectional KL distillation; clients transmit extracted features, labels and predictions. |
+| Contribution | Group knowledge transfer fuses client knowledge while reducing edge training requirements. |
+| Assumptions | Supervised local data, agreed feature tensor dimensions and a server capable of training the larger network. |
+| Evidence boundary | Section 5 explicitly leaves privacy analysis unresolved; feature/label exchange is not a privacy guarantee. Communication scales with data volume; very large client counts remain challenging. |
+| Evidence | [Official publication metadata / workshop program](https://proceedings.neurips.cc/paper/2020/hash/a1d4c20b182ad7137ab3606f0e3fc8a4-Abstract.html); [Final proceedings PDF p.2 overview; pp.3–5, §3; p.9, §5; p.10 Broader Impact.](https://proceedings.neurips.cc/paper/2020/file/a1d4c20b182ad7137ab3606f0e3fc8a4-Paper.pdf) |
+
 ## LEEP: A New Measure to Evaluate Transferability of Learned Representations
 
 | Field | Details |
@@ -1344,6 +1548,40 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Assumptions | Compatible network structure and output semantics are required; activation-based costs use samples. |
 | Evidence boundary | The procedure is greedy by layer because joint alignment is intractable. Weight-only and activation-based variants have different data requirements; arbitrary architectural compatibility is not established. |
 | Evidence | [Official publication metadata and abstract](https://proceedings.nips.cc/paper_files/paper/2020/hash/fb2697869f56484404c8ceee2985b01d-Abstract.html); [§§3–4.1, PDF pp.3–6](https://proceedings.neurips.cc/paper_files/paper/2020/file/fb2697869f56484404c8ceee2985b01d-Paper.pdf) |
+
+## Bayesian Nonparametric Federated Learning of Neural Networks
+
+| Field | Details |
+| --- | --- |
+| Venue / year | International Conference on Machine Learning, 2019 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://proceedings.mlr.press/v97/yurochkin19a.html) · [Code](https://github.com/IBM/probabilistic-federated-neural-matching) |
+| Problem | Independently trained neurons are permutation-ambiguous. |
+| Mechanism | Beta-Bernoulli priors and MAP assignments solved with the Hungarian algorithm; infer global width and extend matching greedily across layers. |
+| Contribution | PFNM connects model-only fusion, neuron matching and adaptive global capacity. |
+| Assumptions | Accessible local weights, common input/output semantics and compatible MLP layers; fusion can operate without auxiliary data. |
+| Evidence boundary | Demonstrated on relatively small MLPs; CNN/RNN extensions are future work. Weight sharing is not a formal privacy guarantee. |
+| Evidence | [Official publication metadata / workshop program](https://proceedings.mlr.press/v97/yurochkin19a.html); [PDF pp.1–5, §§1–3; p.8, §5 Discussion.](https://proceedings.mlr.press/v97/yurochkin19a/yurochkin19a.pdf) |
+
+## FedMD: Heterogenous Federated Learning via Model Distillation
+
+| Field | Details |
+| --- | --- |
+| Venue / year | International Workshop on Federated Learning for User Privacy and Data Confidentiality at NeurIPS, 2019 |
+| Publication status | Workshop |
+| Bibliographic verification | verified |
+| CCF 2026 | None |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://federated-learning.org/fl-neurips-2019/) |
+| Problem | Participants want collaboration while retaining different private architectures. |
+| Mechanism | Public-data transfer learning precedes private training; each round averages class scores, distills the consensus locally and revisits private data. |
+| Contribution | Early black-box heterogeneous-model collaboration through output consensus. |
+| Assumptions | Large labeled public pretraining data, local labeled data and compatible output scores for the collaboration task. |
+| Evidence boundary | Sharing predictions is not a formal privacy guarantee. Public-data dependence and repeated local retraining limit applicability. |
+| Evidence | [Official publication metadata / workshop program](https://federated-learning.org/fl-neurips-2019/); [Author arXiv PDF v1 pp.1–4, §§1–3 and Algorithm 1.](https://arxiv.org/pdf/1910.03581) |
 
 ## Task2Vec: Task Embedding for Meta-Learning
 

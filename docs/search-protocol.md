@@ -23,6 +23,8 @@ Executed queries and bounded citation chains are in the [representation/evolutio
 
 The query logs report the actual discovery branches rather than pretending every Boolean combination was executed across every database. Forward expansion used later papers and named-method searches; complete cited-by graph coverage and saturation were not established. No numerical count of all search hits or excluded hits is claimed because a comprehensive screening ledger was not maintained.
 
+The [coverage correction and omission audit](coverage-audit.md) records the follow-up triggered by Model Trip and PrivFusion, including 14 additions, explicit citation edges and a remaining screening queue. The initial 93-record snapshot was not a coverage-complete corpus.
+
 ## Evidence extraction
 
 For each record, store complete authors, final venue/year where resolved, identifiers, source URLs, primary question, technical mechanism, inputs, assumptions, contribution, limitations, reading depth, and precise section/page locators. The four reading-depth labels are metadata-only, abstract-reviewed, section-reviewed, and full-text-reviewed. Selected-section reading is not full-paper review or experimental reproduction.

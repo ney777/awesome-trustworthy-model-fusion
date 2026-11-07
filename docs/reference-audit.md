@@ -6,22 +6,25 @@ Audit date: 2026-11-07. Bibliographic identity, source reading, venue applicabil
 
 | Record | Bibliography | CCF applicability | Reason |
 |---|---|---|---|
-| [PrivFusion: Privacy-Preserving Model Fusion via Decentralized Federated Graph Matching](https://doi.org/10.1109/tkde.2024.3430819) | partial | verified | Candidate: metadata confirmed; method assumptions and guarantees remain pending full-text review. |
-| [Model Trip: Enhancing Privacy and Fairness in Model Fusion Across Multi-Federations for Trustworthy Global Healthcare](https://doi.org/10.1109/icde60146.2024.00177) | partial | verified | Candidate: title and publication confirmed; actual cross-federation protocol and evidence require review. |
 | [Arcee’s MergeKit: A Toolkit for Merging Large Language Models](https://aclanthology.org/2024.emnlp-industry.36/) | verified | pending | Track applicability is unverified; do not inherit the main-conference rank. |
 | [Beimingwu: A Learnware Dock System](https://doi.org/10.1145/3637528.3671617) | verified | pending | Track applicability is unverified; do not inherit the main-conference rank. |
 | [Knowledge transmission and fusion in large models: research advances and challenges](https://www.sciencedirect.com/science/article/pii/S1566253526006950) | partial | verified | Title/DOI match. Publisher indexed page reports available online 2026-09-29, journal pre-proof; Crossref schedules volume 139 in March 2027. Publisher and author homepage list Haonan Wu, absent from Crossref. Keep as candidate pending authoritative final author reconciliation. |
+| [FedTAM: Decentralized Federated Learning with a Feature Attention Based Multi-teacher Knowledge Distillation for Healthcare](https://ieeexplore.ieee.org/document/10476260/) | verified | pending | ICPADS venue-C is confirmed; individual full/regular-paper track still requires primary evidence. |
 
 ## Identity and source checks
 
 - Required fields, complete author lists, title/DOI/URL duplicates, CCF state consistency, reading locators and code-link provenance pass the local validators.
-- Ninety records have reconciled bibliographic metadata. Three candidates are excluded from the exported BibTeX: PrivFusion, Model Trip, and the Information Fusion survey with an unresolved author/year record. Their existence is supported, but incomplete verification is not promoted to full status.
-- The supplementary online pass checked 93 official URLs: 79 returned HTTP 200, five returned HTTP 202 and nine returned request errors. HTTP 200 can still serve a script-only shell; HTTP 202 or a challenge is not verified paper content. Earlier retrieved primary pages and source locators remain the substantive evidence.
+- 106 records have reconciled bibliographic metadata. Only the Information Fusion survey with an unresolved author/year record is excluded from BibTeX. Model Trip and PrivFusion now have verified bibliography, with reading depth and author-version limits recorded independently.
+- The earlier, pre-correction online pass checked the original 93 official URLs: 79 returned HTTP 200, five returned HTTP 202 and nine returned request errors. HTTP 200 can still serve a script-only shell; HTTP 202 or a challenge is not verified paper content. Earlier retrieved primary pages and source locators remain the substantive evidence.
 - Retrieved Crossref title and author-count signals produced no new mismatch against the stored records in that pass. This does not resolve the separately documented publisher/Crossref discrepancy for the Information Fusion candidate, nor establish a match where an API request failed.
 - Forty-one representation/evolution records include a separate code-link audit: 22 paper-linked repositories returned HTTP 200; no implementation was executed.
 
+The [coverage audit](coverage-audit.md) explains the two hidden entries, 14 added works, remaining screening queue and corrected display rules.
+
 ## Material version decisions
 
+- Model Trip is reviewed at final-abstract level; PrivFusion mechanism notes refer explicitly to arXiv:2311.03396v1 rather than asserting a final-text review.
+- FedMD and Cronus are companion workshops; their records do not inherit NeurIPS A. MetaFed uses its 2024 final issue year and MoFedNet its 2026 final issue year.
 - Deep Model Fusion uses its final 2026 TNNLS issue year, with the 2025 online date retained. Detailed reading of an older author version does not establish omissions in the final article.
 - From Parameters to Behaviors is Findings of EMNLP 2026. The PDF gives Ming Li where the landing-page export gives Li Ming; the discrepancy is preserved.
 - Task Arithmetic and FusionBench use final author lists, rather than silently inheriting a different preprint list.

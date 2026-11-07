@@ -37,6 +37,7 @@ def normalize_doi(s):
     return re.sub(r'^https?://(?:dx\.)?doi\.org/', '', (s or '').strip(), flags=re.I).lower().rstrip('/')
 
 def formal(p):
+    """Catalogue eligibility concerns identity and rank, independently of reading depth."""
     return p.get('verification_status') == 'verified' and p.get('ccf_verification_status') == 'verified'
 
 def write_csv(path, rows):

@@ -70,16 +70,16 @@
     "preprints": "The project brief separately requires arXiv-only items to be None and marked Preprint."
   },
   "counts": {
-    "requested_venues": 33,
-    "verified_listed_venue_rank": 26,
+    "requested_venues": 35,
+    "verified_listed_venue_rank": 28,
     "verified_excluded_type": 1,
     "verified_not_listed": 6,
     "pending_venue_rank": 0,
     "rank_counts": {
       "A": 17,
-      "B": 6,
+      "B": 7,
       "None": 7,
-      "C": 3
+      "C": 4
     }
   },
   "venues": [
@@ -759,6 +759,47 @@
           "NMI": []
         }
       }
+    },
+    {
+      "venue_abbreviation": "JCST",
+      "candidate_full_name": "Journal of Computer Science and Technology",
+      "publication_type": "journal",
+      "ccf_rank": "B",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the B-class table. Extracted text and rendered PDF pages were checked during the coverage audit.",
+      "locator": {
+        "pdf_page_1_based": 68,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 9,
+        "category": "交叉/综合/新兴",
+        "table_rank": "B"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank."
+    },
+    {
+      "venue_abbreviation": "ICPADS",
+      "candidate_full_name": "International Conference on Parallel and Distributed Systems",
+      "publication_type": "conference",
+      "ccf_rank": "C",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the C-class table. Extracted text and rendered PDF pages were checked during the coverage audit.",
+      "locator": {
+        "pdf_page_1_based": 9,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 20,
+        "category": "计算机体系结构/并行与分布计算/存储系统",
+        "table_rank": "C",
+        "rank_heading_pdf_page_1_based": 8
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank."
     }
   ],
   "access_attempts": [

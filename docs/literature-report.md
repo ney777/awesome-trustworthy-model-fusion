@@ -1,24 +1,23 @@
 # Literature discovery report
 
-Snapshot: 2026-11-07. The master contains **93 distinct records**, including **90 with reconciled bibliographic metadata** and **88 eligible for the ranked README catalogue**. These counts describe verified records, not all search hits. Verification of identity, CCF applicability, reading depth and experimental reproduction are separate dimensions.
+Snapshot: 2026-11-07. The master contains **107 distinct records**, including **106 with reconciled bibliographic metadata** and **103 eligible for the ranked README catalogue**. These counts describe verified records, not all search hits. Verification of identity, CCF applicability, reading depth and experimental reproduction are separate dimensions.
 
 ## Coverage
 
 | Primary category | Records |
 |---|---:|
 | benchmarks | 4 |
-| evolution | 14 |
-| governance | 37 |
-| representation | 26 |
+| evolution | 15 |
+| governance | 41 |
+| representation | 35 |
 | surveys | 12 |
 
-Related foundations, tools and surveys are included in these counts and are distinguished in the record fields. Each study has one primary category; secondary tags do not add papers. The database includes 69 records dated 2024–2026, with exact online/issue and accepted/preprint distinctions retained where needed.
+Related foundations, tools and surveys are included in these counts and are distinguished in the record fields. Each study has one primary category; secondary tags do not add papers. The database includes 73 records dated 2024–2026, with exact online/issue and accepted/preprint distinctions retained where needed.
 
 | Reading depth | Records |
 |---|---:|
-| abstract-reviewed | 8 |
-| metadata-only | 2 |
-| section-reviewed | 83 |
+| abstract-reviewed | 10 |
+| section-reviewed | 97 |
 
 Selected-section review does not mean the whole paper, proof or appendix was assessed. No experiments were independently reproduced. Code provenance and availability do not establish implementation correctness.
 
@@ -28,18 +27,18 @@ The following distribution covers all records, including bibliography candidates
 
 | Recorded rank | All records |
 |---|---:|
-| A | 59 |
-| B | 7 |
+| A | 68 |
+| B | 9 |
 | C | 3 |
-| None | 22 |
-| pending | 2 |
+| None | 24 |
+| pending | 3 |
 
 | Recorded rank | Ranked catalogue only |
 |---|---:|
-| A | 57 |
-| B | 7 |
+| A | 68 |
+| B | 9 |
 | C | 3 |
-| None | 21 |
+| None | 23 |
 
 The [venue register](../data/venues_ccf2026.json) gives seventh-edition directory evidence. A venue grade is not a scientific quality score. Industry/Applied Data Science applicability remains pending rather than inheriting a parent-conference grade.
 

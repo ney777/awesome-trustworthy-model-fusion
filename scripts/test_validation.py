@@ -3,7 +3,8 @@ import copy
 import tempfile
 import unittest
 from pathlib import Path
-from library import REQUIRED
+from library import REQUIRED, formal
+from generate_readme import pending_catalogue
 from validate_papers import validate
 from check_citations import check as check_citations
 
@@ -34,6 +35,25 @@ class EvidenceRules(unittest.TestCase):
     def test_unattributed_code_rejected(self):
         self.p['code_url']='https://github.com/example/code'
         self.assertTrue(validate([self.p]))
+    def test_catalogue_does_not_confuse_reading_with_identity(self):
+        self.p.update(ccf_verification_status='verified', ccf_rank='A')
+        for depth in ('metadata-only', 'abstract-reviewed', 'section-reviewed'):
+            self.p['review_depth'] = depth
+            self.assertTrue(formal(self.p))
+            self.assertEqual(pending_catalogue([self.p]), [])
+    def test_pending_identity_and_rank_remain_visible(self):
+        self.p.update(verification_status='partial', ccf_verification_status='verified', ccf_rank='A')
+        q=copy.deepcopy(self.p)
+        q.update(id='unranked', title='A Track Awaiting Verification', verification_status='verified',
+                 ccf_verification_status='pending', ccf_rank=None)
+        output='\n'.join(pending_catalogue([self.p,q]))
+        for paper in (self.p,q):
+            self.assertFalse(formal(paper))
+            self.assertIn(paper['title'], output)
+            self.assertIn(paper['official_url'], output)
+        self.assertIn('Bibliographic identity: partial', output)
+        self.assertIn('CCF venue/track applicability', output)
+        self.assertNotIn('| None |', output)
     def test_undefined_citation_and_commented_citation(self):
         with tempfile.TemporaryDirectory() as folder:
             p=Path(folder);(p/'references.bib').write_text('@article{known, title={Known}}')

@@ -28,12 +28,33 @@ def paper_links(p):
         links.append(f"[Code]({p['code_url']})")
     return ' · '.join(links)
 
+def pending_catalogue(rows):
+    """Keep unresolved identities or ranks visible without promoting their status."""
+    pending = sorted((p for p in rows if not formal(p)),
+                     key=lambda p: (-p['year'], p['title'].casefold()))
+    if not pending:
+        return []
+    lines = ['## Pending verification', '',
+             'These records remain visible while the stated checks are unresolved. Reading depth alone does not make bibliographic metadata pending.', '',
+             '| Year | Paper | Venue | CCF 2026 | Unresolved check | Links |',
+             '| --- | --- | --- | :---: | --- | --- |']
+    for p in pending:
+        checks = []
+        if p.get('verification_status') != 'verified':
+            checks.append('Bibliographic identity: ' + p.get('verification_status', 'pending'))
+        if p.get('ccf_verification_status') != 'verified':
+            checks.append('CCF venue/track applicability')
+        rank = p.get('ccf_rank') if p.get('ccf_verification_status') == 'verified' else 'Pending'
+        lines.append(table_row([p['year'], f"**{p['title']}**", p['venue_abbreviation'],
+                                rank if rank is not None else 'Pending', '; '.join(checks), paper_links(p)]))
+    return lines + ['']
+
 def main():
     data=load(); rows=data['papers']; ready=[p for p in rows if formal(p)]
     lines=['# Awesome Trustworthy Model Fusion and Collaboration','',
            'A curated research collection on how existing models are represented, governed under explicit trust constraints, and updated through collaboration.','',
            '**Representation → Governance → Evolution**','',
-           '[Scope](docs/scope-and-definitions.md) · [Taxonomy](docs/taxonomy.md) · [Detailed records](docs/papers.md) · [Related surveys](docs/prior-surveys.md) · [Benchmarks](docs/benchmarks.md) · [Search protocol](docs/search-protocol.md) · [Audit](docs/reference-audit.md) · [Report](docs/literature-report.md) · [Contributing](CONTRIBUTING.md)','',
+           '[Scope](docs/scope-and-definitions.md) · [Taxonomy](docs/taxonomy.md) · [Detailed records](docs/papers.md) · [Related surveys](docs/prior-surveys.md) · [Benchmarks](docs/benchmarks.md) · [Search protocol](docs/search-protocol.md) · [Coverage audit](docs/coverage-audit.md) · [Audit](docs/reference-audit.md) · [Report](docs/literature-report.md) · [Contributing](CONTRIBUTING.md)','',
            '## Collection status','',
            f"Curation snapshot: {data.get('curation_date','not recorded')}. The database contains {len(rows)} records; {len(ready)} satisfy both metadata and CCF-edition verification for the ranked catalogue. Remaining records are retained as pending, not classified as CCF-None by default.",'',
            'This is a staged, evidence-tracked collection, not a claim of exhaustive coverage. Venue ranks use the **CCF 2026 seventh edition** only. Findings, workshop and other excluded tracks do not inherit the main-conference rank. Publication status and review depth are separate fields.','',
@@ -51,6 +72,7 @@ def main():
                 lines += [table_row([p['year'], f"**{p['title']}**", p['venue_abbreviation'],
                                      p['ccf_rank'], publication_status(p), paper_links(p)])]
             lines += ['']
+    lines += pending_catalogue(rows)
     lines += ['## Verification and maintenance','',
               'Bibliographic facts, review depth, source locators, assumptions and boundaries are stored in [data/papers.json](data/papers.json). The [CSV](data/papers.csv), [BibTeX](data/references.bib), README and detailed notes are generated views. Edit the JSON source, not the generated outputs.','',
               '```sh','python scripts/validate_papers.py','python scripts/check_duplicates.py','python scripts/generate_readme.py','python scripts/export_bibtex.py','```','',
