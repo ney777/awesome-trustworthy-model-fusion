@@ -2,6 +2,32 @@
 import json
 from library import ROOT, CATEGORIES, load, formal, write_csv, digest
 
+def table_cell(value):
+    """Keep text and inline links inside one GitHub Markdown table cell."""
+    return str(value).replace('|', r'\|').replace('\r\n', '\n').replace('\n', '<br>')
+
+def table_row(values):
+    return '| ' + ' | '.join(table_cell(value) for value in values) + ' |'
+
+def publication_status(p):
+    if p['publication_type'] == 'preprint':
+        return 'Preprint'
+    if p.get('publication_status') == 'accepted':
+        return 'Accepted; proceedings pending'
+    if p['publication_type'] == 'workshop':
+        return 'Workshop'
+    if p.get('publication_status') == 'early-access-metadata-conflict':
+        return 'Early access; metadata conflict'
+    tracks = {'findings': 'Findings', 'industry': 'Industry track',
+              'applied-data-science': 'Applied Data Science track'}
+    return tracks.get(p.get('publication_track'), 'Published')
+
+def paper_links(p):
+    links = [f"[Paper]({p['official_url']})"]
+    if p.get('code_url'):
+        links.append(f"[Code]({p['code_url']})")
+    return ' · '.join(links)
+
 def main():
     data=load(); rows=data['papers']; ready=[p for p in rows if formal(p)]
     lines=['# Awesome Trustworthy Model Fusion and Collaboration','',
@@ -18,12 +44,12 @@ def main():
         if not group:lines += ['No entries have completed all required checks for this section yet.','']
         subs=list(dict.fromkeys(p.get('subcategory','General') for p in group))
         for sub in subs:
-            lines += ['### '+sub,'']
+            lines += ['### '+sub,'',
+                      '| Year | Paper | Venue | CCF 2026 | Status | Links |',
+                      '| --- | --- | --- | :---: | --- | --- |']
             for p in [p for p in group if p.get('subcategory','General')==sub]:
-                link=f"[Paper]({p['official_url']})"
-                if p.get('code_url'):link+=f" · [Code]({p['code_url']})"
-                pre=' · Preprint' if p['publication_type']=='preprint' else ' · Accepted; proceedings pending' if p.get('publication_status')=='accepted' else ' · Workshop' if p['publication_type']=='workshop' else ''
-                lines += [f"- **{p['title']}** — {p['venue_abbreviation']}, {p['year']}, CCF-{p['ccf_rank']}{pre}. {link}"]
+                lines += [table_row([p['year'], f"**{p['title']}**", p['venue_abbreviation'],
+                                     p['ccf_rank'], publication_status(p), paper_links(p)])]
             lines += ['']
     lines += ['## Verification and maintenance','',
               'Bibliographic facts, review depth, source locators, assumptions and boundaries are stored in [data/papers.json](data/papers.json). The [CSV](data/papers.csv), [BibTeX](data/references.bib), README and detailed notes are generated views. Edit the JSON source, not the generated outputs.','',
@@ -33,13 +59,19 @@ def main():
     (ROOT/'README.md').write_text('\n'.join(lines),encoding='utf-8')
     notes=['# Literature records','', 'Generated from `data/papers.json`. Pending ranks and incomplete reading are explicit; inclusion here is not a universal trustworthiness endorsement.','']
     for p in sorted(rows,key=lambda p:(p['primary_category'],-p['year'],p['title'])):
-        notes += ['## '+p['title'],'',f"{p['venue_full_name']}, {p['year']}. [Official source]({p['official_url']})",'',
-                  f"Status: {p['verification_status']}; publication: {p.get('publication_status',p['publication_type'])}; CCF: {p['ccf_rank'] if p.get('ccf_rank') is not None else 'pending'}; reading: {p['review_depth']}.",'']
+        notes += ['## '+p['title'],'', '| Field | Details |', '| --- | --- |',
+                  table_row(['Venue / year', f"{p['venue_full_name']}, {p['year']}"]),
+                  table_row(['Publication status', publication_status(p)]),
+                  table_row(['Bibliographic verification', p['verification_status']]),
+                  table_row(['CCF 2026', p['ccf_rank'] if p.get('ccf_rank') is not None else 'Pending verification']),
+                  table_row(['Reading depth', p['review_depth']]),
+                  table_row(['Links', paper_links(p)])]
         for k,label in [('research_problem','Problem'),('technical_mechanism','Mechanism'),('main_contribution','Contribution'),('assumptions','Assumptions'),('limitations','Evidence boundary')]:
             v=p.get(k)
             if isinstance(v,list):v='; '.join(v)
-            notes += [f'**{label}.** {v or "Not yet assessed."}','']
-        notes += ['**Evidence.** '+ '; '.join(f"[{e.get('locator','source')}]({e['url']})" if isinstance(e,dict) else str(e) for e in p['evidence_source']), '']
+            notes += [table_row([label, v or 'Not yet assessed.'])]
+        evidence='; '.join(f"[{e.get('locator','source')}]({e['url']})" if isinstance(e,dict) else str(e) for e in p['evidence_source'])
+        notes += [table_row(['Evidence', evidence]), '']
     (ROOT/'docs/papers.md').write_text('\n'.join(notes),encoding='utf-8')
     write_csv(ROOT/'data/papers.csv',rows)
     (ROOT/'data/surveys.json').write_text(json.dumps({'generated_from':'papers.json','papers':[p for p in rows if p['record_type']=='survey']},ensure_ascii=False,indent=2)+'\n')
