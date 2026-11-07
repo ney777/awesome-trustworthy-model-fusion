@@ -1,23 +1,24 @@
 # Literature discovery report
 
-Snapshot: 2026-11-07. The master contains **107 distinct records**, including **106 with reconciled bibliographic metadata** and **103 eligible for the ranked README catalogue**. These counts describe verified records, not all search hits. Verification of identity, CCF applicability, reading depth and experimental reproduction are separate dimensions.
+Snapshot: 2026-11-07. The master contains **137 distinct records**, including **136 with reconciled bibliographic metadata** and **132 eligible for the ranked README catalogue**. These counts describe verified records, not all search hits. Verification of identity, CCF applicability, reading depth and experimental reproduction are separate dimensions.
 
 ## Coverage
 
 | Primary category | Records |
 |---|---:|
 | benchmarks | 4 |
-| evolution | 15 |
-| governance | 41 |
-| representation | 35 |
+| evolution | 18 |
+| governance | 48 |
+| representation | 55 |
 | surveys | 12 |
 
-Related foundations, tools and surveys are included in these counts and are distinguished in the record fields. Each study has one primary category; secondary tags do not add papers. The database includes 73 records dated 2024–2026, with exact online/issue and accepted/preprint distinctions retained where needed.
+Related foundations, tools and surveys are included in these counts and are distinguished in the record fields. Each study has one primary category; secondary tags do not add papers. The database includes 94 records dated 2024–2026, with exact online/issue and accepted/preprint distinctions retained where needed.
 
 | Reading depth | Records |
 |---|---:|
-| abstract-reviewed | 10 |
-| section-reviewed | 97 |
+| abstract-reviewed | 11 |
+| metadata-only | 1 |
+| section-reviewed | 125 |
 
 Selected-section review does not mean the whole paper, proof or appendix was assessed. No experiments were independently reproduced. Code provenance and availability do not establish implementation correctness.
 
@@ -27,20 +28,20 @@ The following distribution covers all records, including bibliography candidates
 
 | Recorded rank | All records |
 |---|---:|
-| A | 68 |
-| B | 9 |
-| C | 3 |
-| None | 24 |
-| pending | 3 |
+| A | 84 |
+| B | 13 |
+| C | 5 |
+| None | 31 |
+| pending | 4 |
 
 | Recorded rank | Ranked catalogue only |
 |---|---:|
-| A | 68 |
-| B | 9 |
-| C | 3 |
-| None | 23 |
+| A | 84 |
+| B | 13 |
+| C | 5 |
+| None | 30 |
 
-The [venue register](../data/venues_ccf2026.json) gives seventh-edition directory evidence. A venue grade is not a scientific quality score. Industry/Applied Data Science applicability remains pending rather than inheriting a parent-conference grade.
+The [venue register](../data/venues_ccf2026.json) gives seventh-edition directory evidence. A venue grade is not a scientific quality score. Unresolved special-track or full/regular-paper applicability remains pending rather than inheriting a parent-conference grade.
 
 ## Synthesis and positioning
 
@@ -49,6 +50,8 @@ The retained title is **Trustworthy Model Fusion and Collaboration: A Survey of 
 The comparative contribution is an explicit link between capability/compatibility evidence, the decisions permitted by access and trust conditions, and the evidence that may need reassessment after change. Existing surveys already discuss safety, provenance, continual fusion and feedback; no first-framework claim is supported. The event-indexed evaluation is proposed and unimplemented.
 
 All six supplied survey seeds and six recent extensions are compared in [prior-surveys.md](prior-surveys.md). The nearest overlaps include From Parameters to Behaviors, MoErging, the CSUR model-merging survey, FUSE, and the unresolved Knowledge Transmission and Fusion preview. The last record is not counted as fully reconciled metadata.
+
+The [federated table](federated-literature.md) groups 63 records by protocol setting and access conditions. The [federated audit](federated-coverage-audit.md) records a bounded reference-list crosswalk and completed candidate screening.
 
 ## Recheck and continuation
 

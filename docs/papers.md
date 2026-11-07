@@ -70,6 +70,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | Its stated limitations exclude latency and throughput from the main objectives and acknowledge incomplete task/model coverage; stored outputs cannot reproduce every live-system change. |
 | Evidence | [Official publication metadata and abstract](https://arxiv.org/abs/2403.12031); [§3 benchmark; §6 Limitations and Future Work, PDF p.8](https://arxiv.org/pdf/2403.12031) |
 
+## FedSEAM: Federated Continual Learning of LLMs via Subspace Expert Agreement Merging
+
+| Field | Details |
+| --- | --- |
+| Venue / year | arXiv, 2026 |
+| Publication status | Preprint |
+| Bibliographic verification | verified |
+| CCF 2026 | None |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://arxiv.org/abs/2610.33496) |
+| Problem | Federated continual adaptation can erase prior expert content and drift expert routing even when earlier experts are frozen. |
+| Mechanism | Clients select sparse expert tiles using corrected gradient scores and task novelty, test direction/sign compatibility for cross-task sharing, and train task experts locally. The server eigendecomposes averaged input-subspace projectors, filters directions by signed agreement, and forms partial tile merges; gate freezing, snapshots and prior-overlap acceptance restrict changes. |
+| Contribution | Separates routing drift from merge erasure and implements agreement-restricted merging for federated continual LLM adaptation. |
+| Assumptions | Compatible frozen backbone and tile coordinates, synchronized fixed task order, current local data and retained expert/task-start snapshots; the server inspects individual expert updates. |
+| Evidence boundary | The reported clients have near-identically distributed shards; non-IID clients are explicitly future work. Selected parameter components are preserved per merge, not all earlier-task loss over an entire trajectory. Update leakage remains possible; secure aggregation and differential privacy are future work. |
+| Evidence | [Primary publication/acceptance metadata and abstract](https://arxiv.org/abs/2610.33496); [Author preprint v1, pp.3–6 §§3–5; p.9 Limitations](https://arxiv.org/pdf/2610.33496v1) |
+
 ## Learning to Route LLMs from Implicit Cost-Performance Preferences via Meta-Learning
 
 | Field | Details |
@@ -120,6 +137,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Assumptions | Experts share pretrained initialization and backbone; accessible weights permit subspace computation. |
 | Evidence boundary | Appendix D.1 limits the evidence to shared-backbone/shared-initialization models; heterogeneous architectures and initializations remain untested extensions. |
 | Evidence | [Official publication metadata and abstract](https://proceedings.iclr.cc/paper_files/paper/2026/hash/d0da30e312b75a3fffd9e9191f8bc1b0-Abstract-Conference.html); [§3.1, PDF p.3; §4.1, PDF pp.5–6; Appendix D.1, PDF p.23](https://proceedings.iclr.cc/paper_files/paper/2026/file/d0da30e312b75a3fffd9e9191f8bc1b0-Paper-Conference.pdf) |
+
+## On The Surprising Effectiveness of a Single Global Merging in Decentralized Learning
+
+| Field | Details |
+| --- | --- |
+| Venue / year | International Conference on Learning Representations, 2026 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://proceedings.iclr.cc/paper_files/paper/2026/hash/437d9bde2999f6e3e854e09f250261a5-Abstract-Conference.html) |
+| Problem | Decentralized local models may perform poorly on a shared global distribution under sparse communication and heterogeneous data. |
+| Mechanism | Agents alternate local updates and gossip averaging; a global linear combination at the end can improve global-distribution performance even before local models reach consensus. The paper studies mergeability and conditions for the averaged DSGD iterate to match a parallel-SGD convergence rate. |
+| Contribution | Separates model mergeability from full consensus and demonstrates a final-merge route to improved decentralized global performance. |
+| Assumptions | Compatible parameter coordinates and enough nonzero peer communication; theoretical results assume smoothness, bounded noise/diversity, and additional sharpening/consensus conditions. |
+| Evidence boundary | Single final merge does not mean one communication over the whole run: repeated gossip precedes it. Reported global-test gains are not client-level fairness guarantees, and conditional convergence analysis is not unconditional equivalence to centralized learning. |
+| Evidence | [Primary publication/acceptance metadata and abstract](https://proceedings.iclr.cc/paper_files/paper/2026/hash/437d9bde2999f6e3e854e09f250261a5-Abstract-Conference.html); [ICLR-labelled author v4, p.4 Algorithm 1 and §3.2; p.6 §§4.2–4.3; pp.7–8 §5](https://arxiv.org/pdf/2507.06542v4) |
 
 ## Unlocking the Potential of Continual Model Merging: An ODE Perspective
 
@@ -273,6 +307,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Assumptions | Preference data and a specified model pair are available; generalization to replacement pairs is evaluated. |
 | Evidence boundary | The central formulation is binary and training is offline. Dynamic inference selection and transfer to new pairs do not establish continuous policy learning or long-horizon recovery. |
 | Evidence | [Official publication metadata and abstract](https://openreview.net/forum?id=8sSqNntaMr); [§3.1, PDF p.3; §4, PDF pp.4–6; §5.3–5.4](https://arxiv.org/pdf/2406.18665); [Final conference bibliographic record](https://dblp.org/rec/conf/iclr/OngAWC0GKS25.html) |
+
+## DIMAT: Decentralized Iterative Merging-And-Training for Deep Learning Models
+
+| Field | Details |
+| --- | --- |
+| Venue / year | IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2024 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Saadati_DIMAT_Decentralized_Iterative_Merging-And-Training_for_Deep_Learning_Models_CVPR_2024_paper.html) |
+| Problem | Decentralized parameter averaging can combine misaligned neurons and converge slowly under heterogeneous data. |
+| Mechanism | Activation matching produces layerwise permutation matrices by a linear assignment problem; neighbors are aligned before weighted combination, and the procedure interleaves these merge steps with local SGD or adaptive optimization. |
+| Contribution | Treats alignment and merging as a recurring operation in decentralized collaborative training. |
+| Assumptions | Compatible model layers, data for activation matching and local optimization, and a connected communication graph; convergence analysis assumes smoothness, bounded stochastic/heterogeneity terms and a spectral condition on the combined mixing/permutation operator. |
+| Evidence boundary | The graph and spectral assumptions limit the convergence claim. Access to activations and model parameters is not a privacy protocol, and repeated merging is not evidence of autonomous long-term trustworthy evolution. |
+| Evidence | [Official publication metadata and abstract](https://openaccess.thecvf.com/content/CVPR2024/html/Saadati_DIMAT_Decentralized_Iterative_Merging-And-Training_for_Deep_Learning_Models_CVPR_2024_paper.html); [Final CVPR PDF pp.3–5 (printed pp.27519–27521), Sections 3–4.1 and Algorithm 1: graph assumptions, activation matching, iterative mixing and local training](https://openaccess.thecvf.com/content/CVPR2024/papers/Saadati_DIMAT_Decentralized_Iterative_Merging-And-Training_for_Deep_Learning_Models_CVPR_2024_paper.pdf) |
 
 ## FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance
 
@@ -495,6 +546,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | Extraction and membership attacks are trained separately; the paper proposes no corresponding defense. Its auxiliary-data and query assumptions bound the threat evidence. |
 | Evidence | [Official publication metadata and abstract](https://aclanthology.org/2025.findings-acl.713/); [PDF p.3 §§3–4: merging-specific threat model; p.9 Limitations](https://aclanthology.org/2025.findings-acl.713.pdf) |
 
+## FairFHTL: Achieving Task-Agnostic Fairness in Federated Hetero-Task Learning
+
+| Field | Details |
+| --- | --- |
+| Venue / year | 2025 IEEE International Conference on Multimedia and Expo (ICME), 2025 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | Pending verification |
+| Reading depth | metadata-only |
+| Links | [Paper](https://doi.org/10.1109/ICME59968.2025.11209282) |
+| Problem | Balance client performance when federated participants optimize different tasks. |
+| Mechanism | Author synopsis only: task-independent representations and resource allocation balance updates across tasks. No paper-level update rule or fairness metric was extracted. |
+| Contribution | A task-fairness contribution to federated shared-model collaboration, included on verified publication identity and an attributable author synopsis. |
+| Assumptions | Heterogeneous client tasks; detailed data, communication, optimization, and fairness assumptions remain unverified. |
+| Evidence boundary | Only metadata and a coauthor's short description were accessible, not the paper abstract or full text. Do not use this record to support a specific fairness metric, demographic-fairness result, formal guarantee, or experimental comparison. Publication-track verification remains open. |
+| Evidence | [IEEE-deposited final title, eight authors, ICME2025, pp.1–6 and DOI; published-print 30 June 2025. No abstract in this deposit.](https://api.crossref.org/works/10.1109/ICME59968.2025.11209282); [Publisher document identity linked by DOI; accessible response did not expose abstract or full text.](https://ieeexplore.ieee.org/document/11209282/); [Coauthor entry FairFHTL, 2025: complete title/authors and short author-written description of task fairness, shared representations and allocation across updates. This is not treated as the paper abstract.](https://www.bj-yan.top/publications); [Institute author bibliography, publication item5, confirms title, eight authors, ICME2025 and pp.1–6.](https://www.ict.ac.cn/sourcedb/cn/jssrck/202010/t20201023_5721594.html) |
+
 ## FedXDS: Leveraging Model Attribution Methods to counteract Data Heterogeneity in Federated Learning
 
 | Field | Details |
@@ -699,6 +767,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | Author-version abstract reviewed; final publication metadata is confirmed by Crossref; full threat-model extraction remains pending. |
 | Evidence | [Publisher-deposited bibliographic metadata](https://api.crossref.org/works/10.1145/3658644.3690284); [Abstract](https://arxiv.org/abs/2408.07362) |
 
+## Breaking Privacy in Model-Heterogeneous Federated Learning
+
+| Field | Details |
+| --- | --- |
+| Venue / year | International Symposium on Research in Attacks, Intrusions and Defenses, 2024 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | B |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://doi.org/10.1145/3678890.3678905) · [Code](https://github.com/vt-asaplab/model-hetero-fl-attacks) |
+| Problem | Secure aggregation can interact with nonuniform submodel assignment to expose cohort contributions. |
+| Mechanism | Studies convergence-rate and rolling-submodel attacks by a malicious coordinator, showing leakage channels in static and changing partial-training cohorts. |
+| Contribution | Provides a counterexample to treating secure aggregation as end-to-end protection of a heterogeneous training protocol. |
+| Assumptions | Trusted clients; coordinator controls parameter values but not client submodel architectures; attack-specific convergence, overlap and distribution conditions. |
+| Evidence boundary | Not a cryptographic break of secure aggregation or a universal attack on all heterogeneous fusion. The methods target partial-training aggregation, not every distillation system; reported experiments were not reproduced. |
+| Evidence | [Official bibliographic identity](https://doi.org/10.1145/3678890.3678905); [Author-hosted final RAID PDF pp.4–6, §§4–5; system/threat model and two attacks](https://thanghoang.github.io/publication/24_raid_heterofl/24_raid_heteroFL.pdf); [ACM-deposited metadata and final pagination; author-name shortening noted](https://api.crossref.org/works/10.1145/3678890.3678905) |
+
 ## Complementary Knowledge Distillation for Robust and Privacy-Preserving Model Serving in Vertical Federated Learning
 
 | Field | Details |
@@ -715,6 +800,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Assumptions | Active/passive vertical federation with complementary features and partially overlapping sample identities. |
 | Evidence boundary | Abstract-level review only. The precise leakage guarantee, threat assumptions and full experimental limitations remain to be extracted; no formal DP claim is made here. |
 | Evidence | [Official indexed article metadata and abstract; direct page returned an access-verification response.](https://ojs.aaai.org/index.php/AAAI/article/view/29958); [Official AAAI-24 main-track acceptance list, paper 9635](https://aaai.org/wp-content/uploads/2024/02/AAAI-24_Main_2024-02-01.pdf); [Author publication list confirms title, authors and AAAI 2024](https://dashangao.github.io/) |
+
+## DapperFL: Domain Adaptive Federated Learning with Model Fusion Pruning for Edge Devices
+
+| Field | Details |
+| --- | --- |
+| Venue / year | Conference on Neural Information Processing Systems, 2024 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/17a1a1439421f1837e10cd612bf92861-Abstract-Conference.html) · [Code](https://github.com/jyzgh/DapperFL) |
+| Problem | Resource-constrained clients have unequal model capacity while data domains differ. |
+| Mechanism | Each round mixes a briefly fine-tuned local model with the global model using a decaying coefficient, prunes channels to the device budget, and trains with a representation-norm penalty. The server restores missing coordinates from the previous global model before aggregation. |
+| Contribution | Couples fusion, resource-aware pruning and domain-adaptive local optimization within repeated federated rounds. |
+| Assumptions | A common backbone with identifiable channel masks, local data for adaptation, and client capacity/pruning-rate information available to the server. |
+| Evidence boundary | The masked shared-backbone construction does not establish fusion of arbitrary unrelated architectures. Performance under evaluated domain shifts does not imply universal robustness, and local data retention is not formal privacy protection. |
+| Evidence | [Official publication metadata and abstract](https://proceedings.neurips.cc/paper_files/paper/2024/hash/17a1a1439421f1837e10cd612bf92861-Abstract-Conference.html); [Final proceedings PDF pp.3–6, Sections 3.1–3.4 and Algorithm 1: fusion schedule, pruning, domain regularization and masked-model restoration](https://proceedings.neurips.cc/paper_files/paper/2024/file/17a1a1439421f1837e10cd612bf92861-Paper-Conference.pdf) |
 
 ## Have You Merged My Model? On The Robustness of Large Language Model IP Protection Methods Against Model Merging
 
@@ -835,6 +937,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | The DP analysis explicitly covers only the scoring mechanism; communicating client models adds a separate privacy cost. Formal journal metadata are verified, but section reading used the author preprint. |
 | Evidence | [Official publication metadata and abstract](https://doi.org/10.1109/tnnls.2021.3129371); [Author preprint PDF pp.3–5 §3: auxiliary-data distillation, certainty weights and scoped privacy analysis](https://arxiv.org/pdf/2102.02514) |
 
+## Revisiting Weighted Aggregation in Federated Learning with Neural Networks
+
+| Field | Details |
+| --- | --- |
+| Venue / year | International Conference on Machine Learning, 2023 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://proceedings.mlr.press/v202/li23s.html) |
+| Problem | Conventional normalized client weights can miss beneficial shrinkage and interactions among client models. |
+| Mechanism | Factor the aggregate into a positive global shrinking factor and simplex-constrained relative weights, and optimize them on proxy data before constructing the global model. Client coherence motivates the weighting analysis. |
+| Contribution | Separates overall shrinkage from relative weighting and makes both part of federated aggregation optimization. |
+| Assumptions | Aligned client parameterizations, continuing local training, and server-held proxy data for the aggregation objective. |
+| Evidence boundary | Weight quality depends on the size and representativeness of the server proxy set. Client coherence is an optimization interaction rather than certified data contribution or demographic fairness; learned weighting supplies no formal privacy or Byzantine guarantee. |
+| Evidence | [Official publication metadata and abstract](https://proceedings.mlr.press/v202/li23s.html); [Final PMLR PDF pp.3–4, Sections 3–4.2: shrinkage and coherence; p.8, Section 6.1 and Algorithm 1: proxy-data optimization and FedLAW](https://proceedings.mlr.press/v202/li23s/li23s.pdf) |
+
 ## Rewarded soups: towards Pareto-optimal alignment by interpolating weights fine-tuned on diverse rewards
 
 | Field | Details |
@@ -885,6 +1004,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Assumptions | Server access to client updates and a validation dataset defining coalition utility; compatible models in iterative FL. |
 | Evidence boundary | The estimated score is a training/validation-dependent surrogate, not exact global Shapley attribution, demographic fairness or cryptographically verifiable provenance. |
 | Evidence | [Official publication metadata and abstract](https://doi.org/10.1145/3580305.3599500); [PDF p.4 §4.1: validation utility, partial and surrogate federated Shapley values](https://par.nsf.gov/servlets/purl/10448787) |
+
+## FedRolex: Model-Heterogeneous Federated Learning with Rolling Sub-Model Extraction
+
+| Field | Details |
+| --- | --- |
+| Venue / year | Conference on Neural Information Processing Systems, 2022 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://papers.neurips.cc/paper_files/paper/2022/hash/bf5311df07f3efce97471921e6d2f159-Abstract-Conference.html) · [Code](https://github.com/AIoT-MLSys-Lab/FedRolex) |
+| Problem | Static subnetwork allocation can leave parts of the global model trained only by high-capacity clients, while random extraction covers coordinates unevenly. |
+| Mechanism | Extract each client subnetwork using a cyclic window, train it on local data, and selectively average each returned coordinate over clients that updated it, without client weighting. Coordinates receiving no update retain their prior value. |
+| Contribution | Connects the temporal coverage of shared coordinates to resource-inclusive training, including a global model larger than any individual client model. |
+| Assumptions | A shared server model with known coordinate indices, server-coordinated rolling extraction, client capacities and local training data; selected architectures are subnetworks of the same global model. |
+| Evidence boundary | The model heterogeneity is constrained by the shared supernetwork. Coordinate subsets and contributor sets must be distinguished when analyzing secure aggregation; the method itself does not prove privacy against attacks exploiting heterogeneous participation. Device inclusiveness is not demographic fairness, and statistical coverage analysis is not a universal convergence or security guarantee. |
+| Evidence | [Official publication metadata and abstract](https://papers.neurips.cc/paper_files/paper/2022/hash/bf5311df07f3efce97471921e6d2f159-Abstract-Conference.html); [Final NeurIPS PDF pp.3–5, Sections 2–3.3 and Algorithm 1: static/random extraction comparison, rolling window and selective per-coordinate averaging](https://papers.neurips.cc/paper_files/paper/2022/file/bf5311df07f3efce97471921e6d2f159-Paper-Conference.pdf) |
 
 ## Cronus: Robust and Heterogeneous Collaborative Learning with Black-Box Knowledge Transfer
 
@@ -937,6 +1073,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | Depends on root-data quality and the assessed threat model; not a data-free or universal defense. |
 | Evidence | [Official publication metadata and abstract](https://www.ndss-symposium.org/ndss-paper/fltrust-byzantine-robust-federated-learning-via-trust-bootstrapping/) |
 
+## HeteroFL: Computation and Communication Efficient Federated Learning for Heterogeneous Clients
+
+| Field | Details |
+| --- | --- |
+| Venue / year | International Conference on Learning Representations, 2021 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://openreview.net/forum?id=TNkPBBYFkXg) |
+| Problem | Clients with unequal computation and communication capacity cannot all train the same full global network. |
+| Mechanism | Extract fixed nested channel subsets from one global model, train locally using a scaling module and static batch normalization, then form the global model from coordinate-wise averages over participating owners. For label-skewed classification, masked cross-entropy and selective last-layer aggregation are additional components. |
+| Contribution | Makes partial-coordinate fusion explicit under device resource constraints and provides a reference for interpreting privacy attacks on model-heterogeneous aggregation. |
+| Assumptions | A shared global model with known coordinate correspondence, nested channel subsets, client capability information and local training data; heterogeneous models stay within one model class. |
+| Evidence boundary | Width heterogeneity is not arbitrary architecture interoperability. Different coordinates may be averaged over different client subsets. The paper explicitly notes unresolved privacy concerns in final global BN-statistic collection; neither data locality nor partial-model aggregation supplies a formal privacy guarantee. Label-skew experiments do not cover all forms of distribution shift. |
+| Evidence | [Official 2021 conference paper listing: title, all authors and OpenReview paper link; poster is the presentation format of the conference paper](https://iclr.cc/virtual/2021/poster/3165); [Complete author list, ICLR 2021 comment and v3 revision history](https://arxiv.org/abs/2010.01264); [PDF pp.3–5 Sections 3.1–3.3, Equations 1–4, Algorithm 1; p.7 Section 4](https://arxiv.org/pdf/2010.01264v3) |
+
 ## The Limitations of Federated Learning in Sybil Settings
 
 | Field | Details |
@@ -970,6 +1123,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Assumptions | Target distributions lie in the considered mixture set; optimization guarantees impose convexity conditions. |
 | Evidence boundary | Mixture robustness is not arbitrary distribution-shift protection, nor a general demographic-fairness guarantee. |
 | Evidence | [Official publication metadata and abstract](https://proceedings.mlr.press/v97/mohri19a.html); [PDF pp.1,3: motivation and agnostic loss](https://proceedings.mlr.press/v97/mohri19a/mohri19a.pdf) |
+
+## Learning Private Neural Language Modeling with Attentive Aggregation
+
+| Field | Details |
+| --- | --- |
+| Venue / year | International Joint Conference on Neural Networks, 2019 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | C |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://doi.org/10.1109/IJCNN.2019.8852464) · [Code](https://github.com/shaoxiongji/fed-att) |
+| Problem | Uniform model averaging can overlook layer-specific differences among locally trained language models. |
+| Mechanism | Compute layerwise Lp distances from the global model, apply softmax to these positive distance scores, and move the server model toward the attention-weighted client parameters. A separate extension adds Gaussian noise to uploaded parameters. |
+| Contribution | An early train-time aggregation method separating layerwise attention weights from optional parameter perturbation. |
+| Assumptions | Aligned language-model layers, local text data for repeated training, and server access to received client parameters; the reported partitioning is IID random shards. |
+| Evidence boundary | The stated formula uses positive distance in softmax, so it should not be described as automatically upweighting the closest clients. The selected privacy section describes Gaussian perturbation without a complete sensitivity, clipping and composition/accounting specification; no calibrated end-to-end DP guarantee is inferred here. IID language-model results do not establish robustness to clinical non-IID data. |
+| Evidence | [Publisher DOI identity](https://doi.org/10.1109/IJCNN.2019.8852464); [Publisher-deposited title, complete author list, IJCNN 2019 venue, pages 1–8 and DOI](https://api.crossref.org/works/10.1109/IJCNN.2019.8852464); [Author list, preprint history and final DOI](https://arxiv.org/abs/1812.07108); [v2 pp.3–5, III.A–D, Equations 2–6, Algorithms 1–3, IV.A](https://arxiv.org/pdf/1812.07108v2) |
 
 ## Scalable Private Learning with PATE
 
@@ -1022,6 +1192,91 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | Aggregate privacy does not itself establish protection against poisoned contributors or all inference from released aggregates. |
 | Evidence | [Publisher-deposited bibliographic metadata](https://api.crossref.org/works/10.1145/3133956.3133982); [Abstract](https://research.google/pubs/practical-secure-aggregation-for-privacy-preserving-machine-learning/) |
 
+## Bi-level Personalization for Federated Foundation Models: A Task-vector Aggregation Approach
+
+| Field | Details |
+| --- | --- |
+| Venue / year | AAAI Conference on Artificial Intelligence, 2026 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/39991) |
+| Problem | A single global foundation-model update can obscure different client tasks and adaptation directions. |
+| Mechanism | FedBip forms each client task vector as its current locally trained model minus its prior personalized starting model, uses cosine similarities to assign client-specific aggregation weights, and maintains personalized aggregate models; FedBip-L applies the procedure by layer. |
+| Contribution | Uses task vectors as a client-relation signal for personalized foundation-model aggregation. |
+| Assumptions | A shared pretrained model with compatible coordinates, local fine-tuning data, repeated communication, and server access to individual model updates. |
+| Evidence boundary | Task-vector similarity is a surrogate for useful collaboration, not a privacy or fairness certificate. Personalized server state and repeated fine-tuning remain necessary; the selected technical sections were reviewed in the preprint rather than the final publisher PDF. |
+| Evidence | [Primary publication/acceptance metadata and abstract](https://ojs.aaai.org/index.php/AAAI/article/view/39991); [Author preprint v1, pp.4–5 Methodology, task-vector similarity and layer-wise extension](https://arxiv.org/pdf/2509.12697v1) |
+
+## Breaking the Aggregation Bottleneck in Federated Recommendation: A Personalized Model Merging Approach
+
+| Field | Details |
+| --- | --- |
+| Venue / year | AAAI Conference on Artificial Intelligence, 2026 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/38472) |
+| Problem | Replacing local item embeddings by a global aggregate can discard personalized recommendation information. |
+| Mechanism | A local MLP generates item-specific mixing weights from local embeddings and global/local differences. The client trains the resulting mixture; the server balances sample-size weights with an inverse-distance similarity between uploaded item tables. An optional privacy-enhanced variant adds Laplace noise to uploaded embeddings. |
+| Contribution | Couples personalized local initialization and server aggregation for recommendation and reports a separate noise–utility study. |
+| Assumptions | Compatible item identities and embedding dimensions, local interaction data and alternating adapter/model training; the stated noise calibration uses gradient clipping and a sensitivity bound. |
+| Evidence boundary | The base merge is not by itself a formal privacy guarantee. The appendix reports a clipped-sensitivity Laplace construction; selected-section reading did not establish a complete multi-round privacy accountant or independently validate the local-DP claim. Evaluation uses offline recommendation datasets, and conditional local-loss analysis should not be generalized to arbitrary nonconvex models. |
+| Evidence | [Primary publication/acceptance metadata and abstract](https://ojs.aaai.org/index.php/AAAI/article/view/38472); [Author preprint v1, pp.3–5 method and privacy discussion; p.12 Appendix C; p.15 Table 7](https://arxiv.org/pdf/2508.12386v1) |
+
+## Can Model Merging Improve Aggregation in DiLoCo?
+
+| Field | Details |
+| --- | --- |
+| Venue / year | arXiv, 2026 |
+| Publication status | Preprint |
+| Bibliographic verification | verified |
+| CCF 2026 | None |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://arxiv.org/abs/2607.03011) |
+| Problem | Averaged worker pseudo-gradients can limit low-communication language-model pretraining as the number of workers grows. |
+| Mechanism | IsoLoCo averages local pseudo-gradients, replaces singular values of each two-dimensional update matrix by their mean, and applies a Nesterov outer update. The paper compares merging rules and describes a faster approximate implementation. |
+| Contribution | Connects model-merging mechanisms to iterative distributed optimization and evaluates spectral aggregation across worker counts. |
+| Assumptions | Workers use the same model coordinates and objective with periodic synchronization; experiments partition a common language-model pretraining corpus. |
+| Evidence boundary | This is distributed pretraining, not evidence of privacy-preserving or cross-institutional federated deployment. It still exchanges updates periodically and requires local optimization; stronger compression and theoretical explanations are identified as future work. |
+| Evidence | [Primary publication/acceptance metadata and abstract](https://arxiv.org/abs/2607.03011); [Author preprint v1, p.5 §2.3; p.7 §4 Algorithm 2; p.10 §5](https://arxiv.org/pdf/2607.03011v1) |
+
+## Communication-Efficient Personalized Adaptation via Federated-Local Model Merging
+
+| Field | Details |
+| --- | --- |
+| Venue / year | Conference on Neural Information Processing Systems, 2026 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://neurips.cc/virtual/2026/poster/150059) |
+| Problem | Federated adapters encode shared knowledge while local adapters retain client specialization; heuristic mixing can waste communication or harm personalization. |
+| Mechanism | Potara combines compatible federated and local task vectors. A same-basin analysis yields weights from marginal and cross-covariance traces; diagonal Fisher and per-sample gradient correlations estimate these quantities using local data. |
+| Contribution | Links personalized adapter mixing to a conditional loss bound and measures communication–accuracy trade-offs in simulated vision and language federations. |
+| Assumptions | Common pretrained model, separately trained local and federated adapters, local gradient access; analysis assumes smooth same-basin behavior and constrained joint task-vector covariance. |
+| Evidence boundary | A tighter upper bound does not guarantee uniformly lower realized task loss. Mixing still needs gradient-based covariance estimation and prior local/federated training; experiments partition benchmarks rather than establish live multi-institution deployment. No formal privacy mechanism follows from local data retention. |
+| Evidence | [Primary publication/acceptance metadata and abstract](https://neurips.cc/virtual/2026/poster/150059); [Author preprint v1, pp.4–6 §§3.2–3.5 and §4.1–4.2; official NeurIPS 2026 Poster page](https://arxiv.org/pdf/2602.18658v1) |
+
+## FedMerge: Federated Model Merging for Personalization
+
+| Field | Details |
+| --- | --- |
+| Venue / year | AAAI Conference on Artificial Intelligence, 2026 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/39113) · [Code](https://github.com/shutong043/FedMerge) |
+| Problem | One or a few global models restrict client-specific behavior, while independently fine-tuning many candidates increases client cost. |
+| Mechanism | Each client receives one weighted mixture of the server model bank and trains it locally. Returned model changes update both the bank and client mixing weights by the chain rule; softmax normalizes the coefficients and reduced layer subsets can approximate inner products. |
+| Contribution | Jointly optimizes shared source models and personalized mixtures with ordinary local training communication. |
+| Assumptions | Compatible model parameterization, repeated access to client training data, and a server that stores the model bank and per-client coefficients. |
+| Evidence boundary | The method is an iterative training scheme, not a training-free post-hoc merge. Server model storage and weight learning add cost; keeping raw data local does not itself establish formal privacy or demographic fairness. |
+| Evidence | [Primary publication/acceptance metadata and abstract](https://ojs.aaai.org/index.php/AAAI/article/view/39113); [Author version v3, p.1 code; pp.3–4 Backgrounds and Methodology, Eqs.3–11 and Algorithm 1](https://arxiv.org/pdf/2504.06768v3) |
+
 ## RegMean++: Enhancing Effectiveness and Generalization of Regression Mean for Model Merging
 
 | Field | Details |
@@ -1073,6 +1328,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | Validation covers two architectures and community-derived data. The limitations explicitly state that current kinship-guided merging does not support sustained evolution; environmental feedback remains future work. |
 | Evidence | [Official publication metadata and abstract](https://aclanthology.org/2025.findings-emnlp.32/); [§3.2; §4.1–4.2, PDF pp.3–5; Limitations, PDF p.9](https://aclanthology.org/2025.findings-emnlp.32.pdf) |
 
+## FedAWA: Adaptive Optimization of Aggregation Weights in Federated Learning Using Client Vectors
+
+| Field | Details |
+| --- | --- |
+| Venue / year | IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2025 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://openaccess.thecvf.com/content/CVPR2025/html/Shi_FedAWA_Adaptive_Optimization_of_Aggregation_Weights_in_Federated_Learning_Using_CVPR_2025_paper.html) |
+| Problem | Fixed client aggregation weights can neglect client-update directions under heterogeneous data. |
+| Mechanism | FedAWA subtracts the incoming global model from each locally trained model, optimizes normalized client coefficients to align the merged update with client vectors, and adds alignment to the current global model; a layer-wise variant chooses coefficients separately by layer. |
+| Contribution | Uses update geometry to adapt server aggregation weights without extra runtime proxy examples. |
+| Assumptions | Common compatible model coordinates, iterative client training and a server able to inspect client updates; runtime weighting does not require a separate validation/proxy dataset. |
+| Evidence boundary | The method still requires local training and repeated communication. Directional alignment is a proxy for generalization; raw update access is not automatically compatible with secure aggregation, and no formal privacy or demographic-fairness guarantee follows from it. |
+| Evidence | [Primary publication/acceptance metadata and abstract](https://openaccess.thecvf.com/content/CVPR2025/html/Shi_FedAWA_Adaptive_Optimization_of_Aggregation_Weights_in_Federated_Learning_Using_CVPR_2025_paper.html); [Author preprint v1, pp.4–5 client vectors, aggregation-weight objective and layer-wise extension](https://arxiv.org/pdf/2503.15842v1) |
+
 ## Identifying and Reusing Learnwares Across Different Label Spaces
 
 | Field | Details |
@@ -1090,6 +1362,40 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | The identification phase avoids central raw-data access, but reuse still trains on user labels. This operational restriction is not a differential-privacy guarantee; utility depends on specification fidelity. |
 | Evidence | [Official publication metadata and abstract](https://ijcai.org/proceedings/2025/638); [§3.1–3.3, PDF pp.2–4; §4.1, PDF p.5](https://ijcai.org/proceedings/2025/0638.pdf) |
 
+## Intrinsic Training Signals for Federated Learning Aggregation
+
+| Field | Details |
+| --- | --- |
+| Venue / year | International Conference on Image Analysis and Processing, 2025 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | None |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://link.springer.com/chapter/10.1007/978-3-032-10185-3_11) |
+| Problem | Uniformly aggregating layers and classes overlooks different local learning dynamics in heterogeneous clients. |
+| Mechanism | LIVAR weights LoRA layers through a learned mapping from gradient/update importance and combines classifier information using local class statistics. Its calibration trains a reference on pooled TinyImageNet proxy data, fits optimal layer weights, and derives a random-forest/SHAP mapping for runtime aggregation. |
+| Contribution | Makes aggregation responsive to layer and class learning signals and examines an interpretable calibration model. |
+| Assumptions | Compatible LoRA/classifier coordinates, shared label meaning, client training statistics, and a proxy-data calibration stage with a centrally trained reference. |
+| Evidence boundary | The overall method is not proxy-data-free: its layer-weight calibration explicitly uses a proxy dataset and reference model. SHAP here explains the fitted mapping, not causal fairness or privacy; transmitted statistics and updates need a separate privacy assessment. |
+| Evidence | [Primary publication/acceptance metadata and abstract](https://link.springer.com/chapter/10.1007/978-3-032-10185-3_11); [Author preprint v2, pp.4–6 method and proxy calibration; p.10 §6](https://arxiv.org/pdf/2507.06813v2) |
+
+## Many-Task Federated Fine-Tuning via Unified Task Vectors
+
+| Field | Details |
+| --- | --- |
+| Venue / year | Workshop on Federated Learning in the Age of Generative AI (FedGenAI), co-located with IJCAI 2025, 2025 |
+| Publication status | Workshop |
+| Bibliographic verification | verified |
+| CCF 2026 | None |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://federated-learning.org/FedGenAI-ijcai-2025/) |
+| Problem | Clients with multiple distinct tasks can make per-task or per-client model storage and communication expensive. |
+| Mechanism | MaTU unifies task-vector signs and magnitudes, sends the resulting vector plus binary masks and rescalers, and aggregates same-task and selected cross-task information according to known client/task assignments and sign compatibility. |
+| Contribution | Offers a compact representation for iterative many-task federated adaptation without retaining a separate server model for every client. |
+| Assumptions | Shared pretrained backbone and compatible task vectors, local per-task fine-tuning, known task assignments at the server, and communicated masks/rescalers. |
+| Evidence boundary | Task labels, masks and updates may disclose information; local data retention is not a formal privacy guarantee. Experiments on 30 benchmark datasets do not establish live cross-institution federation. This is a companion-workshop paper and does not inherit IJCAI A. |
+| Evidence | [Primary publication/acceptance metadata and abstract](https://federated-learning.org/FedGenAI-ijcai-2025/); [Author preprint v3, pp.3–4 method; official FedGenAI-IJCAI 2025 accepted-paper programme](https://arxiv.org/pdf/2502.06376v3) |
+
 ## Model merging with SVD to tie the Knots
 
 | Field | Details |
@@ -1106,6 +1412,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Assumptions | LoRA models share architecture and pretrained initialization. |
 | Evidence boundary | The demonstrated setting remains shared-base LoRA fusion. A stronger joint-task protocol reveals that per-task scores alone can hide cross-task confusion. |
 | Evidence | [Official publication metadata and abstract](https://proceedings.iclr.cc/paper_files/paper/2025/hash/0d4f8a5109c5083b5307fcd0bddae7a7-Abstract-Conference.html); [§3, PDF p.3; §4, PDF pp.5–6; §5.3, PDF p.8](https://proceedings.iclr.cc/paper_files/paper/2025/file/0d4f8a5109c5083b5307fcd0bddae7a7-Paper-Conference.pdf) |
+
+## Never Start from Scratch: Expediting On-Device LLM Personalization via Explainable Model Selection
+
+| Field | Details |
+| --- | --- |
+| Venue / year | ACM International Conference on Mobile Systems, Applications, and Services, 2025 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | B |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://dl.acm.org/doi/10.1145/3711875.3729132) |
+| Problem | Starting every mobile user from the same base LLM wastes adaptation compute and scarce personal data. |
+| Mechanism | XPerT probes cached and base models, summarizes behavioral differences into a decomposed latent basis, maps user data to that basis, and selects suitable personalized checkpoints. When needed, it composes multiple candidates by task arithmetic before local fine-tuning. |
+| Contribution | Connects behavioral model selection with explicit multi-model composition in an implemented smartphone personalization system. |
+| Assumptions | A compatible common LLM base, a cloud cache of personalized checkpoints, probe/summarization access and local user data for matching and adaptation. |
+| Evidence boundary | This is a cloud-cache/on-device collaboration design, not a conventional federated aggregation protocol. Explainability coordinates and local data retention are not formal fairness or privacy guarantees; language-style benchmark evidence should not be generalized to unrestricted personal data. |
+| Evidence | [Primary publication/acceptance metadata and abstract](https://dl.acm.org/doi/10.1145/3711875.3729132); [Author-hosted ACM paper, p.1 bibliographic header; pp.3–4 §3; p.7 §5.2](https://sites.pitt.edu/~weigao/publications/mobisys25_xpert.pdf) |
 
 ## PLeaS - Merging Models with Permutations and Least Squares
 
@@ -1141,6 +1464,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | Performance depends on available adaptation examples; the paper explicitly studies validation-set size. Representation uncertainty is not a calibrated safety guarantee. |
 | Evidence | [Official publication metadata and abstract](https://proceedings.mlr.press/v267/wei25c.html); [§3; §4.1–4.3, PDF pp.3–6; Appendix C.3, PDF p.15](https://raw.githubusercontent.com/mlresearch/v267/main/assets/wei25c/wei25c.pdf) |
 
+## Task Arithmetic Through The Lens Of One-Shot Federated Learning
+
+| Field | Details |
+| --- | --- |
+| Venue / year | Transactions on Machine Learning Research, 2025 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | None |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://openreview.net/forum?id=Cgyo7S7Oy0) · [Code](https://github.com/SilviaTao/one_shot_fl_task_arithmetic) |
+| Problem | The relationship between task-vector merging and federated optimization needs explicit conditions. |
+| Mechanism | Compare common-base local-SGD equations, with outer step size beta=lambda*T, then apply heterogeneity analysis and federated aggregation alternatives. |
+| Contribution | Separates data heterogeneity from differences in local training when interpreting merge behavior. |
+| Assumptions | Common initialization and compatible parameters; transferred bounds impose their own SGD, smoothness, noise and objective assumptions. |
+| Evidence boundary | Algebraic correspondence does not certify a federated deployment or transfer convergence guarantees to arbitrary optimizers, architectures or adapters. Proofs were not independently rederived. |
+| Evidence | [Official bibliographic identity](https://openreview.net/forum?id=Cgyo7S7Oy0); [Accepted author version v2, publication header TMLR 05/2025; pp.4–6 §§3–4, equations 2–4 and assumptions 4.2–4.5](https://arxiv.org/pdf/2411.18607v2); [Indexed final PDF first page, Published in Transactions on Machine Learning Research (05/2025)](https://openreview.net/pdf?id=Cgyo7S7Oy0) |
+
 ## AdaMerging: Adaptive Model Merging for Multi-Task Learning
 
 | Field | Details |
@@ -1158,6 +1498,74 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | The optimization is transductive and depends on test-distribution access. Entropy is a surrogate objective, not a general reliability or safety guarantee; adaptive weights alone do not establish continual collaboration. |
 | Evidence | [Official publication metadata and abstract](https://proceedings.iclr.cc/paper_files/paper/2024/hash/62868cc2fc1eb5cdf321d05b4b88510c-Abstract-Conference.html); [§3, PDF pp.4–6; §4.1, PDF p.7](https://proceedings.iclr.cc/paper_files/paper/2024/file/62868cc2fc1eb5cdf321d05b4b88510c-Paper-Conference.pdf) |
 
+## Buffalo: Biomedical Vision-Language Understanding with Cross-Modal Prototype and Federated Foundation Model Collaboration
+
+| Field | Details |
+| --- | --- |
+| Venue / year | Proceedings of the 33rd ACM International Conference on Information and Knowledge Management, 2024 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | B |
+| Reading depth | abstract-reviewed |
+| Links | [Paper](https://doi.org/10.1145/3627673.3679627) · [Code](https://github.com/yyyanbj/Buffalo) |
+| Problem | Share biomedical model knowledge across federated clients with missing or heterogeneous modalities. |
+| Mechanism | The publisher abstract describes cross-modal prototype imputation and downstream federated fine-tuning. Exact prototype construction, aggregation, and update rules were not inspected. |
+| Contribution | Prototype-mediated collaboration evaluated on report generation and biomedical visual question answering under modality heterogeneity. |
+| Assumptions | Local biomedical data and a federated communication setting; precise modality-availability and trust assumptions require full-text review. |
+| Evidence boundary | Abstract-level evidence only. Raw-data locality does not establish formal privacy, and task-level performance does not establish clinical benefit. This is broader federated representation collaboration, not verified post-hoc weight merging. The linked code was identified but not executed. |
+| Evidence | [ACM-deposited final title, nine authors, CIKM 2024, pp.2775–2785; published-print 21 October 2024.](https://api.crossref.org/works/10.1145/3627673.3679627); [Official ACM SIGWEB proceedings: Buffalo entry and abstract, within SESSION: Full Research Papers; the subsequent Short Research Papers heading begins after this entry.](https://www.sigweb.sigweb.hosting.acm.org/toc/cikm24.html); [Buffalo publication entry links the author code repository.](https://www.bj-yan.top/publications); [README identifies the official CIKM 2024 implementation and matching title/DOI. Code identity checked; no reproduction.](https://github.com/yyyanbj/Buffalo) |
+
+## FedBone: Towards Large-Scale Federated Multi-Task Learning
+
+| Field | Details |
+| --- | --- |
+| Venue / year | Journal of Computer Science and Technology, 2024 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | B |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://jcst.ict.ac.cn/article/doi/10.1007/s11390-024-3639-x) |
+| Problem | Combine heterogeneous task updates in federated training under client compute limits. |
+| Mechanism | Sections 3.2–3.5 place the shared model on a server and retain client embedding, adaptation, and prediction modules. Intermediate representations and backward signals cross the split. Historical-gradient attention reweights task gradients; projection removes opposing components before aggregation. |
+| Contribution | A split federated multi-task framework with task adaptation and conflict-aware shared-backbone gradient aggregation. |
+| Assumptions | Server access to task gradients and prior aggregate gradients; iterative client–server communication and compatible shared-model interfaces. |
+| Evidence boundary | Training-time gradient fusion is distinct from post-hoc merging of pretrained checkpoints. Exchanged representations and gradients remain potential disclosure surfaces; local raw data alone do not prove privacy. Method sections were reviewed, but experimental results were not independently reproduced. |
+| Evidence | [Publisher-deposited final metadata: JCST 39(5), 1040–1057, September 2024; six authors.](https://api.crossref.org/works/10.1007/s11390-024-3639-x); [Official final journal record.](https://jcst.ict.ac.cn/article/doi/10.1007/s11390-024-3639-x); [Final 18-page PDF: p.1/printed1040 Regular Paper and metadata; pp.5–7/printed1044–1046, Sections3.2–3.5, Figure2 and Algorithm1.](https://jcst.ict.ac.cn/fileup/1000-9000/PDF/JCST-2024-5-4-3639-1040.pdf) |
+
+## FedFisher: Leveraging Fisher Information for One-Shot Federated Learning
+
+| Field | Details |
+| --- | --- |
+| Venue / year | International Conference on Artificial Intelligence and Statistics, 2024 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | C |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://proceedings.mlr.press/v238/jhunjhunwala24a.html) |
+| Problem | Averaging locally trained models can lose accuracy when only one model-upload round is allowed. |
+| Mechanism | Clients train from a common initialization and send weights with Fisher approximations; the server minimizes a Fisher-weighted quadratic discrepancy. Diagonal and KFAC variants reduce the cost of the full Fisher matrix. |
+| Contribution | Connects one-shot aggregation to local posterior curvature, with restricted theory and practical approximations. |
+| Assumptions | Compatible parameter coordinates and common initialization; clients retain data to estimate Fisher information; the server receives weights and Fisher summaries. |
+| Evidence boundary | The overparameterized two-layer ReLU result uses full Fisher information and does not directly establish the same guarantee for diagonal/KFAC variants. KFAC factors require individual server access in the discussed implementation. Inversion experiments and optional secure aggregation are not a differential-privacy guarantee; closeness to local models is not demographic fairness. |
+| Evidence | [Official publication metadata and abstract](https://proceedings.mlr.press/v238/jhunjhunwala24a.html); [Final proceedings PDF pp.3–4, Section 2 and Algorithm 1: local posteriors, Fisher fusion and common initialization; pp.6–7, Section 4: approximations and secure-aggregation distinction](https://proceedings.mlr.press/v238/jhunjhunwala24a/jhunjhunwala24a.pdf) |
+
+## FuseFL: One-Shot Federated Learning through the Lens of Causality with Progressive Model Fusion
+
+| Field | Details |
+| --- | --- |
+| Venue / year | Conference on Neural Information Processing Systems, 2024 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/31e6e0c09325a3be16d93f84e40e0c7e-Abstract-Conference.html) · [Code](https://github.com/wizard1203/FuseFL) |
+| Problem | One-shot federation under distribution heterogeneity can retain spurious local features and poorly combine independently learned representations. |
+| Mechanism | Partition networks into blocks; train, exchange and concatenate a block across clients, adapt its output, freeze it, and continue local training on later blocks. Width adjustment controls fused-model growth. |
+| Contribution | Makes module composition and progressive local retraining an alternative to terminal weight averaging under a one-shot communication budget. |
+| Assumptions | Local training data remain available between block-fusion stages; block interfaces must be compatible through the prescribed adapters; staged communication and training are coordinated. |
+| Evidence boundary | The one-shot description refers to the overall communication budget and does not mean a single final exchange of fully trained checkpoints: fusion and local retraining occur in successive block stages. The causal motivation is not clinical causal identification or a general privacy guarantee. |
+| Evidence | [Official publication metadata and abstract](https://proceedings.neurips.cc/paper_files/paper/2024/hash/31e6e0c09325a3be16d93f84e40e0c7e-Abstract-Conference.html); [Final proceedings PDF pp.6–7, Section 4 and Figure 4: progressive block fusion, retraining, adapters and complexity](https://proceedings.neurips.cc/paper_files/paper/2024/file/31e6e0c09325a3be16d93f84e40e0c7e-Paper-Conference.pdf) |
+
 ## Language Models are Super Mario: Absorbing Abilities from Homologous Models as a Free Lunch
 
 | Field | Details |
@@ -1174,6 +1582,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Assumptions | Models are fine-tuned from a shared pretrained backbone and have compatible parameter spaces. |
 | Evidence boundary | The method targets small supervised fine-tuning deltas from homologous models; experiments explicitly avoid merging checkpoints with different base initializations. Hyperparameter search and evaluation access must be accounted for separately. |
 | Evidence | [Official publication metadata and abstract](https://proceedings.mlr.press/v235/yu24p.html); [§3 Methodology, PDF pp.3–4; §4.2 setup, PDF p.6](https://raw.githubusercontent.com/mlresearch/v235/main/assets/yu24p/yu24p.pdf) |
+
+## Local Superior Soups: A Catalyst for Model Merging in Cross-Silo Federated Learning
+
+| Field | Details |
+| --- | --- |
+| Venue / year | Conference on Neural Information Processing Systems, 2024 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/24f7b98aef14fcd68acf3c941af1b59e-Abstract-Conference.html) · [Code](https://github.com/ubc-tea/Local-Superior-Soups) |
+| Problem | Local models trained on heterogeneous silo data may occupy incompatible regions of the loss landscape and merge poorly. |
+| Mechanism | Initialize from a pretrained or previous global model, build local candidate models sequentially, and train interpolated weights with affinity/diversity regularization. A local soup becomes the client contribution to subsequent global aggregation. |
+| Contribution | Shows how training can prepare models for subsequent averaging in cross-silo federation with limited communication. |
+| Assumptions | A shared architecture and meaningful common pretrained/global initialization; local data and extra training of several local candidates are available. |
+| Evidence boundary | This changes local training and creates multiple candidates, so it is not a training-free post-hoc merger. The convex/smooth analysis should not be presented as a general guarantee for deep nonconvex networks; benefits depend on initialization and evaluated heterogeneity. |
+| Evidence | [Official publication metadata and abstract](https://proceedings.neurips.cc/paper_files/paper/2024/hash/24f7b98aef14fcd68acf3c941af1b59e-Abstract-Conference.html); [Final proceedings PDF pp.3–5, Sections 3.1–3.3 and Algorithm 1: soup construction, interpolation, affinity/diversity terms and theorem assumptions](https://proceedings.neurips.cc/paper_files/paper/2024/file/24f7b98aef14fcd68acf3c941af1b59e-Paper-Conference.pdf) |
 
 ## MetaFed: Federated Learning Among Federations With Cyclic Knowledge Distillation for Personalized Healthcare
 
@@ -1345,6 +1770,40 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | Appendix A notes incomplete theory, dependence on shared initialization, and a remaining gap to joint multi-task training. Choosing suitable checkpoints is also unresolved. |
 | Evidence | [Official publication metadata and abstract](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1644c9af28ab7916874f6fd6228a9bcf-Abstract-Conference.html); [§§3–4; Appendix A Limitations and Future Works, PDF p.17](https://proceedings.neurips.cc/paper_files/paper/2023/file/1644c9af28ab7916874f6fd6228a9bcf-Paper-Conference.pdf) |
 
+## lo-fi: distributed fine-tuning without communication
+
+| Field | Details |
+| --- | --- |
+| Venue / year | Transactions on Machine Learning Research, 2023 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | None |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://openreview.net/forum?id=1U0aPkBVz0) |
+| Problem | Synchronizing gradients across device groups can make fine-tuning expensive when interconnect communication is limiting. |
+| Mechanism | Partition devices into groups, perform group-local fine-tuning without inter-group updates, then average the final group models. Synchronous communication can still occur among devices within a group. |
+| Contribution | Provides a distributed-training foundation for terminal model averaging and a comparison point for one-shot federation. |
+| Assumptions | Compatible parameters from a shared pretrained checkpoint; data and training configuration that allow averaging to remain effective; within-group communication may be available. |
+| Evidence boundary | The reviewed experiments primarily use IID data partitioning and do not establish performance in non-IID cross-hospital federation. Communication is removed between groups during fine-tuning, not necessarily within groups or at the final merge. Speedup is hardware/task dependent and the protocol supplies no formal privacy guarantee. |
+| Evidence | [Official OpenReview publication identity](https://openreview.net/forum?id=1U0aPkBVz0); [Indexed official PDF text: title, authors and Published in Transactions on Machine Learning Research (01/2023); direct download access challenge](https://openreview.net/pdf?id=1U0aPkBVz0); [Author list and v2 revision dated 2022-11-12](https://arxiv.org/abs/2210.11948); [v2 pp.1–3 Section 2; p.7 Section 3.4; method reading version differs from final publication](https://arxiv.org/pdf/2210.11948v2); [Author-hosted PDF read for methods; bytes identical to downloaded arXiv v2](https://www.arimorcos.com/static/pdfs/wortsman_lofi.pdf) |
+
+## DENSE: Data-Free One-Shot Federated Learning
+
+| Field | Details |
+| --- | --- |
+| Venue / year | Conference on Neural Information Processing Systems, 2022 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://proceedings.neurips.cc/paper_files/paper/2022/hash/868f2266086530b2c71006ea1908b14a-Abstract-Conference.html) |
+| Problem | One-shot federation needs to combine heterogeneous client models without a shared auxiliary dataset or repeated client communication. |
+| Mechanism | Train a server generator using ensemble classification, batch-normalization statistics and a teacher-student boundary-disagreement objective; alternate generation and KL-based ensemble-to-student distillation after the client models are uploaded once. |
+| Contribution | Supplies a one-shot behavioral-fusion route across differing architectures and a contrast to coordinate averaging or curvature-weighted fusion. |
+| Assumptions | Server access to client models and their BN statistics for the stated generation loss, compatible input/output-label semantics and server-side generation/distillation compute; raw auxiliary examples are not required at the server. |
+| Evidence boundary | Data-free refers to the absence of raw auxiliary training data at the server, not absence of local training data, BN statistics or server optimization. Visual dissimilarity of generated images does not establish privacy: the paper leaves additional privacy mechanisms and attack analysis for future work. Model access and synthesis quality remain substantive assumptions. |
+| Evidence | [Official publication metadata and abstract](https://proceedings.neurips.cc/paper_files/paper/2022/hash/868f2266086530b2c71006ea1908b14a-Abstract-Conference.html); [Final NeurIPS PDF pp.3–6, Sections 2.2–2.3, Equations 1–6 and Algorithm 1: generator losses, client BN statistics, ensemble distillation and explicit privacy discussion](https://proceedings.neurips.cc/paper_files/paper/2022/file/868f2266086530b2c71006ea1908b14a-Paper-Conference.pdf) |
+
 ## Deep Neural Network Fusion via Graph Matching with Applications to Model Ensemble and Federated Learning
 
 | Field | Details |
@@ -1379,6 +1838,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | Not a general merger for existing arbitrary checkpoints. Encoding strength trades alignment against trainability; the paper notes activation/gradient scale and optimizer issues. No privacy mechanism is established. |
 | Evidence | [Official publication metadata / workshop program](https://openaccess.thecvf.com/content/CVPR2022/html/Li_Federated_Learning_With_Position-Aware_Neurons_CVPR_2022_paper.html); [Final CVF PDF pp.2–4 (printed 10083–10085), §§2–4; p.8 (10089), Disadvantages and Conclusions.](https://openaccess.thecvf.com/content/CVPR2022/papers/Li_Federated_Learning_With_Position-Aware_Neurons_CVPR_2022_paper.pdf) |
 
+## Fine-tuning Global Model via Data-Free Knowledge Distillation for Non-IID Federated Learning
+
+| Field | Details |
+| --- | --- |
+| Venue / year | IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2022 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://openaccess.thecvf.com/content/CVPR2022/html/Zhang_Fine-Tuning_Global_Model_via_Data-Free_Knowledge_Distillation_for_Non-IID_Federated_CVPR_2022_paper.html) |
+| Problem | Direct aggregation can lose client knowledge under non-IID data. |
+| Mechanism | Alternate conditional-generator training and distillation from client models into the global model; label sampling and class-weighted teacher contributions address label imbalance. |
+| Contribution | Adds server-side knowledge transfer after averaging, unlike FedGen generator feedback to clients. |
+| Assumptions | Server receives compatible client models and client label-distribution statistics; local training remains data-dependent. |
+| Evidence boundary | No raw server training set is required, but models/statistics are exposed and extra generator/student optimization is required. This access arrangement alone is not differential privacy. |
+| Evidence | [Publisher-deposited final title, all authors, DOI and pages](https://api.crossref.org/works/10.1109/CVPR52688.2022.00993); [CVF accepted record; alternative pagination 10174–10183](https://openaccess.thecvf.com/content/CVPR2022/html/Zhang_Fine-Tuning_Global_Model_via_Data-Free_Knowledge_Distillation_for_Non-IID_Federated_CVPR_2022_paper.html); [PDF pp.3–5, §3, Algorithms 1–2](https://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_Fine-Tuning_Global_Model_via_Data-Free_Knowledge_Distillation_for_Non-IID_Federated_CVPR_2022_paper.pdf) |
+
 ## Merging Models with Fisher-Weighted Averaging
 
 | Field | Details |
@@ -1412,6 +1888,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Assumptions | Models share initialization and architecture; greedy selection uses held-out validation data. |
 | Evidence boundary | The paper reports weaker gains for some pretraining regimes and shows that weight soups do not inherit ensembles’ calibration improvement. |
 | Evidence | [Official publication metadata and abstract](https://proceedings.mlr.press/v162/wortsman22a.html); [§2 Method, PDF pp.2–3; §5 Scope and limitations, PDF p.8](https://proceedings.mlr.press/v162/wortsman22a/wortsman22a.pdf) |
+
+## Wasserstein Barycenter-based Model Fusion and Linear Mode Connectivity of Neural Networks
+
+| Field | Details |
+| --- | --- |
+| Venue / year | arXiv, 2022 |
+| Publication status | Preprint |
+| Bibliographic verification | verified |
+| CCF 2026 | None |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://arxiv.org/abs/2210.06671) · [Code](https://github.com/SixuLi/WBFusionAndLMC) |
+| Problem | Network parameters cannot be directly compared across unaligned hidden units. |
+| Mechanism | Alternate weight and transport-coupling updates layerwise; recurrent extensions add Gromov-Wasserstein terms for hidden-to-hidden relations. |
+| Contribution | Connects multi-model fusion with Wasserstein/Gromov-Wasserstein barycenters and empirical mode-connectivity analysis. |
+| Assumptions | Shared input layer and layer count in the stated fully connected construction; chosen target widths and accessible weights. |
+| Evidence boundary | A related alignment foundation, not a complete federated protocol. Architecture-specific constructions and empirical connectivity do not guarantee arbitrary network compatibility or privacy. |
+| Evidence | [Official bibliographic identity](https://arxiv.org/abs/2210.06671); [Author preprint pp.4–6, §§2–3; same-input/depth assumption and alternating solver](https://arxiv.org/pdf/2210.06671); [Author publication list, Others: Preprint](https://sixuli.github.io/); [PDF p.1, author code footnote](https://arxiv.org/pdf/2210.06671) |
 
 ## Data-Free Knowledge Distillation for Heterogeneous Federated Learning
 
@@ -1548,6 +2041,23 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Assumptions | Compatible network structure and output semantics are required; activation-based costs use samples. |
 | Evidence boundary | The procedure is greedy by layer because joint alignment is intractable. Weight-only and activation-based variants have different data requirements; arbitrary architectural compatibility is not established. |
 | Evidence | [Official publication metadata and abstract](https://proceedings.nips.cc/paper_files/paper/2020/hash/fb2697869f56484404c8ceee2985b01d-Abstract.html); [§§3–4.1, PDF pp.3–6](https://proceedings.neurips.cc/paper_files/paper/2020/file/fb2697869f56484404c8ceee2985b01d-Paper.pdf) |
+
+## Tackling the Objective Inconsistency Problem in Heterogeneous Federated Optimization
+
+| Field | Details |
+| --- | --- |
+| Venue / year | Conference on Neural Information Processing Systems, 2020 |
+| Publication status | Published |
+| Bibliographic verification | verified |
+| CCF 2026 | A |
+| Reading depth | section-reviewed |
+| Links | [Paper](https://proceedings.neurips.cc/paper/2020/hash/564127c03caab942e503ee6f810f54fd-Abstract.html) |
+| Problem | Unequal local solver steps can make standard aggregation optimize an unintended weighted objective. |
+| Mechanism | Represent each local solver update as a weighted gradient accumulation, normalize its scale and aggregate it with the desired population weights and an effective global step size. The framework covers several local solver choices. |
+| Contribution | Provides a foundational aggregation correction that disentangles client participation or work from the intended federated objective. |
+| Assumptions | Shared parameter coordinates and access to local solver/update-normalization information; analysis uses smoothness, bounded variance/dissimilarity and suitable step sizes. |
+| Evidence boundary | A training-time optimizer using local-update metadata is not a merger for arbitrary independently trained checkpoints. Objective consistency does not imply demographic fairness, Byzantine robustness or privacy. |
+| Evidence | [Official publication metadata and abstract](https://proceedings.neurips.cc/paper/2020/hash/564127c03caab942e503ee6f810f54fd-Abstract.html); [Final NeurIPS PDF pp.5–6, Sections 4.1–4.2: normalized update framework and objective inconsistency; p.8, Section 5 and Theorem 3: FedNova and assumptions](https://proceedings.neurips.cc/paper/2020/file/564127c03caab942e503ee6f810f54fd-Paper.pdf) |
 
 ## Bayesian Nonparametric Federated Learning of Neural Networks
 

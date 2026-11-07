@@ -2,7 +2,7 @@
   "schema_version": 2,
   "curation_date": "2026-11-07",
   "scope": "Trustworthy Model Fusion and Collaboration",
-  "search_status": "staged purposive search with recorded citation expansion; not exhaustive",
+  "search_status": "Staged purposive search; federated reference-list crosswalk and previous candidate queue checked on 2026-11-07; not exhaustive.",
   "papers": [
     {
       "id": "ditto2021",
@@ -68,7 +68,9 @@
         "category": "人工智能",
         "table_rank": "A"
       },
-      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked."
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "federated_view_group": "Personalization and multi-federation collaboration",
+      "federated_setting": "Personalized training regularized toward a shared global model."
     },
     {
       "id": "afl2019",
@@ -133,7 +135,9 @@
         "category": "人工智能",
         "table_rank": "A"
       },
-      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked."
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "federated_view_group": "Privacy, fairness, robustness and attribution",
+      "federated_setting": "Worst-case client-mixture risk is an explicit federated optimization objective."
     },
     {
       "id": "warm2024",
@@ -267,7 +271,9 @@
         "category": "人工智能",
         "table_rank": "A"
       },
-      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked."
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "federated_view_group": "Alignment and knowledge transfer",
+      "federated_setting": "A server generator transfers synthesized latent knowledge back to local learners."
     },
     {
       "id": "fedavg2017",
@@ -334,7 +340,9 @@
         "category": "人工智能",
         "table_rank": "C"
       },
-      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the C-class table. Both extracted text and rendered PDF page were checked."
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the C-class table. Both extracted text and rendered PDF page were checked.",
+      "federated_view_group": "Aggregation and heterogeneous training",
+      "federated_setting": "Repeated local optimization and server averaging of compatible updates."
     },
     {
       "id": "safe_merge2026",
@@ -842,7 +850,9 @@
         "category": "人工智能",
         "table_rank": "A"
       },
-      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked."
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "federated_view_group": "Privacy, fairness, robustness and attribution",
+      "federated_setting": "Byzantine-resilient update selection under stated assumptions; aggregation foundation."
     },
     {
       "id": "mergebackdoor2025",
@@ -975,7 +985,9 @@
         "category": "网络与信息安全",
         "table_rank": "B"
       },
-      "ccf_basis": "The CCF 2026 formal directory places RAID in the B-class network and information security conference table; text and rendered page checked. The directory retains the historical venue title and DBLP RAID series URL."
+      "ccf_basis": "The CCF 2026 formal directory places RAID in the B-class network and information security conference table; text and rendered page checked. The directory retains the historical venue title and DBLP RAID series URL.",
+      "federated_view_group": "Privacy, fairness, robustness and attribution",
+      "federated_setting": "Coordinated-client defenses using update similarity and history."
     },
     {
       "id": "fltrust2021",
@@ -1034,7 +1046,9 @@
         "category": "网络与信息安全",
         "table_rank": "A"
       },
-      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked."
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "federated_view_group": "Privacy, fairness, robustness and attribution",
+      "federated_setting": "Trusted server reference data guide client-update weighting and magnitude normalization."
     },
     {
       "id": "privfusion2024",
@@ -1126,7 +1140,9 @@
       },
       "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
       "reviewed_version": "arXiv:2311.03396v1, 5 November 2023; author preprint titled Differentially Private Pre-Trained Model Fusion using Decentralized Federated Graph Matching; final TKDE text not reviewed",
-      "publication_date_note": "Final issue December 2024 (Crossref published-print). Crossref has no published-online date; its created timestamp 2024-08-21 is a DOI record creation date, not asserted as online publication date."
+      "publication_date_note": "Final issue December 2024 (Crossref published-print). Crossref has no published-online date; its created timestamp 2024-08-21 is a DOI record creation date, not asserted as online publication date.",
+      "federated_view_group": "Privacy, fairness, robustness and attribution",
+      "federated_setting": "Decentralized private graph matching; mechanism reading uses the qualified author version."
     },
     {
       "id": "modeltrip2024",
@@ -1211,7 +1227,9 @@
       },
       "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
       "reviewed_version": "Final-publication abstract and publisher-deposited bibliographic metadata; full text not accessed",
-      "publication_date_note": "ICDE 2024 conference publication (Crossref published-print 13 May 2024); IEEE page reports added to Xplore 23 July 2024. No distinct online-publication date established."
+      "publication_date_note": "ICDE 2024 conference publication (Crossref published-print 13 May 2024); IEEE page reports added to Xplore 23 July 2024. No distinct online-publication date established.",
+      "federated_view_group": "Personalization and multi-federation collaboration",
+      "federated_setting": "Cross-federation healthcare fusion with privacy/fairness objectives; abstract-level evidence."
     },
     {
       "id": "badmerging2024",
@@ -1341,7 +1359,9 @@
         "category": "网络与信息安全",
         "table_rank": "A"
       },
-      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked."
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "federated_view_group": "Privacy, fairness, robustness and attribution",
+      "federated_setting": "Secure aggregation combined with proofs of contribution norm bounds."
     },
     {
       "id": "secureagg2017",
@@ -1407,7 +1427,9 @@
         "category": "网络与信息安全",
         "table_rank": "A"
       },
-      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked."
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "federated_view_group": "Privacy, fairness, robustness and attribution",
+      "federated_setting": "Cryptographic aggregate access; a protocol foundation rather than a merging algorithm."
     },
     {
       "id": "feddf2020",
@@ -1469,7 +1491,9 @@
         "category": "人工智能",
         "table_rank": "A"
       },
-      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked."
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "federated_view_group": "Alignment and knowledge transfer",
+      "federated_setting": "Server distillation of teacher predictions into architecture-specific students."
     },
     {
       "id": "task2vec",
@@ -1766,7 +1790,9 @@
         "category": "人工智能",
         "table_rank": "A"
       },
-      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked."
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "federated_view_group": "Related foundations and model reuse",
+      "federated_setting": "Layerwise optimal-transport alignment; broader model-fusion foundation."
     },
     {
       "id": "gitrebasin",
@@ -2947,7 +2973,9 @@
         "category": "人工智能",
         "table_rank": "A"
       },
-      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked."
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "federated_view_group": "Personalization and multi-federation collaboration",
+      "federated_setting": "Constrained low-rank training supports closed-form continual federated merging."
     },
     {
       "id": "time",
@@ -4819,7 +4847,9 @@
         "sha256": "3d04f4c1ad81b40cbdd1f99b58b2c22323daf9fc6031ae00717d476b967e2c9f"
       },
       "original_review_depth": "section-reviewed",
-      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the B-class table. Both extracted text and rendered PDF page were checked."
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the B-class table. Both extracted text and rendered PDF page were checked.",
+      "federated_view_group": "Privacy, fairness, robustness and attribution",
+      "federated_setting": "Privacy-preserving evolutionary merging of personalized language models."
     },
     {
       "id": "phimm2025",
@@ -4961,7 +4991,9 @@
         "table_rank": "A"
       },
       "original_review_depth": "abstract-reviewed",
-      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked."
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "federated_view_group": "Privacy, fairness, robustness and attribution",
+      "federated_setting": "Selective cross-party distillation for heterogeneous label knowledge."
     },
     {
       "id": "dpmodelmerging2026",
@@ -5398,7 +5430,9 @@
         "sha256": "5ac13b808e89b388107a4975f29695000239a42e5b94712544fefd79015dbdae"
       },
       "original_review_depth": "section-reviewed",
-      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked."
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "federated_view_group": "Privacy, fairness, robustness and attribution",
+      "federated_setting": "Attribution-guided selection of shared distillation information."
     },
     {
       "id": "fedaux2023",
@@ -5474,7 +5508,9 @@
       "preprint_url": "https://arxiv.org/abs/2102.02514",
       "publication_notes": "Final issue year 2023, volume 34(9), pp.5531–5543; DOI contains 2021 (early-access identifier).",
       "original_review_depth": "section-reviewed",
-      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the B-class table. Both extracted text and rendered PDF page were checked."
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the B-class table. Both extracted text and rendered PDF page were checked.",
+      "federated_view_group": "Privacy, fairness, robustness and attribution",
+      "federated_setting": "Auxiliary-data distillation with protected certainty-weight estimation."
     },
     {
       "id": "shapleyfl2023",
@@ -5552,7 +5588,9 @@
         "sha256": "708809f6ed15f938b75a0935c89796cd1a30788cc1fef46e00475007432d44c4"
       },
       "original_review_depth": "section-reviewed",
-      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked."
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "federated_view_group": "Privacy, fairness, robustness and attribution",
+      "federated_setting": "Estimated marginal utility informs federated weighting and participation."
     },
     {
       "id": "scalablepate2018",
@@ -6272,7 +6310,9 @@
         "table_rank": "C"
       },
       "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the C-class table. Both extracted text and rendered PDF page were checked.",
-      "number": "6"
+      "number": "6",
+      "federated_view_group": "Related federated surveys",
+      "federated_setting": "Survey of trustworthy federated learning; broader than model fusion."
     },
     {
       "id": "qi2024aggregation",
@@ -6349,7 +6389,9 @@
         "category": "计算机体系结构/并行与分布计算/存储系统",
         "table_rank": "C"
       },
-      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the C-class table. Both extracted text and rendered PDF page were checked."
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the C-class table. Both extracted text and rendered PDF page were checked.",
+      "federated_view_group": "Related federated surveys",
+      "federated_setting": "Federated aggregation survey; current reading remains at the abstract level."
     },
     {
       "id": "ji2024emerging",
@@ -6443,7 +6485,9 @@
         }
       },
       "ccf_basis": "No acronym or full-name match in all 72 text-extracted pages of the formal directory, after case-folding and removal of whitespace/punctuation.",
-      "number": "9"
+      "number": "9",
+      "federated_view_group": "Related federated surveys",
+      "federated_setting": "Survey connecting federated model fusion with broader federated paradigms."
     },
     {
       "id": "fan2026transmission",
@@ -7119,7 +7163,9 @@
         "category": "交叉/综合/新兴",
         "table_rank": "B"
       },
-      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the B-class table. Extracted text and rendered PDF pages were checked during the coverage audit."
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the B-class table. Extracted text and rendered PDF pages were checked during the coverage audit.",
+      "federated_view_group": "Personalization and multi-federation collaboration",
+      "federated_setting": "Hierarchical model-agent links organize evolving multi-federation collaboration."
     },
     {
       "id": "metafed2024",
@@ -7197,7 +7243,9 @@
       "volume": "35",
       "issue": "11",
       "pages": "16671--16682",
-      "publication_version_note": "Final journal year2024 verified from publisher-deposited metadata; DOI includes2023. Technical reading used accepted author manuscript v3, not an asserted byte-identical publisher PDF."
+      "publication_version_note": "Final journal year2024 verified from publisher-deposited metadata; DOI includes2023. Technical reading used accepted author manuscript v3, not an asserted byte-identical publisher PDF.",
+      "federated_view_group": "Personalization and multi-federation collaboration",
+      "federated_setting": "Cyclic knowledge distillation followed by federation-specific personalization."
     },
     {
       "id": "fedtam2023",
@@ -7267,7 +7315,9 @@
       "bibtex_provenance": "https://api.crossref.org/works/10.1109/ICPADS60453.2023.00180",
       "pages": "1246--1253",
       "access_note": "IEEE page returned an empty body or JavaScript verification. No full paper was obtained; no captcha bypass attempted.",
-      "ccf_pending_note": "Venue ICPADS-C checked during the coverage audit in CCF2026 formal PDF pp.8–9, row20; individual full/regular-paper track remains unverified. Page count or Oral status alone is not track evidence."
+      "ccf_pending_note": "Venue ICPADS-C checked during the coverage audit in CCF2026 formal PDF pp.8–9, row20; individual full/regular-paper track remains unverified. Page count or Oral status alone is not track evidence.",
+      "federated_view_group": "Personalization and multi-federation collaboration",
+      "federated_setting": "Cyclic transfer with feature-attention multi-teacher distillation; abstract-level evidence."
     },
     {
       "ccf_rank": "A",
@@ -7548,7 +7598,9 @@
       "relationship": "core",
       "bibtex_provenance": "https://proceedings.mlr.press/v97/yurochkin19a.html",
       "pages": "7252--7261",
-      "verification_notes": "PFNM is the method name, not the final publication title. PMLR abbreviates author Nghia Hoang; the final PDF gives Trong Nghia Hoang. Earlier ICLR under-review version is not used as the final venue."
+      "verification_notes": "PFNM is the method name, not the final publication title. PMLR abbreviates author Nghia Hoang; the final PDF gives Trong Nghia Hoang. Earlier ICLR under-review version is not used as the final venue.",
+      "federated_view_group": "Alignment and knowledge transfer",
+      "federated_setting": "Bayesian neuron matching and global-width estimation from local weights."
     },
     {
       "id": "fedma2020",
@@ -7619,7 +7671,9 @@
       "checked_on": "2026-11-07",
       "relationship": "core",
       "bibtex_provenance": "https://openreview.net/forum?id=BkluqlSFDS",
-      "verification_notes": "OpenReview forum/PDF returned access verification. Publication status and code cross-checked on IBM Research; technical reading uses the author arXiv PDF with ICLR 2020 header."
+      "verification_notes": "OpenReview forum/PDF returned access verification. Publication status and code cross-checked on IBM Research; technical reading uses the author arXiv PDF with ICLR 2020 header.",
+      "federated_view_group": "Alignment and knowledge transfer",
+      "federated_setting": "Layerwise matching interleaved with client retraining."
     },
     {
       "id": "fedmd2019",
@@ -7677,7 +7731,9 @@
       "checked_on": "2026-11-07",
       "relationship": "core",
       "bibtex_provenance": "https://federated-learning.org/fl-neurips-2019/",
-      "verification_notes": "Official workshop program identifies both authors and title at 11:50–12:00 on 2019-12-13. The paper footer says NeurIPS, but this is a companion workshop, not NeurIPS main. Preserve the paper/arXiv spelling Heterogenous."
+      "verification_notes": "Official workshop program identifies both authors and title at 11:50–12:00 on 2019-12-13. The paper footer says NeurIPS, but this is a companion workshop, not NeurIPS main. Preserve the paper/arXiv spelling Heterogenous.",
+      "federated_view_group": "Alignment and knowledge transfer",
+      "federated_setting": "Public-example score exchange, consensus distillation and local training."
     },
     {
       "id": "fedgkt2020",
@@ -7742,7 +7798,9 @@
       "checked_on": "2026-11-07",
       "relationship": "core",
       "bibtex_provenance": "https://proceedings.neurips.cc/paper/2020/hash/a1d4c20b182ad7137ab3606f0e3fc8a4-Abstract.html",
-      "verification_notes": "Official paper links the general FedML project, but no exact verified paper-specific source path was recovered; code_url is left null."
+      "verification_notes": "Official paper links the general FedML project, but no exact verified paper-specific source path was recovered; code_url is left null.",
+      "federated_view_group": "Alignment and knowledge transfer",
+      "federated_setting": "Bidirectional client/server learning through features, labels and predictions."
     },
     {
       "id": "fedbe2021",
@@ -7810,7 +7868,9 @@
       "checked_on": "2026-11-07",
       "relationship": "core",
       "bibtex_provenance": "https://openreview.net/forum?id=dgtpE6gKjHn",
-      "verification_notes": "OpenReview direct access was blocked; indexed official PDF identifies ICLR 2021. Author arXiv v4 has the same conference header and author list. Original arXiv year 2020 is not the publication year."
+      "verification_notes": "OpenReview direct access was blocked; indexed official PDF identifies ICLR 2021. Author arXiv v4 has the same conference header and author list. Original arXiv year 2020 is not the publication year.",
+      "federated_view_group": "Alignment and knowledge transfer",
+      "federated_setting": "Sample compatible client-weight distributions and distill on unlabeled server inputs."
     },
     {
       "id": "cronus2021",
@@ -7870,7 +7930,9 @@
       "checked_on": "2026-11-07",
       "relationship": "core",
       "bibtex_provenance": "https://neurips2021workshopfl.github.io/NFFL-2021/paper.html",
-      "verification_notes": "Workshop accepted-paper list and PDF footer establish NFFL 2021. The earlier arXiv is 2019; ICLR 2022 under-review PDF does not establish main-conference acceptance. Author order/name normalized to workshop program (PDF reverses Chang Hongyan)."
+      "verification_notes": "Workshop accepted-paper list and PDF footer establish NFFL 2021. The earlier arXiv is 2019; ICLR 2022 under-review PDF does not establish main-conference acceptance. Author order/name normalized to workshop program (PDF reverses Chang Hongyan).",
+      "federated_view_group": "Privacy, fairness, robustness and attribution",
+      "federated_setting": "Robust public-data prediction aggregation followed by local distillation."
     },
     {
       "id": "gamf2022",
@@ -7938,7 +8000,9 @@
       "checked_on": "2026-11-07",
       "relationship": "core",
       "bibtex_provenance": "https://proceedings.mlr.press/v162/liu22k.html",
-      "pages": "13857--13869"
+      "pages": "13857--13869",
+      "federated_view_group": "Alignment and knowledge transfer",
+      "federated_setting": "Graph matching aligns channel relations before model combination."
     },
     {
       "id": "fedpan2022",
@@ -8008,7 +8072,2295 @@
       "relationship": "core",
       "bibtex_provenance": "https://openaccess.thecvf.com/content/CVPR2022/html/Li_Federated_Learning_With_Position-Aware_Neurons_CVPR_2022_paper.html",
       "pages": "10082--10091",
-      "verification_notes": "Use PANs / FL with PANs as method name; FedPAN is the author code-repository name, not FedPA. CVF official pages resolve an older cited page-range mismatch. Author-code provenance not independently established from the retrieved paper, so code_url remains null."
+      "verification_notes": "Use PANs / FL with PANs as method name; FedPAN is the author code-repository name, not FedPA. CVF official pages resolve an older cited page-range mismatch. Author-code provenance not independently established from the retrieved paper, so code_url remains null.",
+      "federated_view_group": "Aggregation and heterogeneous training",
+      "federated_setting": "Training-time position encodings prepare neurons for subsequent averaging."
+    },
+    {
+      "id": "fedftg2022",
+      "bibtex_key": "fedftg2022",
+      "title": "Fine-tuning Global Model via Data-Free Knowledge Distillation for Non-IID Federated Learning",
+      "authors": [
+        "Lin Zhang",
+        "Li Shen",
+        "Liang Ding",
+        "Dacheng Tao",
+        "Ling-Yu Duan"
+      ],
+      "venue_full_name": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+      "venue_abbreviation": "CVPR",
+      "year": 2022,
+      "publication_type": "conference",
+      "publication_track": "full-paper",
+      "publication_status": "published",
+      "doi": "10.1109/CVPR52688.2022.00993",
+      "official_url": "https://openaccess.thecvf.com/content/CVPR2022/html/Zhang_Fine-Tuning_Global_Model_via_Data-Free_Knowledge_Distillation_for_Non-IID_Federated_CVPR_2022_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_Fine-Tuning_Global_Model_via_Data-Free_Knowledge_Distillation_for_Non-IID_Federated_CVPR_2022_paper.pdf",
+      "code_url": null,
+      "code_verification_source": null,
+      "primary_category": "representation",
+      "subcategory": "Behavioral Alignment and Distillation",
+      "secondary_tags": [
+        "federated-coverage-audit"
+      ],
+      "research_problem": "Direct aggregation can lose client knowledge under non-IID data.",
+      "key_idea": "Repair the averaged server model through generated hard examples.",
+      "technical_mechanism": "Alternate conditional-generator training and distillation from client models into the global model; label sampling and class-weighted teacher contributions address label imbalance.",
+      "assumptions": "Server receives compatible client models and client label-distribution statistics; local training remains data-dependent.",
+      "main_contribution": "Adds server-side knowledge transfer after averaging, unlike FedGen generator feedback to clients.",
+      "limitations": "No raw server training set is required, but models/statistics are exposed and extra generator/student optimization is required. This access arrangement alone is not differential privacy.",
+      "evidence_source": [
+        {
+          "url": "https://api.crossref.org/works/10.1109/CVPR52688.2022.00993",
+          "locator": "Publisher-deposited final title, all authors, DOI and pages"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Zhang_Fine-Tuning_Global_Model_via_Data-Free_Knowledge_Distillation_for_Non-IID_Federated_CVPR_2022_paper.html",
+          "locator": "CVF accepted record; alternative pagination 10174–10183"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_Fine-Tuning_Global_Model_via_Data-Free_Knowledge_Distillation_for_Non-IID_Federated_CVPR_2022_paper.pdf",
+          "locator": "PDF pp.3–5, §3, Algorithms 1–2"
+        }
+      ],
+      "verification_status": "verified",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "CVF accepted PDF pp.3–5, §3 and Algorithms 1–2; server access and hard-sample generation"
+      ],
+      "record_type": "paper",
+      "relationship": "core",
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_rank": "A",
+      "ccf_verification_status": "verified",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "ccf_locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 4,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "bibtex_provenance": "https://openaccess.thecvf.com/content/CVPR2022/html/Zhang_Fine-Tuning_Global_Model_via_Data-Free_Knowledge_Distillation_for_Non-IID_Federated_CVPR_2022_paper.html",
+      "pages": "10164--10173",
+      "metadata_notes": "IEEE-deposited Crossref final proceedings pagination is 10164–10173; the CVF accepted-version page/PDF uses 10174–10183. The final IEEE range is exported; technical locators use PDF page indices.",
+      "federated_view_group": "Alignment and knowledge transfer",
+      "federated_setting": "Generator-assisted server distillation refines global models across rounds."
+    },
+    {
+      "id": "wbfusion2022",
+      "bibtex_key": "wbfusion2022",
+      "title": "Wasserstein Barycenter-based Model Fusion and Linear Mode Connectivity of Neural Networks",
+      "authors": [
+        "Aditya Kumar Akash",
+        "Sixu Li",
+        "Nicolás García Trillos"
+      ],
+      "venue_full_name": "arXiv",
+      "venue_abbreviation": "arXiv",
+      "year": 2022,
+      "publication_type": "preprint",
+      "publication_track": "preprint",
+      "publication_status": "preprint",
+      "doi": "10.48550/arXiv.2210.06671",
+      "official_url": "https://arxiv.org/abs/2210.06671",
+      "pdf_url": "https://arxiv.org/pdf/2210.06671",
+      "code_url": "https://github.com/SixuLi/WBFusionAndLMC",
+      "code_verification_source": "https://arxiv.org/pdf/2210.06671",
+      "primary_category": "representation",
+      "subcategory": "Parameter and Representation Alignment",
+      "secondary_tags": [
+        "federated-coverage-audit"
+      ],
+      "research_problem": "Network parameters cannot be directly compared across unaligned hidden units.",
+      "key_idea": "Interpret layers as probability measures and construct a barycenter network.",
+      "technical_mechanism": "Alternate weight and transport-coupling updates layerwise; recurrent extensions add Gromov-Wasserstein terms for hidden-to-hidden relations.",
+      "assumptions": "Shared input layer and layer count in the stated fully connected construction; chosen target widths and accessible weights.",
+      "main_contribution": "Connects multi-model fusion with Wasserstein/Gromov-Wasserstein barycenters and empirical mode-connectivity analysis.",
+      "limitations": "A related alignment foundation, not a complete federated protocol. Architecture-specific constructions and empirical connectivity do not guarantee arbitrary network compatibility or privacy.",
+      "evidence_source": [
+        {
+          "url": "https://arxiv.org/abs/2210.06671",
+          "locator": "Official bibliographic identity"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2210.06671",
+          "locator": "Author preprint pp.4–6, §§2–3; same-input/depth assumption and alternating solver"
+        },
+        {
+          "url": "https://sixuli.github.io/",
+          "locator": "Author publication list, Others: Preprint"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2210.06671",
+          "locator": "PDF p.1, author code footnote"
+        }
+      ],
+      "verification_status": "verified",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Author preprint pp.4–6, §§2–3; same-input/depth assumption and alternating solver"
+      ],
+      "record_type": "paper",
+      "relationship": "related-foundation",
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_rank": "None",
+      "ccf_verification_status": "verified",
+      "ccf_verification_source": "https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml",
+      "ccf_basis": "Preprint has no peer-reviewed venue rank under the catalogue rules.",
+      "ccf_locator": {
+        "reason": "arXiv-only preprint; not a ranked venue"
+      },
+      "bibtex_provenance": "https://arxiv.org/abs/2210.06671",
+      "version_note": "Author homepage still labels this work Preprint; the located ICLR 2023 page is under review and is not acceptance evidence.",
+      "federated_view_group": "Related foundations and model reuse",
+      "federated_setting": "Wasserstein-barycenter construction; not a complete federated protocol."
+    },
+    {
+      "id": "taskarithmeticfl2025",
+      "bibtex_key": "taskarithmeticfl2025",
+      "title": "Task Arithmetic Through The Lens Of One-Shot Federated Learning",
+      "authors": [
+        "Zhixu Silvia Tao",
+        "Ian Mason",
+        "Sanjeev Kulkarni",
+        "Xavier Boix"
+      ],
+      "venue_full_name": "Transactions on Machine Learning Research",
+      "venue_abbreviation": "TMLR",
+      "year": 2025,
+      "publication_type": "journal",
+      "publication_track": "journal-article",
+      "publication_status": "published",
+      "doi": null,
+      "official_url": "https://openreview.net/forum?id=Cgyo7S7Oy0",
+      "pdf_url": "https://arxiv.org/pdf/2411.18607v2",
+      "code_url": "https://github.com/SilviaTao/one_shot_fl_task_arithmetic",
+      "code_verification_source": "https://openreview.net/pdf?id=Cgyo7S7Oy0",
+      "primary_category": "representation",
+      "subcategory": "Foundations and Scope",
+      "secondary_tags": [
+        "federated-coverage-audit"
+      ],
+      "research_problem": "The relationship between task-vector merging and federated optimization needs explicit conditions.",
+      "key_idea": "Express task arithmetic as a scaled one-round FedAvg update.",
+      "technical_mechanism": "Compare common-base local-SGD equations, with outer step size beta=lambda*T, then apply heterogeneity analysis and federated aggregation alternatives.",
+      "assumptions": "Common initialization and compatible parameters; transferred bounds impose their own SGD, smoothness, noise and objective assumptions.",
+      "main_contribution": "Separates data heterogeneity from differences in local training when interpreting merge behavior.",
+      "limitations": "Algebraic correspondence does not certify a federated deployment or transfer convergence guarantees to arbitrary optimizers, architectures or adapters. Proofs were not independently rederived.",
+      "evidence_source": [
+        {
+          "url": "https://openreview.net/forum?id=Cgyo7S7Oy0",
+          "locator": "Official bibliographic identity"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2411.18607v2",
+          "locator": "Accepted author version v2, publication header TMLR 05/2025; pp.4–6 §§3–4, equations 2–4 and assumptions 4.2–4.5"
+        },
+        {
+          "url": "https://openreview.net/pdf?id=Cgyo7S7Oy0",
+          "locator": "Indexed final PDF first page, Published in Transactions on Machine Learning Research (05/2025)"
+        }
+      ],
+      "verification_status": "verified",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Accepted author version v2, publication header TMLR 05/2025; pp.4–6 §§3–4, equations 2–4 and assumptions 4.2–4.5"
+      ],
+      "record_type": "paper",
+      "relationship": "related-foundation",
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_rank": "None",
+      "ccf_verification_status": "verified",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_basis": "No acronym or full-name match in all 72 text-extracted pages of the formal directory, after case-folding and removal of whitespace/punctuation.",
+      "ccf_locator": {
+        "pdf_pages_checked": "1-72",
+        "nonempty_text_pages": 72,
+        "search_terms": [
+          "TMLR",
+          "Transactions on Machine Learning Research"
+        ],
+        "matching_pages": {
+          "TMLR": [],
+          "Transactions on Machine Learning Research": []
+        }
+      },
+      "bibtex_provenance": "https://openreview.net/forum?id=Cgyo7S7Oy0",
+      "preprint_url": "https://arxiv.org/abs/2411.18607",
+      "version_note": "Final TMLR publication is May 2025; the reference Awesome list still uses the 2024 preprint. OpenReview indexed final PDF and author v2 both carry the TMLR publication header.",
+      "federated_view_group": "Related foundations and model reuse",
+      "federated_setting": "Conditional connection between task arithmetic and one-round FedAvg."
+    },
+    {
+      "id": "heteroflprivacy2024",
+      "bibtex_key": "heteroflprivacy2024",
+      "title": "Breaking Privacy in Model-Heterogeneous Federated Learning",
+      "authors": [
+        "Atharva Haldankar",
+        "Arman Riasi",
+        "Hoang-Dung Nguyen",
+        "Tran Viet Xuan Phuong",
+        "Thang Hoang"
+      ],
+      "venue_full_name": "International Symposium on Research in Attacks, Intrusions and Defenses",
+      "venue_abbreviation": "RAID",
+      "year": 2024,
+      "publication_type": "conference",
+      "publication_track": "full-paper",
+      "publication_status": "published",
+      "doi": "10.1145/3678890.3678905",
+      "official_url": "https://doi.org/10.1145/3678890.3678905",
+      "pdf_url": "https://thanghoang.github.io/publication/24_raid_heterofl/24_raid_heteroFL.pdf",
+      "code_url": "https://github.com/vt-asaplab/model-hetero-fl-attacks",
+      "code_verification_source": "https://thanghoang.github.io/publication/24_raid_heterofl/",
+      "primary_category": "governance",
+      "subcategory": "Privacy-Preserving Fusion",
+      "secondary_tags": [
+        "federated-coverage-audit"
+      ],
+      "research_problem": "Secure aggregation can interact with nonuniform submodel assignment to expose cohort contributions.",
+      "key_idea": "Analyze the information revealed by heterogeneous partial-model aggregation.",
+      "technical_mechanism": "Studies convergence-rate and rolling-submodel attacks by a malicious coordinator, showing leakage channels in static and changing partial-training cohorts.",
+      "assumptions": "Trusted clients; coordinator controls parameter values but not client submodel architectures; attack-specific convergence, overlap and distribution conditions.",
+      "main_contribution": "Provides a counterexample to treating secure aggregation as end-to-end protection of a heterogeneous training protocol.",
+      "limitations": "Not a cryptographic break of secure aggregation or a universal attack on all heterogeneous fusion. The methods target partial-training aggregation, not every distillation system; reported experiments were not reproduced.",
+      "evidence_source": [
+        {
+          "url": "https://doi.org/10.1145/3678890.3678905",
+          "locator": "Official bibliographic identity"
+        },
+        {
+          "url": "https://thanghoang.github.io/publication/24_raid_heterofl/24_raid_heteroFL.pdf",
+          "locator": "Author-hosted final RAID PDF pp.4–6, §§4–5; system/threat model and two attacks"
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1145/3678890.3678905",
+          "locator": "ACM-deposited metadata and final pagination; author-name shortening noted"
+        }
+      ],
+      "verification_status": "verified",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Author-hosted final RAID PDF pp.4–6, §§4–5; system/threat model and two attacks"
+      ],
+      "record_type": "paper",
+      "relationship": "core",
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_rank": "B",
+      "ccf_verification_status": "verified",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_basis": "The CCF 2026 formal directory places RAID in the B-class network and information security conference table; text and rendered page checked. The directory retains the historical venue title and DBLP RAID series URL.",
+      "ccf_locator": {
+        "pdf_page_1_based": 21,
+        "page_numbering": "PDF page including cover",
+        "table_row": 9,
+        "category": "网络与信息安全",
+        "table_rank": "B"
+      },
+      "bibtex_provenance": "https://doi.org/10.1145/3678890.3678905",
+      "pages": "465--479",
+      "metadata_notes": "The publisher-deposited metadata and author web page shorten the fourth author to Tran Phuong; the final PDF prints Tran Viet Xuan Phuong, retained here.",
+      "federated_view_group": "Privacy, fairness, robustness and attribution",
+      "federated_setting": "Attack analysis of partial-model aggregation under a malicious coordinator."
+    },
+    {
+      "id": "fedfisher2024",
+      "title": "FedFisher: Leveraging Fisher Information for One-Shot Federated Learning",
+      "authors": [
+        "Divyansh Jhunjhunwala",
+        "Shiqiang Wang",
+        "Gauri Joshi"
+      ],
+      "venue_full_name": "International Conference on Artificial Intelligence and Statistics",
+      "venue_abbreviation": "AISTATS",
+      "year": 2024,
+      "publication_type": "conference",
+      "publication_track": "full-paper",
+      "ccf_rank": "C",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 59,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 1,
+        "category": "人工智能",
+        "table_rank": "C"
+      },
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the C-class table. Both extracted text and rendered PDF page were checked.",
+      "doi": null,
+      "official_url": "https://proceedings.mlr.press/v238/jhunjhunwala24a.html",
+      "pdf_url": "https://proceedings.mlr.press/v238/jhunjhunwala24a/jhunjhunwala24a.pdf",
+      "code_url": null,
+      "code_verification_source": null,
+      "primary_category": "representation",
+      "subcategory": "Parameter and Representation Alignment",
+      "secondary_tags": [
+        "federated",
+        "one-shot",
+        "Fisher-information",
+        "curvature-weighted-fusion"
+      ],
+      "research_problem": "Averaging locally trained models can lose accuracy when only one model-upload round is allowed.",
+      "key_idea": "Use local Fisher information to weight parameter directions in an approximate Bayesian fusion objective.",
+      "technical_mechanism": "Clients train from a common initialization and send weights with Fisher approximations; the server minimizes a Fisher-weighted quadratic discrepancy. Diagonal and KFAC variants reduce the cost of the full Fisher matrix.",
+      "assumptions": "Compatible parameter coordinates and common initialization; clients retain data to estimate Fisher information; the server receives weights and Fisher summaries.",
+      "main_contribution": "Connects one-shot aggregation to local posterior curvature, with restricted theory and practical approximations.",
+      "limitations": "The overparameterized two-layer ReLU result uses full Fisher information and does not directly establish the same guarantee for diagonal/KFAC variants. KFAC factors require individual server access in the discussed implementation. Inversion experiments and optional secure aggregation are not a differential-privacy guarantee; closeness to local models is not demographic fairness.",
+      "evidence_source": [
+        {
+          "url": "https://proceedings.mlr.press/v238/jhunjhunwala24a.html",
+          "locator": "Official publication metadata and abstract"
+        },
+        {
+          "url": "https://proceedings.mlr.press/v238/jhunjhunwala24a/jhunjhunwala24a.pdf",
+          "locator": "Final proceedings PDF pp.3–4, Section 2 and Algorithm 1: local posteriors, Fisher fusion and common initialization; pp.6–7, Section 4: approximations and secure-aggregation distinction"
+        }
+      ],
+      "verification_status": "verified",
+      "bibtex_key": "fedfisher2024",
+      "record_type": "paper",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Final proceedings PDF pp.3–4, Section 2 and Algorithm 1: local posteriors, Fisher fusion and common initialization; pp.6–7, Section 4: approximations and secure-aggregation distinction"
+      ],
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "relationship": "core",
+      "bibtex_provenance": "https://proceedings.mlr.press/v238/jhunjhunwala24a.html",
+      "volume": "238",
+      "pages": "1612--1620",
+      "federated_view_group": "One-shot and decentralized fusion",
+      "federated_setting": "One-shot combination of common-initialization models using Fisher statistics."
+    },
+    {
+      "id": "fusefl2024",
+      "title": "FuseFL: One-Shot Federated Learning through the Lens of Causality with Progressive Model Fusion",
+      "authors": [
+        "Zhenheng Tang",
+        "Yonggang Zhang",
+        "Peijie Dong",
+        "Yiu-ming Cheung",
+        "Amelie Chi Zhou",
+        "Bo Han",
+        "Xiaowen Chu"
+      ],
+      "venue_full_name": "Conference on Neural Information Processing Systems",
+      "venue_abbreviation": "NeurIPS",
+      "year": 2024,
+      "publication_type": "conference",
+      "publication_track": "full-paper",
+      "ccf_rank": "A",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 2,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "doi": "10.52202/079017-0891",
+      "official_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/31e6e0c09325a3be16d93f84e40e0c7e-Abstract-Conference.html",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/31e6e0c09325a3be16d93f84e40e0c7e-Paper-Conference.pdf",
+      "code_url": "https://github.com/wizard1203/FuseFL",
+      "code_verification_source": "https://proceedings.neurips.cc/paper_files/paper/2024/file/31e6e0c09325a3be16d93f84e40e0c7e-Paper-Conference.pdf",
+      "primary_category": "representation",
+      "subcategory": "Parameter and Representation Alignment",
+      "secondary_tags": [
+        "federated",
+        "one-shot-budget",
+        "progressive-module-fusion",
+        "feature-concatenation",
+        "heterogeneous-models"
+      ],
+      "research_problem": "One-shot federation under distribution heterogeneity can retain spurious local features and poorly combine independently learned representations.",
+      "key_idea": "Progressively fuse local blocks and retrain subsequent blocks to use features learned across clients.",
+      "technical_mechanism": "Partition networks into blocks; train, exchange and concatenate a block across clients, adapt its output, freeze it, and continue local training on later blocks. Width adjustment controls fused-model growth.",
+      "assumptions": "Local training data remain available between block-fusion stages; block interfaces must be compatible through the prescribed adapters; staged communication and training are coordinated.",
+      "main_contribution": "Makes module composition and progressive local retraining an alternative to terminal weight averaging under a one-shot communication budget.",
+      "limitations": "The one-shot description refers to the overall communication budget and does not mean a single final exchange of fully trained checkpoints: fusion and local retraining occur in successive block stages. The causal motivation is not clinical causal identification or a general privacy guarantee.",
+      "evidence_source": [
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/31e6e0c09325a3be16d93f84e40e0c7e-Abstract-Conference.html",
+          "locator": "Official publication metadata and abstract"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/31e6e0c09325a3be16d93f84e40e0c7e-Paper-Conference.pdf",
+          "locator": "Final proceedings PDF pp.6–7, Section 4 and Figure 4: progressive block fusion, retraining, adapters and complexity"
+        }
+      ],
+      "verification_status": "verified",
+      "bibtex_key": "fusefl2024",
+      "record_type": "paper",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Final proceedings PDF pp.6–7, Section 4 and Figure 4: progressive block fusion, retraining, adapters and complexity"
+      ],
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "relationship": "core",
+      "bibtex_provenance": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/31e6e0c09325a3be16d93f84e40e0c7e-Abstract-Conference.html",
+      "volume": "37",
+      "version_note": "Use the NeurIPS 2024 main-conference publication rather than the arXiv-only label in the discovery list.",
+      "federated_view_group": "One-shot and decentralized fusion",
+      "federated_setting": "Progressive block fusion with intermediate exchanges and further local training."
+    },
+    {
+      "id": "dapperfl2024",
+      "title": "DapperFL: Domain Adaptive Federated Learning with Model Fusion Pruning for Edge Devices",
+      "authors": [
+        "Yongzhe Jia",
+        "Xuyun Zhang",
+        "Hongsheng Hu",
+        "Kim-Kwang Raymond Choo",
+        "Lianyong Qi",
+        "Xiaolong Xu",
+        "Amin Beheshti",
+        "Wanchun Dou"
+      ],
+      "venue_full_name": "Conference on Neural Information Processing Systems",
+      "venue_abbreviation": "NeurIPS",
+      "year": 2024,
+      "publication_type": "conference",
+      "publication_track": "full-paper",
+      "ccf_rank": "A",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 2,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "doi": "10.52202/079017-0417",
+      "official_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/17a1a1439421f1837e10cd612bf92861-Abstract-Conference.html",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/17a1a1439421f1837e10cd612bf92861-Paper-Conference.pdf",
+      "code_url": "https://github.com/jyzgh/DapperFL",
+      "code_verification_source": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/17a1a1439421f1837e10cd612bf92861-Abstract-Conference.html",
+      "primary_category": "governance",
+      "subcategory": "Constraint-Aware Fusion Optimization",
+      "secondary_tags": [
+        "federated",
+        "resource-heterogeneity",
+        "structured-pruning",
+        "domain-shift",
+        "training-time-fusion"
+      ],
+      "research_problem": "Resource-constrained clients have unequal model capacity while data domains differ.",
+      "key_idea": "Fuse local and global models before pruning, then regularize the pruned representation during local training.",
+      "technical_mechanism": "Each round mixes a briefly fine-tuned local model with the global model using a decaying coefficient, prunes channels to the device budget, and trains with a representation-norm penalty. The server restores missing coordinates from the previous global model before aggregation.",
+      "assumptions": "A common backbone with identifiable channel masks, local data for adaptation, and client capacity/pruning-rate information available to the server.",
+      "main_contribution": "Couples fusion, resource-aware pruning and domain-adaptive local optimization within repeated federated rounds.",
+      "limitations": "The masked shared-backbone construction does not establish fusion of arbitrary unrelated architectures. Performance under evaluated domain shifts does not imply universal robustness, and local data retention is not formal privacy protection.",
+      "evidence_source": [
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/17a1a1439421f1837e10cd612bf92861-Abstract-Conference.html",
+          "locator": "Official publication metadata and abstract"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/17a1a1439421f1837e10cd612bf92861-Paper-Conference.pdf",
+          "locator": "Final proceedings PDF pp.3–6, Sections 3.1–3.4 and Algorithm 1: fusion schedule, pruning, domain regularization and masked-model restoration"
+        }
+      ],
+      "verification_status": "verified",
+      "bibtex_key": "dapperfl2024",
+      "record_type": "paper",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Final proceedings PDF pp.3–6, Sections 3.1–3.4 and Algorithm 1: fusion schedule, pruning, domain regularization and masked-model restoration"
+      ],
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "relationship": "core",
+      "bibtex_provenance": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/17a1a1439421f1837e10cd612bf92861-Abstract-Conference.html",
+      "volume": "37",
+      "federated_view_group": "Aggregation and heterogeneous training",
+      "federated_setting": "Local/global blending, pruning and representation regularization during repeated training."
+    },
+    {
+      "id": "dimat2024",
+      "title": "DIMAT: Decentralized Iterative Merging-And-Training for Deep Learning Models",
+      "authors": [
+        "Nastaran Saadati",
+        "Minh Pham",
+        "Nasla Saleem",
+        "Joshua R. Waite",
+        "Aditya Balu",
+        "Zhanong Jiang",
+        "Chinmay Hegde",
+        "Soumik Sarkar"
+      ],
+      "venue_full_name": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+      "venue_abbreviation": "CVPR",
+      "year": 2024,
+      "publication_type": "conference",
+      "publication_track": "full-paper",
+      "ccf_rank": "A",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 4,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "doi": null,
+      "official_url": "https://openaccess.thecvf.com/content/CVPR2024/html/Saadati_DIMAT_Decentralized_Iterative_Merging-And-Training_for_Deep_Learning_Models_CVPR_2024_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Saadati_DIMAT_Decentralized_Iterative_Merging-And-Training_for_Deep_Learning_Models_CVPR_2024_paper.pdf",
+      "code_url": null,
+      "code_verification_source": null,
+      "primary_category": "evolution",
+      "subcategory": "Model Collaboration and Network Evolution",
+      "secondary_tags": [
+        "federated",
+        "decentralized",
+        "activation-matching",
+        "permutation-alignment",
+        "iterative-merging"
+      ],
+      "research_problem": "Decentralized parameter averaging can combine misaligned neurons and converge slowly under heterogeneous data.",
+      "key_idea": "Alternate local optimization with activation-based neuron matching and merging among neighboring models.",
+      "technical_mechanism": "Activation matching produces layerwise permutation matrices by a linear assignment problem; neighbors are aligned before weighted combination, and the procedure interleaves these merge steps with local SGD or adaptive optimization.",
+      "assumptions": "Compatible model layers, data for activation matching and local optimization, and a connected communication graph; convergence analysis assumes smoothness, bounded stochastic/heterogeneity terms and a spectral condition on the combined mixing/permutation operator.",
+      "main_contribution": "Treats alignment and merging as a recurring operation in decentralized collaborative training.",
+      "limitations": "The graph and spectral assumptions limit the convergence claim. Access to activations and model parameters is not a privacy protocol, and repeated merging is not evidence of autonomous long-term trustworthy evolution.",
+      "evidence_source": [
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Saadati_DIMAT_Decentralized_Iterative_Merging-And-Training_for_Deep_Learning_Models_CVPR_2024_paper.html",
+          "locator": "Official publication metadata and abstract"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Saadati_DIMAT_Decentralized_Iterative_Merging-And-Training_for_Deep_Learning_Models_CVPR_2024_paper.pdf",
+          "locator": "Final CVPR PDF pp.3–5 (printed pp.27519–27521), Sections 3–4.1 and Algorithm 1: graph assumptions, activation matching, iterative mixing and local training"
+        }
+      ],
+      "verification_status": "verified",
+      "bibtex_key": "dimat2024",
+      "record_type": "paper",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Final CVPR PDF pp.3–5 (printed pp.27519–27521), Sections 3–4.1 and Algorithm 1: graph assumptions, activation matching, iterative mixing and local training"
+      ],
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "relationship": "core",
+      "bibtex_provenance": "https://openaccess.thecvf.com/content/CVPR2024/html/Saadati_DIMAT_Decentralized_Iterative_Merging-And-Training_for_Deep_Learning_Models_CVPR_2024_paper.html",
+      "pages": "27517--27527",
+      "version_note": "The official CVF landing page and final PDF spell the sixth author Zhanong Jiang; that literal publication spelling is retained rather than silently replacing it with Zhanhong found in other records.",
+      "federated_view_group": "One-shot and decentralized fusion",
+      "federated_setting": "Neighbor activation matching and repeated merge-and-train steps on a communication graph."
+    },
+    {
+      "id": "lss2024",
+      "title": "Local Superior Soups: A Catalyst for Model Merging in Cross-Silo Federated Learning",
+      "authors": [
+        "Minghui Chen",
+        "Meirui Jiang",
+        "Xin Zhang",
+        "Qi Dou",
+        "Zehua Wang",
+        "Xiaoxiao Li"
+      ],
+      "venue_full_name": "Conference on Neural Information Processing Systems",
+      "venue_abbreviation": "NeurIPS",
+      "year": 2024,
+      "publication_type": "conference",
+      "publication_track": "full-paper",
+      "ccf_rank": "A",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 2,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "doi": "10.52202/079017-0657",
+      "official_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/24f7b98aef14fcd68acf3c941af1b59e-Abstract-Conference.html",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/24f7b98aef14fcd68acf3c941af1b59e-Paper-Conference.pdf",
+      "code_url": "https://github.com/ubc-tea/Local-Superior-Soups",
+      "code_verification_source": "https://proceedings.neurips.cc/paper_files/paper/2024/file/24f7b98aef14fcd68acf3c941af1b59e-Paper-Conference.pdf",
+      "primary_category": "representation",
+      "subcategory": "Parameter and Representation Alignment",
+      "secondary_tags": [
+        "federated",
+        "cross-silo",
+        "model-soups",
+        "mergeability-aware-training",
+        "common-initialization"
+      ],
+      "research_problem": "Local models trained on heterogeneous silo data may occupy incompatible regions of the loss landscape and merge poorly.",
+      "key_idea": "Train a local pool that balances affinity to a common reference with diversity, then average that pool before federation.",
+      "technical_mechanism": "Initialize from a pretrained or previous global model, build local candidate models sequentially, and train interpolated weights with affinity/diversity regularization. A local soup becomes the client contribution to subsequent global aggregation.",
+      "assumptions": "A shared architecture and meaningful common pretrained/global initialization; local data and extra training of several local candidates are available.",
+      "main_contribution": "Shows how training can prepare models for subsequent averaging in cross-silo federation with limited communication.",
+      "limitations": "This changes local training and creates multiple candidates, so it is not a training-free post-hoc merger. The convex/smooth analysis should not be presented as a general guarantee for deep nonconvex networks; benefits depend on initialization and evaluated heterogeneity.",
+      "evidence_source": [
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/24f7b98aef14fcd68acf3c941af1b59e-Abstract-Conference.html",
+          "locator": "Official publication metadata and abstract"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/24f7b98aef14fcd68acf3c941af1b59e-Paper-Conference.pdf",
+          "locator": "Final proceedings PDF pp.3–5, Sections 3.1–3.3 and Algorithm 1: soup construction, interpolation, affinity/diversity terms and theorem assumptions"
+        }
+      ],
+      "verification_status": "verified",
+      "bibtex_key": "lss2024",
+      "record_type": "paper",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Final proceedings PDF pp.3–5, Sections 3.1–3.3 and Algorithm 1: soup construction, interpolation, affinity/diversity terms and theorem assumptions"
+      ],
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "relationship": "core",
+      "bibtex_provenance": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/24f7b98aef14fcd68acf3c941af1b59e-Abstract-Conference.html",
+      "volume": "37",
+      "version_note": "Use the NeurIPS 2024 main-conference publication rather than the arXiv-only label in the discovery list.",
+      "federated_view_group": "One-shot and decentralized fusion",
+      "federated_setting": "Multiple locally trained candidates form soups before global aggregation."
+    },
+    {
+      "id": "fedlaw2023",
+      "title": "Revisiting Weighted Aggregation in Federated Learning with Neural Networks",
+      "authors": [
+        "Zexi Li",
+        "Tao Lin",
+        "Xinyi Shang",
+        "Chao Wu"
+      ],
+      "venue_full_name": "International Conference on Machine Learning",
+      "venue_abbreviation": "ICML",
+      "year": 2023,
+      "publication_type": "conference",
+      "publication_track": "full-paper",
+      "ccf_rank": "A",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 6,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "doi": null,
+      "official_url": "https://proceedings.mlr.press/v202/li23s.html",
+      "pdf_url": "https://proceedings.mlr.press/v202/li23s/li23s.pdf",
+      "code_url": null,
+      "code_verification_source": null,
+      "primary_category": "governance",
+      "subcategory": "Constraint-Aware Fusion Optimization",
+      "secondary_tags": [
+        "federated",
+        "learnable-aggregation",
+        "server-proxy-data",
+        "global-shrinking",
+        "FedLAW"
+      ],
+      "research_problem": "Conventional normalized client weights can miss beneficial shrinkage and interactions among client models.",
+      "key_idea": "Learn the total aggregation scale and relative client weights using a server proxy objective.",
+      "technical_mechanism": "Factor the aggregate into a positive global shrinking factor and simplex-constrained relative weights, and optimize them on proxy data before constructing the global model. Client coherence motivates the weighting analysis.",
+      "assumptions": "Aligned client parameterizations, continuing local training, and server-held proxy data for the aggregation objective.",
+      "main_contribution": "Separates overall shrinkage from relative weighting and makes both part of federated aggregation optimization.",
+      "limitations": "Weight quality depends on the size and representativeness of the server proxy set. Client coherence is an optimization interaction rather than certified data contribution or demographic fairness; learned weighting supplies no formal privacy or Byzantine guarantee.",
+      "evidence_source": [
+        {
+          "url": "https://proceedings.mlr.press/v202/li23s.html",
+          "locator": "Official publication metadata and abstract"
+        },
+        {
+          "url": "https://proceedings.mlr.press/v202/li23s/li23s.pdf",
+          "locator": "Final PMLR PDF pp.3–4, Sections 3–4.2: shrinkage and coherence; p.8, Section 6.1 and Algorithm 1: proxy-data optimization and FedLAW"
+        }
+      ],
+      "verification_status": "verified",
+      "bibtex_key": "fedlaw2023",
+      "record_type": "paper",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Final PMLR PDF pp.3–4, Sections 3–4.2: shrinkage and coherence; p.8, Section 6.1 and Algorithm 1: proxy-data optimization and FedLAW"
+      ],
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "relationship": "core",
+      "bibtex_provenance": "https://proceedings.mlr.press/v202/li23s.html",
+      "volume": "202",
+      "pages": "19767--19788",
+      "aliases": [
+        "FedLAW"
+      ],
+      "federated_view_group": "Aggregation and heterogeneous training",
+      "federated_setting": "Learned global shrinkage and relative aggregation weights using server proxy data."
+    },
+    {
+      "id": "fednova2020",
+      "title": "Tackling the Objective Inconsistency Problem in Heterogeneous Federated Optimization",
+      "authors": [
+        "Jianyu Wang",
+        "Qinghua Liu",
+        "Hao Liang",
+        "Gauri Joshi",
+        "H. Vincent Poor"
+      ],
+      "venue_full_name": "Conference on Neural Information Processing Systems",
+      "venue_abbreviation": "NeurIPS",
+      "year": 2020,
+      "publication_type": "conference",
+      "publication_track": "full-paper",
+      "ccf_rank": "A",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 2,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "doi": null,
+      "official_url": "https://proceedings.neurips.cc/paper/2020/hash/564127c03caab942e503ee6f810f54fd-Abstract.html",
+      "pdf_url": "https://proceedings.neurips.cc/paper/2020/file/564127c03caab942e503ee6f810f54fd-Paper.pdf",
+      "code_url": null,
+      "code_verification_source": null,
+      "primary_category": "representation",
+      "subcategory": "Foundations and Scope",
+      "secondary_tags": [
+        "federated",
+        "normalized-aggregation",
+        "heterogeneous-local-steps",
+        "training-time-fusion",
+        "FedNova"
+      ],
+      "research_problem": "Unequal local solver steps can make standard aggregation optimize an unintended weighted objective.",
+      "key_idea": "Normalize local model changes by their effective accumulated update weights before global aggregation.",
+      "technical_mechanism": "Represent each local solver update as a weighted gradient accumulation, normalize its scale and aggregate it with the desired population weights and an effective global step size. The framework covers several local solver choices.",
+      "assumptions": "Shared parameter coordinates and access to local solver/update-normalization information; analysis uses smoothness, bounded variance/dissimilarity and suitable step sizes.",
+      "main_contribution": "Provides a foundational aggregation correction that disentangles client participation or work from the intended federated objective.",
+      "limitations": "A training-time optimizer using local-update metadata is not a merger for arbitrary independently trained checkpoints. Objective consistency does not imply demographic fairness, Byzantine robustness or privacy.",
+      "evidence_source": [
+        {
+          "url": "https://proceedings.neurips.cc/paper/2020/hash/564127c03caab942e503ee6f810f54fd-Abstract.html",
+          "locator": "Official publication metadata and abstract"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper/2020/file/564127c03caab942e503ee6f810f54fd-Paper.pdf",
+          "locator": "Final NeurIPS PDF pp.5–6, Sections 4.1–4.2: normalized update framework and objective inconsistency; p.8, Section 5 and Theorem 3: FedNova and assumptions"
+        }
+      ],
+      "verification_status": "verified",
+      "bibtex_key": "fednova2020",
+      "record_type": "paper",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Final NeurIPS PDF pp.5–6, Sections 4.1–4.2: normalized update framework and objective inconsistency; p.8, Section 5 and Theorem 3: FedNova and assumptions"
+      ],
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "relationship": "related-foundation",
+      "bibtex_provenance": "https://proceedings.neurips.cc/paper/2020/hash/564127c03caab942e503ee6f810f54fd-Abstract.html",
+      "volume": "33",
+      "aliases": [
+        "FedNova"
+      ],
+      "federated_view_group": "Aggregation and heterogeneous training",
+      "federated_setting": "Training-time normalization for heterogeneous local solver progress; related optimization foundation."
+    },
+    {
+      "id": "lofi2023",
+      "title": "lo-fi: distributed fine-tuning without communication",
+      "authors": [
+        "Mitchell Wortsman",
+        "Suchin Gururangan",
+        "Shen Li",
+        "Ali Farhadi",
+        "Ludwig Schmidt",
+        "Michael Rabbat",
+        "Ari S. Morcos"
+      ],
+      "venue_full_name": "Transactions on Machine Learning Research",
+      "venue_abbreviation": "TMLR",
+      "year": 2023,
+      "publication_type": "journal",
+      "publication_track": "journal-article",
+      "ccf_rank": "None",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_pages_checked": "1-72",
+        "nonempty_text_pages": 72,
+        "search_terms": [
+          "TMLR",
+          "Transactions on Machine Learning Research"
+        ],
+        "matching_pages": {
+          "TMLR": [],
+          "Transactions on Machine Learning Research": []
+        }
+      },
+      "ccf_basis": "No acronym or full-name match in all 72 text-extracted pages of the formal directory, after case-folding and removal of whitespace/punctuation.",
+      "doi": null,
+      "official_url": "https://openreview.net/forum?id=1U0aPkBVz0",
+      "pdf_url": "https://arxiv.org/pdf/2210.11948v2",
+      "code_url": null,
+      "code_verification_source": null,
+      "primary_category": "representation",
+      "subcategory": "Foundations and Scope",
+      "secondary_tags": [
+        "distributed-fine-tuning",
+        "common-initialization",
+        "terminal-weight-averaging",
+        "lo-fi"
+      ],
+      "research_problem": "Synchronizing gradients across device groups can make fine-tuning expensive when interconnect communication is limiting.",
+      "key_idea": "Fine-tune several copies of a common pretrained model independently and average the final weights.",
+      "technical_mechanism": "Partition devices into groups, perform group-local fine-tuning without inter-group updates, then average the final group models. Synchronous communication can still occur among devices within a group.",
+      "assumptions": "Compatible parameters from a shared pretrained checkpoint; data and training configuration that allow averaging to remain effective; within-group communication may be available.",
+      "main_contribution": "Provides a distributed-training foundation for terminal model averaging and a comparison point for one-shot federation.",
+      "limitations": "The reviewed experiments primarily use IID data partitioning and do not establish performance in non-IID cross-hospital federation. Communication is removed between groups during fine-tuning, not necessarily within groups or at the final merge. Speedup is hardware/task dependent and the protocol supplies no formal privacy guarantee.",
+      "evidence_source": [
+        {
+          "url": "https://openreview.net/forum?id=1U0aPkBVz0",
+          "locator": "Official OpenReview publication identity"
+        },
+        {
+          "url": "https://openreview.net/pdf?id=1U0aPkBVz0",
+          "locator": "Indexed official PDF text: title, authors and Published in Transactions on Machine Learning Research (01/2023); direct download access challenge"
+        },
+        {
+          "url": "https://arxiv.org/abs/2210.11948",
+          "locator": "Author list and v2 revision dated 2022-11-12"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2210.11948v2",
+          "locator": "v2 pp.1–3 Section 2; p.7 Section 3.4; method reading version differs from final publication"
+        },
+        {
+          "url": "https://www.arimorcos.com/static/pdfs/wortsman_lofi.pdf",
+          "locator": "Author-hosted PDF read for methods; bytes identical to downloaded arXiv v2"
+        }
+      ],
+      "verification_status": "verified",
+      "bibtex_key": "lofi2023",
+      "record_type": "paper",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Author/arXiv v2 PDF pp.1–3, Section 2: group-local fine-tuning and final averaging; p.7, Section 3.4: speedup and communication discussion"
+      ],
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "relationship": "related-foundation",
+      "bibtex_provenance": "https://openreview.net/forum?id=1U0aPkBVz0",
+      "aliases": [
+        "lo-fi"
+      ],
+      "version_note": "Final publication identified as TMLR 01/2023 from the indexed official OpenReview PDF header (https://openreview.net/pdf?id=1U0aPkBVz0). The OpenReview full-PDF download returned an access challenge. Method sections were read in arXiv 2210.11948v2 / the identical author-hosted PDF, not asserted to be the final publication PDF. The 2022 year on the author homepage and discovery list refers to an earlier version.",
+      "federated_view_group": "Related foundations and model reuse",
+      "federated_setting": "Independent fine-tuning groups followed by averaging; not evidence of institutional non-IID federation."
+    },
+    {
+      "id": "fedatt2019",
+      "title": "Learning Private Neural Language Modeling with Attentive Aggregation",
+      "authors": [
+        "Shaoxiong Ji",
+        "Shirui Pan",
+        "Guodong Long",
+        "Xue Li",
+        "Jing Jiang",
+        "Zi Huang"
+      ],
+      "venue_full_name": "International Joint Conference on Neural Networks",
+      "venue_abbreviation": "IJCNN",
+      "year": 2019,
+      "publication_type": "conference",
+      "publication_track": "full-paper",
+      "ccf_rank": "C",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 60,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 19,
+        "category": "人工智能",
+        "table_rank": "C",
+        "rank_heading_pdf_page_1_based": 59
+      },
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the C-class table; extracted text and rendered PDF pages checked in the federated coverage audit.",
+      "doi": "10.1109/IJCNN.2019.8852464",
+      "official_url": "https://doi.org/10.1109/IJCNN.2019.8852464",
+      "pdf_url": "https://arxiv.org/pdf/1812.07108v2",
+      "code_url": "https://github.com/shaoxiongji/fed-att",
+      "code_verification_source": "https://arxiv.org/pdf/1812.07108v2",
+      "primary_category": "governance",
+      "subcategory": "Constraint-Aware Fusion Optimization",
+      "secondary_tags": [
+        "federated",
+        "attentive-aggregation",
+        "language-modeling",
+        "parameter-noise",
+        "FedAtt"
+      ],
+      "research_problem": "Uniform model averaging can overlook layer-specific differences among locally trained language models.",
+      "key_idea": "Use parameter-distance attention to weight client models separately at each layer.",
+      "technical_mechanism": "Compute layerwise Lp distances from the global model, apply softmax to these positive distance scores, and move the server model toward the attention-weighted client parameters. A separate extension adds Gaussian noise to uploaded parameters.",
+      "assumptions": "Aligned language-model layers, local text data for repeated training, and server access to received client parameters; the reported partitioning is IID random shards.",
+      "main_contribution": "An early train-time aggregation method separating layerwise attention weights from optional parameter perturbation.",
+      "limitations": "The stated formula uses positive distance in softmax, so it should not be described as automatically upweighting the closest clients. The selected privacy section describes Gaussian perturbation without a complete sensitivity, clipping and composition/accounting specification; no calibrated end-to-end DP guarantee is inferred here. IID language-model results do not establish robustness to clinical non-IID data.",
+      "evidence_source": [
+        {
+          "url": "https://doi.org/10.1109/IJCNN.2019.8852464",
+          "locator": "Publisher DOI identity"
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1109/IJCNN.2019.8852464",
+          "locator": "Publisher-deposited title, complete author list, IJCNN 2019 venue, pages 1–8 and DOI"
+        },
+        {
+          "url": "https://arxiv.org/abs/1812.07108",
+          "locator": "Author list, preprint history and final DOI"
+        },
+        {
+          "url": "https://arxiv.org/pdf/1812.07108v2",
+          "locator": "v2 pp.3–5, III.A–D, Equations 2–6, Algorithms 1–3, IV.A"
+        }
+      ],
+      "verification_status": "verified",
+      "bibtex_key": "fedatt2019",
+      "record_type": "paper",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Author arXiv v2 PDF pp.3–5, Sections III.A–D, Equations 2–6 and Algorithms 1–3: attentive aggregation and Gaussian perturbation; Section IV.A: IID random-shard evaluation"
+      ],
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "relationship": "core",
+      "bibtex_provenance": "https://doi.org/10.1109/IJCNN.2019.8852464",
+      "pages": "1--8",
+      "aliases": [
+        "FedAtt"
+      ],
+      "version_note": "Final IJCNN 2019 title, complete authors, DOI and pages verified against publisher-deposited Crossref metadata; method reading used arXiv v2 (2019-03-13), not a separately retrieved IEEE final PDF.",
+      "federated_view_group": "Aggregation and heterogeneous training",
+      "federated_setting": "Layerwise attentive aggregation of local language models; optional noise is not a complete DP analysis."
+    },
+    {
+      "ccf_rank": "None",
+      "ccf_verification_source": "https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_basis": "Project rule: arXiv-only preprints have no CCF venue rank.",
+      "id": "fedseam2026",
+      "bibtex_key": "fedseam2026",
+      "title": "FedSEAM: Federated Continual Learning of LLMs via Subspace Expert Agreement Merging",
+      "authors": [
+        "Fatema Siddika",
+        "Abhijit Chunduru",
+        "Zilinghan Li",
+        "Ali Jannesari",
+        "Ravi Madduri"
+      ],
+      "venue_full_name": "arXiv",
+      "venue_abbreviation": "arXiv",
+      "year": 2026,
+      "publication_type": "preprint",
+      "publication_track": "preprint",
+      "publication_status": "preprint",
+      "doi": null,
+      "official_url": "https://arxiv.org/abs/2610.33496",
+      "pdf_url": "https://arxiv.org/pdf/2610.33496v1",
+      "code_url": null,
+      "code_verification_source": null,
+      "primary_category": "evolution",
+      "subcategory": "Continual Model Adaptation",
+      "secondary_tags": [
+        "federated-learning",
+        "continual-learning",
+        "model-merging",
+        "sparse-experts"
+      ],
+      "research_problem": "Federated continual adaptation can erase prior expert content and drift expert routing even when earlier experts are frozen.",
+      "key_idea": "Merge only common input directions with cross-client sign agreement, while retaining client-specific residuals and protecting selected prior components.",
+      "technical_mechanism": "Clients select sparse expert tiles using corrected gradient scores and task novelty, test direction/sign compatibility for cross-task sharing, and train task experts locally. The server eigendecomposes averaged input-subspace projectors, filters directions by signed agreement, and forms partial tile merges; gate freezing, snapshots and prior-overlap acceptance restrict changes.",
+      "assumptions": "Compatible frozen backbone and tile coordinates, synchronized fixed task order, current local data and retained expert/task-start snapshots; the server inspects individual expert updates.",
+      "main_contribution": "Separates routing drift from merge erasure and implements agreement-restricted merging for federated continual LLM adaptation.",
+      "limitations": "The reported clients have near-identically distributed shards; non-IID clients are explicitly future work. Selected parameter components are preserved per merge, not all earlier-task loss over an entire trajectory. Update leakage remains possible; secure aggregation and differential privacy are future work.",
+      "evidence_source": [
+        {
+          "url": "https://arxiv.org/abs/2610.33496",
+          "locator": "Primary publication/acceptance metadata and abstract"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.33496v1",
+          "locator": "Author preprint v1, pp.3–6 §§3–5; p.9 Limitations"
+        }
+      ],
+      "verification_status": "verified",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Author preprint v1, pp.3–6 §§3–5; p.9 Limitations"
+      ],
+      "record_type": "paper",
+      "relationship": "core",
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "bibtex_provenance": "https://arxiv.org/abs/2610.33496",
+      "preprint_url": "https://arxiv.org/abs/2610.33496",
+      "reviewed_version": "2610.33496v1",
+      "federated_view_group": "Personalization and multi-federation collaboration",
+      "federated_setting": "Continual LLM expert merging; strong non-IID client conditions remain unvalidated."
+    },
+    {
+      "ccf_rank": "None",
+      "ccf_verification_source": "https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_basis": "Project rule: arXiv-only preprints have no CCF venue rank.",
+      "id": "isoloco2026",
+      "bibtex_key": "isoloco2026",
+      "title": "Can Model Merging Improve Aggregation in DiLoCo?",
+      "authors": [
+        "Stefan Horoi",
+        "Benjamin Thérien",
+        "Guy Wolf",
+        "Eugene Belilovsky"
+      ],
+      "venue_full_name": "arXiv",
+      "venue_abbreviation": "arXiv",
+      "year": 2026,
+      "publication_type": "preprint",
+      "publication_track": "preprint",
+      "publication_status": "preprint",
+      "doi": null,
+      "official_url": "https://arxiv.org/abs/2607.03011",
+      "pdf_url": "https://arxiv.org/pdf/2607.03011v1",
+      "code_url": null,
+      "code_verification_source": null,
+      "primary_category": "representation",
+      "subcategory": "Foundations and Scope",
+      "secondary_tags": [
+        "distributed-training",
+        "low-communication",
+        "model-merging",
+        "spectral-aggregation"
+      ],
+      "research_problem": "Averaged worker pseudo-gradients can limit low-communication language-model pretraining as the number of workers grows.",
+      "key_idea": "Treat DiLoCo outer aggregation as repeated task-vector merging and flatten the update spectrum before the momentum step.",
+      "technical_mechanism": "IsoLoCo averages local pseudo-gradients, replaces singular values of each two-dimensional update matrix by their mean, and applies a Nesterov outer update. The paper compares merging rules and describes a faster approximate implementation.",
+      "assumptions": "Workers use the same model coordinates and objective with periodic synchronization; experiments partition a common language-model pretraining corpus.",
+      "main_contribution": "Connects model-merging mechanisms to iterative distributed optimization and evaluates spectral aggregation across worker counts.",
+      "limitations": "This is distributed pretraining, not evidence of privacy-preserving or cross-institutional federated deployment. It still exchanges updates periodically and requires local optimization; stronger compression and theoretical explanations are identified as future work.",
+      "evidence_source": [
+        {
+          "url": "https://arxiv.org/abs/2607.03011",
+          "locator": "Primary publication/acceptance metadata and abstract"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2607.03011v1",
+          "locator": "Author preprint v1, p.5 §2.3; p.7 §4 Algorithm 2; p.10 §5"
+        }
+      ],
+      "verification_status": "verified",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Author preprint v1, p.5 §2.3; p.7 §4 Algorithm 2; p.10 §5"
+      ],
+      "record_type": "paper",
+      "relationship": "related-foundation",
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "bibtex_provenance": "https://arxiv.org/abs/2607.03011",
+      "preprint_url": "https://arxiv.org/abs/2607.03011",
+      "reviewed_version": "2607.03011v1",
+      "federated_view_group": "Related foundations and model reuse",
+      "federated_setting": "Merging for periodic DiLoCo synchronization in distributed training."
+    },
+    {
+      "ccf_rank": "A",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 1,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "id": "fedmerge2026",
+      "bibtex_key": "fedmerge2026",
+      "title": "FedMerge: Federated Model Merging for Personalization",
+      "authors": [
+        "Shutong Chen",
+        "Tianyi Zhou",
+        "Guodong Long",
+        "Jing Jiang",
+        "Chengqi Zhang"
+      ],
+      "venue_full_name": "AAAI Conference on Artificial Intelligence",
+      "venue_abbreviation": "AAAI",
+      "year": 2026,
+      "publication_type": "conference",
+      "publication_track": "full-paper",
+      "publication_status": "published",
+      "doi": "10.1609/aaai.v40i24.39113",
+      "official_url": "https://ojs.aaai.org/index.php/AAAI/article/view/39113",
+      "pdf_url": "https://arxiv.org/pdf/2504.06768v3",
+      "code_url": "https://github.com/shutong043/FedMerge",
+      "code_verification_source": "https://arxiv.org/pdf/2504.06768v3",
+      "primary_category": "representation",
+      "subcategory": "Parameter and Representation Alignment",
+      "secondary_tags": [
+        "federated-learning",
+        "personalization",
+        "model-merging",
+        "learned-merging-weights"
+      ],
+      "research_problem": "One or a few global models restrict client-specific behavior, while independently fine-tuning many candidates increases client cost.",
+      "key_idea": "Learn a server-side soup of global models and a personalized convex merging vector for each client.",
+      "technical_mechanism": "Each client receives one weighted mixture of the server model bank and trains it locally. Returned model changes update both the bank and client mixing weights by the chain rule; softmax normalizes the coefficients and reduced layer subsets can approximate inner products.",
+      "assumptions": "Compatible model parameterization, repeated access to client training data, and a server that stores the model bank and per-client coefficients.",
+      "main_contribution": "Jointly optimizes shared source models and personalized mixtures with ordinary local training communication.",
+      "limitations": "The method is an iterative training scheme, not a training-free post-hoc merge. Server model storage and weight learning add cost; keeping raw data local does not itself establish formal privacy or demographic fairness.",
+      "evidence_source": [
+        {
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/39113",
+          "locator": "Primary publication/acceptance metadata and abstract"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2504.06768v3",
+          "locator": "Author version v3, p.1 code; pp.3–4 Backgrounds and Methodology, Eqs.3–11 and Algorithm 1"
+        }
+      ],
+      "verification_status": "verified",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Author version v3, p.1 code; pp.3–4 Backgrounds and Methodology, Eqs.3–11 and Algorithm 1"
+      ],
+      "record_type": "paper",
+      "relationship": "core",
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "bibtex_provenance": "https://ojs.aaai.org/index.php/AAAI/article/view/39113",
+      "preprint_url": "https://arxiv.org/abs/2504.06768",
+      "reviewed_version": "2504.06768v3",
+      "volume": "40",
+      "number": "24",
+      "pages": "20253--20261",
+      "aliases": [
+        "FedMerge: Federated Personalization via Model Merging"
+      ],
+      "version_note": "Final AAAI 2026 identity supersedes the 2025 preprint title; technical extraction used the 2026 author v3, not a separate additional paper.",
+      "federated_view_group": "Personalization and multi-federation collaboration",
+      "federated_setting": "Clients train personalized mixtures of a server model bank; local changes update bank models and mixing weights."
+    },
+    {
+      "ccf_rank": "A",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 2,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "id": "potara2026",
+      "bibtex_key": "potara2026",
+      "title": "Communication-Efficient Personalized Adaptation via Federated-Local Model Merging",
+      "authors": [
+        "Yinan Zou",
+        "Md Kamran Chowdhury Shisher",
+        "Christopher G. Brinton",
+        "Vishrant Tripathi"
+      ],
+      "venue_full_name": "Conference on Neural Information Processing Systems",
+      "venue_abbreviation": "NeurIPS",
+      "year": 2026,
+      "publication_type": "conference",
+      "publication_track": "full-paper",
+      "publication_status": "accepted; proceedings pending",
+      "doi": null,
+      "official_url": "https://neurips.cc/virtual/2026/poster/150059",
+      "pdf_url": "https://arxiv.org/pdf/2602.18658v1",
+      "code_url": null,
+      "code_verification_source": null,
+      "primary_category": "representation",
+      "subcategory": "Parameter and Representation Alignment",
+      "secondary_tags": [
+        "federated-learning",
+        "personalization",
+        "LoRA",
+        "model-merging",
+        "uncertainty"
+      ],
+      "research_problem": "Federated adapters encode shared knowledge while local adapters retain client specialization; heuristic mixing can waste communication or harm personalization.",
+      "key_idea": "Choose a closed-form mixture of federated and locally trained adapters by minimizing a variance-trace bound on expected task loss.",
+      "technical_mechanism": "Potara combines compatible federated and local task vectors. A same-basin analysis yields weights from marginal and cross-covariance traces; diagonal Fisher and per-sample gradient correlations estimate these quantities using local data.",
+      "assumptions": "Common pretrained model, separately trained local and federated adapters, local gradient access; analysis assumes smooth same-basin behavior and constrained joint task-vector covariance.",
+      "main_contribution": "Links personalized adapter mixing to a conditional loss bound and measures communication–accuracy trade-offs in simulated vision and language federations.",
+      "limitations": "A tighter upper bound does not guarantee uniformly lower realized task loss. Mixing still needs gradient-based covariance estimation and prior local/federated training; experiments partition benchmarks rather than establish live multi-institution deployment. No formal privacy mechanism follows from local data retention.",
+      "evidence_source": [
+        {
+          "url": "https://neurips.cc/virtual/2026/poster/150059",
+          "locator": "Primary publication/acceptance metadata and abstract"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2602.18658v1",
+          "locator": "Author preprint v1, pp.4–6 §§3.2–3.5 and §4.1–4.2; official NeurIPS 2026 Poster page"
+        }
+      ],
+      "verification_status": "verified",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Author preprint v1, pp.4–6 §§3.2–3.5 and §4.1–4.2; official NeurIPS 2026 Poster page"
+      ],
+      "record_type": "paper",
+      "relationship": "core",
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "bibtex_provenance": "https://neurips.cc/virtual/2026/poster/150059",
+      "preprint_url": "https://arxiv.org/abs/2602.18658",
+      "reviewed_version": "2602.18658v1",
+      "version_note": "Official NeurIPS 2026 poster and author list confirm acceptance (scheduled 2026-12-09); proceedings DOI/volume/pages were not assigned here. Methods reviewed from arXiv v1; final camera-ready content was not compared.",
+      "acceptance_source": "https://neurips.cc/Downloads/2026",
+      "openreview_url": "https://openreview.net/forum?id=l5U24ix94Z",
+      "federated_view_group": "Personalization and multi-federation collaboration",
+      "federated_setting": "Federated/local model merging for personalized adaptation; accepted proceedings pending."
+    },
+    {
+      "ccf_rank": "A",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 7,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "id": "single_global_merging2026",
+      "bibtex_key": "single_global_merging2026",
+      "title": "On The Surprising Effectiveness of a Single Global Merging in Decentralized Learning",
+      "authors": [
+        "Tongtian Zhu",
+        "Tianyu Zhang",
+        "Mingze Wang",
+        "Zhanpeng Zhou",
+        "Can Wang"
+      ],
+      "venue_full_name": "International Conference on Learning Representations",
+      "venue_abbreviation": "ICLR",
+      "year": 2026,
+      "publication_type": "conference",
+      "publication_track": "full-paper",
+      "publication_status": "published",
+      "doi": null,
+      "official_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/437d9bde2999f6e3e854e09f250261a5-Abstract-Conference.html",
+      "pdf_url": "https://arxiv.org/pdf/2507.06542v4",
+      "code_url": null,
+      "code_verification_source": null,
+      "primary_category": "evolution",
+      "subcategory": "Model Collaboration and Network Evolution",
+      "secondary_tags": [
+        "decentralized-learning",
+        "model-merging",
+        "gossip",
+        "communication"
+      ],
+      "research_problem": "Decentralized local models may perform poorly on a shared global distribution under sparse communication and heterogeneous data.",
+      "key_idea": "Apply one final global parameter merge after training with limited but nonzero peer exchange.",
+      "technical_mechanism": "Agents alternate local updates and gossip averaging; a global linear combination at the end can improve global-distribution performance even before local models reach consensus. The paper studies mergeability and conditions for the averaged DSGD iterate to match a parallel-SGD convergence rate.",
+      "assumptions": "Compatible parameter coordinates and enough nonzero peer communication; theoretical results assume smoothness, bounded noise/diversity, and additional sharpening/consensus conditions.",
+      "main_contribution": "Separates model mergeability from full consensus and demonstrates a final-merge route to improved decentralized global performance.",
+      "limitations": "Single final merge does not mean one communication over the whole run: repeated gossip precedes it. Reported global-test gains are not client-level fairness guarantees, and conditional convergence analysis is not unconditional equivalence to centralized learning.",
+      "evidence_source": [
+        {
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/437d9bde2999f6e3e854e09f250261a5-Abstract-Conference.html",
+          "locator": "Primary publication/acceptance metadata and abstract"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2507.06542v4",
+          "locator": "ICLR-labelled author v4, p.4 Algorithm 1 and §3.2; p.6 §§4.2–4.3; pp.7–8 §5"
+        }
+      ],
+      "verification_status": "verified",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "ICLR-labelled author v4, p.4 Algorithm 1 and §3.2; p.6 §§4.2–4.3; pp.7–8 §5"
+      ],
+      "record_type": "paper",
+      "relationship": "core",
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "bibtex_provenance": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/437d9bde2999f6e3e854e09f250261a5-Abstract-Conference.html",
+      "preprint_url": "https://arxiv.org/abs/2507.06542",
+      "reviewed_version": "2507.06542v4",
+      "aliases": [
+        "A Single Merging Suffices: Recovering Server-based Learning Performance in Decentralized Learning"
+      ],
+      "version_note": "2025 preprint and ICLR 2026 final are one arXiv identity (2507.06542); retain one record.",
+      "federated_view_group": "One-shot and decentralized fusion",
+      "federated_setting": "One final global merge after decentralized training that still uses gossip communication."
+    },
+    {
+      "ccf_rank": "A",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 1,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "id": "fedbip2026",
+      "bibtex_key": "fedbip2026",
+      "title": "Bi-level Personalization for Federated Foundation Models: A Task-vector Aggregation Approach",
+      "authors": [
+        "Yiyuan Yang",
+        "Guodong Long",
+        "Qinghua Lu",
+        "Liming Zhu",
+        "Jing Jiang"
+      ],
+      "venue_full_name": "AAAI Conference on Artificial Intelligence",
+      "venue_abbreviation": "AAAI",
+      "year": 2026,
+      "publication_type": "conference",
+      "publication_track": "full-paper",
+      "publication_status": "published",
+      "doi": "10.1609/aaai.v40i33.39991",
+      "official_url": "https://ojs.aaai.org/index.php/AAAI/article/view/39991",
+      "pdf_url": "https://arxiv.org/pdf/2509.12697v1",
+      "code_url": null,
+      "code_verification_source": null,
+      "primary_category": "representation",
+      "subcategory": "Parameter and Representation Alignment",
+      "secondary_tags": [
+        "federated-learning",
+        "foundation-models",
+        "personalization",
+        "task-vectors"
+      ],
+      "research_problem": "A single global foundation-model update can obscure different client tasks and adaptation directions.",
+      "key_idea": "Personalize both local adaptation and server aggregation using task-vector similarity.",
+      "technical_mechanism": "FedBip forms each client task vector as its current locally trained model minus its prior personalized starting model, uses cosine similarities to assign client-specific aggregation weights, and maintains personalized aggregate models; FedBip-L applies the procedure by layer.",
+      "assumptions": "A shared pretrained model with compatible coordinates, local fine-tuning data, repeated communication, and server access to individual model updates.",
+      "main_contribution": "Uses task vectors as a client-relation signal for personalized foundation-model aggregation.",
+      "limitations": "Task-vector similarity is a surrogate for useful collaboration, not a privacy or fairness certificate. Personalized server state and repeated fine-tuning remain necessary; the selected technical sections were reviewed in the preprint rather than the final publisher PDF.",
+      "evidence_source": [
+        {
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/39991",
+          "locator": "Primary publication/acceptance metadata and abstract"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2509.12697v1",
+          "locator": "Author preprint v1, pp.4–5 Methodology, task-vector similarity and layer-wise extension"
+        }
+      ],
+      "verification_status": "verified",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Author preprint v1, pp.4–5 Methodology, task-vector similarity and layer-wise extension"
+      ],
+      "record_type": "paper",
+      "relationship": "core",
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "bibtex_provenance": "https://ojs.aaai.org/index.php/AAAI/article/view/39991",
+      "preprint_url": "https://arxiv.org/abs/2509.12697",
+      "reviewed_version": "2509.12697v1",
+      "volume": "40",
+      "number": "33",
+      "pages": "27702--27710",
+      "version_note": "Promoted from 2025 arXiv listing to the verified AAAI 2026 publication; selected-method reading used arXiv v1.",
+      "federated_view_group": "Personalization and multi-federation collaboration",
+      "federated_setting": "Task-vector aggregation and client-level merging for foundation-model personalization."
+    },
+    {
+      "ccf_rank": "None",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_pages_1_based": "1–72",
+        "search_terms": [
+          "ICIAP",
+          "Image Analysis and Processing"
+        ]
+      },
+      "ccf_basis": "Neither ICIAP nor Image Analysis and Processing appears in the complete 72-page CCF-authored 2026 formal directory.",
+      "id": "livar2025",
+      "bibtex_key": "livar2025",
+      "title": "Intrinsic Training Signals for Federated Learning Aggregation",
+      "authors": [
+        "Cosimo Fiorini",
+        "Matteo Mosconi",
+        "Pietro Buzzega",
+        "Riccardo Salami",
+        "Simone Calderara"
+      ],
+      "venue_full_name": "International Conference on Image Analysis and Processing",
+      "venue_abbreviation": "ICIAP",
+      "year": 2025,
+      "publication_type": "conference",
+      "publication_track": "full-paper",
+      "publication_status": "published",
+      "doi": "10.1007/978-3-032-10185-3_11",
+      "official_url": "https://link.springer.com/chapter/10.1007/978-3-032-10185-3_11",
+      "pdf_url": "https://arxiv.org/pdf/2507.06813v2",
+      "code_url": null,
+      "code_verification_source": null,
+      "primary_category": "representation",
+      "subcategory": "Parameter and Representation Alignment",
+      "secondary_tags": [
+        "federated-learning",
+        "LoRA",
+        "aggregation",
+        "explainability",
+        "proxy-data"
+      ],
+      "research_problem": "Uniformly aggregating layers and classes overlooks different local learning dynamics in heterogeneous clients.",
+      "key_idea": "Use layer-importance and class-variance signals to adapt model aggregation.",
+      "technical_mechanism": "LIVAR weights LoRA layers through a learned mapping from gradient/update importance and combines classifier information using local class statistics. Its calibration trains a reference on pooled TinyImageNet proxy data, fits optimal layer weights, and derives a random-forest/SHAP mapping for runtime aggregation.",
+      "assumptions": "Compatible LoRA/classifier coordinates, shared label meaning, client training statistics, and a proxy-data calibration stage with a centrally trained reference.",
+      "main_contribution": "Makes aggregation responsive to layer and class learning signals and examines an interpretable calibration model.",
+      "limitations": "The overall method is not proxy-data-free: its layer-weight calibration explicitly uses a proxy dataset and reference model. SHAP here explains the fitted mapping, not causal fairness or privacy; transmitted statistics and updates need a separate privacy assessment.",
+      "evidence_source": [
+        {
+          "url": "https://link.springer.com/chapter/10.1007/978-3-032-10185-3_11",
+          "locator": "Primary publication/acceptance metadata and abstract"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2507.06813v2",
+          "locator": "Author preprint v2, pp.4–6 method and proxy calibration; p.10 §6"
+        }
+      ],
+      "verification_status": "verified",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Author preprint v2, pp.4–6 method and proxy calibration; p.10 §6"
+      ],
+      "record_type": "paper",
+      "relationship": "core",
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "bibtex_provenance": "https://link.springer.com/chapter/10.1007/978-3-032-10185-3_11",
+      "preprint_url": "https://arxiv.org/abs/2507.06813",
+      "reviewed_version": "2507.06813v2",
+      "volume": "16167",
+      "pages": "128--142",
+      "version_note": "ICIAP 2025 conference identity retained as year 2025; Springer first-online date is 2026-01-02. CCF 2026 directory verification found neither ICIAP nor its full title; rank None.",
+      "federated_view_group": "Aggregation and heterogeneous training",
+      "federated_setting": "LoRA aggregation from training signals; the mapping is calibrated with proxy data."
+    },
+    {
+      "ccf_rank": "A",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 1,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "id": "fedem2026",
+      "bibtex_key": "fedem2026",
+      "title": "Breaking the Aggregation Bottleneck in Federated Recommendation: A Personalized Model Merging Approach",
+      "authors": [
+        "Jundong Chen",
+        "Honglei Zhang",
+        "Chunxu Zhang",
+        "Fangyuan Luo",
+        "Yidong Li"
+      ],
+      "venue_full_name": "AAAI Conference on Artificial Intelligence",
+      "venue_abbreviation": "AAAI",
+      "year": 2026,
+      "publication_type": "conference",
+      "publication_track": "full-paper",
+      "publication_status": "published",
+      "doi": "10.1609/aaai.v40i17.38472",
+      "official_url": "https://ojs.aaai.org/index.php/AAAI/article/view/38472",
+      "pdf_url": "https://arxiv.org/pdf/2508.12386v1",
+      "code_url": null,
+      "code_verification_source": null,
+      "primary_category": "representation",
+      "subcategory": "Parameter and Representation Alignment",
+      "secondary_tags": [
+        "federated-learning",
+        "recommendation",
+        "personalization",
+        "model-merging",
+        "differential-privacy"
+      ],
+      "research_problem": "Replacing local item embeddings by a global aggregate can discard personalized recommendation information.",
+      "key_idea": "Learn an elastic local/global embedding mixture before local training and personalize server aggregation.",
+      "technical_mechanism": "A local MLP generates item-specific mixing weights from local embeddings and global/local differences. The client trains the resulting mixture; the server balances sample-size weights with an inverse-distance similarity between uploaded item tables. An optional privacy-enhanced variant adds Laplace noise to uploaded embeddings.",
+      "assumptions": "Compatible item identities and embedding dimensions, local interaction data and alternating adapter/model training; the stated noise calibration uses gradient clipping and a sensitivity bound.",
+      "main_contribution": "Couples personalized local initialization and server aggregation for recommendation and reports a separate noise–utility study.",
+      "limitations": "The base merge is not by itself a formal privacy guarantee. The appendix reports a clipped-sensitivity Laplace construction; selected-section reading did not establish a complete multi-round privacy accountant or independently validate the local-DP claim. Evaluation uses offline recommendation datasets, and conditional local-loss analysis should not be generalized to arbitrary nonconvex models.",
+      "evidence_source": [
+        {
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/38472",
+          "locator": "Primary publication/acceptance metadata and abstract"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2508.12386v1",
+          "locator": "Author preprint v1, pp.3–5 method and privacy discussion; p.12 Appendix C; p.15 Table 7"
+        }
+      ],
+      "verification_status": "verified",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Author preprint v1, pp.3–5 method and privacy discussion; p.12 Appendix C; p.15 Table 7"
+      ],
+      "record_type": "paper",
+      "relationship": "core",
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "bibtex_provenance": "https://ojs.aaai.org/index.php/AAAI/article/view/38472",
+      "preprint_url": "https://arxiv.org/abs/2508.12386",
+      "reviewed_version": "2508.12386v1",
+      "volume": "40",
+      "number": "17",
+      "pages": "14547--14555",
+      "version_note": "Final AAAI 2026 metadata supersedes 2025 preprint; methods/privacy extraction used arXiv v1.",
+      "federated_view_group": "Personalization and multi-federation collaboration",
+      "federated_setting": "Personalized model merging for federated recommendation; optional LDP treated separately."
+    },
+    {
+      "ccf_rank": "B",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 14,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 5,
+        "category": "计算机网络",
+        "table_rank": "B"
+      },
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the B-class table; extracted text and rendered PDF pages checked in the federated coverage audit.",
+      "id": "xpert2025",
+      "bibtex_key": "xpert2025",
+      "title": "Never Start from Scratch: Expediting On-Device LLM Personalization via Explainable Model Selection",
+      "authors": [
+        "Haoming Wang",
+        "Boyuan Yang",
+        "Xiangyu Yin",
+        "Wei Gao"
+      ],
+      "venue_full_name": "ACM International Conference on Mobile Systems, Applications, and Services",
+      "venue_abbreviation": "MobiSys",
+      "year": 2025,
+      "publication_type": "conference",
+      "publication_track": "full-paper",
+      "publication_status": "published",
+      "doi": "10.1145/3711875.3729132",
+      "official_url": "https://dl.acm.org/doi/10.1145/3711875.3729132",
+      "pdf_url": "https://sites.pitt.edu/~weigao/publications/mobisys25_xpert.pdf",
+      "code_url": null,
+      "code_verification_source": null,
+      "primary_category": "representation",
+      "subcategory": "Task–Model Association and Selection",
+      "secondary_tags": [
+        "on-device-personalization",
+        "model-selection",
+        "model-merging",
+        "explainability",
+        "task-arithmetic"
+      ],
+      "research_problem": "Starting every mobile user from the same base LLM wastes adaptation compute and scarce personal data.",
+      "key_idea": "Explain and select cached personalized models, combining several when one candidate is insufficient.",
+      "technical_mechanism": "XPerT probes cached and base models, summarizes behavioral differences into a decomposed latent basis, maps user data to that basis, and selects suitable personalized checkpoints. When needed, it composes multiple candidates by task arithmetic before local fine-tuning.",
+      "assumptions": "A compatible common LLM base, a cloud cache of personalized checkpoints, probe/summarization access and local user data for matching and adaptation.",
+      "main_contribution": "Connects behavioral model selection with explicit multi-model composition in an implemented smartphone personalization system.",
+      "limitations": "This is a cloud-cache/on-device collaboration design, not a conventional federated aggregation protocol. Explainability coordinates and local data retention are not formal fairness or privacy guarantees; language-style benchmark evidence should not be generalized to unrestricted personal data.",
+      "evidence_source": [
+        {
+          "url": "https://dl.acm.org/doi/10.1145/3711875.3729132",
+          "locator": "Primary publication/acceptance metadata and abstract"
+        },
+        {
+          "url": "https://sites.pitt.edu/~weigao/publications/mobisys25_xpert.pdf",
+          "locator": "Author-hosted ACM paper, p.1 bibliographic header; pp.3–4 §3; p.7 §5.2"
+        }
+      ],
+      "verification_status": "verified",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Author-hosted ACM paper, p.1 bibliographic header; pp.3–4 §3; p.7 §5.2"
+      ],
+      "record_type": "paper",
+      "relationship": "core",
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "bibtex_provenance": "https://dl.acm.org/doi/10.1145/3711875.3729132",
+      "preprint_url": "https://arxiv.org/abs/2504.13938",
+      "reviewed_version": "2504.13938v1",
+      "federated_view_group": "Related foundations and model reuse",
+      "federated_setting": "Cloud-cache/on-device selection and optional task-arithmetic merging; not conventional federated aggregation."
+    },
+    {
+      "ccf_rank": "A",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 4,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "id": "fedawa2025",
+      "bibtex_key": "fedawa2025",
+      "title": "FedAWA: Adaptive Optimization of Aggregation Weights in Federated Learning Using Client Vectors",
+      "authors": [
+        "Changlong Shi",
+        "He Zhao",
+        "Bingjie Zhang",
+        "Mingyuan Zhou",
+        "Dandan Guo",
+        "Yi Chang"
+      ],
+      "venue_full_name": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+      "venue_abbreviation": "CVPR",
+      "year": 2025,
+      "publication_type": "conference",
+      "publication_track": "full-paper",
+      "publication_status": "published",
+      "doi": null,
+      "official_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Shi_FedAWA_Adaptive_Optimization_of_Aggregation_Weights_in_Federated_Learning_Using_CVPR_2025_paper.html",
+      "pdf_url": "https://arxiv.org/pdf/2503.15842v1",
+      "code_url": null,
+      "code_verification_source": null,
+      "primary_category": "representation",
+      "subcategory": "Parameter and Representation Alignment",
+      "secondary_tags": [
+        "federated-learning",
+        "model-merging",
+        "aggregation-weights",
+        "task-vectors"
+      ],
+      "research_problem": "Fixed client aggregation weights can neglect client-update directions under heterogeneous data.",
+      "key_idea": "Optimize aggregation coefficients from the geometric alignment of client vectors.",
+      "technical_mechanism": "FedAWA subtracts the incoming global model from each locally trained model, optimizes normalized client coefficients to align the merged update with client vectors, and adds alignment to the current global model; a layer-wise variant chooses coefficients separately by layer.",
+      "assumptions": "Common compatible model coordinates, iterative client training and a server able to inspect client updates; runtime weighting does not require a separate validation/proxy dataset.",
+      "main_contribution": "Uses update geometry to adapt server aggregation weights without extra runtime proxy examples.",
+      "limitations": "The method still requires local training and repeated communication. Directional alignment is a proxy for generalization; raw update access is not automatically compatible with secure aggregation, and no formal privacy or demographic-fairness guarantee follows from it.",
+      "evidence_source": [
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Shi_FedAWA_Adaptive_Optimization_of_Aggregation_Weights_in_Federated_Learning_Using_CVPR_2025_paper.html",
+          "locator": "Primary publication/acceptance metadata and abstract"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2503.15842v1",
+          "locator": "Author preprint v1, pp.4–5 client vectors, aggregation-weight objective and layer-wise extension"
+        }
+      ],
+      "verification_status": "verified",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Author preprint v1, pp.4–5 client vectors, aggregation-weight objective and layer-wise extension"
+      ],
+      "record_type": "paper",
+      "relationship": "core",
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "bibtex_provenance": "https://openaccess.thecvf.com/content/CVPR2025/html/Shi_FedAWA_Adaptive_Optimization_of_Aggregation_Weights_in_Federated_Learning_Using_CVPR_2025_paper.html",
+      "preprint_url": "https://arxiv.org/abs/2503.15842",
+      "reviewed_version": "2503.15842v1",
+      "pages": "30651--30660",
+      "version_note": "CVPR 2025 final identity verified in the official CVF proceedings; selected method text was read in arXiv v1.",
+      "federated_view_group": "Aggregation and heterogeneous training",
+      "federated_setting": "Iterative client-vector alignment determines aggregation weights without runtime proxy examples."
+    },
+    {
+      "ccf_rank": "None",
+      "ccf_verification_source": "https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_basis": "Accompanying workshop explicitly excluded by the CCF 2026 publication-scope rule; does not inherit IJCAI A.",
+      "id": "matu2025",
+      "bibtex_key": "matu2025",
+      "title": "Many-Task Federated Fine-Tuning via Unified Task Vectors",
+      "authors": [
+        "Vasileios Tsouvalas",
+        "Tanir Ozcelebi",
+        "Nirvana Meratnia"
+      ],
+      "venue_full_name": "Workshop on Federated Learning in the Age of Generative AI (FedGenAI), co-located with IJCAI 2025",
+      "venue_abbreviation": "FedGenAI-IJCAI",
+      "year": 2025,
+      "publication_type": "workshop",
+      "publication_track": "workshop",
+      "publication_status": "published",
+      "doi": null,
+      "official_url": "https://federated-learning.org/FedGenAI-ijcai-2025/",
+      "pdf_url": "https://arxiv.org/pdf/2502.06376v3",
+      "code_url": null,
+      "code_verification_source": null,
+      "primary_category": "representation",
+      "subcategory": "Parameter and Representation Alignment",
+      "secondary_tags": [
+        "federated-learning",
+        "many-task-learning",
+        "task-vectors",
+        "LoRA",
+        "model-merging"
+      ],
+      "research_problem": "Clients with multiple distinct tasks can make per-task or per-client model storage and communication expensive.",
+      "key_idea": "Compress each client’s task updates into one unified vector and reconstruct task behavior with lightweight modulators.",
+      "technical_mechanism": "MaTU unifies task-vector signs and magnitudes, sends the resulting vector plus binary masks and rescalers, and aggregates same-task and selected cross-task information according to known client/task assignments and sign compatibility.",
+      "assumptions": "Shared pretrained backbone and compatible task vectors, local per-task fine-tuning, known task assignments at the server, and communicated masks/rescalers.",
+      "main_contribution": "Offers a compact representation for iterative many-task federated adaptation without retaining a separate server model for every client.",
+      "limitations": "Task labels, masks and updates may disclose information; local data retention is not a formal privacy guarantee. Experiments on 30 benchmark datasets do not establish live cross-institution federation. This is a companion-workshop paper and does not inherit IJCAI A.",
+      "evidence_source": [
+        {
+          "url": "https://federated-learning.org/FedGenAI-ijcai-2025/",
+          "locator": "Primary publication/acceptance metadata and abstract"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2502.06376v3",
+          "locator": "Author preprint v3, pp.3–4 method; official FedGenAI-IJCAI 2025 accepted-paper programme"
+        }
+      ],
+      "verification_status": "verified",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Author preprint v3, pp.3–4 method; official FedGenAI-IJCAI 2025 accepted-paper programme"
+      ],
+      "record_type": "paper",
+      "relationship": "core",
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "bibtex_provenance": "https://federated-learning.org/FedGenAI-ijcai-2025/",
+      "preprint_url": "https://arxiv.org/abs/2502.06376",
+      "reviewed_version": "2502.06376v3",
+      "version_note": "Workshop acceptance replaces the stale arXiv-only listing; arXiv v3 is the selected-method reading source.",
+      "federated_view_group": "Personalization and multi-federation collaboration",
+      "federated_setting": "Unified task vectors and modulators for iterative many-task federated fine-tuning."
+    },
+    {
+      "id": "buffalo2024",
+      "title": "Buffalo: Biomedical Vision-Language Understanding with Cross-Modal Prototype and Federated Foundation Model Collaboration",
+      "authors": [
+        "Bingjie Yan",
+        "Qian Chen",
+        "Yiqiang Chen",
+        "Xinlong Jiang",
+        "Wuliang Huang",
+        "Bingyu Wang",
+        "Zhirui Wang",
+        "Chenlong Gao",
+        "Teng Zhang"
+      ],
+      "venue_full_name": "Proceedings of the 33rd ACM International Conference on Information and Knowledge Management",
+      "venue_abbreviation": "CIKM",
+      "year": 2024,
+      "publication_type": "conference",
+      "ccf_rank": "B",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 36,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 1,
+        "category": "数据库/数据挖掘/内容检索",
+        "table_rank": "B"
+      },
+      "ccf_basis": "CIKM appears in the B-class table of the CCF-authored 2026 directory, checked as text and rendered page in this audit. The ACM SIGWEB proceedings place Buffalo within Full Research Papers, before the Short Research Papers section.",
+      "doi": "10.1145/3627673.3679627",
+      "official_url": "https://doi.org/10.1145/3627673.3679627",
+      "pdf_url": null,
+      "code_url": "https://github.com/yyyanbj/Buffalo",
+      "code_verification_source": "https://www.bj-yan.top/publications",
+      "primary_category": "representation",
+      "subcategory": "Structured Model Representation and Organization",
+      "secondary_tags": [
+        "federated",
+        "prototype-exchange",
+        "modality-heterogeneity",
+        "foundation-model-collaboration",
+        "healthcare",
+        "abstract-reviewed"
+      ],
+      "research_problem": "Share biomedical model knowledge across federated clients with missing or heterogeneous modalities.",
+      "key_idea": "Use cross-modal prototypes as the shared interface for foundation-model collaboration.",
+      "technical_mechanism": "The publisher abstract describes cross-modal prototype imputation and downstream federated fine-tuning. Exact prototype construction, aggregation, and update rules were not inspected.",
+      "assumptions": "Local biomedical data and a federated communication setting; precise modality-availability and trust assumptions require full-text review.",
+      "main_contribution": "Prototype-mediated collaboration evaluated on report generation and biomedical visual question answering under modality heterogeneity.",
+      "limitations": "Abstract-level evidence only. Raw-data locality does not establish formal privacy, and task-level performance does not establish clinical benefit. This is broader federated representation collaboration, not verified post-hoc weight merging. The linked code was identified but not executed.",
+      "evidence_source": [
+        {
+          "url": "https://api.crossref.org/works/10.1145/3627673.3679627",
+          "locator": "ACM-deposited final title, nine authors, CIKM 2024, pp.2775–2785; published-print 21 October 2024."
+        },
+        {
+          "url": "https://www.sigweb.sigweb.hosting.acm.org/toc/cikm24.html",
+          "locator": "Official ACM SIGWEB proceedings: Buffalo entry and abstract, within SESSION: Full Research Papers; the subsequent Short Research Papers heading begins after this entry."
+        },
+        {
+          "url": "https://www.bj-yan.top/publications",
+          "locator": "Buffalo publication entry links the author code repository."
+        },
+        {
+          "url": "https://github.com/yyyanbj/Buffalo",
+          "locator": "README identifies the official CIKM 2024 implementation and matching title/DOI. Code identity checked; no reproduction."
+        }
+      ],
+      "verification_status": "verified",
+      "bibtex_key": "buffalo2024",
+      "record_type": "paper",
+      "review_depth": "abstract-reviewed",
+      "full_text_locators": [],
+      "review_scope": "Final publisher abstract and official proceedings track; full text not retrieved.",
+      "reviewed_version": "Final CIKM 2024 publication abstract via ACM SIGWEB proceedings",
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "relationship": "core",
+      "publication_track": "full-paper",
+      "publication_status": "published",
+      "bibtex_provenance": "https://api.crossref.org/works/10.1145/3627673.3679627",
+      "pages": "2775--2785",
+      "federated_view_group": "Alignment and knowledge transfer",
+      "federated_setting": "Cross-modal prototype imputation and federated biomedical fine-tuning; abstract-level evidence."
+    },
+    {
+      "id": "fedbone2024",
+      "title": "FedBone: Towards Large-Scale Federated Multi-Task Learning",
+      "authors": [
+        "Yi-Qiang Chen",
+        "Teng Zhang",
+        "Xin-Long Jiang",
+        "Qian Chen",
+        "Chen-Long Gao",
+        "Wu-Liang Huang"
+      ],
+      "venue_full_name": "Journal of Computer Science and Technology",
+      "venue_abbreviation": "JCST",
+      "year": 2024,
+      "publication_type": "journal",
+      "ccf_rank": "B",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 68,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 9,
+        "category": "交叉/综合/新兴",
+        "table_rank": "B"
+      },
+      "ccf_basis": "The CCF-authored 2026 directory lists JCST in the B-class table. Its text and rendered page were checked in the coverage audit; the final article first page identifies Regular Paper.",
+      "doi": "10.1007/s11390-024-3639-x",
+      "official_url": "https://jcst.ict.ac.cn/article/doi/10.1007/s11390-024-3639-x",
+      "pdf_url": "https://jcst.ict.ac.cn/fileup/1000-9000/PDF/JCST-2024-5-4-3639-1040.pdf",
+      "code_url": null,
+      "code_verification_source": null,
+      "primary_category": "representation",
+      "subcategory": "Parameter and Representation Alignment",
+      "secondary_tags": [
+        "federated",
+        "multi-task",
+        "split-learning",
+        "gradient-aggregation",
+        "gradient-conflict",
+        "training-time-collaboration"
+      ],
+      "research_problem": "Combine heterogeneous task updates in federated training under client compute limits.",
+      "key_idea": "Split a shared backbone from local task modules and reconcile conflicting gradients.",
+      "technical_mechanism": "Sections 3.2–3.5 place the shared model on a server and retain client embedding, adaptation, and prediction modules. Intermediate representations and backward signals cross the split. Historical-gradient attention reweights task gradients; projection removes opposing components before aggregation.",
+      "assumptions": "Server access to task gradients and prior aggregate gradients; iterative client–server communication and compatible shared-model interfaces.",
+      "main_contribution": "A split federated multi-task framework with task adaptation and conflict-aware shared-backbone gradient aggregation.",
+      "limitations": "Training-time gradient fusion is distinct from post-hoc merging of pretrained checkpoints. Exchanged representations and gradients remain potential disclosure surfaces; local raw data alone do not prove privacy. Method sections were reviewed, but experimental results were not independently reproduced.",
+      "evidence_source": [
+        {
+          "url": "https://api.crossref.org/works/10.1007/s11390-024-3639-x",
+          "locator": "Publisher-deposited final metadata: JCST 39(5), 1040–1057, September 2024; six authors."
+        },
+        {
+          "url": "https://jcst.ict.ac.cn/article/doi/10.1007/s11390-024-3639-x",
+          "locator": "Official final journal record."
+        },
+        {
+          "url": "https://jcst.ict.ac.cn/fileup/1000-9000/PDF/JCST-2024-5-4-3639-1040.pdf",
+          "locator": "Final 18-page PDF: p.1/printed1040 Regular Paper and metadata; pp.5–7/printed1044–1046, Sections3.2–3.5, Figure2 and Algorithm1."
+        }
+      ],
+      "verification_status": "verified",
+      "bibtex_key": "fedbone2024",
+      "record_type": "paper",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Final JCST PDF p.1 (printed1040): complete author list, final issue, Regular Paper.",
+        "Final JCST PDF pp.5–6 (printed1044–1045), Sections3.2–3.3, Figure2 and Algorithm1: server backbone, local modules, forward/backward split and shared gradient update.",
+        "Final JCST PDF pp.6–7 (printed1045–1046), Section3.4: historical-gradient attention and projection of conflicting task gradients.",
+        "Final JCST PDF p.7 (printed1046), Section3.5: task adaptation module."
+      ],
+      "review_scope": "Final journal metadata and method Sections3.2–3.5; no claim of complete experimental audit.",
+      "reviewed_version": "Final JCST 2024 journal PDF",
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "relationship": "related-foundation",
+      "publication_track": "regular-paper",
+      "publication_status": "published",
+      "bibtex_provenance": "https://api.crossref.org/works/10.1007/s11390-024-3639-x",
+      "volume": "39",
+      "number": "5",
+      "pages": "1040--1057",
+      "metadata_note": "The first page notes recommendation by FL-IJCAI2023; this record is the final 2024 JCST article, not a second 2023 conference record.",
+      "federated_view_group": "Aggregation and heterogeneous training",
+      "federated_setting": "Split multi-task training with server-side task-gradient weighting and projection."
+    },
+    {
+      "id": "fairfhtl2025",
+      "title": "FairFHTL: Achieving Task-Agnostic Fairness in Federated Hetero-Task Learning",
+      "authors": [
+        "Teng Zhang",
+        "Yiqiang Chen",
+        "Xinlong Jiang",
+        "Wuliang Huang",
+        "Qian Chen",
+        "Chenlong Gao",
+        "Zhirui Wang",
+        "Bingjie Yan"
+      ],
+      "venue_full_name": "2025 IEEE International Conference on Multimedia and Expo (ICME)",
+      "venue_abbreviation": "ICME",
+      "year": 2025,
+      "publication_type": "conference",
+      "ccf_rank": null,
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "pending-verification",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 48,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 10,
+        "category": "计算机图形学与多媒体",
+        "table_rank": "B"
+      },
+      "ccf_basis": "The venue ICME is B in the 2026 formal directory, but this paper's full/regular track was not established from an official program or paper. The article rank remains null until that separate check is resolved.",
+      "ccf_pending_note": "Venue rank verified; individual publication-track applicability pending. Six pages alone do not establish a full/regular track.",
+      "doi": "10.1109/ICME59968.2025.11209282",
+      "official_url": "https://doi.org/10.1109/ICME59968.2025.11209282",
+      "pdf_url": null,
+      "code_url": null,
+      "code_verification_source": null,
+      "primary_category": "governance",
+      "subcategory": "Fairness-Aware Fusion",
+      "secondary_tags": [
+        "federated",
+        "heterogeneous-tasks",
+        "shared-representation",
+        "task-performance-fairness",
+        "metadata-only",
+        "author-synopsis"
+      ],
+      "research_problem": "Balance client performance when federated participants optimize different tasks.",
+      "key_idea": "The coauthor synopsis identifies shared representations and allocation of shared-model updates as the collaboration objects.",
+      "technical_mechanism": "Author synopsis only: task-independent representations and resource allocation balance updates across tasks. No paper-level update rule or fairness metric was extracted.",
+      "assumptions": "Heterogeneous client tasks; detailed data, communication, optimization, and fairness assumptions remain unverified.",
+      "main_contribution": "A task-fairness contribution to federated shared-model collaboration, included on verified publication identity and an attributable author synopsis.",
+      "limitations": "Only metadata and a coauthor's short description were accessible, not the paper abstract or full text. Do not use this record to support a specific fairness metric, demographic-fairness result, formal guarantee, or experimental comparison. Publication-track verification remains open.",
+      "evidence_source": [
+        {
+          "url": "https://api.crossref.org/works/10.1109/ICME59968.2025.11209282",
+          "locator": "IEEE-deposited final title, eight authors, ICME2025, pp.1–6 and DOI; published-print 30 June 2025. No abstract in this deposit."
+        },
+        {
+          "url": "https://ieeexplore.ieee.org/document/11209282/",
+          "locator": "Publisher document identity linked by DOI; accessible response did not expose abstract or full text."
+        },
+        {
+          "url": "https://www.bj-yan.top/publications",
+          "locator": "Coauthor entry FairFHTL, 2025: complete title/authors and short author-written description of task fairness, shared representations and allocation across updates. This is not treated as the paper abstract."
+        },
+        {
+          "url": "https://www.ict.ac.cn/sourcedb/cn/jssrck/202010/t20201023_5721594.html",
+          "locator": "Institute author bibliography, publication item5, confirms title, eight authors, ICME2025 and pp.1–6."
+        }
+      ],
+      "verification_status": "verified",
+      "bibtex_key": "fairfhtl2025",
+      "record_type": "paper",
+      "review_depth": "metadata-only",
+      "full_text_locators": [],
+      "review_scope": "Publisher-deposited metadata plus coauthor-written synopsis; neither formal abstract nor paper text reviewed.",
+      "reviewed_version": "Final ICME2025 bibliographic record; author synopsis consulted separately",
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "relationship": "related-governance",
+      "publication_track": "pending-verification",
+      "publication_status": "published",
+      "bibtex_provenance": "https://api.crossref.org/works/10.1109/ICME59968.2025.11209282",
+      "pages": "1--6",
+      "federated_view_group": "Privacy, fairness, robustness and attribution",
+      "federated_setting": "Federated hetero-task fairness candidate with verified bibliography; method and CCF track pending."
+    },
+    {
+      "id": "heterofl2021",
+      "title": "HeteroFL: Computation and Communication Efficient Federated Learning for Heterogeneous Clients",
+      "authors": [
+        "Enmao Diao",
+        "Jie Ding",
+        "Vahid Tarokh"
+      ],
+      "venue_full_name": "International Conference on Learning Representations",
+      "venue_abbreviation": "ICLR",
+      "year": 2021,
+      "publication_type": "conference",
+      "publication_track": "full-paper",
+      "ccf_rank": "A",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 7,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "doi": null,
+      "official_url": "https://openreview.net/forum?id=TNkPBBYFkXg",
+      "pdf_url": "https://arxiv.org/pdf/2010.01264v3",
+      "code_url": null,
+      "code_verification_source": null,
+      "primary_category": "governance",
+      "subcategory": "Constraint-Aware Fusion Optimization",
+      "secondary_tags": [
+        "federated",
+        "resource-heterogeneity",
+        "partial-model-aggregation",
+        "nested-subnetworks",
+        "shared-supernetwork"
+      ],
+      "research_problem": "Clients with unequal computation and communication capacity cannot all train the same full global network.",
+      "key_idea": "Allocate nested width-reduced subnetworks according to client capability and average each parameter over clients that trained it.",
+      "technical_mechanism": "Extract fixed nested channel subsets from one global model, train locally using a scaling module and static batch normalization, then form the global model from coordinate-wise averages over participating owners. For label-skewed classification, masked cross-entropy and selective last-layer aggregation are additional components.",
+      "assumptions": "A shared global model with known coordinate correspondence, nested channel subsets, client capability information and local training data; heterogeneous models stay within one model class.",
+      "main_contribution": "Makes partial-coordinate fusion explicit under device resource constraints and provides a reference for interpreting privacy attacks on model-heterogeneous aggregation.",
+      "limitations": "Width heterogeneity is not arbitrary architecture interoperability. Different coordinates may be averaged over different client subsets. The paper explicitly notes unresolved privacy concerns in final global BN-statistic collection; neither data locality nor partial-model aggregation supplies a formal privacy guarantee. Label-skew experiments do not cover all forms of distribution shift.",
+      "evidence_source": [
+        {
+          "url": "https://iclr.cc/virtual/2021/poster/3165",
+          "locator": "Official 2021 conference paper listing: title, all authors and OpenReview paper link; poster is the presentation format of the conference paper"
+        },
+        {
+          "url": "https://arxiv.org/abs/2010.01264",
+          "locator": "Complete author list, ICLR 2021 comment and v3 revision history"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2010.01264v3",
+          "locator": "PDF pp.3–5 Sections 3.1–3.3, Equations 1–4, Algorithm 1; p.7 Section 4"
+        }
+      ],
+      "verification_status": "verified",
+      "bibtex_key": "heterofl2021",
+      "record_type": "paper",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Author arXiv v3 PDF pp.3–5, Sections 3.1–3.3, Equations 1–4 and Algorithm 1: nested coordinates, aggregation, static BN and scaling; p.7, Section 4: masked class outputs and selective last-layer aggregation"
+      ],
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "relationship": "core",
+      "bibtex_provenance": "https://iclr.cc/virtual/2021/poster/3165",
+      "version_note": "Publication identity and complete authors confirmed by the ICLR 2021 official poster/paper page. OpenReview direct access returned a browser challenge. Methods read in arXiv 2010.01264v3 (2021-12-14), whose header identifies publication at ICLR 2021; byte identity with the OpenReview final PDF was not asserted.",
+      "federated_view_group": "Aggregation and heterogeneous training",
+      "federated_setting": "Nested partial models share coordinates; only participating coordinates are averaged."
+    },
+    {
+      "id": "fedrolex2022",
+      "title": "FedRolex: Model-Heterogeneous Federated Learning with Rolling Sub-Model Extraction",
+      "authors": [
+        "Samiul Alam",
+        "Luyang Liu",
+        "Ming Yan",
+        "Mi Zhang"
+      ],
+      "venue_full_name": "Conference on Neural Information Processing Systems",
+      "venue_abbreviation": "NeurIPS",
+      "year": 2022,
+      "publication_type": "conference",
+      "publication_track": "full-paper",
+      "ccf_rank": "A",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 2,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "doi": "10.52202/068431-2152",
+      "official_url": "https://papers.neurips.cc/paper_files/paper/2022/hash/bf5311df07f3efce97471921e6d2f159-Abstract-Conference.html",
+      "pdf_url": "https://papers.neurips.cc/paper_files/paper/2022/file/bf5311df07f3efce97471921e6d2f159-Paper-Conference.pdf",
+      "code_url": "https://github.com/AIoT-MLSys-Lab/FedRolex",
+      "code_verification_source": "https://papers.neurips.cc/paper_files/paper/2022/hash/bf5311df07f3efce97471921e6d2f159-Abstract-Conference.html",
+      "primary_category": "governance",
+      "subcategory": "Constraint-Aware Fusion Optimization",
+      "secondary_tags": [
+        "federated",
+        "resource-heterogeneity",
+        "partial-model-aggregation",
+        "rolling-subnetworks",
+        "shared-supernetwork"
+      ],
+      "research_problem": "Static subnetwork allocation can leave parts of the global model trained only by high-capacity clients, while random extraction covers coordinates unevenly.",
+      "key_idea": "Roll the selected channel window across rounds so that limited-capacity clients train different parts of a larger global model.",
+      "technical_mechanism": "Extract each client subnetwork using a cyclic window, train it on local data, and selectively average each returned coordinate over clients that updated it, without client weighting. Coordinates receiving no update retain their prior value.",
+      "assumptions": "A shared server model with known coordinate indices, server-coordinated rolling extraction, client capacities and local training data; selected architectures are subnetworks of the same global model.",
+      "main_contribution": "Connects the temporal coverage of shared coordinates to resource-inclusive training, including a global model larger than any individual client model.",
+      "limitations": "The model heterogeneity is constrained by the shared supernetwork. Coordinate subsets and contributor sets must be distinguished when analyzing secure aggregation; the method itself does not prove privacy against attacks exploiting heterogeneous participation. Device inclusiveness is not demographic fairness, and statistical coverage analysis is not a universal convergence or security guarantee.",
+      "evidence_source": [
+        {
+          "url": "https://papers.neurips.cc/paper_files/paper/2022/hash/bf5311df07f3efce97471921e6d2f159-Abstract-Conference.html",
+          "locator": "Official publication metadata and abstract"
+        },
+        {
+          "url": "https://papers.neurips.cc/paper_files/paper/2022/file/bf5311df07f3efce97471921e6d2f159-Paper-Conference.pdf",
+          "locator": "Final NeurIPS PDF pp.3–5, Sections 2–3.3 and Algorithm 1: static/random extraction comparison, rolling window and selective per-coordinate averaging"
+        }
+      ],
+      "verification_status": "verified",
+      "bibtex_key": "fedrolex2022",
+      "record_type": "paper",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Final NeurIPS PDF pp.3–5, Sections 2–3.3 and Algorithm 1: static/random extraction comparison, rolling window and selective per-coordinate averaging"
+      ],
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "relationship": "core",
+      "bibtex_provenance": "https://papers.neurips.cc/paper_files/paper/2022/hash/bf5311df07f3efce97471921e6d2f159-Abstract-Conference.html",
+      "volume": "35",
+      "federated_view_group": "Aggregation and heterogeneous training",
+      "federated_setting": "Rolling submodel extraction and selective averaging across resource-heterogeneous clients."
+    },
+    {
+      "id": "dense2022",
+      "title": "DENSE: Data-Free One-Shot Federated Learning",
+      "authors": [
+        "Jie Zhang",
+        "Chen Chen",
+        "Bo Li",
+        "Lingjuan Lyu",
+        "Shuang Wu",
+        "Shouhong Ding",
+        "Chunhua Shen",
+        "Chao Wu"
+      ],
+      "venue_full_name": "Conference on Neural Information Processing Systems",
+      "venue_abbreviation": "NeurIPS",
+      "year": 2022,
+      "publication_type": "conference",
+      "publication_track": "full-paper",
+      "ccf_rank": "A",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_verification_status": "verified",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_locator": {
+        "pdf_page_1_based": 57,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 2,
+        "category": "人工智能",
+        "table_rank": "A"
+      },
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the A-class table. Both extracted text and rendered PDF page were checked.",
+      "doi": "10.52202/068431-1556",
+      "official_url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/868f2266086530b2c71006ea1908b14a-Abstract-Conference.html",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/868f2266086530b2c71006ea1908b14a-Paper-Conference.pdf",
+      "code_url": null,
+      "code_verification_source": null,
+      "primary_category": "representation",
+      "subcategory": "Behavioral Alignment and Distillation",
+      "secondary_tags": [
+        "federated",
+        "one-shot",
+        "data-free-distillation",
+        "synthetic-data",
+        "heterogeneous-models"
+      ],
+      "research_problem": "One-shot federation needs to combine heterogeneous client models without a shared auxiliary dataset or repeated client communication.",
+      "key_idea": "Generate synthetic inputs from uploaded models, then distill their averaged logits into a server student.",
+      "technical_mechanism": "Train a server generator using ensemble classification, batch-normalization statistics and a teacher-student boundary-disagreement objective; alternate generation and KL-based ensemble-to-student distillation after the client models are uploaded once.",
+      "assumptions": "Server access to client models and their BN statistics for the stated generation loss, compatible input/output-label semantics and server-side generation/distillation compute; raw auxiliary examples are not required at the server.",
+      "main_contribution": "Supplies a one-shot behavioral-fusion route across differing architectures and a contrast to coordinate averaging or curvature-weighted fusion.",
+      "limitations": "Data-free refers to the absence of raw auxiliary training data at the server, not absence of local training data, BN statistics or server optimization. Visual dissimilarity of generated images does not establish privacy: the paper leaves additional privacy mechanisms and attack analysis for future work. Model access and synthesis quality remain substantive assumptions.",
+      "evidence_source": [
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/868f2266086530b2c71006ea1908b14a-Abstract-Conference.html",
+          "locator": "Official publication metadata and abstract"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/868f2266086530b2c71006ea1908b14a-Paper-Conference.pdf",
+          "locator": "Final NeurIPS PDF pp.3–6, Sections 2.2–2.3, Equations 1–6 and Algorithm 1: generator losses, client BN statistics, ensemble distillation and explicit privacy discussion"
+        }
+      ],
+      "verification_status": "verified",
+      "bibtex_key": "dense2022",
+      "record_type": "paper",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Final NeurIPS PDF pp.3–6, Sections 2.2–2.3, Equations 1–6 and Algorithm 1: generator losses, client BN statistics, ensemble distillation and explicit privacy discussion"
+      ],
+      "reproduction_status": "not-attempted",
+      "checked_on": "2026-11-07",
+      "relationship": "core",
+      "bibtex_provenance": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/868f2266086530b2c71006ea1908b14a-Abstract-Conference.html",
+      "volume": "35",
+      "federated_view_group": "One-shot and decentralized fusion",
+      "federated_setting": "Single model upload followed by server generator training and student distillation."
     }
   ]
 }

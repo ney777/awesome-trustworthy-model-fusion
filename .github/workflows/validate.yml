@@ -19,4 +19,4 @@ jobs:
       - run: python scripts/generate_readme.py
       - run: python scripts/export_bibtex.py
       - run: python scripts/generate_audit_report.py
-      - run: git diff --exit-code -- README.md data docs/papers.md docs/literature-report.md
+      - run: git diff --exit-code -- README.md data docs/papers.md docs/federated-literature.md docs/literature-report.md

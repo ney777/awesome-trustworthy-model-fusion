@@ -70,16 +70,16 @@
     "preprints": "The project brief separately requires arXiv-only items to be None and marked Preprint."
   },
   "counts": {
-    "requested_venues": 35,
-    "verified_listed_venue_rank": 28,
+    "requested_venues": 40,
+    "verified_listed_venue_rank": 32,
     "verified_excluded_type": 1,
-    "verified_not_listed": 6,
+    "verified_not_listed": 7,
     "pending_venue_rank": 0,
     "rank_counts": {
       "A": 17,
-      "B": 7,
-      "None": 7,
-      "C": 4
+      "B": 10,
+      "None": 8,
+      "C": 5
     }
   },
   "venues": [
@@ -800,6 +800,106 @@
       },
       "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
       "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank."
+    },
+    {
+      "venue_abbreviation": "CIKM",
+      "candidate_full_name": "ACM International Conference on Information and Knowledge Management",
+      "publication_type": "conference",
+      "ccf_rank": "B",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the B-class table; extracted text and rendered PDF pages checked in the federated coverage audit.",
+      "locator": {
+        "pdf_page_1_based": 36,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 1,
+        "category": "数据库/数据挖掘/内容检索",
+        "table_rank": "B"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank."
+    },
+    {
+      "venue_abbreviation": "ICME",
+      "candidate_full_name": "IEEE International Conference on Multimedia & Expo",
+      "publication_type": "conference",
+      "ccf_rank": "B",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the B-class table; extracted text and rendered PDF pages checked in the federated coverage audit.",
+      "locator": {
+        "pdf_page_1_based": 48,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 10,
+        "category": "计算机图形学与多媒体",
+        "table_rank": "B"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank."
+    },
+    {
+      "venue_abbreviation": "IJCNN",
+      "candidate_full_name": "International Joint Conference on Neural Networks",
+      "publication_type": "conference",
+      "ccf_rank": "C",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the C-class table; extracted text and rendered PDF pages checked in the federated coverage audit.",
+      "locator": {
+        "pdf_page_1_based": 60,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 19,
+        "category": "人工智能",
+        "table_rank": "C",
+        "rank_heading_pdf_page_1_based": 59
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank."
+    },
+    {
+      "venue_abbreviation": "MobiSys",
+      "candidate_full_name": "ACM International Conference on Mobile Systems, Applications, and Services",
+      "publication_type": "conference",
+      "ccf_rank": "B",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-in-formal-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The CCF-authored 2026 formal directory places this venue in the B-class table; extracted text and rendered PDF pages checked in the federated coverage audit.",
+      "locator": {
+        "pdf_page_1_based": 14,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 5,
+        "category": "计算机网络",
+        "table_rank": "B"
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office",
+      "paper_scope": "Only eligible full/regular papers; verify the actual publication track. Companion workshops, short papers, demos, technical briefs, summaries, and Findings do not inherit this rank."
+    },
+    {
+      "venue_abbreviation": "ICIAP",
+      "candidate_full_name": "International Conference on Image Analysis and Processing",
+      "publication_type": "conference",
+      "ccf_rank": "None",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-not-listed-in-complete-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "Neither ICIAP nor Image Analysis and Processing appears in the complete 72-page CCF-authored 2026 formal directory.",
+      "locator": {
+        "pdf_pages_1_based": "1–72",
+        "search_terms": [
+          "ICIAP",
+          "Image Analysis and Processing"
+        ]
+      },
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office"
     }
   ],
   "access_attempts": [

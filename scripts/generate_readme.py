@@ -14,7 +14,7 @@ def publication_status(p):
         return 'Preprint'
     if p.get('publication_status') == 'accepted':
         return 'Accepted; proceedings pending'
-    if p['publication_type'] == 'workshop':
+    if p['publication_type'] == 'workshop' or p.get('publication_track') == 'workshop':
         return 'Workshop'
     if p.get('publication_status') == 'early-access-metadata-conflict':
         return 'Early access; metadata conflict'
@@ -49,12 +49,36 @@ def pending_catalogue(rows):
                                 rank if rank is not None else 'Pending', '; '.join(checks), paper_links(p)]))
     return lines + ['']
 
+def federated_catalogue(rows):
+    selected = [p for p in rows if p.get('federated_view_group')]
+    lines = ['# Federated fusion and related foundations', '',
+             f"This focused view contains {len(selected)} records selected from the master bibliography. Groups distinguish actual federated protocols, decentralized training and related model-reuse foundations; inclusion does not establish privacy, fairness or a real institutional deployment.", '',
+             'See the [federated coverage audit](federated-coverage-audit.md) for the reference-list crosswalk, version reconciliation and disposition of the previous screening queue. [Detailed records](papers.md) retain assumptions, limitations and source locators.', '']
+    group_order = ['Aggregation and heterogeneous training', 'Alignment and knowledge transfer',
+                   'One-shot and decentralized fusion', 'Personalization and multi-federation collaboration',
+                   'Privacy, fairness, robustness and attribution', 'Related foundations and model reuse',
+                   'Related federated surveys']
+    for group in group_order + [g for g in dict.fromkeys(p['federated_view_group'] for p in selected) if g not in group_order]:
+        lines += ['## ' + group, '',
+                  '| Year | Paper | Venue / CCF 2026 | Setting and role | Publication / reading | Links |',
+                  '| --- | --- | --- | --- | --- | --- |']
+        for p in sorted((p for p in selected if p['federated_view_group'] == group),
+                        key=lambda p: (-p['year'], p['title'].casefold())):
+            rank = p['ccf_rank'] if p.get('ccf_verification_status') == 'verified' else 'Pending'
+            status = publication_status(p) + '; ' + p['review_depth']
+            if p['verification_status'] != 'verified':
+                status += '; bibliography ' + p['verification_status']
+            lines.append(table_row([p['year'], p['title'], p['venue_abbreviation'] + ' / ' + str(rank),
+                                    p['federated_setting'], status, paper_links(p)]))
+        lines += ['']
+    return '\n'.join(lines)
+
 def main():
     data=load(); rows=data['papers']; ready=[p for p in rows if formal(p)]
     lines=['# Awesome Trustworthy Model Fusion and Collaboration','',
            'A curated research collection on how existing models are represented, governed under explicit trust constraints, and updated through collaboration.','',
            '**Representation → Governance → Evolution**','',
-           '[Scope](docs/scope-and-definitions.md) · [Taxonomy](docs/taxonomy.md) · [Detailed records](docs/papers.md) · [Related surveys](docs/prior-surveys.md) · [Benchmarks](docs/benchmarks.md) · [Search protocol](docs/search-protocol.md) · [Coverage audit](docs/coverage-audit.md) · [Audit](docs/reference-audit.md) · [Report](docs/literature-report.md) · [Contributing](CONTRIBUTING.md)','',
+           '[Scope](docs/scope-and-definitions.md) · [Taxonomy](docs/taxonomy.md) · [Federated literature](docs/federated-literature.md) · [Detailed records](docs/papers.md) · [Related surveys](docs/prior-surveys.md) · [Benchmarks](docs/benchmarks.md) · [Search protocol](docs/search-protocol.md) · [Coverage audit](docs/coverage-audit.md) · [Audit](docs/reference-audit.md) · [Report](docs/literature-report.md) · [Contributing](CONTRIBUTING.md)','',
            '## Collection status','',
            f"Curation snapshot: {data.get('curation_date','not recorded')}. The database contains {len(rows)} records; {len(ready)} satisfy both metadata and CCF-edition verification for the ranked catalogue. Remaining records are retained as pending, not classified as CCF-None by default.",'',
            'This is a staged, evidence-tracked collection, not a claim of exhaustive coverage. Venue ranks use the **CCF 2026 seventh edition** only. Findings, workshop and other excluded tracks do not inherit the main-conference rank. Publication status and review depth are separate fields.','',
@@ -95,6 +119,7 @@ def main():
         evidence='; '.join(f"[{e.get('locator','source')}]({e['url']})" if isinstance(e,dict) else str(e) for e in p['evidence_source'])
         notes += [table_row(['Evidence', evidence]), '']
     (ROOT/'docs/papers.md').write_text('\n'.join(notes),encoding='utf-8')
+    (ROOT/'docs/federated-literature.md').write_text(federated_catalogue(rows),encoding='utf-8')
     write_csv(ROOT/'data/papers.csv',rows)
     (ROOT/'data/surveys.json').write_text(json.dumps({'generated_from':'papers.json','papers':[p for p in rows if p['record_type']=='survey']},ensure_ascii=False,indent=2)+'\n')
     print(f'Generated {len(ready)} ranked entries and {len(rows)} detailed records.')

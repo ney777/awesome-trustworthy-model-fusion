@@ -51,9 +51,9 @@ The corrective search used the following actual query families and primary-sourc
 | Foundations | `"Probabilistic Federated Neural Matching" PMLR`; `"Federated Learning with Matched Averaging" ICLR 2020`; `"FedMD" "2019" workshop`; `"FedGKT" "FedBE" federated learning`; `"Cronus" "Robust and Heterogeneous"` | PMLR, CVF, NeurIPS, official workshop program and author manuscripts; exact GAMF/PANs title searches |
 | Trade-offs | `"Rewarded soups" NeurIPS 2023`; `"Pareto" "model merging" ICLR paper` | Final NeurIPS/ICLR/PMLR pages and selected methods sections of all three papers |
 
-## Remaining screening queue
+## Historical screening queue — now processed
 
-These candidates remain visible as a screening queue; they are not counted among the 107 included records. Pending scope or reading is different from a negative relevance decision.
+This table preserves the six candidates queued at the 107-record snapshot. All six have now been processed and included at their supported evidence depth; see the [federated follow-up audit](federated-coverage-audit.md) for current decisions and the 137-record snapshot. The next-check column below records the historical task, not an outstanding exclusion.
 
 | Candidate | Next check | Current source |
 |---|---|---|
@@ -64,4 +64,4 @@ These candidates remain visible as a screening queue; they are not counted among
 | Fine-tuning Global Model via Data-free Knowledge Distillation for Non-IID Federated Learning | Follow PrivFusion's reference 16; compare its operator and data assumptions with FedDF/FedGen. | [Seed author manuscript](https://arxiv.org/abs/2311.03396v1) |
 | Breaking Privacy in Model-Heterogeneous Federated Learning | Read the attack model and confirm applicability to the fusion threat matrix. | [USENIX RAID 2024](https://www.usenix.org/conference/raid2024) |
 
-Generic multimodal-feature fusion and identity/cloud federation hits were excluded from this targeted branch when they did not establish interaction among independent models. Shared authors, title keywords and an impressive venue label are not inclusion criteria. This audit repairs demonstrated omissions and makes unresolved candidates visible; it does not establish exhaustive coverage or experimental reproduction.
+Generic multimodal-feature fusion and identity/cloud federation hits were excluded from this targeted branch when they did not establish interaction among independent models. Shared authors, title keywords and an impressive venue label are not inclusion criteria. This historical audit repairs demonstrated omissions; the linked follow-up closes its six-item queue. Neither pass establishes exhaustive coverage or experimental reproduction.

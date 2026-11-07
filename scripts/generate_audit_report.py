@@ -38,7 +38,7 @@ The following distribution covers all records, including bibliography candidates
 |---|---:|
 {tab('ccf_rank',ready)}
 
-The [venue register](../data/venues_ccf2026.json) gives seventh-edition directory evidence. A venue grade is not a scientific quality score. Industry/Applied Data Science applicability remains pending rather than inheriting a parent-conference grade.
+The [venue register](../data/venues_ccf2026.json) gives seventh-edition directory evidence. A venue grade is not a scientific quality score. Unresolved special-track or full/regular-paper applicability remains pending rather than inheriting a parent-conference grade.
 
 ## Synthesis and positioning
 
@@ -47,6 +47,8 @@ The retained title is **Trustworthy Model Fusion and Collaboration: A Survey of 
 The comparative contribution is an explicit link between capability/compatibility evidence, the decisions permitted by access and trust conditions, and the evidence that may need reassessment after change. Existing surveys already discuss safety, provenance, continual fusion and feedback; no first-framework claim is supported. The event-indexed evaluation is proposed and unimplemented.
 
 All six supplied survey seeds and six recent extensions are compared in [prior-surveys.md](prior-surveys.md). The nearest overlaps include From Parameters to Behaviors, MoErging, the CSUR model-merging survey, FUSE, and the unresolved Knowledge Transmission and Fusion preview. The last record is not counted as fully reconciled metadata.
+
+The [federated table](federated-literature.md) groups {sum(bool(r.get('federated_view_group')) for r in rs)} records by protocol setting and access conditions. The [federated audit](federated-coverage-audit.md) records a bounded reference-list crosswalk and completed candidate screening.
 
 ## Recheck and continuation
 

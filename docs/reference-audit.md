@@ -10,16 +10,17 @@ Audit date: 2026-11-07. Bibliographic identity, source reading, venue applicabil
 | [Beimingwu: A Learnware Dock System](https://doi.org/10.1145/3637528.3671617) | verified | pending | Track applicability is unverified; do not inherit the main-conference rank. |
 | [Knowledge transmission and fusion in large models: research advances and challenges](https://www.sciencedirect.com/science/article/pii/S1566253526006950) | partial | verified | Title/DOI match. Publisher indexed page reports available online 2026-09-29, journal pre-proof; Crossref schedules volume 139 in March 2027. Publisher and author homepage list Haonan Wu, absent from Crossref. Keep as candidate pending authoritative final author reconciliation. |
 | [FedTAM: Decentralized Federated Learning with a Feature Attention Based Multi-teacher Knowledge Distillation for Healthcare](https://ieeexplore.ieee.org/document/10476260/) | verified | pending | ICPADS venue-C is confirmed; individual full/regular-paper track still requires primary evidence. |
+| [FairFHTL](https://doi.org/10.1109/ICME59968.2025.11209282) | verified | pending | ICME venue-B is confirmed; individual full/regular-paper applicability remains unresolved. Method evidence remains metadata-only plus an author synopsis. |
 
 ## Identity and source checks
 
 - Required fields, complete author lists, title/DOI/URL duplicates, CCF state consistency, reading locators and code-link provenance pass the local validators.
-- 106 records have reconciled bibliographic metadata. Only the Information Fusion survey with an unresolved author/year record is excluded from BibTeX. Model Trip and PrivFusion now have verified bibliography, with reading depth and author-version limits recorded independently.
+- 136 records have reconciled bibliographic metadata. Only the Information Fusion survey with an unresolved author/year record is excluded from BibTeX. Model Trip and PrivFusion now have verified bibliography, with reading depth and author-version limits recorded independently.
 - The earlier, pre-correction online pass checked the original 93 official URLs: 79 returned HTTP 200, five returned HTTP 202 and nine returned request errors. HTTP 200 can still serve a script-only shell; HTTP 202 or a challenge is not verified paper content. Earlier retrieved primary pages and source locators remain the substantive evidence.
 - Retrieved Crossref title and author-count signals produced no new mismatch against the stored records in that pass. This does not resolve the separately documented publisher/Crossref discrepancy for the Information Fusion candidate, nor establish a match where an API request failed.
 - Forty-one representation/evolution records include a separate code-link audit: 22 paper-linked repositories returned HTTP 200; no implementation was executed.
 
-The [coverage audit](coverage-audit.md) explains the two hidden entries, 14 added works, remaining screening queue and corrected display rules.
+The [initial coverage audit](coverage-audit.md) explains the two hidden entries, 14 earlier additions and corrected display rules. The [federated follow-up](federated-coverage-audit.md) closes its six-item queue and records 30 further additions, with a 63-record [focused table](federated-literature.md).
 
 ## Material version decisions
 
@@ -29,8 +30,10 @@ The [coverage audit](coverage-audit.md) explains the two hidden entries, 14 adde
 - From Parameters to Behaviors is Findings of EMNLP 2026. The PDF gives Ming Li where the landing-page export gives Li Ming; the discrepancy is preserved.
 - Task Arithmetic and FusionBench use final author lists, rather than silently inheriting a different preprint list.
 - Conference-year records such as OPCM and RESM retain 2025 despite later proceedings upload dates.
-- Two NeurIPS 2026 works have official acceptance listings, but final proceedings were not retrieved and their scheduled conference is later than the audit date. README and BibTeX explicitly identify this state.
+- Three NeurIPS 2026 works have official acceptance listings, but final proceedings were not retrieved and their scheduled conference is later than the audit date. README and BibTeX explicitly identify this state.
 - Fan et al. has 2026 online/pre-proof information and a scheduled 2027 issue, with publisher and Crossref author lists differing. It remains a comparison candidate, excluded from formal citation export.
+- The federated follow-up reconciles FedMerge and Single Global Merging aliases, uses the final AAAI 2026 versions of FedMerge/FedBip/FedEM, and retains MaTU as a companion workshop. Potara is accepted at NeurIPS 2026 with proceedings pending.
+- Task Arithmetic Through the Lens of One-Shot Federated Learning uses its TMLR 2025 identity; Wasserstein-barycenter fusion remains a preprint. IJCNN is C in the verified 2026 directory.
 
 ## Claim-level boundaries
 

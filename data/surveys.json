@@ -261,7 +261,9 @@
         "table_rank": "C"
       },
       "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the C-class table. Both extracted text and rendered PDF page were checked.",
-      "number": "6"
+      "number": "6",
+      "federated_view_group": "Related federated surveys",
+      "federated_setting": "Survey of trustworthy federated learning; broader than model fusion."
     },
     {
       "id": "qi2024aggregation",
@@ -338,7 +340,9 @@
         "category": "计算机体系结构/并行与分布计算/存储系统",
         "table_rank": "C"
       },
-      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the C-class table. Both extracted text and rendered PDF page were checked."
+      "ccf_basis": "The CCF-authored 2026 formal directory places this venue in the C-class table. Both extracted text and rendered PDF page were checked.",
+      "federated_view_group": "Related federated surveys",
+      "federated_setting": "Federated aggregation survey; current reading remains at the abstract level."
     },
     {
       "id": "ji2024emerging",
@@ -432,7 +436,9 @@
         }
       },
       "ccf_basis": "No acronym or full-name match in all 72 text-extracted pages of the formal directory, after case-folding and removal of whitespace/punctuation.",
-      "number": "9"
+      "number": "9",
+      "federated_view_group": "Related federated surveys",
+      "federated_setting": "Survey connecting federated model fusion with broader federated paradigms."
     },
     {
       "id": "fan2026transmission",

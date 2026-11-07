@@ -23,7 +23,7 @@ Executed queries and bounded citation chains are in the [representation/evolutio
 
 The query logs report the actual discovery branches rather than pretending every Boolean combination was executed across every database. Forward expansion used later papers and named-method searches; complete cited-by graph coverage and saturation were not established. No numerical count of all search hits or excluded hits is claimed because a comprehensive screening ledger was not maintained.
 
-The [coverage correction and omission audit](coverage-audit.md) records the follow-up triggered by Model Trip and PrivFusion, including 14 additions, explicit citation edges and a remaining screening queue. The initial 93-record snapshot was not a coverage-complete corpus.
+The [coverage correction and omission audit](coverage-audit.md) records the follow-up triggered by Model Trip and PrivFusion, including 14 additions and explicit citation edges. The subsequent [federated audit](federated-coverage-audit.md) closes that six-item screening queue, reconciles all 31 entries in a frozen reference-list section, and checks four bounded related leads. Its 41 source occurrences map to 39 unique studies: nine existing and 30 added. The [screening ledger](../data/federated-screening.json) preserves aliases and decisions; this does not imply coverage of the reference repository’s other sections or of all federated learning. The initial 93-record snapshot was not a coverage-complete corpus.
 
 ## Evidence extraction
 
