@@ -40,6 +40,15 @@ The [initial coverage audit](coverage-audit.md) records the two hidden entries a
 
 Every detailed record links its technical summary to a source and reading level. The local manuscript additionally maps claims to records and selected-section evidence. The synthesis does not claim experimental reproduction, a new benchmark implementation, universal safeguards, or first-survey priority. Full texts and manuscript drafts are excluded from the public repository.
 
+## Targeted claim corrections after manuscript review
+
+A subsequent whole-manuscript review concentrated on the fusion argument and chapter transitions, with 11 selected primary-source claim checks. Two descriptions required material clarification:
+
+- **MetaRouter:** the initial adaptation phase gathers pairwise preference feedback under a stationary preference profile; the context encoder remains fixed during inference. The record now describes adaptation across user preference profiles, with related-collaboration status, rather than demonstrated continual online policy updating. [Official paper, §§3–4.2](https://ijcai.org/proceedings/2026/673)
+- **FuseFL:** progressive block exchanges are interleaved with local training. Its experiment assigns E/K epochs to each of K blocks to match a total E-epoch training budget. Multiple exchanges do not establish an increased total training budget. [Primary paper, p.7 and Table 1](https://proceedings.neurips.cc/paper_files/paper/2024/hash/31e6e0c09325a3be16d93f84e40e0c7e-Abstract-Conference.html)
+
+The catalogue remains at 140 records; no general federated method was added. These targeted checks do not establish a new full-text review of every cited paper. Model Trip's abstract-level evidence and PrivFusion's identified author-version boundary remain unchanged.
+
 ## Repeatable checks
 
 ```sh

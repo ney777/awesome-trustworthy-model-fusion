@@ -42,7 +42,7 @@ The [venue register](../data/venues_ccf2026.json) gives seventh-edition director
 
 ## Synthesis and positioning
 
-The retained title is **Trustworthy Model Fusion and Collaboration: A Survey of Representation, Governance, and Evolution**. Persistent source-model collaboration is materially different from source-independent fused inference; keeping both terms supports the verified scope. Model fusion in federated settings remains a priority, while a federated-only title would exclude relevant checkpoint reuse and routing work.
+The retained title is **Trustworthy Model Fusion and Collaboration: A Survey of Representation, Governance, and Evolution**. Fusion operations are the main comparison unit. Source-retaining composition and model selection supply supporting or boundary comparisons, and do not establish continual fusion merely by changing a query or training round. Model fusion in federated settings remains a priority alongside relevant post-training checkpoint reuse.
 
 The comparative contribution is an explicit link between capability/compatibility evidence, the decisions permitted by access and trust conditions, and the evidence that may need reassessment after change. Existing surveys already discuss safety, provenance, continual fusion and feedback; no first-framework claim is supported. The event-indexed evaluation is proposed and unimplemented.
 

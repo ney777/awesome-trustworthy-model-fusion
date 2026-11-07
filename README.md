@@ -284,4 +284,4 @@ python scripts/export_bibtex.py
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for inclusion and verification rules. Original repository materials are released under the [MIT license](LICENSE); linked publications and third-party tools retain their respective rights.
 
-<!-- source-sha256: 0f2aeb6d8111857fa93fd4dcc010e53a2ab248a791d09797d92ade0fd6a108aa -->
+<!-- source-sha256: e4d17973445782b56e0a0ec9816174d98adf1c77a27f5e8c265c0086b1083363 -->

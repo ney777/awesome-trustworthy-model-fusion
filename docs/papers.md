@@ -115,11 +115,11 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Reading depth | section-reviewed |
 | Links | [Paper](https://ijcai.org/proceedings/2026/673) |
 | Problem | How can a router adapt to users whose cost-performance preferences are implicit? |
-| Mechanism | A meta-learned context encoder summarizes pairwise feedback; an entropy-regularized policy selects models as a contextual bandit. |
-| Contribution | Adds adaptation to changing preferences beyond a fixed global cost threshold. |
-| Assumptions | User feedback and candidate-model performance/cost observations are available. |
-| Evidence boundary | The policy optimizes a one-step reward rather than long-term collaboration consequences. Latency and privacy preferences remain future work. |
-| Evidence | [Official publication metadata and abstract](https://ijcai.org/proceedings/2026/673); [§4.1–4.2, PDF pp.3–4; §6 Conclusion, PDF p.7](https://ijcai.org/proceedings/2026/0673.pdf) |
+| Mechanism | A meta-learned permutation-invariant encoder summarizes contexts collected during a preliminary adaptation phase. The preference profile is assumed stationary during that phase and encoder parameters remain fixed at inference. An entropy-regularized policy is trained for a one-step contextual-bandit objective. |
+| Contribution | Adapts routing across user cost-performance preference profiles through context inference, rather than using one global preference threshold. |
+| Assumptions | Pairwise user feedback and candidate response cost/performance observations are available during adaptation; the preference profile remains stationary while contexts are collected. The meta-trained context encoder is fixed during inference. |
+| Evidence boundary | Initial preference-context adaptation does not establish continual learning under changing deployment preferences. The policy optimizes a one-step reward rather than long-term collaboration consequences; latency and privacy preferences remain future work. |
+| Evidence | [Official publication metadata and abstract](https://ijcai.org/proceedings/2026/673); [§3 preliminary adaptation and §4.1 stationary preferences, PDF p.3; §4.1 fixed encoder at inference and §4.2 one-step policy, PDF p.4; §6 Conclusion, PDF p.7](https://ijcai.org/proceedings/2026/0673.pdf) |
 
 ## MoFedNet: Semantic Link is All Models Need
 
@@ -1325,7 +1325,7 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Mechanism | MaTU unifies task-vector signs and magnitudes, sends the resulting vector plus binary masks and rescalers, and aggregates same-task and selected cross-task information according to known client/task assignments and sign compatibility. |
 | Contribution | Offers a compact representation for iterative many-task federated adaptation without retaining a separate server model for every client. |
 | Assumptions | Shared pretrained backbone and compatible task vectors, local per-task fine-tuning, known task assignments at the server, and communicated masks/rescalers. |
-| Evidence boundary | Task labels, masks and updates may disclose information; local data retention is not a formal privacy guarantee. Experiments on 30 benchmark datasets do not establish live cross-institution federation. This is a companion-workshop paper and does not inherit IJCAI A. |
+| Evidence boundary | Task labels, masks and updates may disclose information; local data retention is not a formal privacy guarantee. Experiments on 30 benchmark datasets do not establish live cross-institution federation. This is a companion-workshop paper and does not inherit the IJCAI main-conference rank. |
 | Evidence | [Primary publication/acceptance metadata and abstract](https://federated-learning.org/FedGenAI-ijcai-2025/); [Author preprint v3, pp.3–4 method; official FedGenAI-IJCAI 2025 accepted-paper programme](https://arxiv.org/pdf/2502.06376v3) |
 
 ## Model merging with SVD to tie the Knots
@@ -1495,7 +1495,7 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Mechanism | Partition networks into blocks; train, exchange and concatenate a block across clients, adapt its output, freeze it, and continue local training on later blocks. Width adjustment controls fused-model growth. |
 | Contribution | Makes module composition and progressive local retraining an alternative to terminal weight averaging under a one-shot communication budget. |
 | Assumptions | Local training data remain available between block-fusion stages; block interfaces must be compatible through the prescribed adapters; staged communication and training are coordinated. |
-| Evidence boundary | The one-shot description refers to the overall communication budget and does not mean a single final exchange of fully trained checkpoints: fusion and local retraining occur in successive block stages. The causal motivation is not clinical causal identification or a general privacy guarantee. |
+| Evidence boundary | The one-shot description refers to the overall communication budget and does not mean a single final exchange of fully trained checkpoints: fusion and local retraining occur in successive block stages. The causal motivation is not clinical causal identification or a general privacy guarantee. The reported experiment divides E epochs across K blocks as E/K per block to match the total reference training-epoch budget; multiple block exchanges should not be described as additional total training epochs. |
 | Evidence | [Official publication metadata and abstract](https://proceedings.neurips.cc/paper_files/paper/2024/hash/31e6e0c09325a3be16d93f84e40e0c7e-Abstract-Conference.html); [Final proceedings PDF pp.6–7, Section 4 and Figure 4: progressive block fusion, retraining, adapters and complexity](https://proceedings.neurips.cc/paper_files/paper/2024/file/31e6e0c09325a3be16d93f84e40e0c7e-Paper-Conference.pdf) |
 
 ## Language Models are Super Mario: Absorbing Abilities from Homologous Models as a Free Lunch

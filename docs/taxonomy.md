@@ -4,7 +4,7 @@ The taxonomy follows three connected questions. It is an analytical organization
 
 ## I. Fusion Representation
 
-**How can models be characterized, aligned and organized for collaboration?**
+**Which information makes a particular fusion operation feasible?**
 
 1. Capability profiling and characterization: task embeddings, model specifications and model recommendation.
 2. Similarity and compatibility assessment: task relationships, behavioral agreement, parameter geometry and kinship.
@@ -18,9 +18,9 @@ Representation outputs inform governance; similarity alone cannot determine whet
 
 ## II. Trustworthy Fusion Governance
 
-**Which collaboration decisions satisfy the stated trust requirements?**
+**Which properties of a fused model are supported under stated trust requirements?**
 
-The topics include privacy-preserving fusion, fairness-aware decisions, robust and secure fusion, explainability and auditability, constraint-aware optimization, and trustworthy selection/orchestration. The distinction between an observed property and a decision constraint is central.
+The topics include privacy of fusion releases, merge-specific attacks and defenses, safety and fairness objectives that change the combination, and the provenance of source models and validation evidence. The distinction between an observed property and a decision constraint is central. General federated optimization, security and fairness methods do not enter without an explicit model-fusion operation.
 
 For each method, record the actor that makes the decision, information it can observe, trusted resources, attacker capabilities, protected object, enforcement mechanism and failure response. Separate cryptographic or statistical guarantees from empirical attack resistance. Multi-attribute optimization does not imply composable guarantees unless their assumptions and interactions are established.
 
@@ -28,15 +28,15 @@ A governance decision may accept, reject, defer, isolate or fall back. These are
 
 Static governance becomes stale when component versions, query distributions or trust evidence change, motivating the evolution dimension.
 
-## III. Collaborative Evolution
+## III. Fusion Updates and Collaborative Evolution
 
 **What changes over time, and what evidence justifies the change?**
 
-The topics include adaptive selection/routing, continual adaptation, dynamic collaboration topology, knowledge accumulation/reuse, lifecycle management and federated agent/model networks.
+The core is sequential knowledge integration into a fused predictor and continual fusion within a federated training protocol. Comparisons identify the incoming source or task, accumulated weights or modules, retention mechanism, information access and evaluated sequence.
 
-Records distinguish: (a) static deployment with input-dependent selection; (b) repeated offline re-optimization; (c) sequential model or task integration; and (d) policies that learn from interaction history. These are distinct mechanisms, not assumed maturity stages. The initial collection includes methods in several of these groups without claiming that all implement a complete lifecycle.
+Conditional module composition, fixed routing and offline merge search supply boundary comparisons. They do not establish continual knowledge retention merely because inputs, search trials or communication rounds vary. Related systems that update model indexes or initial preference context retain their separate comparison unit. In particular, MetaRouter's initial preference adaptation is not evidence of continuously updated deployment policies.
 
-Representation must be refreshed after changes; governance must re-evaluate validity under the new conditions. Long-term evaluation therefore concerns retention, recovery, cumulative cost and repeated trust testing in addition to final task performance.
+An update requires reassessment when it changes the premises of earlier fusion evidence. The proposed evaluation records retention and acquisition, changed releases or attack surfaces, and cumulative construction cost. Source withdrawal and recovery remain research questions where the reviewed evidence is incomplete; no general removal mechanism or event-based benchmark is claimed.
 
 ## Record mapping
 
