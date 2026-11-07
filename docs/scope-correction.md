@@ -2,7 +2,7 @@
 
 A federated setting is not sufficient for inclusion in this model-fusion collection. The corrected catalogue requires a direct contribution to how models or modules are aligned, combined, distilled, or constrained during fusion. General federated optimization, client scheduling, gradient defenses, data sharing, and fairness objectives do not qualify solely because the protocol contains an aggregation step.
 
-This corrects the over-broad admission at [commit `e166a13`](https://github.com/ney777/awesome-trustworthy-model-fusion/commit/e166a13feb2b4a4769597e1f454a0fa3d8487075): **17 records have been removed from the included catalogue, reducing 137 to 120**. Fifteen fall outside the corrected method scope; two lack sufficient direct-fusion evidence. The [focused method table](federated-literature.md) now contains **42 records**, each with an explicit `fusion_relevance` field. Exclusion records preserve the decisions without counting as included literature or entering README, CSV, or BibTeX exports.
+This records the correction of the over-broad admission at [commit `e166a13`](https://github.com/ney777/awesome-trustworthy-model-fusion/commit/e166a13feb2b4a4769597e1f454a0fa3d8487075): **17 records were removed, reducing the catalogue from 137 to 120 at that snapshot**. Fifteen fall outside the corrected method scope; two lack sufficient direct-fusion evidence. The focused view contained **42 records** at that stage, each with an explicit `fusion_relevance` field. The current public library contains **139 works**, with **52 records** in the [focused federated/distributed view](federated-literature.md). Exclusion records preserve the decisions without counting as included literature or entering README, CSV, or BibTeX exports.
 
 ## Admission rule
 

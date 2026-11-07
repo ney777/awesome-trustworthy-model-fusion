@@ -1,6 +1,6 @@
 # Literature records
 
-Generated from `data/papers.json`. Pending ranks and incomplete reading are explicit; inclusion here is not a universal trustworthiness endorsement.
+Explore each work through its problem, fusion mechanism, assumptions and evidence boundaries. Reading depth describes the sources assessed for each entry; inclusion is not a universal trustworthiness endorsement. In the CCF column, — means no grade is displayed; None denotes a venue or publication type outside the ranked directory.
 
 ## FusionBench: A Unified Library and Comprehensive Benchmark for Deep Model Fusion
 
@@ -8,7 +8,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Journal of Machine Learning Research, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://www.jmlr.org/papers/v26/25-1243.html) · [Code](https://github.com/tanganke/fusion_bench) |
@@ -25,7 +24,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Conference on Neural Information Processing Systems, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.neurips.cc/paper_files/paper/2025/hash/91f7f71cb04699f387dc863da42a1fe3-Abstract-Datasets_and_Benchmarks_Track.html) |
@@ -42,8 +40,7 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing: Industry Track, 2024 |
 | Publication status | Industry track |
-| Bibliographic verification | verified |
-| CCF 2026 | Pending verification |
+| CCF 2026 | — |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://aclanthology.org/2024.emnlp-industry.36/) · [Code](https://github.com/arcee-ai/mergekit) |
 | Problem | How can weight-merging methods be made usable across practical hardware configurations? |
@@ -59,8 +56,7 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, 2024 |
 | Publication status | Applied Data Science track |
-| Bibliographic verification | verified |
-| CCF 2026 | Pending verification |
+| CCF 2026 | — |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://doi.org/10.1145/3637528.3671617) · [Code](https://github.com/Learnware-LAMDA/Beimingwu) |
 | Problem | How can heterogeneous trained models be submitted, identified, deployed, and reused in a common system? |
@@ -76,7 +72,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | arXiv, 2024 |
 | Publication status | Preprint |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://arxiv.org/abs/2403.12031) · [Code](https://github.com/withmartian/routerbench) |
@@ -93,7 +88,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | arXiv, 2026 |
 | Publication status | Preprint |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://arxiv.org/abs/2610.33496) |
@@ -110,7 +104,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence, 2026 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | B |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://ijcai.org/proceedings/2026/673) |
@@ -127,7 +120,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Journal of Computer Science and Technology, 2026 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | B |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://jcst.ict.ac.cn/en/article/doi/10.1007/s11390-025-5684-5) |
@@ -144,7 +136,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2026 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.iclr.cc/paper_files/paper/2026/hash/d0da30e312b75a3fffd9e9191f8bc1b0-Abstract-Conference.html) · [Code](https://github.com/zihuanqiu/NUFILT) |
@@ -161,7 +152,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2026 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.iclr.cc/paper_files/paper/2026/hash/437d9bde2999f6e3e854e09f250261a5-Abstract-Conference.html) |
@@ -178,7 +168,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Machine Learning, 2026 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.mlr.press/v306/lin26o.html) · [Code](https://github.com/yohbii/ODE-M) |
@@ -195,7 +184,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.iclr.cc/paper_files/paper/2025/hash/d79b8c42f61b51722992705022134ef3-Abstract-Conference.html) · [Code](https://github.com/aimagelab/fed-mammoth) |
@@ -212,7 +200,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Advances in Neural Information Processing Systems, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://papers.nips.cc/paper_files/paper/2025/hash/37d9f19150fce07bced2a81fc87d47a6-Abstract-Conference.html) |
@@ -229,7 +216,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Nature Machine Intelligence, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://www.nature.com/articles/s42256-024-00975-8) · [Code](https://github.com/SakanaAI/evolutionary-model-merge) |
@@ -246,7 +232,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.iclr.cc/paper_files/paper/2025/hash/41b6674c28a9b93ec8d22a53ca25bc3b-Abstract-Conference.html) · [Code](https://github.com/ulab-uiuc/GraphRouter) |
@@ -263,7 +248,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openaccess.thecvf.com/content/CVPR2025/html/Dziadzio_How_to_Merge_Your_Multimodal_Models_Over_Time_CVPR_2025_paper.html) |
@@ -280,7 +264,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Advances in Neural Information Processing Systems, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://papers.nips.cc/paper_files/paper/2025/hash/7611a3cb5d733e628081431445cb01fd-Abstract-Conference.html) · [Code](https://github.com/tanganke/opcm) |
@@ -297,7 +280,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.iclr.cc/paper_files/paper/2025/hash/4065a881baab1744bfba208a4361bbb1-Abstract-Conference.html) |
@@ -314,7 +296,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openreview.net/forum?id=8sSqNntaMr) · [Code](https://github.com/lm-sys/RouteLLM) |
@@ -331,7 +312,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Saadati_DIMAT_Decentralized_Iterative_Merging-And-Training_for_Deep_Learning_Models_CVPR_2024_paper.html) |
@@ -348,7 +328,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Transactions on Machine Learning Research, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openreview.net/forum?id=cSimKw5p6R) · [Code](https://github.com/stanford-futuredata/FrugalGPT) |
@@ -365,7 +344,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Proceedings of the AAAI Conference on Artificial Intelligence, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/29298) |
@@ -382,7 +360,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Advances in Neural Information Processing Systems, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/8fcd17eb91bae20d9826786d7d6be799-Abstract-Conference.html) · [Code](https://github.com/LZY-the-boys/Twin-Merging) |
@@ -399,7 +376,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2026 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openaccess.thecvf.com/content/CVPR2026/html/Chen_Defending_Unauthorized_Model_Merging_via_Dual-Stage_Weight_Protection_CVPR_2026_paper.html) |
@@ -416,7 +392,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2026 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.iclr.cc/paper_files/paper/2026/hash/cbe25fa0e7c7084049276888a09acc8d-Abstract-Conference.html) · [Code](https://github.com/weijun-l/module-switching-defense) |
@@ -433,7 +408,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Advances in Neural Information Processing Systems, 2026 |
 | Publication status | Accepted; proceedings pending |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://neurips.cc/virtual/2026/poster/149241) |
@@ -450,7 +424,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Machine Learning, 2026 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.mlr.press/v306/liu26dl.html) |
@@ -467,7 +440,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Advances in Neural Information Processing Systems, 2026 |
 | Publication status | Accepted; proceedings pending |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://neurips.cc/virtual/2026/poster/155690) |
@@ -484,7 +456,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Findings of the Association for Computational Linguistics: ACL 2026, 2026 |
 | Publication status | Findings |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://aclanthology.org/2026.findings-acl.1761/) |
@@ -501,7 +472,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | arXiv, 2026 |
 | Publication status | Preprint |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://arxiv.org/abs/2608.26655) |
@@ -518,7 +488,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Machine Learning, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.mlr.press/v267/dekoninck25a.html) |
@@ -535,7 +504,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Proceedings of the 39th Pacific Asia Conference on Language, Information and Computation, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://aclanthology.org/2025.paclic-1.24/) |
@@ -552,7 +520,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Findings of the Association for Computational Linguistics: ACL 2025, 2025 |
 | Publication status | Findings |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://aclanthology.org/2025.findings-acl.713/) |
@@ -569,7 +536,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | 34th USENIX Security Symposium (USENIX Security 25), 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://www.usenix.org/conference/usenixsecurity25/presentation/wang-lijin) · [Code](https://github.com/wljLlla/MergeBackdoor) |
@@ -586,7 +552,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://aclanthology.org/2025.acl-long.1055/) · [Code](https://github.com/MqLeet/LED-Merging) |
@@ -603,7 +568,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.iclr.cc/paper_files/paper/2025/hash/a3724221b623bf1966e92cd266ac6177-Abstract-Conference.html) |
@@ -620,7 +584,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://aclanthology.org/2025.acl-long.342/) |
@@ -637,7 +600,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Conference on Empirical Methods in Natural Language Processing, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | B |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://aclanthology.org/2025.emnlp-main.295/) · [Code](https://github.com/My-avenge/Merger-as-a-Stealer) |
@@ -654,7 +616,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.iclr.cc/paper_files/paper/2025/hash/36f7c3d80c1ba329ab8cf7b96e63a0fa-Abstract-Conference.html) |
@@ -671,7 +632,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Advances in Neural Information Processing Systems, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | abstract-reviewed |
 | Links | [Paper](https://proceedings.neurips.cc/paper_files/paper/2025/hash/a3948805bc5220206f5bfc465de0b1b7-Abstract-Conference.html) |
@@ -688,7 +648,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Machine Learning, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.mlr.press/v267/chen25af.html) |
@@ -705,7 +664,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | B |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://aclanthology.org/2025.emnlp-main.1747/) |
@@ -722,7 +680,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | arXiv, 2025 |
 | Publication status | Preprint |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://arxiv.org/abs/2508.01784) |
@@ -739,7 +696,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | B |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://aclanthology.org/2025.emnlp-main.531/) |
@@ -756,7 +712,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Proceedings of the 2024 on ACM SIGSAC Conference on Computer and Communications Security, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | abstract-reviewed |
 | Links | [Paper](https://doi.org/10.1145/3658644.3690284) |
@@ -773,7 +728,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Proceedings of the AAAI Conference on Artificial Intelligence, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | abstract-reviewed |
 | Links | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/29958) |
@@ -790,7 +744,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Conference on Neural Information Processing Systems, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/17a1a1439421f1837e10cd612bf92861-Abstract-Conference.html) · [Code](https://github.com/jyzgh/DapperFL) |
@@ -807,7 +760,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Computing and Informatics, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://www.cai.sk/ojs/index.php/cai/article/view/2024_1_1) |
@@ -824,7 +776,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Proceedings of the 1st ACM Workshop on Large AI Systems and Models with Privacy and Safety Analysis, 2024 |
 | Publication status | Workshop |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://doi.org/10.1145/3689217.3690614) · [Code](https://github.com/ThuCCSLab/MergeGuard) |
@@ -841,7 +792,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Findings of the Association for Computational Linguistics: ACL 2024, 2024 |
 | Publication status | Findings |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | abstract-reviewed |
 | Links | [Paper](https://aclanthology.org/2024.findings-acl.894/) |
@@ -858,7 +808,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Findings of the Association for Computational Linguistics: EMNLP 2024, 2024 |
 | Publication status | Findings |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | abstract-reviewed |
 | Links | [Paper](https://aclanthology.org/2024.findings-emnlp.762/) |
@@ -875,7 +824,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | 2024 IEEE 40th International Conference on Data Engineering (ICDE), 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | abstract-reviewed |
 | Links | [Paper](https://doi.org/10.1109/icde60146.2024.00177) |
@@ -892,7 +840,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | IEEE Transactions on Knowledge and Data Engineering, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://doi.org/10.1109/tkde.2024.3430819) |
@@ -909,7 +856,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Machine Learning, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.mlr.press/v235/rame24a.html) |
@@ -926,7 +872,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | IEEE Transactions on Neural Networks and Learning Systems, 2023 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | B |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://doi.org/10.1109/tnnls.2021.3129371) |
@@ -943,7 +888,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Machine Learning, 2023 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.mlr.press/v202/li23s.html) |
@@ -960,7 +904,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Advances in Neural Information Processing Systems, 2023 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.neurips.cc/paper_files/paper/2023/hash/e12a3b98b67e8395f639fde4c2b03168-Abstract-Conference.html) |
@@ -977,7 +920,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | NeurIPS Workshop on New Frontiers in Federated Learning: Privacy, Fairness, Robustness, Personalization and Data Ownership, 2021 |
 | Publication status | Workshop |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://neurips2021workshopfl.github.io/NFFL-2021/paper.html) |
@@ -994,7 +936,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Joint Conference on Neural Networks, 2019 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | C |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://doi.org/10.1109/IJCNN.2019.8852464) · [Code](https://github.com/shaoxiongji/fed-att) |
@@ -1011,7 +952,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2018 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openreview.net/forum?id=rkZB1XbRZ) |
@@ -1028,7 +968,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | AAAI Conference on Artificial Intelligence, 2026 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/39991) |
@@ -1045,7 +984,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | AAAI Conference on Artificial Intelligence, 2026 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/38472) |
@@ -1062,7 +1000,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | arXiv, 2026 |
 | Publication status | Preprint |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://arxiv.org/abs/2607.03011) |
@@ -1079,7 +1016,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Conference on Neural Information Processing Systems, 2026 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://neurips.cc/virtual/2026/poster/150059) |
@@ -1096,7 +1032,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | AAAI Conference on Artificial Intelligence, 2026 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/39113) · [Code](https://github.com/shutong043/FedMerge) |
@@ -1113,7 +1048,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2026 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.iclr.cc/paper_files/paper/2026/hash/5acb720a361eecb34ee62d356859d246-Abstract-Conference.html) · [Code](https://github.com/cjcj46262/G-Merging) |
@@ -1130,7 +1064,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Machine Learning, 2026 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.mlr.press/v306/verma26b.html) · [Code](https://github.com/idea-iitd/GFFMerge) |
@@ -1147,7 +1080,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Transactions on Machine Learning Research, 2026 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openreview.net/forum?id=H5lDsSCS9i) · [Code](https://github.com/nthehai01/RegMean-plusplus) |
@@ -1164,7 +1096,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2026 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.iclr.cc/paper_files/paper/2026/hash/8611049567e7339a88fc68a06100fac1-Abstract-Conference.html) |
@@ -1181,7 +1112,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Conference on Topology, Algebra, and Geometry in Data Science, 2026 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.mlr.press/v321/boufalis26a.html) · [Code](https://github.com/odyboufalaki/Symmetry-Aware-Graph-Metanetwork-Autoencoders) |
@@ -1198,7 +1128,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | ACM SIGKDD Conference on Knowledge Discovery and Data Mining, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://doi.org/10.1145/3711896.3736825) · [Code](https://github.com/Jun-B0518/FedHydra) |
@@ -1215,7 +1144,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Findings of the Association for Computational Linguistics: EMNLP 2025, 2025 |
 | Publication status | Findings |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://aclanthology.org/2025.findings-emnlp.32/) |
@@ -1232,7 +1160,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openaccess.thecvf.com/content/CVPR2025/html/Shi_FedAWA_Adaptive_Optimization_of_Aggregation_Weights_in_Federated_Learning_Using_CVPR_2025_paper.html) |
@@ -1249,7 +1176,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | ICLR Workshop on Neural Network Weights as a New Data Modality, 2025 |
 | Publication status | Workshop |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://arxiv.org/abs/2503.03384) |
@@ -1266,7 +1192,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Proceedings of the Thirty-Fourth International Joint Conference on Artificial Intelligence, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | B |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://ijcai.org/proceedings/2025/638) |
@@ -1283,7 +1208,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Conference on Neural Information Processing Systems, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://papers.nips.cc/paper_files/paper/2025/hash/ad7c21456da003836ef6be2261e940df-Abstract-Conference.html) |
@@ -1300,7 +1224,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Image Analysis and Processing, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://link.springer.com/chapter/10.1007/978-3-032-10185-3_11) |
@@ -1317,7 +1240,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Workshop on Federated Learning in the Age of Generative AI (FedGenAI), co-located with IJCAI 2025, 2025 |
 | Publication status | Workshop |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://federated-learning.org/FedGenAI-ijcai-2025/) |
@@ -1334,7 +1256,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.iclr.cc/paper_files/paper/2025/hash/0d4f8a5109c5083b5307fcd0bddae7a7-Abstract-Conference.html) · [Code](https://github.com/gstoica27/KnOTS) |
@@ -1351,7 +1272,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | ACM International Conference on Mobile Systems, Applications, and Services, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | B |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://dl.acm.org/doi/10.1145/3711875.3729132) |
@@ -1368,7 +1288,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openaccess.thecvf.com/content/CVPR2025/html/Nasery_PLeaS_-_Merging_Models_with_Permutations_and_Least_Squares_CVPR_2025_paper.html) |
@@ -1385,7 +1304,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Machine Learning, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.mlr.press/v267/wei25c.html) |
@@ -1402,7 +1320,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Transactions on Machine Learning Research, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openreview.net/forum?id=Cgyo7S7Oy0) · [Code](https://github.com/SilviaTao/one_shot_fl_task_arithmetic) |
@@ -1419,7 +1336,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.iclr.cc/paper_files/paper/2024/hash/62868cc2fc1eb5cdf321d05b4b88510c-Abstract-Conference.html) |
@@ -1436,7 +1352,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | NeurIPS 2024 Workshop on Adaptive Foundation Models, 2024 |
 | Publication status | Workshop |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openreview.net/forum?id=nZmAwmi2gr) |
@@ -1453,7 +1368,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Artificial Intelligence and Statistics, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | C |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.mlr.press/v238/jhunjhunwala24a.html) |
@@ -1470,7 +1384,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Joint Conference on Artificial Intelligence, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | B |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://www.ijcai.org/proceedings/2024/632) |
@@ -1487,7 +1400,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Conference on Neural Information Processing Systems, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/31e6e0c09325a3be16d93f84e40e0c7e-Abstract-Conference.html) · [Code](https://github.com/wizard1203/FuseFL) |
@@ -1504,7 +1416,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Machine Learning, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.mlr.press/v235/yu24p.html) |
@@ -1521,7 +1432,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Conference on Neural Information Processing Systems, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/24f7b98aef14fcd68acf3c941af1b59e-Abstract-Conference.html) · [Code](https://github.com/ubc-tea/Local-Superior-Soups) |
@@ -1538,7 +1448,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Machine Learning, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.mlr.press/v235/chen24ah.html) · [Code](https://github.com/dinobby/MAGDi) |
@@ -1555,7 +1464,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | IEEE Transactions on Neural Networks and Learning Systems, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | B |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://ieeexplore.ieee.org/document/10197230/) · [Code](https://github.com/microsoft/PersonalizedFL) |
@@ -1572,7 +1480,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Conference on Neural Information Processing Systems, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/ba0ad9d1e0c737800b2340b9cd68c208-Abstract-Conference.html) · [Code](https://github.com/Carkham/FedSD2C) |
@@ -1589,7 +1496,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Machine Learning, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.mlr.press/v235/yang24t.html) |
@@ -1606,7 +1512,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.iclr.cc/paper_files/paper/2024/hash/7e0af0d1bc0ec2a90fc294be2e00447e-Abstract-Conference.html) · [Code](https://github.com/graldij/transformer-fusion) |
@@ -1623,7 +1528,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.iclr.cc/paper_files/paper/2024/hash/7dbb5bfab324e3b86af9bd0df15498dd-Abstract-Conference.html) |
@@ -1640,7 +1544,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2023 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openreview.net/forum?id=FCnohuR6AnM) · [Code](https://github.com/bloomberg/dataless-model-merging) |
@@ -1657,7 +1560,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2023 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openreview.net/forum?id=6t0Kwf8-jrj) |
@@ -1674,8 +1576,7 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | IEEE International Conference on Parallel and Distributed Systems, 2023 |
 | Publication status | Published |
-| Bibliographic verification | verified |
-| CCF 2026 | Pending verification |
+| CCF 2026 | — |
 | Reading depth | abstract-reviewed |
 | Links | [Paper](https://ieeexplore.ieee.org/document/10476260/) |
 | Problem | Transfer useful knowledge across non-IID clients without a trusted central server. |
@@ -1691,7 +1592,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2023 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openreview.net/forum?id=CQsmMYmlP5T) · [Code](https://github.com/samuela/git-re-basin) |
@@ -1708,7 +1608,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Advances in Neural Information Processing Systems, 2023 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://papers.nips.cc/paper_files/paper/2023/hash/2c71b14637802ed08eaa3cf50342b2b9-Abstract-Conference.html) · [Code](https://github.com/zhangyikaii/Model-Spider) |
@@ -1725,7 +1624,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2023 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openreview.net/forum?id=SXZr8aDKia) · [Code](https://github.com/JianXu95/FedPAC) |
@@ -1742,7 +1640,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Machine Learning, 2023 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.mlr.press/v202/baek23a.html) · [Code](https://github.com/JinheonBaek/FED-PUB) |
@@ -1759,7 +1656,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Advances in Neural Information Processing Systems, 2023 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1644c9af28ab7916874f6fd6228a9bcf-Abstract-Conference.html) · [Code](https://github.com/prateeky2806/ties-merging) |
@@ -1776,7 +1672,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Transactions on Machine Learning Research, 2023 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openreview.net/forum?id=1U0aPkBVz0) |
@@ -1793,7 +1688,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Conference on Neural Information Processing Systems, 2022 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.neurips.cc/paper_files/paper/2022/hash/868f2266086530b2c71006ea1908b14a-Abstract-Conference.html) |
@@ -1810,7 +1704,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Machine Learning, 2022 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.mlr.press/v162/liu22k.html) · [Code](https://github.com/Thinklab-SJTU/GAMF) |
@@ -1827,7 +1720,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2022 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openaccess.thecvf.com/content/CVPR2022/html/Li_Federated_Learning_With_Position-Aware_Neurons_CVPR_2022_paper.html) |
@@ -1844,7 +1736,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2022 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openaccess.thecvf.com/content/CVPR2022/html/Zhang_Fine-Tuning_Global_Model_via_Data-Free_Knowledge_Distillation_for_Non-IID_Federated_CVPR_2022_paper.html) |
@@ -1861,7 +1752,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Advances in Neural Information Processing Systems, 2022 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.neurips.cc/paper_files/paper/2022/hash/70c26937fbf3d4600b69a129031b66ec-Abstract-Conference.html) |
@@ -1878,7 +1768,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Machine Learning, 2022 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.mlr.press/v162/wortsman22a.html) · [Code](https://github.com/mlfoundations/model-soups) |
@@ -1895,7 +1784,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | arXiv, 2022 |
 | Publication status | Preprint |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://arxiv.org/abs/2210.06671) · [Code](https://github.com/SixuLi/WBFusionAndLMC) |
@@ -1912,7 +1800,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Machine Learning, 2021 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.mlr.press/v139/zhu21b.html) · [Code](https://github.com/zhuangdizhu/FedGen) |
@@ -1929,7 +1816,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2021 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openreview.net/forum?id=dgtpE6gKjHn) · [Code](https://github.com/hongyouc/FedBE) |
@@ -1946,7 +1832,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Machine Learning, 2021 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.mlr.press/v139/you21b.html) |
@@ -1963,7 +1848,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | AAAI Conference on Artificial Intelligence, 2021 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/16960) |
@@ -1980,7 +1864,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2021 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openreview.net/forum?id=fiHpzZ4ABdk) |
@@ -1997,7 +1880,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Advances in Neural Information Processing Systems, 2020 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.neurips.cc/paper/2020/hash/18df51b97ccd68128e994804f3eccc87-Abstract.html) |
@@ -2014,7 +1896,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Learning Representations, 2020 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openreview.net/forum?id=BkluqlSFDS) · [Code](https://github.com/IBM/FedMA) |
@@ -2031,7 +1912,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Conference on Neural Information Processing Systems, 2020 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.neurips.cc/paper/2020/hash/a1d4c20b182ad7137ab3606f0e3fc8a4-Abstract.html) |
@@ -2048,7 +1928,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Machine Learning, 2020 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.mlr.press/v119/nguyen20b.html) |
@@ -2065,7 +1944,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Advances in Neural Information Processing Systems, 2020 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.nips.cc/paper_files/paper/2020/hash/fb2697869f56484404c8ceee2985b01d-Abstract.html) · [Code](https://github.com/sidak/otfusion) |
@@ -2082,7 +1960,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Conference on Machine Learning, 2019 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://proceedings.mlr.press/v97/yurochkin19a.html) · [Code](https://github.com/IBM/probabilistic-federated-neural-matching) |
@@ -2099,7 +1976,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Workshop on Federated Learning for User Privacy and Data Confidentiality at NeurIPS, 2019 |
 | Publication status | Workshop |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://federated-learning.org/fl-neurips-2019/) |
@@ -2116,7 +1992,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Joint Conference on Artificial Intelligence, 2019 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | B |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://www.ijcai.org/proceedings/2019/428) |
@@ -2133,7 +2008,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Proceedings of the IEEE/CVF International Conference on Computer Vision, 2019 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | A |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openaccess.thecvf.com/content_ICCV_2019/html/Achille_Task2Vec_Task_Embedding_for_Meta-Learning_ICCV_2019_paper.html) |
@@ -2150,7 +2024,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | 2nd Workshop on Machine Learning on the Phone and other Consumer Devices at NeurIPS, 2018 |
 | Publication status | Workshop |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://arxiv.org/abs/1902.11175) |
@@ -2167,7 +2040,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | IEEE Transactions on Neural Networks and Learning Systems, 2026 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | B |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://ieeexplore.ieee.org/document/11268959) |
@@ -2184,7 +2056,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Findings of the Association for Computational Linguistics: EMNLP 2026, 2026 |
 | Publication status | Findings |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://aclanthology.org/2026.findings-emnlp.722/) |
@@ -2195,30 +2066,12 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | Explicitly excludes ordinary source-retaining ensembles and routing. |
 | Evidence | [§2, pp.15179–15180](https://aclanthology.org/2026.findings-emnlp.722.pdf); [§5 p.15186; Tables 8–9 p.15202](https://aclanthology.org/2026.findings-emnlp.722.pdf) |
 
-## Knowledge transmission and fusion in large models: research advances and challenges
-
-| Field | Details |
-| --- | --- |
-| Venue / year | Information Fusion, 2026 |
-| Publication status | Early access; metadata conflict |
-| Bibliographic verification | partial |
-| CCF 2026 | None |
-| Reading depth | section-reviewed |
-| Links | [Paper](https://www.sciencedirect.com/science/article/pii/S1566253526006950) |
-| Problem | Knowledge transmission and fusion across six learning paradigms. |
-| Mechanism | Survey synthesis; not a new fusion algorithm. |
-| Contribution | Knowledge states and heterogeneous carriers. Privacy, unreliable sources, resources and constrained decisions. |
-| Assumptions | Coverage statements apply only to the explicitly inspected version and sections. |
-| Evidence boundary | Only publisher abstract/introduction excerpts inspected; metadata conflict unresolved. |
-| Evidence | [Introduction, numbered contributions (1)–(3)](https://www.sciencedirect.com/science/article/pii/S1566253526006950); [Publication entry for DOI 104819](https://weiping-ding.github.io/) |
-
 ## Model Merging in LLMs, MLLMs, and Beyond: Methods, Theories, Applications, and Opportunities
 
 | Field | Details |
 | --- | --- |
 | Venue / year | ACM Computing Surveys, 2026 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://dl.acm.org/doi/10.1145/3787849) |
@@ -2235,7 +2088,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | arXiv, 2026 |
 | Publication status | Preprint |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://arxiv.org/abs/2603.09938) |
@@ -2252,7 +2104,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | arXiv, 2025 |
 | Publication status | Preprint |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://arxiv.org/abs/2510.13890) |
@@ -2269,7 +2120,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Transactions on Machine Learning Research, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://openreview.net/forum?id=u0azVc9Y0y) |
@@ -2286,7 +2136,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | arXiv, 2025 |
 | Publication status | Preprint |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://arxiv.org/abs/2507.16731) |
@@ -2303,7 +2152,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | arXiv, 2025 |
 | Publication status | Preprint |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://arxiv.org/abs/2503.08998) |
@@ -2320,15 +2168,14 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Joint Conference on Artificial Intelligence, 2025 |
 | Publication status | Published |
-| Bibliographic verification | verified |
-| CCF 2026 | Pending verification |
+| CCF 2026 | — |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://www.ijcai.org/proceedings/2025/1174) |
 | Problem | How single-round federated methods address data/model heterogeneity and communication constraints. |
 | Mechanism | Comparative survey; it proposes no new model fusion operator. |
 | Contribution | A related survey for comparing the one-shot protocol axis, synthesis/ensembling roles, and heterogeneity assumptions. |
 | Assumptions | Taxonomy covers broader one-shot federation, including data-level approaches outside the present repository's fusion-method scope. |
-| Evidence boundary | Its four categories mix operators, auxiliary-model roles and communication protocols; copying every covered FL method would exceed the user's fusion-only scope. |
+| Evidence boundary | Its four categories mix operators, auxiliary-model roles and communication protocols; copying every covered FL method would exceed the catalogue's fusion scope. |
 | Evidence | [Official publication identity and authors](https://www.ijcai.org/proceedings/2025/1174); [Official Survey Track; Section 3 taxonomy, Figure 1 and Table 1; Sections 3.1–3.4 and 4; printed pp. 10575–10579](https://www.ijcai.org/proceedings/2025/1174.pdf) |
 
 ## A Survey of Trustworthy Federated Learning: Issues, Solutions, and Challenges
@@ -2337,7 +2184,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | ACM Transactions on Intelligent Systems and Technology, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | C |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://dl.acm.org/doi/10.1145/3678181) |
@@ -2354,7 +2200,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | International Journal of Machine Learning and Cybernetics, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | None |
 | Reading depth | section-reviewed |
 | Links | [Paper](https://link.springer.com/article/10.1007/s13042-024-02119-1) |
@@ -2371,7 +2216,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | --- | --- |
 | Venue / year | Future Generation Computer Systems, 2024 |
 | Publication status | Published |
-| Bibliographic verification | verified |
 | CCF 2026 | C |
 | Reading depth | abstract-reviewed |
 | Links | [Paper](https://www.sciencedirect.com/science/article/pii/S0167739X23003333) |

@@ -435,121 +435,6 @@
       "number": "9"
     },
     {
-      "id": "fan2026transmission",
-      "title": "Knowledge transmission and fusion in large models: research advances and challenges",
-      "authors": [
-        "Yan Fan",
-        "Yu Wang",
-        "Junran Yang",
-        "Yifei Xu",
-        "Zhichao Zhang",
-        "Pengfei Zhu",
-        "Weiping Ding",
-        "Qinghua Hu"
-      ],
-      "venue_full_name": "Information Fusion",
-      "venue_abbreviation": "Information Fusion",
-      "year": 2026,
-      "publication_type": "journal",
-      "publication_status": "early-access-metadata-conflict",
-      "ccf_rank": "None",
-      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
-      "doi": "10.1016/j.inffus.2026.104819",
-      "official_url": "https://www.sciencedirect.com/science/article/pii/S1566253526006950",
-      "pdf_url": null,
-      "code_url": null,
-      "primary_category": "surveys",
-      "secondary_tags": [],
-      "mandatory_seed": true,
-      "verification_status": "partial",
-      "checked_on": "2026-11-07",
-      "bibtex_key": "fan2026transmission",
-      "bibtex_export_source": "https://api.crossref.org/works/10.1016/j.inffus.2026.104819/transform/application/x-bibtex",
-      "evidence_source": [
-        {
-          "url": "https://www.sciencedirect.com/science/article/pii/S1566253526006950",
-          "locator": "Introduction, numbered contributions (1)–(3)",
-          "paraphrase": "The framework already connects states, transmission decisions, fusion diagnostics, decisions and feedback."
-        },
-        {
-          "url": "https://weiping-ding.github.io/",
-          "locator": "Publication entry for DOI 104819",
-          "paraphrase": "Author record lists nine authors and scheduled 2027 volume."
-        }
-      ],
-      "metadata_notes": [
-        "Title/DOI match. Publisher indexed page reports available online 2026-09-29, journal pre-proof; Crossref schedules volume 139 in March 2027. Publisher and author homepage list Haonan Wu, absent from Crossref. Keep as candidate pending authoritative final author reconciliation."
-      ],
-      "reproduction_status": "not-applicable",
-      "volume": "139",
-      "issue": null,
-      "pages": "104819",
-      "metadata_sources": [
-        "https://api.crossref.org/works/10.1016/j.inffus.2026.104819",
-        "https://www.sciencedirect.com/science/article/pii/S1566253526006950"
-      ],
-      "year_online": 2026,
-      "scheduled_print_year": 2027,
-      "authors_publisher": [
-        "Yan Fan",
-        "Yu Wang",
-        "Junran Yang",
-        "Haonan Wu",
-        "Yifei Xu",
-        "Zhichao Zhang",
-        "Pengfei Zhu",
-        "Weiping Ding",
-        "Qinghua Hu"
-      ],
-      "authors_crossref": [
-        "Yan Fan",
-        "Yu Wang",
-        "Junran Yang",
-        "Yifei Xu",
-        "Zhichao Zhang",
-        "Pengfei Zhu",
-        "Weiping Ding",
-        "Qinghua Hu"
-      ],
-      "primary_scope": "Knowledge transmission and fusion across six learning paradigms.",
-      "taxonomy": "Carrier/flow/mechanism and objective/timing/mechanism; coupled state–decision–diagnostic loop.",
-      "representation_coverage": "Knowledge states and heterogeneous carriers.",
-      "governance_coverage": "Privacy, unreliable sources, resources and constrained decisions.",
-      "dynamic_evolution_coverage": "Closed-loop interactions and dynamic deployment are explicit.",
-      "federated_or_decentralized_setting": "Distributed clients are in scope; complete protocol coverage unassessed.",
-      "evaluation_framework": "Announces a framework-aware benchmark map, checklist and lookup template.",
-      "limitations": "Only publisher abstract/introduction excerpts inspected; metadata conflict unresolved.",
-      "distinction_from_proposed_survey": "Strong overlap: a unified feedback loop or constraint-aware taxonomy alone is insufficient differentiation.",
-      "review_depth": "section-reviewed",
-      "reviewed_version": "Publisher pre-proof indexed preview; Crossref metadata",
-      "research_problem": "Knowledge transmission and fusion across six learning paradigms.",
-      "key_idea": "Carrier/flow/mechanism and objective/timing/mechanism; coupled state–decision–diagnostic loop.",
-      "main_contribution": "Knowledge states and heterogeneous carriers. Privacy, unreliable sources, resources and constrained decisions.",
-      "technical_mechanism": "Survey synthesis; not a new fusion algorithm.",
-      "assumptions": "Coverage statements apply only to the explicitly inspected version and sections.",
-      "original_review_depth": "publisher-abstract-and-introduction-excerpts",
-      "full_text_locators": [
-        "Introduction, numbered contributions (1)–(3)",
-        "Publication entry for DOI 104819"
-      ],
-      "record_type": "survey",
-      "subcategory": "Scope and Taxonomy Comparisons",
-      "publication_track": "journal-article",
-      "ccf_verification_status": "verified",
-      "ccf_edition": "CCF 2026, 7th edition",
-      "ccf_locator": {
-        "pdf_pages_checked": "1-72",
-        "nonempty_text_pages": 72,
-        "search_terms": [
-          "Information Fusion"
-        ],
-        "matching_pages": {
-          "Information Fusion": []
-        }
-      },
-      "ccf_basis": "No acronym or full-name match in all 72 text-extracted pages of the formal directory, after case-folding and removal of whitespace/punctuation."
-    },
-    {
       "id": "yadav2025moerging",
       "title": "A Survey on Model MoErging: Recycling and Routing Among Specialized Experts for Collaborative Learning",
       "authors": [
@@ -1093,7 +978,7 @@
       "technical_mechanism": "Comparative survey; it proposes no new model fusion operator.",
       "assumptions": "Taxonomy covers broader one-shot federation, including data-level approaches outside the present repository's fusion-method scope.",
       "main_contribution": "A related survey for comparing the one-shot protocol axis, synthesis/ensembling roles, and heterogeneity assumptions.",
-      "limitations": "Its four categories mix operators, auxiliary-model roles and communication protocols; copying every covered FL method would exceed the user's fusion-only scope.",
+      "limitations": "Its four categories mix operators, auxiliary-model roles and communication protocols; copying every covered FL method would exceed the catalogue's fusion scope.",
       "primary_scope": "One-shot federated learning; broader than direct model fusion.",
       "taxonomy": "Parameter learning, knowledge distillation, generative models, ensemble methods and their hybrids.",
       "representation_coverage": "Parameter merging, model/data distillation, synthetic knowledge transfer and output ensembles.",

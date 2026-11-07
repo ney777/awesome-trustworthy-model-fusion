@@ -6,7 +6,7 @@ The 7 November 2026 snapshot uses a staged, purposive search with documented bac
 
 Include a study when it directly concerns knowledge interaction among reusable models, capability-based selection, fusion/alignment, constraints on model composition, or changes to a collaboration state. Related foundations and infrastructure are labeled separately and require a direct relationship to fusion or the explicitly retained model-selection/collaboration scope. General federated optimization, gradient security, client fairness or partial-model scheduling is not sufficient for inclusion. Exclude generic single-model learning, generic RAG, ordinary task-delegating agents, and trustworthiness papers without a specific connection to model combination. A method name containing “fusion,” “dynamic,” or “privacy” does not establish relevance or a guarantee.
 
-Each study receives one primary category and multiple secondary tags. Final and preprint versions count once. Normalized titles, DOI identifiers, official URLs, author lists, and version notes are used to reconcile duplicates. Unknown venues or track applicability remain pending; they are not CCF-None by default.
+Each study receives one primary category and multiple secondary tags. Final and preprint versions count once. Normalized titles, DOI identifiers, official URLs, author lists, and version notes are used to reconcile duplicates. Catalogue entries require verified bibliographic identity. Candidates with unresolved identities stay in local working notes until verified. A missing CCF grade does not prevent inclusion of a verified, in-scope paper.
 
 ## Discovery and citation follow-up
 
@@ -19,7 +19,7 @@ Executed queries and bounded citation chains are in the [representation/evolutio
 | Representation | `site:proceedings.mlr.press LEEP LogME transferability`; `"Model Spider" "Learning"`; `"Learnware" "2024" "reuse" primary paper` | LEEP → task embeddings; PLeaS → alignment predecessors; RegMean → RegMean++; learnware specifications → ELSI and label-space assembly |
 | Governance | `model merging fairness 2025 2026`; `model merging privacy differential`; `model merging provenance attribution watermark`; `ShapleyFL`; `Cascade Routing` | RouteMark references → MergePrint and MergeGuard; FedXDS → FedAUX; newer watermark study → earlier durability problem |
 | Evolution | `"continual model merging" "2026" site:proceedings.iclr.cc`; `"GraphRouter" LLM routing ICLR2025`; named OPCM, DOP and TIME follow-ups | OPCM/DOP → NUFILT and ODE-M; Surgery → ProbSurgery; RouteLLM/GraphRouter → MetaRouter |
-| Cross-cutting surveys | The six supplied DOI/title/ACL seeds; recent model-merging, MoErging, FUSE, small/large-model and edge/cloud survey searches | Survey references and named mechanisms provide candidates, followed by separate primary-source checks |
+| Cross-cutting surveys | DOI/title/ACL record checks; recent model-merging, MoErging, FUSE, small/large-model and edge/cloud survey searches | Survey references and named mechanisms provide candidates, followed by separate primary-source checks |
 
 The query logs report the actual discovery branches rather than pretending every Boolean combination was executed across every database. Forward expansion used later papers and named-method searches; complete cited-by graph coverage and saturation were not established. No numerical count of all search hits or excluded hits is claimed because a comprehensive screening ledger was not maintained.
 
@@ -33,7 +33,7 @@ Technical claims prefer primary methods. A publisher abstract supports only clai
 
 ## Version and CCF rules
 
-Final issue year and online year are stored separately when they differ. Conference year is not replaced by a later website upload date. Official acceptance is distinguished from completed proceedings publication. Findings, companion workshops, Industry, and Applied Data Science tracks are checked explicitly.
+Final issue year and online year are stored separately when they differ. Conference year is not replaced by a later website upload date. Official acceptance is distinguished from completed proceedings publication. Findings, companion workshops, Industry, and Applied Data Science tracks are checked explicitly. Where a grade cannot be established, tables display `—` (no grade listed); this does not mean a confirmed unranked result and does not inherit the main-conference grade.
 
 Venue ranks use the [CCF seventh-edition release](https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml) and a [formal directory copy preserved by a university research office](https://kyc.lsu.edu.cn/2026/0518/c1772a367789/page.htm). The [venue register](../data/venues_ccf2026.json) contains directory page/row evidence and the source limitation: the official PDF endpoint required access verification, so byte equality with that endpoint was not established. The university-hosted document is the CCF directory, not a third-party rank table.
 

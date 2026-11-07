@@ -6,7 +6,7 @@ The latest bounded update is documented in the [model-conditions audit](model-co
 
 Model Trip and PrivFusion had already been found and stored, but an incorrect metadata status hid them from the ranked README and excluded them from BibTeX. The earlier extraction step marked these two papers `partial` because method reading was unfinished, even though their bibliographic identities and CCF-A venues had been confirmed. This confused bibliographic verification with reading depth. The README filter then exposed only records with verified bibliography and CCF applicability. This was a curation error, not a relevance exclusion or a failed title search.
 
-The correction updates the existing records without duplicating them, separates identity from reading progress, and adds a visible pending-verification table. An unavailable final PDF no longer causes otherwise confirmed metadata to be downgraded. Regression checks cover both abstract-only eligibility and visibility of unresolved records. The initial corpus had 93 records; this bounded follow-up adds 14 distinct works, producing 107 records, 106 reconciled bibliographies and 103 ranked-catalogue entries. Four records remain visibly pending for identity or track applicability.
+The correction updated the existing records without duplicating them and separated identity from reading progress. An unavailable final PDF no longer caused otherwise confirmed metadata to be downgraded. The initial corpus had 93 records; this bounded follow-up added 14 distinct works, producing a historical snapshot of 107 records, 106 reconciled bibliographies and 103 records with verified CCF applicability. Current inclusion depends on bibliographic identity and fusion relevance; an unassigned CCF classification is displayed as `—` within the normal subject tables.
 
 ## The two supplied papers
 
@@ -35,7 +35,7 @@ The missing works form three connected groups. Classical matching and distillati
 | [FedBE](https://openreview.net/forum?id=dgtpE6gKjHn) | ICLR 2021 | A | representation | section-reviewed |
 | [GAMF](https://proceedings.mlr.press/v162/liu22k.html) | ICML 2022 | A | representation | section-reviewed |
 | [PANs](https://openaccess.thecvf.com/content/CVPR2022/html/Li_Federated_Learning_With_Position-Aware_Neurons_CVPR_2022_paper.html) | CVPR 2022 | A | representation | section-reviewed |
-| [FedTAM](https://ieeexplore.ieee.org/document/10476260/) | ICPADS 2023 | Pending track | representation | abstract-reviewed |
+| [FedTAM](https://ieeexplore.ieee.org/document/10476260/) | ICPADS 2023 | — | representation | abstract-reviewed |
 | [MetaFed](https://ieeexplore.ieee.org/document/10197230/) | TNNLS 2024 | B | representation | section-reviewed |
 
 FedMD and Cronus are companion-workshop records and do not inherit NeurIPS A. Cronus uses the verified 2021 workshop version, not its 2019 preprint year or an ICLR 2022 under-review page. MetaFed uses its 2024 final TNNLS issue year rather than the 2023 online/DOI year. MoFedNet uses JCST 2026. ICPADS is C in the directory, but FedTAM's individual full/regular-paper applicability remains unresolved; a page count or Oral label does not settle it. JCST-B and ICPADS-C have been added to the [venue register](../data/venues_ccf2026.json).
@@ -55,17 +55,17 @@ The corrective search used the following actual query families and primary-sourc
 | Foundations | `"Probabilistic Federated Neural Matching" PMLR`; `"Federated Learning with Matched Averaging" ICLR 2020`; `"FedMD" "2019" workshop`; `"FedGKT" "FedBE" federated learning`; `"Cronus" "Robust and Heterogeneous"` | PMLR, CVF, NeurIPS, official workshop program and author manuscripts; exact GAMF/PANs title searches |
 | Trade-offs | `"Rewarded soups" NeurIPS 2023`; `"Pareto" "model merging" ICLR paper` | Final NeurIPS/ICLR/PMLR pages and selected methods sections of all three papers |
 
-## Historical screening queue — now processed
+## Completed follow-up screening
 
-This table preserves the six candidates queued at the 107-record snapshot. All six were processed in the earlier follow-up. The corrected decisions retain two and exclude four; see the [federated follow-up audit](federated-coverage-audit.md) for current decisions. The next-check column below records the historical task, not an outstanding exclusion.
+The six works identified at the 107-record snapshot have all been screened. Two are retained and four excluded under the corrected scope; the [federated follow-up audit](federated-coverage-audit.md) gives the evidence for these decisions.
 
-| Candidate | Next check | Current source |
+| Work | Completed scope decision | Source |
 |---|---|---|
-| Buffalo: Biomedical Vision-Language Understanding with Cross-Modal Prototype and Federated Foundation Model Collaboration | Determine the fusion object and role of prototype exchange from the paper; final bibliography is identified. | [ACM publication](https://doi.org/10.1145/3627673.3679627) |
-| FedBone: Towards Large-Scale Federated Multi-Task Learning | Assess split training and gradient combination against the broader training-time fusion scope. | [JCST publication](https://doi.org/10.1007/s11390-024-3639-x) |
-| FairFHTL: Achieving Task-Agnostic Fairness in Federated Hetero-Task Learning | Verify full publication and fairness mechanism before inclusion. | [Author publication list](https://www.bj-yan.top/publications) |
-| Wasserstein Barycenter-Based Model Fusion and Linear Mode Connectivity of Neural Networks | Follow PrivFusion's reference 11 and reconcile final publication. | [Seed author manuscript](https://arxiv.org/abs/2311.03396v1) |
-| Fine-tuning Global Model via Data-free Knowledge Distillation for Non-IID Federated Learning | Follow PrivFusion's reference 16; compare its operator and data assumptions with FedDF/FedGen. | [Seed author manuscript](https://arxiv.org/abs/2311.03396v1) |
-| Breaking Privacy in Model-Heterogeneous Federated Learning | Read the attack model and confirm applicability to the fusion threat matrix. | [USENIX RAID 2024](https://www.usenix.org/conference/raid2024) |
+| Buffalo: Biomedical Vision-Language Understanding with Cross-Modal Prototype and Federated Foundation Model Collaboration | Excluded: inspected evidence does not establish a direct model-fusion operator. | [ACM publication](https://doi.org/10.1145/3627673.3679627) |
+| FedBone: Towards Large-Scale Federated Multi-Task Learning | Excluded: combining task gradients in split training does not satisfy the model-fusion inclusion rule. | [JCST publication](https://doi.org/10.1007/s11390-024-3639-x) |
+| FairFHTL: Achieving Task-Agnostic Fairness in Federated Hetero-Task Learning | Excluded: inspected evidence establishes task-fairness optimization, without a direct model-fusion object or operator. | [Author publication list](https://www.bj-yan.top/publications) |
+| Wasserstein Barycenter-Based Model Fusion and Linear Mode Connectivity of Neural Networks | Retained: transport correspondences and barycenter weights construct a fused network from source models. | [Seed author manuscript](https://arxiv.org/abs/2311.03396v1) |
+| Fine-tuning Global Model via Data-free Knowledge Distillation for Non-IID Federated Learning | Retained: generated inputs and class-weighted teachers distill multiple client models into one global model. | [Seed author manuscript](https://arxiv.org/abs/2311.03396v1) |
+| Breaking Privacy in Model-Heterogeneous Federated Learning | Excluded: the attack targets training cohorts and secure-aggregation behavior, without a specific model-fusion operator as its object. | [USENIX RAID 2024](https://www.usenix.org/conference/raid2024) |
 
-Generic multimodal-feature fusion and identity/cloud federation hits were excluded from this targeted branch when they did not establish interaction among independent models. Shared authors, title keywords and an impressive venue label are not inclusion criteria. This historical audit repairs demonstrated omissions; the linked follow-up closes its six-item queue. Neither pass establishes exhaustive coverage or experimental reproduction.
+Generic multimodal-feature fusion and identity/cloud federation hits were excluded from this targeted branch when they did not establish interaction among independent models. Shared authors, title keywords and an impressive venue label are not inclusion criteria. This historical audit repairs demonstrated omissions; the linked follow-up records the completed screening decisions. Neither pass establishes exhaustive coverage or experimental reproduction.

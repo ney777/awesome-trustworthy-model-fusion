@@ -55,10 +55,10 @@ FedAUX uses its final 2023 issue year, although the DOI contains 2021; technical
 | [Making Open-Source Text LLM Watermarks Durable Against Merging](https://neurips.cc/virtual/2026/poster/155690) | 2026 / NeurIPS | core | section-reviewed | accepted |
 | [MergePrint: Merge-Resistant Fingerprints for Robust Black-box Ownership Verification of Large Language Models](https://aclanthology.org/2025.acl-long.342/) | 2025 / ACL | core | section-reviewed | published |
 
-## CCF and unresolved tracks
+## CCF and publication tracks
 
-Ranks use CCF 2026 seventh formal edition, documented in the venue audit. RAID is B (PDF p.21, row9). CSUR and PACLIC are absent after acronym/full-name searches over all72 pages and are None. Findings and the LAMPS companion workshop do not inherit parent-conference ranks. Preprint status is distinct from venue absence. Unknown applicability remains pending.
+Ranks use CCF 2026 seventh formal edition, documented in the venue audit. RAID is B (PDF p.21, row9). CSUR and PACLIC are absent after acronym/full-name searches over all72 pages and are None. Findings and the LAMPS companion workshop do not inherit parent-conference ranks. Preprint status is distinct from venue absence. Unknown paper-level applicability is displayed as `—`.
 
-The KDD directory row has no ADS-specific footnote, and the general scope does not expressly discuss ADS or EMNLP Industry. The [EMNLP 2024 Industry CFP](https://2024.emnlp.org/calls/industry_track/) sets a six-page limit without calling the track Short. Length alone does not resolve the mapping. Beimingwu ADS and MergeKit Industry therefore remain internally pending; this does not alter the verified parent-venue ranks.
+The KDD directory row has no ADS-specific footnote, and the general scope does not expressly discuss ADS or EMNLP Industry. The [EMNLP 2024 Industry CFP](https://2024.emnlp.org/calls/industry_track/) sets a six-page limit without calling the track Short. Length alone does not resolve the mapping. Beimingwu ADS and MergeKit Industry therefore carry `—` in the CCF column; this does not alter the verified parent-venue ranks.
 
 Downloaded full texts and retrieval snapshots remain private; per-record full-text hashes are included. No experiments were reproduced. This log records discovery activity, not repository release status.

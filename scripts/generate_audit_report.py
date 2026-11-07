@@ -1,59 +1,62 @@
-"""Generate corpus counts from the master; exclude local manuscript from public output."""
+"""Generate a reader-facing overview of the public collection."""
 from collections import Counter
-from library import ROOT, load, formal
+from library import ROOT, load, catalogue_rows, ccf_label
+
 
 def main():
-    d=load();rs=d['papers'];ready=[r for r in rs if formal(r)]
-    verified=[r for r in rs if r['verification_status']=='verified']
-    def tab(field, rows):
-        c=Counter(str(r.get(field) if r.get(field) is not None else 'pending') for r in rows)
-        return '\n'.join(f'| {k} | {v} |' for k,v in sorted(c.items()))
-    text=f'''# Literature discovery report
+    data = load()
+    rows = catalogue_rows(data['papers'])
 
-Snapshot: {d['curation_date']}. The master contains **{len(rs)} distinct records**, including **{len(verified)} with reconciled bibliographic metadata** and **{len(ready)} eligible for the ranked README catalogue**. These counts describe verified records, not all search hits. Verification of identity, CCF applicability, reading depth and experimental reproduction are separate dimensions.
+    def table(values):
+        return '\n'.join(f'| {key} | {count} |' for key, count in sorted(Counter(values).items()))
+
+    text = f'''# Collection overview
+
+Updated: {data['curation_date']}. This collection contains **{len(rows)} papers, surveys and tools** on model fusion. The [main catalogue](../README.md) organizes them by representation, trustworthy governance and collaborative evolution. The [federated literature table](federated-literature.md) highlights **{sum(bool(p.get('federated_view_group')) for p in rows)} records** with an explicit fusion focus in federated or distributed settings.
 
 ## Coverage
 
 | Primary category | Records |
-|---|---:|
-{tab('primary_category',rs)}
+| --- | ---: |
+{table(p['primary_category'] for p in rows)}
 
-Related foundations, tools and surveys are included in these counts and are distinguished in the record fields. Each study has one primary category; secondary tags do not add papers. The database includes {sum(2024<=r['year']<=2026 for r in rs)} records dated 2024–2026, with exact online/issue and accepted/preprint distinctions retained where needed.
+Each work has one primary category; secondary tags do not add records. Foundations, tools and surveys are distinguished in the record fields. The collection includes {sum(2024 <= p['year'] <= 2026 for p in rows)} records dated 2024–2026. Online/issue years, preprints and accepted papers are identified in the individual records.
+
+| Publication type | Records |
+| --- | ---: |
+{table(p['publication_type'] for p in rows)}
+
+## How to read the records
+
+The [detailed records](papers.md) describe the problem, fusion mechanism, assumptions, contribution and evidence boundaries. Publication identity, reading depth and experimental reproduction are separate dimensions.
 
 | Reading depth | Records |
-|---|---:|
-{tab('review_depth',rs)}
+| --- | ---: |
+{table(p['review_depth'] for p in rows)}
 
-Selected-section review does not mean the whole paper, proof or appendix was assessed. No experiments were independently reproduced. Code provenance and availability do not establish implementation correctness.
+Selected-section review does not mean the whole paper, proof or appendix was assessed. No experiments were independently reproduced for this catalogue. Code availability does not establish implementation correctness.
 
-## CCF 2026 distribution
+## Venue grades
 
-The following distribution covers all records, including bibliography candidates. Pending is an internal unresolved state and is not a fifth CCF grade.
+| CCF 2026 label | Records |
+| --- | ---: |
+{table(ccf_label(p) for p in rows)}
 
-| Recorded rank | All records |
-|---|---:|
-{tab('ccf_rank',rs)}
+Grades follow the seventh-edition directory, with sources in the [venue register](../data/venues_ccf2026.json). **—** means no grade is displayed; **None** denotes a venue or publication type outside the ranked directory. Special tracks do not automatically inherit a parent-conference grade. A venue grade does not determine inclusion or establish scientific quality.
 
-| Recorded rank | Ranked catalogue only |
-|---|---:|
-{tab('ccf_rank',ready)}
+## Explore the literature
 
-The [venue register](../data/venues_ccf2026.json) gives seventh-edition directory evidence. A venue grade is not a scientific quality score. Unresolved special-track or full/regular-paper applicability remains pending rather than inheriting a parent-conference grade.
+- [Scope and definitions](scope-and-definitions.md): the fusion operations covered and boundaries with adjacent topics.
+- [Related surveys](prior-surveys.md): {sum(p['record_type'] == 'survey' for p in rows)} surveys and their complementary perspectives.
+- [Model conditions](model-conditions.md): selected source, target and auxiliary model configurations.
+- [Benchmarks and tools](benchmarks.md): evaluation resources and their limits.
+- [Search protocol](search-protocol.md): source selection and literature coverage.
 
-## Synthesis and positioning
-
-The retained title is **Trustworthy Model Fusion and Collaboration: A Survey of Representation, Governance, and Evolution**. Fusion operations are the main comparison unit. Source-retaining composition and model selection supply supporting or boundary comparisons, and do not establish continual fusion merely by changing a query or training round. Model fusion in federated settings remains a priority alongside relevant post-training checkpoint reuse.
-
-The comparative contribution is an explicit link between capability/compatibility evidence, the decisions permitted by access and trust conditions, and the evidence that may need reassessment after change. Existing surveys already discuss safety, provenance, continual fusion and feedback; no first-framework claim is supported. The event-indexed evaluation is proposed and unimplemented.
-
-All six supplied survey seeds and six recent extensions are compared in [prior-surveys.md](prior-surveys.md). The nearest overlaps include From Parameters to Behaviors, MoErging, the CSUR model-merging survey, FUSE, and the unresolved Knowledge Transmission and Fusion preview. The last record is not counted as fully reconciled metadata.
-
-The [scope correction](scope-correction.md) removed 17 general-FL or insufficiently supported records from the former 137-record snapshot. The [federated table](federated-literature.md) groups {sum(bool(r.get('federated_view_group')) for r in rs)} records by explicit fusion object and operation. The [federated audit](federated-coverage-audit.md) records a bounded reference-list crosswalk and completed candidate screening.
-
-## Recheck and continuation
-
-See the [executed search protocol](search-protocol.md), [source-level records](papers.md), [research questions](research-gaps.md), [outline](survey-outline.md) and [reference audit](reference-audit.md). Priority improvements are final-version access for several surveys, reconciliation of the Information Fusion author/year record, explicit CCF track applicability, and stronger cross-operator evidence on withdrawal and long-term recovery. The collection is purposive, not exhaustive.
+This is a curated collection, not an exhaustive census. General federated learning methods are excluded unless they directly study model fusion. Corrections and relevant additions are welcome through the [contribution guide](../CONTRIBUTING.md).
 '''
-    (ROOT/'docs/literature-report.md').write_text(text)
-    print('Generated literature report from',len(rs),'records.')
-if __name__=='__main__':main()
+    (ROOT / 'docs/literature-report.md').write_text(text, encoding='utf-8')
+    print('Generated collection overview from', len(rows), 'records.')
+
+
+if __name__ == '__main__':
+    main()

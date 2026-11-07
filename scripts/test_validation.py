@@ -3,8 +3,8 @@ import copy
 import tempfile
 import unittest
 from pathlib import Path
-from library import REQUIRED, formal
-from generate_readme import pending_catalogue
+from library import REQUIRED, formal, catalogue_rows, ccf_label
+from generate_readme import federated_catalogue
 from validate_papers import validate
 from check_citations import check as check_citations
 
@@ -40,20 +40,24 @@ class EvidenceRules(unittest.TestCase):
         for depth in ('metadata-only', 'abstract-reviewed', 'section-reviewed'):
             self.p['review_depth'] = depth
             self.assertTrue(formal(self.p))
-            self.assertEqual(pending_catalogue([self.p]), [])
-    def test_pending_identity_and_rank_remain_visible(self):
+            self.assertEqual(catalogue_rows([self.p]), [self.p])
+    def test_public_catalogue_requires_identity_not_rank(self):
         self.p.update(verification_status='partial', ccf_verification_status='verified', ccf_rank='A')
         q=copy.deepcopy(self.p)
-        q.update(id='unranked', title='A Track Awaiting Verification', verification_status='verified',
+        q.update(id='unranked', title='A Verified Fusion Paper', verification_status='verified',
                  ccf_verification_status='pending', ccf_rank=None)
-        output='\n'.join(pending_catalogue([self.p,q]))
         for paper in (self.p,q):
-            self.assertFalse(formal(paper))
-            self.assertIn(paper['title'], output)
-            self.assertIn(paper['official_url'], output)
-        self.assertIn('Bibliographic identity: partial', output)
-        self.assertIn('CCF venue/track applicability', output)
-        self.assertNotIn('| None |', output)
+            paper.update(federated_view_group='Alignment and knowledge transfer',
+                         fusion_relevance='Combines source models by alignment.')
+        self.assertEqual(catalogue_rows([self.p,q]), [q])
+        output=federated_catalogue([self.p,q])
+        self.assertNotIn(self.p['title'], output)
+        self.assertIn(q['title'], output)
+        self.assertIn('EX / —', output)
+        self.assertNotIn('EX / None', output)
+        self.assertNotIn('Pending', output)
+        q.update(ccf_verification_status='verified', ccf_rank='None')
+        self.assertEqual(ccf_label(q), 'None')
     def test_undefined_citation_and_commented_citation(self):
         with tempfile.TemporaryDirectory() as folder:
             p=Path(folder);(p/'references.bib').write_text('@article{known, title={Known}}')

@@ -37,13 +37,23 @@ def normalize_doi(s):
     return re.sub(r'^https?://(?:dx\.)?doi\.org/', '', (s or '').strip(), flags=re.I).lower().rstrip('/')
 
 def formal(p):
-    """Catalogue eligibility concerns identity and rank, independently of reading depth."""
+    """A record with both bibliographic identity and CCF applicability established."""
     return p.get('verification_status') == 'verified' and p.get('ccf_verification_status') == 'verified'
+
+def catalogue_rows(rows):
+    """Public entries require established identity, independently of venue rank."""
+    return [p for p in rows if p.get('verification_status') == 'verified']
+
+def ccf_label(p):
+    """Do not turn an unknown track grade into either a grade or confirmed None."""
+    if p.get('ccf_verification_status') != 'verified' or p.get('ccf_rank') is None:
+        return '—'
+    return p['ccf_rank']
 
 def write_csv(path, rows):
     fields = list(dict.fromkeys(REQUIRED + sorted({k for p in rows for k in p})))
     with path.open('w', encoding='utf-8-sig', newline='') as f:
-        w = csv.DictWriter(f, fieldnames=fields)
+        w = csv.DictWriter(f, fieldnames=fields, lineterminator='\n')
         w.writeheader()
         for p in rows:
             w.writerow({k: json.dumps(v, ensure_ascii=False) if isinstance(v, (list, dict)) else v for k, v in p.items()})

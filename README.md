@@ -4,15 +4,15 @@ A curated research collection on how existing models are represented, governed u
 
 **Representation → Governance → Evolution**
 
-[Scope](docs/scope-and-definitions.md) · [Taxonomy](docs/taxonomy.md) · [Federated literature](docs/federated-literature.md) · [Model conditions](docs/model-conditions.md) · [Detailed records](docs/papers.md) · [Related surveys](docs/prior-surveys.md) · [Benchmarks](docs/benchmarks.md) · [Search protocol](docs/search-protocol.md) · [Coverage audit](docs/coverage-audit.md) · [Model-condition audit](docs/model-conditions-audit.md) · [Audit](docs/reference-audit.md) · [Report](docs/literature-report.md) · [Contributing](CONTRIBUTING.md)
+[Scope](docs/scope-and-definitions.md) · [Taxonomy](docs/taxonomy.md) · [Federated literature](docs/federated-literature.md) · [Model conditions](docs/model-conditions.md) · [Detailed records](docs/papers.md) · [Related surveys](docs/prior-surveys.md) · [Benchmarks](docs/benchmarks.md) · [Collection overview](docs/literature-report.md) · [Contributing](CONTRIBUTING.md) · [中文](README.zh-CN.md)
 
-## Collection status
+## About this collection
 
-Curation snapshot: 2026-11-07. The database contains 140 records; 135 satisfy both metadata and CCF-edition verification for the ranked catalogue. Remaining records are retained as pending, not classified as CCF-None by default.
+Updated: 2026-11-07. Browse 139 papers, surveys and tools in the topic tables below. The [federated literature table](docs/federated-literature.md) highlights fusion methods in federated and distributed settings.
 
-This is a staged, evidence-tracked collection, not a claim of exhaustive coverage. Federated learning alone is not an inclusion criterion: methods must directly concern model fusion; general FL methods are excluded from the method catalogue. See the [scope correction](docs/scope-correction.md). Venue ranks use the **CCF 2026 seventh edition** only. Findings, workshop and other excluded tracks do not inherit the main-conference rank. Publication status and review depth are separate fields.
+Methods must directly concern model fusion; general federated learning methods are outside this catalogue. This is a curated collection, not an exhaustive census. Detailed records explain the fusion mechanism, assumptions and evidence boundaries.
 
-The unpublished survey manuscript is maintained locally and is not distributed in this repository.
+Venue grades follow the **CCF 2026 seventh edition**. Findings, workshops and other excluded tracks do not inherit the main-conference grade. **—** means no grade is displayed; **None** denotes a venue or publication type outside the ranked directory. Grades do not determine inclusion or scientific quality. Preprints and accepted papers are labeled separately from published papers.
 
 ## I. Fusion Representation
 
@@ -86,6 +86,7 @@ The unpublished survey manuscript is maintained locally and is not distributed i
 | 2024 | **MAGDi: Structured Distillation of Multi-Agent Interaction Graphs Improves Reasoning in Smaller Language Models** | ICML | A | Published | [Paper](https://proceedings.mlr.press/v235/chen24ah.html) · [Code](https://github.com/dinobby/MAGDi) |
 | 2024 | **MetaFed: Federated Learning Among Federations With Cyclic Knowledge Distillation for Personalized Healthcare** | TNNLS | B | Published | [Paper](https://ieeexplore.ieee.org/document/10197230/) · [Code](https://github.com/microsoft/PersonalizedFL) |
 | 2024 | **One-shot Federated Learning via Synthetic Distiller-Distillate Communication** | NeurIPS | A | Published | [Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/ba0ad9d1e0c737800b2340b9cd68c208-Abstract-Conference.html) · [Code](https://github.com/Carkham/FedSD2C) |
+| 2023 | **FedTAM: Decentralized Federated Learning with a Feature Attention Based Multi-teacher Knowledge Distillation for Healthcare** | ICPADS | — | Published | [Paper](https://ieeexplore.ieee.org/document/10476260/) |
 | 2022 | **DENSE: Data-Free One-Shot Federated Learning** | NeurIPS | A | Published | [Paper](https://proceedings.neurips.cc/paper_files/paper/2022/hash/868f2266086530b2c71006ea1908b14a-Abstract-Conference.html) |
 | 2022 | **Fine-tuning Global Model via Data-Free Knowledge Distillation for Non-IID Federated Learning** | CVPR | A | Published | [Paper](https://openaccess.thecvf.com/content/CVPR2022/html/Zhang_Fine-Tuning_Global_Model_via_Data-Free_Knowledge_Distillation_for_Non-IID_Federated_CVPR_2022_paper.html) |
 | 2021 | **FedBE: Making Bayesian Model Ensemble Applicable to Federated Learning** | ICLR | A | Published | [Paper](https://openreview.net/forum?id=dgtpE6gKjHn) · [Code](https://github.com/hongyouc/FedBE) |
@@ -245,6 +246,7 @@ The unpublished survey manuscript is maintained locally and is not distributed i
 | 2025 | **A Survey on Model MoErging: Recycling and Routing Among Specialized Experts for Collaborative Learning** | TMLR | None | Published | [Paper](https://openreview.net/forum?id=u0azVc9Y0y) |
 | 2025 | **Collaborative Inference and Learning between Edge SLMs and Cloud LLMs: A Survey of Algorithms, Execution, and Open Challenges** | arXiv | None | Preprint | [Paper](https://arxiv.org/abs/2507.16731) |
 | 2025 | **From Task-Specific Models to Unified Systems: A Review of Model Merging Approaches** | arXiv | None | Preprint | [Paper](https://arxiv.org/abs/2503.08998) |
+| 2025 | **One-shot Federated Learning Methods: A Practical Guide** | IJCAI | — | Published | [Paper](https://www.ijcai.org/proceedings/2025/1174) |
 | 2024 | **A Survey of Trustworthy Federated Learning: Issues, Solutions, and Challenges** | TIST | C | Published | [Paper](https://dl.acm.org/doi/10.1145/3678181) |
 | 2024 | **Emerging trends in federated learning: from model fusion to federated X learning** | IJMLC | None | Published | [Paper](https://link.springer.com/article/10.1007/s13042-024-02119-1) |
 | 2024 | **Model aggregation techniques in federated learning: A comprehensive survey** | FGCS | C | Published | [Paper](https://www.sciencedirect.com/science/article/pii/S0167739X23003333) |
@@ -257,31 +259,14 @@ The unpublished survey manuscript is maintained locally and is not distributed i
 | --- | --- | --- | :---: | --- | --- |
 | 2025 | **FusionBench: A Unified Library and Comprehensive Benchmark for Deep Model Fusion** | JMLR | A | Published | [Paper](https://www.jmlr.org/papers/v26/25-1243.html) · [Code](https://github.com/tanganke/fusion_bench) |
 | 2025 | **MergeBench: A Benchmark for Merging Domain-Specialized LLMs** | NeurIPS | A | Published | [Paper](https://proceedings.neurips.cc/paper_files/paper/2025/hash/91f7f71cb04699f387dc863da42a1fe3-Abstract-Datasets_and_Benchmarks_Track.html) |
+| 2024 | **Arcee’s MergeKit: A Toolkit for Merging Large Language Models** | EMNLP Industry | — | Industry track | [Paper](https://aclanthology.org/2024.emnlp-industry.36/) · [Code](https://github.com/arcee-ai/mergekit) |
+| 2024 | **Beimingwu: A Learnware Dock System** | KDD Applied | — | Applied Data Science track | [Paper](https://doi.org/10.1145/3637528.3671617) · [Code](https://github.com/Learnware-LAMDA/Beimingwu) |
 | 2024 | **RouterBench: A Benchmark for Multi-LLM Routing System** | arXiv | None | Preprint | [Paper](https://arxiv.org/abs/2403.12031) · [Code](https://github.com/withmartian/routerbench) |
 
-## Pending verification
+## Data and contributions
 
-These records remain visible while the stated checks are unresolved. Reading depth alone does not make bibliographic metadata pending.
-
-| Year | Paper | Venue | CCF 2026 | Unresolved check | Links |
-| --- | --- | --- | :---: | --- | --- |
-| 2026 | **Knowledge transmission and fusion in large models: research advances and challenges** | Information Fusion | None | Bibliographic identity: partial | [Paper](https://www.sciencedirect.com/science/article/pii/S1566253526006950) |
-| 2025 | **One-shot Federated Learning Methods: A Practical Guide** | IJCAI | Pending | CCF venue/track applicability | [Paper](https://www.ijcai.org/proceedings/2025/1174) |
-| 2024 | **Arcee’s MergeKit: A Toolkit for Merging Large Language Models** | EMNLP Industry | Pending | CCF venue/track applicability | [Paper](https://aclanthology.org/2024.emnlp-industry.36/) · [Code](https://github.com/arcee-ai/mergekit) |
-| 2024 | **Beimingwu: A Learnware Dock System** | KDD Applied | Pending | CCF venue/track applicability | [Paper](https://doi.org/10.1145/3637528.3671617) · [Code](https://github.com/Learnware-LAMDA/Beimingwu) |
-| 2023 | **FedTAM: Decentralized Federated Learning with a Feature Attention Based Multi-teacher Knowledge Distillation for Healthcare** | ICPADS | Pending | CCF venue/track applicability | [Paper](https://ieeexplore.ieee.org/document/10476260/) |
-
-## Verification and maintenance
-
-Bibliographic facts, review depth, source locators, assumptions and boundaries are stored in [data/papers.json](data/papers.json). The [CSV](data/papers.csv), [BibTeX](data/references.bib), README and detailed notes are generated views. Edit the JSON source, not the generated outputs.
-
-```sh
-python scripts/validate_papers.py
-python scripts/check_duplicates.py
-python scripts/generate_readme.py
-python scripts/export_bibtex.py
-```
+Download the [CSV](data/papers.csv), [BibTeX](data/references.bib) or [JSON](data/papers.json). [Detailed records](docs/papers.md) include source links, reading depth, assumptions and limitations. The [search protocol](docs/search-protocol.md) describes how literature is selected.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for inclusion and verification rules. Original repository materials are released under the [MIT license](LICENSE); linked publications and third-party tools retain their respective rights.
 
-<!-- source-sha256: e4d17973445782b56e0a0ec9816174d98adf1c77a27f5e8c265c0086b1083363 -->
+<!-- source-sha256: 2b184b2ac65e54db457d124219b5df06173af511914f781d802f61ce0b7364a8 -->

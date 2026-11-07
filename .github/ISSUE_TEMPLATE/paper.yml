@@ -27,4 +27,4 @@ body:
     id: ccf
     attributes:
       label: CCF 2026 seventh-edition evidence
-      description: Provide venue/track matching and official directory page. Unknown rank remains pending, not None.
+      description: Provide venue/track matching and the official directory page when available. Leave an unknown rank blank; do not label it None.
