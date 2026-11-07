@@ -1,5 +1,7 @@
 # Governance extension search audit
 
+This is a historical search log. Inclusion decisions described here may be superseded by the [scope correction](scope-correction.md); generic FL methods no longer appear in the active catalogue.
+
 Private knowledge transfer, fairness and provenance require different evidence. Keeping raw data local does not by itself protect released weights; source detection does not estimate contribution; and reduced class-wise error gaps do not establish demographic fairness. These distinctions govern the 18 additions in this extension.
 
 ## Evidence boundaries

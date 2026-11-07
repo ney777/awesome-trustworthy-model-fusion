@@ -32,3 +32,7 @@ python scripts/check_release.py
 ```
 
 Optional network inspection is available with `python scripts/verify_sources.py --online --id PAPER_ID`. It records identity/availability signals and never automatically promotes a paper to verified. Human source reading and final-version reconciliation remain necessary.
+
+## Federated scope check
+
+A federation setting is not an inclusion reason. Name the source models/modules, the fusion operation, and the primary-source passage establishing that fusion is central. `fusion_relevance` is required for the federated method view. General FL optimizers, client scheduling, gradient defenses, cryptographic aggregation and fairness objectives are excluded unless a direct fusion contribution is established. Do not reintroduce an identity from [the exclusion audit](data/scope-exclusions.json) without new scope evidence and an explicit revision of that decision.

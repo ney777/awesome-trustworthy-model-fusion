@@ -51,16 +51,18 @@ def pending_catalogue(rows):
 
 def federated_catalogue(rows):
     selected = [p for p in rows if p.get('federated_view_group')]
-    lines = ['# Federated fusion and related foundations', '',
-             f"This focused view contains {len(selected)} records selected from the master bibliography. Groups distinguish actual federated protocols, decentralized training and related model-reuse foundations; inclusion does not establish privacy, fairness or a real institutional deployment.", '',
+    lines = ['# Model fusion in federated and distributed settings', '',
+             f"This focused view contains {len(selected)} records with an explicit model-fusion contribution. Each row identifies the models, modules or knowledge being combined and the fusion operation. General federated optimization, client scheduling, gradient defense and protocol security are excluded unless the work directly studies model fusion. Distributed merging foundations are labeled separately; inclusion does not establish privacy, fairness or institutional deployment.", '',
              'See the [federated coverage audit](federated-coverage-audit.md) for the reference-list crosswalk, version reconciliation and disposition of the previous screening queue. [Detailed records](papers.md) retain assumptions, limitations and source locators.', '']
-    group_order = ['Aggregation and heterogeneous training', 'Alignment and knowledge transfer',
+    group_order = ['Fusion weights and component combinations', 'Alignment and knowledge transfer',
                    'One-shot and decentralized fusion', 'Personalization and multi-federation collaboration',
                    'Privacy, fairness, robustness and attribution', 'Related foundations and model reuse',
                    'Related federated surveys']
     for group in group_order + [g for g in dict.fromkeys(p['federated_view_group'] for p in selected) if g not in group_order]:
+        if not any(p['federated_view_group'] == group for p in selected):
+            continue
         lines += ['## ' + group, '',
-                  '| Year | Paper | Venue / CCF 2026 | Setting and role | Publication / reading | Links |',
+                  '| Year | Paper | Venue / CCF 2026 | Fusion object and operation | Publication / reading | Links |',
                   '| --- | --- | --- | --- | --- | --- |']
         for p in sorted((p for p in selected if p['federated_view_group'] == group),
                         key=lambda p: (-p['year'], p['title'].casefold())):
@@ -69,7 +71,7 @@ def federated_catalogue(rows):
             if p['verification_status'] != 'verified':
                 status += '; bibliography ' + p['verification_status']
             lines.append(table_row([p['year'], p['title'], p['venue_abbreviation'] + ' / ' + str(rank),
-                                    p['federated_setting'], status, paper_links(p)]))
+                                    p['fusion_relevance'], status, paper_links(p)]))
         lines += ['']
     return '\n'.join(lines)
 
@@ -81,7 +83,7 @@ def main():
            '[Scope](docs/scope-and-definitions.md) · [Taxonomy](docs/taxonomy.md) · [Federated literature](docs/federated-literature.md) · [Detailed records](docs/papers.md) · [Related surveys](docs/prior-surveys.md) · [Benchmarks](docs/benchmarks.md) · [Search protocol](docs/search-protocol.md) · [Coverage audit](docs/coverage-audit.md) · [Audit](docs/reference-audit.md) · [Report](docs/literature-report.md) · [Contributing](CONTRIBUTING.md)','',
            '## Collection status','',
            f"Curation snapshot: {data.get('curation_date','not recorded')}. The database contains {len(rows)} records; {len(ready)} satisfy both metadata and CCF-edition verification for the ranked catalogue. Remaining records are retained as pending, not classified as CCF-None by default.",'',
-           'This is a staged, evidence-tracked collection, not a claim of exhaustive coverage. Venue ranks use the **CCF 2026 seventh edition** only. Findings, workshop and other excluded tracks do not inherit the main-conference rank. Publication status and review depth are separate fields.','',
+           'This is a staged, evidence-tracked collection, not a claim of exhaustive coverage. Federated learning alone is not an inclusion criterion: methods must directly concern model fusion; general FL methods are excluded from the method catalogue. See the [scope correction](docs/scope-correction.md). Venue ranks use the **CCF 2026 seventh edition** only. Findings, workshop and other excluded tracks do not inherit the main-conference rank. Publication status and review depth are separate fields.','',
            'The unpublished survey manuscript is maintained locally and is not distributed in this repository.','']
     for cat, heading in CATEGORIES.items():
         lines += ['## '+heading,'']

@@ -1,5 +1,7 @@
 # Coverage correction and omission audit
 
+**Historical audit.** Current scope decisions are in the [scope correction](scope-correction.md). The former all-inclusion follow-up was over-broad; of the six candidates below, WB fusion and FedFTG remain included, while Buffalo, FedBone, FairFHTL and the model-heterogeneous FL attack have been removed from the catalogue. Historical counts are not current library totals.
+
 Model Trip and PrivFusion had already been found and stored, but an incorrect metadata status hid them from the ranked README and excluded them from BibTeX. The earlier extraction step marked these two papers `partial` because method reading was unfinished, even though their bibliographic identities and CCF-A venues had been confirmed. This confused bibliographic verification with reading depth. The README filter then exposed only records with verified bibliography and CCF applicability. This was a curation error, not a relevance exclusion or a failed title search.
 
 The correction updates the existing records without duplicating them, separates identity from reading progress, and adds a visible pending-verification table. An unavailable final PDF no longer causes otherwise confirmed metadata to be downgraded. Regression checks cover both abstract-only eligibility and visibility of unresolved records. The initial corpus had 93 records; this bounded follow-up adds 14 distinct works, producing 107 records, 106 reconciled bibliographies and 103 ranked-catalogue entries. Four records remain visibly pending for identity or track applicability.
@@ -53,7 +55,7 @@ The corrective search used the following actual query families and primary-sourc
 
 ## Historical screening queue — now processed
 
-This table preserves the six candidates queued at the 107-record snapshot. All six have now been processed and included at their supported evidence depth; see the [federated follow-up audit](federated-coverage-audit.md) for current decisions and the 137-record snapshot. The next-check column below records the historical task, not an outstanding exclusion.
+This table preserves the six candidates queued at the 107-record snapshot. All six were processed in the earlier follow-up. The corrected decisions retain two and exclude four; see the [federated follow-up audit](federated-coverage-audit.md) for current decisions. The next-check column below records the historical task, not an outstanding exclusion.
 
 | Candidate | Next check | Current source |
 |---|---|---|

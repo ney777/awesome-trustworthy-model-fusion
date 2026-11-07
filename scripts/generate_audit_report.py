@@ -42,13 +42,13 @@ The [venue register](../data/venues_ccf2026.json) gives seventh-edition director
 
 ## Synthesis and positioning
 
-The retained title is **Trustworthy Model Fusion and Collaboration: A Survey of Representation, Governance, and Evolution**. Persistent source-model collaboration is materially different from source-independent fused inference; keeping both terms supports the verified scope. Federated protocols remain a priority setting, while a federated-only title would exclude relevant checkpoint reuse and routing work.
+The retained title is **Trustworthy Model Fusion and Collaboration: A Survey of Representation, Governance, and Evolution**. Persistent source-model collaboration is materially different from source-independent fused inference; keeping both terms supports the verified scope. Model fusion in federated settings remains a priority, while a federated-only title would exclude relevant checkpoint reuse and routing work.
 
 The comparative contribution is an explicit link between capability/compatibility evidence, the decisions permitted by access and trust conditions, and the evidence that may need reassessment after change. Existing surveys already discuss safety, provenance, continual fusion and feedback; no first-framework claim is supported. The event-indexed evaluation is proposed and unimplemented.
 
 All six supplied survey seeds and six recent extensions are compared in [prior-surveys.md](prior-surveys.md). The nearest overlaps include From Parameters to Behaviors, MoErging, the CSUR model-merging survey, FUSE, and the unresolved Knowledge Transmission and Fusion preview. The last record is not counted as fully reconciled metadata.
 
-The [federated table](federated-literature.md) groups {sum(bool(r.get('federated_view_group')) for r in rs)} records by protocol setting and access conditions. The [federated audit](federated-coverage-audit.md) records a bounded reference-list crosswalk and completed candidate screening.
+The [scope correction](scope-correction.md) removed 17 general-FL or insufficiently supported records from the former 137-record snapshot. The [federated table](federated-literature.md) groups {sum(bool(r.get('federated_view_group')) for r in rs)} records by explicit fusion object and operation. The [federated audit](federated-coverage-audit.md) records a bounded reference-list crosswalk and completed candidate screening.
 
 ## Recheck and continuation
 

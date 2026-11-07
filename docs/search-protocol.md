@@ -1,10 +1,10 @@
 # Search and verification protocol
 
-The 7 November 2026 snapshot uses a staged, purposive search with documented backward and targeted forward citation follow-up. It is not an exhaustive systematic review, a PRISMA screening exercise, or a complete citation-graph export. The main time window is 2018–2026, with three 2017 foundations retained where they explain aggregation or privacy assumptions.
+The 7 November 2026 snapshot uses a staged, purposive search with documented backward and targeted forward citation follow-up. It is not an exhaustive systematic review, a PRISMA screening exercise, or a complete citation-graph export. The current time window is 2018–2026. General federated background methods, including the previously included 2017 aggregation/security foundations, were removed by the scope correction.
 
 ## Scope and screening
 
-Include a study when it directly concerns knowledge interaction among reusable models, capability-based selection, fusion/alignment, constraints on model composition, or changes to a collaboration state. Related foundations and infrastructure are labeled separately. Exclude generic single-model learning, generic RAG, ordinary task-delegating agents, and trustworthiness papers without a specific connection to model combination. A method name containing “fusion,” “dynamic,” or “privacy” does not establish relevance or a guarantee.
+Include a study when it directly concerns knowledge interaction among reusable models, capability-based selection, fusion/alignment, constraints on model composition, or changes to a collaboration state. Related foundations and infrastructure are labeled separately and require a direct relationship to fusion or the explicitly retained model-selection/collaboration scope. General federated optimization, gradient security, client fairness or partial-model scheduling is not sufficient for inclusion. Exclude generic single-model learning, generic RAG, ordinary task-delegating agents, and trustworthiness papers without a specific connection to model combination. A method name containing “fusion,” “dynamic,” or “privacy” does not establish relevance or a guarantee.
 
 Each study receives one primary category and multiple secondary tags. Final and preprint versions count once. Normalized titles, DOI identifiers, official URLs, author lists, and version notes are used to reconcile duplicates. Unknown venues or track applicability remain pending; they are not CCF-None by default.
 
@@ -23,7 +23,7 @@ Executed queries and bounded citation chains are in the [representation/evolutio
 
 The query logs report the actual discovery branches rather than pretending every Boolean combination was executed across every database. Forward expansion used later papers and named-method searches; complete cited-by graph coverage and saturation were not established. No numerical count of all search hits or excluded hits is claimed because a comprehensive screening ledger was not maintained.
 
-The [coverage correction and omission audit](coverage-audit.md) records the follow-up triggered by Model Trip and PrivFusion, including 14 additions and explicit citation edges. The subsequent [federated audit](federated-coverage-audit.md) closes that six-item screening queue, reconciles all 31 entries in a frozen reference-list section, and checks four bounded related leads. Its 41 source occurrences map to 39 unique studies: nine existing and 30 added. The [screening ledger](../data/federated-screening.json) preserves aliases and decisions; this does not imply coverage of the reference repository’s other sections or of all federated learning. The initial 93-record snapshot was not a coverage-complete corpus.
+The [earlier coverage audit](coverage-audit.md) records the discovery history. The [federated crosswalk](federated-coverage-audit.md) preserves 41 source occurrences mapping to 39 unique studies; current screening retains 31 and excludes eight. Across the whole former corpus, the [scope correction](scope-correction.md) removes 17 entries. These decisions supersede the earlier all-inclusion pass. The executed queries above are historical discovery branches; encountering a title does not imply retaining it.
 
 ## Evidence extraction
 

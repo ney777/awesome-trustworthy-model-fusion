@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "checked_on": "2026-11-07",
   "reference_snapshot": {
     "repository": "EnnengYang/Awesome-Model-Merging-Methods-Theories-Applications",
@@ -9,22 +9,7 @@
     "section": "Model Merging in Federated Learning",
     "retrieved_on": "2026-11-07"
   },
-  "scope": "One frozen federated subsection, the prior six-candidate queue, and four bounded follow-ups; not the complete upstream repository or an exhaustive federated-learning search.",
-  "counts": {
-    "baseline_master_records": 107,
-    "final_master_records": 137,
-    "source_entries": 41,
-    "distinct_screened_identities": 39,
-    "existing_identities": 9,
-    "new_identities": 30,
-    "alias_entries": 2,
-    "reference_source_rows": 31,
-    "reference_distinct_identities": 29,
-    "reference_existing_identities": 9,
-    "reference_new_identities": 20,
-    "previous_queue_identities": 6,
-    "follow_up_identities": 4
-  },
+  "scope": "Frozen reference discovery crosswalk, with corrected current scope decisions. Reference-list membership does not establish catalogue eligibility.",
   "disposition_meanings": {
     "已有": "Present in the 107-record baseline; retain one canonical record.",
     "新增": "New canonical record included during this audit.",
@@ -77,7 +62,6 @@
       "source_title": "FedSEAM: Federated Continual Learning of LLMs via Subspace Expert Agreement Merging",
       "source_url": "https://arxiv.org/pdf/2610.33496",
       "canonical_id": "fedseam2026",
-      "disposition": "新增",
       "note": "Preprint; continual expert merging. The paper leaves non-IID-client and formal privacy evaluation open.",
       "official_url": "https://arxiv.org/abs/2610.33496",
       "review_depth": "section-reviewed",
@@ -93,7 +77,10 @@
           "url": "https://arxiv.org/pdf/2610.33496v1",
           "locator": "Author preprint v1, pp.3–6 §§3–5; p.9 Limitations"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Merges sparse expert tiles only along input-subspace directions with cross-client signed agreement, preserving incompatible components locally."
     },
     {
       "entry_id": "ref-02",
@@ -101,7 +88,6 @@
       "source_title": "Can Model Merging Improve Aggregation in DiLoCo?",
       "source_url": "https://arxiv.org/pdf/2607.03011",
       "canonical_id": "isoloco2026",
-      "disposition": "新增",
       "note": "Preprint; distributed-training foundation. Worker pretraining is not evidence of cross-institution federation.",
       "official_url": "https://arxiv.org/abs/2607.03011",
       "review_depth": "section-reviewed",
@@ -117,7 +103,10 @@
           "url": "https://arxiv.org/pdf/2607.03011v1",
           "locator": "Author preprint v1, p.5 §2.3; p.7 §4 Algorithm 2; p.10 §5"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Adapts Iso-C model merging to local-model parameter differences, reshapes update singular values, and incorporates the merged update into DiLoCo."
     },
     {
       "entry_id": "ref-03",
@@ -125,7 +114,6 @@
       "source_title": "FedMerge: Federated Model Merging for Personalization",
       "source_url": "https://scholar.google.com/scholar_url?url=https://ojs.aaai.org/index.php/AAAI/article/view/39113/43075&hl=en&sa=X&d=1003636543056490924&ei=dcC-afi-LoKq6rQPo6Gk2As&scisig=AFtJQiw8mqG2DDhpKAJPVgWDpcKq&oi=scholaralrt&hist=vWBd1VsAAAAJ:1360192736361724487:AFtJQix2MBKNfqG8ZHqg__7tkl0l&html=&pos=0&folt=art",
       "canonical_id": "fedmerge2026",
-      "disposition": "新增",
       "note": "Final AAAI 2026 title supersedes the retitled 2025 preprint; iterative model-bank personalization.",
       "official_url": "https://ojs.aaai.org/index.php/AAAI/article/view/39113",
       "review_depth": "section-reviewed",
@@ -141,7 +129,10 @@
           "url": "https://arxiv.org/pdf/2504.06768v3",
           "locator": "Author version v3, p.1 code; pp.3–4 Backgrounds and Methodology, Eqs.3–11 and Algorithm 1"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Forms each personalized model as a learned weighted mixture of server-bank models and jointly updates source models and mixing coefficients."
     },
     {
       "entry_id": "ref-04",
@@ -149,7 +140,6 @@
       "source_title": "Communication-Efficient Personalized Adaptation via Federated-Local Model Merging",
       "source_url": "https://arxiv.org/pdf/2602.18658",
       "canonical_id": "potara2026",
-      "disposition": "新增",
       "note": "Official NeurIPS 2026 main-conference acceptance; proceedings pending. Methods read in author preprint v1.",
       "official_url": "https://neurips.cc/virtual/2026/poster/150059",
       "review_depth": "section-reviewed",
@@ -165,7 +155,10 @@
           "url": "https://arxiv.org/pdf/2602.18658v1",
           "locator": "Author preprint v1, pp.4–6 §§3.2–3.5 and §4.1–4.2; official NeurIPS 2026 Poster page"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Combines compatible federated and local task vectors using coefficients estimated from marginal and cross-covariance information."
     },
     {
       "entry_id": "ref-05",
@@ -173,7 +166,6 @@
       "source_title": "On The Surprising Effectiveness of a Single Global Merging in Decentralized Learning",
       "source_url": "https://openreview.net/pdf?id=zrFnwRHuQo",
       "canonical_id": "single_global_merging2026",
-      "disposition": "新增",
       "note": "ICLR 2026 final title reconciled with arXiv:2507.06542; final merge follows repeated gossip.",
       "official_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/437d9bde2999f6e3e854e09f250261a5-Abstract-Conference.html",
       "review_depth": "section-reviewed",
@@ -189,7 +181,10 @@
           "url": "https://arxiv.org/pdf/2507.06542v4",
           "locator": "ICLR-labelled author v4, p.4 Algorithm 1 and §3.2; p.6 §§4.2–4.3; pp.7–8 §5"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Studies a final linear combination of decentralized local models and when it recovers global-distribution performance before consensus."
     },
     {
       "entry_id": "ref-06",
@@ -197,7 +192,6 @@
       "source_title": "Bi-level Personalization for Federated Foundation Models: A Task-vector Aggregation Approach",
       "source_url": "https://arxiv.org/pdf/2509.12697",
       "canonical_id": "fedbip2026",
-      "disposition": "新增",
       "note": "Final AAAI 2026 publication replaces the discovery list's 2025 preprint status.",
       "official_url": "https://ojs.aaai.org/index.php/AAAI/article/view/39991",
       "review_depth": "section-reviewed",
@@ -213,7 +207,10 @@
           "url": "https://arxiv.org/pdf/2509.12697v1",
           "locator": "Author preprint v1, pp.4–5 Methodology, task-vector similarity and layer-wise extension"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Combines client task vectors using similarity-derived client-specific or layer-specific coefficients to construct personalized models."
     },
     {
       "entry_id": "ref-07",
@@ -221,7 +218,6 @@
       "source_title": "Intrinsic Training Signals for Federated Learning Aggregation",
       "source_url": "https://arxiv.org/pdf/2507.06813",
       "canonical_id": "livar2025",
-      "disposition": "新增",
       "note": "ICIAP 2025 conference year retained; Springer first-online date 2026-01-02. ICIAP absent from CCF 2026; None.",
       "official_url": "https://link.springer.com/chapter/10.1007/978-3-032-10185-3_11",
       "review_depth": "section-reviewed",
@@ -237,7 +233,10 @@
           "url": "https://arxiv.org/pdf/2507.06813v2",
           "locator": "Author preprint v2, pp.4–6 method and proxy calibration; p.10 §6"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Merges LoRA updates with proxy-calibrated layer coefficients and combines classifier components with class-variance-aware weights."
     },
     {
       "entry_id": "ref-08",
@@ -245,7 +244,6 @@
       "source_title": "Breaking the Aggregation Bottleneck in Federated Recommendation: A Personalized Model Merging Approach",
       "source_url": "https://arxiv.org/pdf/2508.12386",
       "canonical_id": "fedem2026",
-      "disposition": "新增",
       "note": "Final AAAI 2026 publication replaces the 2025 preprint status; optional noise variant is separate from the base merge.",
       "official_url": "https://ojs.aaai.org/index.php/AAAI/article/view/38472",
       "review_depth": "section-reviewed",
@@ -261,7 +259,10 @@
           "url": "https://arxiv.org/pdf/2508.12386v1",
           "locator": "Author preprint v1, pp.3–5 method and privacy discussion; p.12 Appendix C; p.15 Table 7"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Learns item-specific coefficients that mix local and global recommendation-model embeddings, together with personalized server aggregation."
     },
     {
       "entry_id": "ref-09",
@@ -269,7 +270,6 @@
       "source_title": "A Single Merging Suffices: Recovering Server-based Learning Performance in Decentralized Learning",
       "source_url": "https://arxiv.org/pdf/2507.06542",
       "canonical_id": "single_global_merging2026",
-      "disposition": "别名",
       "note": "Retitled arXiv:2507.06542 version; same identity as reference row 5. No new record.",
       "official_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/437d9bde2999f6e3e854e09f250261a5-Abstract-Conference.html",
       "review_depth": "section-reviewed",
@@ -285,7 +285,10 @@
           "url": "https://arxiv.org/pdf/2507.06542v4",
           "locator": "ICLR-labelled author v4, p.4 Algorithm 1 and §3.2; p.6 §§4.2–4.3; pp.7–8 §5"
         }
-      ]
+      ],
+      "historical_disposition": "别名",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Studies a final linear combination of decentralized local models and when it recovers global-distribution performance before consensus."
     },
     {
       "entry_id": "ref-10",
@@ -293,7 +296,6 @@
       "source_title": "Closed-form merging of parameter-efficient modules for Federated Continual Learning",
       "source_url": "https://arxiv.org/pdf/2410.17961",
       "canonical_id": "lorm",
-      "disposition": "已有",
       "note": "Existing ICLR 2025 LoRM record; discovery arXiv link does not create another paper.",
       "official_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/d79b8c42f61b51722992705022134ef3-Abstract-Conference.html",
       "review_depth": "section-reviewed",
@@ -309,7 +311,10 @@
           "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/d79b8c42f61b51722992705022134ef3-Paper-Conference.pdf",
           "locator": "§3.1–3.3, PDF pp.3–6; §4.1 evaluation setting, PDF p.6"
         }
-      ]
+      ],
+      "historical_disposition": "已有",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Compatible low-rank modules are combined through closed-form regression-based merging under an alternating-factor federated/continual training protocol."
     },
     {
       "entry_id": "ref-11",
@@ -317,7 +322,6 @@
       "source_title": "Never Start from Scratch: Expediting On-Device LLM Personalization via Explainable Model Selection",
       "source_url": "https://arxiv.org/pdf/2504.13938",
       "canonical_id": "xpert2025",
-      "disposition": "新增",
       "note": "MobiSys 2025; selected method section explicitly combines cached models. Broader cloud/device collaboration, not a standard FL loop.",
       "official_url": "https://dl.acm.org/doi/10.1145/3711875.3729132",
       "review_depth": "section-reviewed",
@@ -333,7 +337,10 @@
           "url": "https://sites.pitt.edu/~weigao/publications/mobisys25_xpert.pdf",
           "locator": "Author-hosted ACM paper, p.1 bibliographic header; pp.3–4 §3; p.7 §5.2"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Selects compatible personalized checkpoints from a cache and combines multiple candidates by task arithmetic before local adaptation."
     },
     {
       "entry_id": "ref-12",
@@ -341,7 +348,6 @@
       "source_title": "FedMerge: Federated Personalization via Model Merging",
       "source_url": "https://arxiv.org/pdf/2504.06768",
       "canonical_id": "fedmerge2026",
-      "disposition": "别名",
       "note": "Retitled arXiv:2504.06768 version; same identity as reference row 3. No new record.",
       "official_url": "https://ojs.aaai.org/index.php/AAAI/article/view/39113",
       "review_depth": "section-reviewed",
@@ -357,7 +363,10 @@
           "url": "https://arxiv.org/pdf/2504.06768v3",
           "locator": "Author version v3, p.1 code; pp.3–4 Backgrounds and Methodology, Eqs.3–11 and Algorithm 1"
         }
-      ]
+      ],
+      "historical_disposition": "别名",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Forms each personalized model as a learned weighted mixture of server-bank models and jointly updates source models and mixing coefficients."
     },
     {
       "entry_id": "ref-13",
@@ -365,7 +374,6 @@
       "source_title": "Personalized Language Models via Privacy-Preserving Evolutionary Model Merging",
       "source_url": "https://arxiv.org/pdf/2503.18008v1",
       "canonical_id": "prime2025",
-      "disposition": "已有",
       "note": "Existing final EMNLP 2025 record; preprint v1 is a version link, not an additional identity.",
       "official_url": "https://aclanthology.org/2025.emnlp-main.1747/",
       "review_depth": "section-reviewed",
@@ -381,7 +389,10 @@
           "url": "https://aclanthology.org/2025.emnlp-main.1747.pdf",
           "locator": "PDF pp.3–4 §§2–3: LoRA selection, privacy objective and threat model; p.9 Limitations"
         }
-      ]
+      ],
+      "historical_disposition": "已有",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Selected compatible user LoRAs are merged through evolutionary coefficient optimization balancing target utility and similarity to donor behavior."
     },
     {
       "entry_id": "ref-14",
@@ -389,7 +400,6 @@
       "source_title": "FedAWA: Adaptive Optimization of Aggregation Weights in Federated Learning Using Client Vectors",
       "source_url": "https://arxiv.org/pdf/2503.15842",
       "canonical_id": "fedawa2025",
-      "disposition": "新增",
       "note": "Final CVPR 2025 publication replaces discovery arXiv-only status.",
       "official_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Shi_FedAWA_Adaptive_Optimization_of_Aggregation_Weights_in_Federated_Learning_Using_CVPR_2025_paper.html",
       "review_depth": "section-reviewed",
@@ -405,7 +415,10 @@
           "url": "https://arxiv.org/pdf/2503.15842v1",
           "locator": "Author preprint v1, pp.4–5 client vectors, aggregation-weight objective and layer-wise extension"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Represents local models as client vectors relative to the global model and optimizes model-wise or layerwise fusion coefficients through vector alignment."
     },
     {
       "entry_id": "ref-15",
@@ -413,7 +426,6 @@
       "source_title": "Many-Task Federated Fine-Tuning via Unified Task Vectors",
       "source_url": "https://arxiv.org/pdf/2502.06376",
       "canonical_id": "matu2025",
-      "disposition": "新增",
       "note": "FedGenAI-IJCAI 2025 companion workshop; does not inherit IJCAI A.",
       "official_url": "https://federated-learning.org/FedGenAI-ijcai-2025/",
       "review_depth": "section-reviewed",
@@ -429,7 +441,10 @@
           "url": "https://arxiv.org/pdf/2502.06376v3",
           "locator": "Author preprint v3, pp.3–4 method; official FedGenAI-IJCAI 2025 accepted-paper programme"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Combines task-vector signs and magnitudes into a unified update, with task masks and rescalers supporting cross-task model composition."
     },
     {
       "entry_id": "ref-16",
@@ -437,7 +452,6 @@
       "source_title": "PrivFusion: Privacy-Preserving Model Fusion via Decentralized Federated Graph Matching",
       "source_url": "https://ieeexplore.ieee.org/document/10643309/",
       "canonical_id": "privfusion2024",
-      "disposition": "已有",
       "note": "Already included and repaired in the prior audit; retain final TKDE 2024 identity and identified preprint reading scope.",
       "official_url": "https://doi.org/10.1109/tkde.2024.3430819",
       "review_depth": "section-reviewed",
@@ -461,7 +475,10 @@
           "url": "https://www.bj-yan.top/publications",
           "locator": "Coauthor publication list identifies final PrivFusion and summarizes the same decentralized matching/local-DP/perturbation-filter components; this supports association, not exact version equivalence."
         }
-      ]
+      ],
+      "historical_disposition": "已有",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Locally perturbed neuron/channel graph representations determine decentralized correspondences, followed by alignment and weight fusion of pretrained models."
     },
     {
       "entry_id": "ref-17",
@@ -469,7 +486,6 @@
       "source_title": "Model Trip: Enhancing Privacy and Fairness in Model Fusion Across Multi-Federations for Trustworthy Global Healthcare",
       "source_url": "https://ieeexplore.ieee.org/document/10597838/",
       "canonical_id": "modeltrip2024",
-      "disposition": "已有",
       "note": "Already included and repaired in the prior audit; final abstract-reviewed. No duplicate FairFusion entry.",
       "official_url": "https://doi.org/10.1109/icde60146.2024.00177",
       "review_depth": "abstract-reviewed",
@@ -493,7 +509,10 @@
           "url": "https://www.bj-yan.top/",
           "locator": "Coauthor selected-publication entry: Model Trip/FairFusion; publisher Paper link and unavailable ModelTrip Code link."
         }
-      ]
+      ],
+      "historical_disposition": "已有",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "The verified abstract directly identifies cross-federation fusion of pretrained healthcare models with joint utility/privacy/fairness objectives; the detailed operator remains unverified."
     },
     {
       "entry_id": "ref-18",
@@ -501,7 +520,6 @@
       "source_title": "DapperFL: Domain Adaptive Federated Learning with Model Fusion Pruning for Edge Devices",
       "source_url": "https://arxiv.org/pdf/2412.05823",
       "canonical_id": "dapperfl2024",
-      "disposition": "新增",
       "note": "Final NeurIPS 2024 main-conference paper; resource-aware fusion and pruning on a shared backbone.",
       "official_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/17a1a1439421f1837e10cd612bf92861-Abstract-Conference.html",
       "review_depth": "section-reviewed",
@@ -517,7 +535,10 @@
           "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/17a1a1439421f1837e10cd612bf92861-Paper-Conference.pdf",
           "locator": "Final proceedings PDF pp.3–6, Sections 3.1–3.4 and Algorithm 1: fusion schedule, pruning, domain regularization and masked-model restoration"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Blends local and global model parameters before capacity-aware channel pruning to construct a compact personalized model."
     },
     {
       "entry_id": "ref-19",
@@ -525,7 +546,6 @@
       "source_title": "FuseFL: One-Shot Federated Learning through the Lens of Causality with Progressive Model Fusion",
       "source_url": "https://arxiv.org/pdf/2410.20380",
       "canonical_id": "fusefl2024",
-      "disposition": "新增",
       "note": "Final NeurIPS 2024 main-conference paper; progressive block fusion includes continued local training.",
       "official_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/31e6e0c09325a3be16d93f84e40e0c7e-Abstract-Conference.html",
       "review_depth": "section-reviewed",
@@ -541,7 +561,10 @@
           "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/31e6e0c09325a3be16d93f84e40e0c7e-Paper-Conference.pdf",
           "locator": "Final proceedings PDF pp.6–7, Section 4 and Figure 4: progressive block fusion, retraining, adapters and complexity"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Concatenates and adapts trained blocks from multiple local models, then freezes the fused block before training subsequent blocks."
     },
     {
       "entry_id": "ref-20",
@@ -549,7 +572,6 @@
       "source_title": "Local Superior Soups: A Catalyst for Model Merging in Cross-Silo Federated Learning",
       "source_url": "https://arxiv.org/pdf/2410.23660",
       "canonical_id": "lss2024",
-      "disposition": "新增",
       "note": "Final NeurIPS 2024 main-conference paper; local training prepares mergeable candidates.",
       "official_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/24f7b98aef14fcd68acf3c941af1b59e-Abstract-Conference.html",
       "review_depth": "section-reviewed",
@@ -565,7 +587,10 @@
           "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/24f7b98aef14fcd68acf3c941af1b59e-Paper-Conference.pdf",
           "locator": "Final proceedings PDF pp.3–5, Sections 3.1–3.3 and Algorithm 1: soup construction, interpolation, affinity/diversity terms and theorem assumptions"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Builds a local model pool with interpolation-based affinity and diversity objectives, then averages the pool into a mergeable local soup."
     },
     {
       "entry_id": "ref-21",
@@ -573,7 +598,6 @@
       "source_title": "DIMAT: Decentralized Iterative Merging-And-Training for Deep Learning Models",
       "source_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Saadati_DIMAT_Decentralized_Iterative_Merging-And-Training_for_Deep_Learning_Models_CVPR_2024_paper.pdf",
       "canonical_id": "dimat2024",
-      "disposition": "新增",
       "note": "CVPR 2024 final; repeated neighbor alignment, merging and training. Matching uses activation data.",
       "official_url": "https://openaccess.thecvf.com/content/CVPR2024/html/Saadati_DIMAT_Decentralized_Iterative_Merging-And-Training_for_Deep_Learning_Models_CVPR_2024_paper.html",
       "review_depth": "section-reviewed",
@@ -589,7 +613,10 @@
           "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Saadati_DIMAT_Decentralized_Iterative_Merging-And-Training_for_Deep_Learning_Models_CVPR_2024_paper.pdf",
           "locator": "Final CVPR PDF pp.3–5 (printed pp.27519–27521), Sections 3–4.1 and Algorithm 1: graph assumptions, activation matching, iterative mixing and local training"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Matches neurons using activation-based assignments, aligns neighboring models, and merges their parameters between local training stages."
     },
     {
       "entry_id": "ref-22",
@@ -597,7 +624,6 @@
       "source_title": "FedFisher: Leveraging Fisher Information for One-Shot Federated Learning",
       "source_url": "https://proceedings.mlr.press/v238/jhunjhunwala24a/jhunjhunwala24a.pdf",
       "canonical_id": "fedfisher2024",
-      "disposition": "新增",
       "note": "AISTATS 2024, CCF C; curvature-aware one-shot FL, with data-derived local Fisher information.",
       "official_url": "https://proceedings.mlr.press/v238/jhunjhunwala24a.html",
       "review_depth": "section-reviewed",
@@ -613,7 +639,10 @@
           "url": "https://proceedings.mlr.press/v238/jhunjhunwala24a/jhunjhunwala24a.pdf",
           "locator": "Final proceedings PDF pp.3–4, Section 2 and Algorithm 1: local posteriors, Fisher fusion and common initialization; pp.6–7, Section 4: approximations and secure-aggregation distinction"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Combines local model weights by minimizing Fisher-weighted discrepancies, using diagonal or KFAC approximations in practical variants."
     },
     {
       "entry_id": "ref-23",
@@ -621,7 +650,6 @@
       "source_title": "lo-fi: distributed fine-tuning without communication",
       "source_url": "https://openreview.net/pdf?id=1U0aPkBVz0",
       "canonical_id": "lofi2023",
-      "disposition": "新增",
       "note": "TMLR 2023 final identity; selected reading uses the identified author version. TMLR absent from CCF 2026; None.",
       "official_url": "https://openreview.net/forum?id=1U0aPkBVz0",
       "review_depth": "section-reviewed",
@@ -649,7 +677,10 @@
           "url": "https://www.arimorcos.com/static/pdfs/wortsman_lofi.pdf",
           "locator": "Author-hosted PDF read for methods; bytes identical to downloaded arXiv v2"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Fine-tunes copies of a common checkpoint in independent device groups and averages their final model weights."
     },
     {
       "entry_id": "ref-24",
@@ -657,7 +688,6 @@
       "source_title": "Revisiting Weighted Aggregation in Federated Learning with Neural Networks",
       "source_url": "https://proceedings.mlr.press/v202/li23s/li23s.pdf",
       "canonical_id": "fedlaw2023",
-      "disposition": "新增",
       "note": "ICML 2023 final; FedLAW is the method alias. Server proxy data inform learned aggregation.",
       "official_url": "https://proceedings.mlr.press/v202/li23s.html",
       "review_depth": "section-reviewed",
@@ -673,7 +703,10 @@
           "url": "https://proceedings.mlr.press/v202/li23s/li23s.pdf",
           "locator": "Final PMLR PDF pp.3–4, Sections 3–4.2: shrinkage and coherence; p.8, Section 6.1 and Algorithm 1: proxy-data optimization and FedLAW"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Optimizes a global shrinkage factor and relative coefficients of a weighted combination of client-model parameters using proxy data."
     },
     {
       "entry_id": "ref-25",
@@ -681,7 +714,6 @@
       "source_title": "Deep neural network fusion via graph matching with applications to model ensemble and federated learning",
       "source_url": "https://proceedings.mlr.press/v162/liu22k/liu22k.pdf",
       "canonical_id": "gamf2022",
-      "disposition": "已有",
       "note": "Existing ICML 2022 GAMF graph-matching record.",
       "official_url": "https://proceedings.mlr.press/v162/liu22k.html",
       "review_depth": "section-reviewed",
@@ -697,7 +729,10 @@
           "url": "https://proceedings.mlr.press/v162/liu22k/liu22k.pdf",
           "locator": "Final proceedings PDF pp.2–5, §2 and §§3.1–3.3, Algorithms 1–2."
         }
-      ]
+      ],
+      "historical_disposition": "已有",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Quadratic graph matching and cycle-consistent channel correspondences align multiple neural networks before weight fusion."
     },
     {
       "entry_id": "ref-26",
@@ -705,7 +740,6 @@
       "source_title": "Federated Learning with Matched Averaging",
       "source_url": "https://openreview.net/pdf?id=BkluqlSFDS",
       "canonical_id": "fedma2020",
-      "disposition": "已有",
       "note": "Existing ICLR 2020 FedMA matched-averaging record.",
       "official_url": "https://openreview.net/forum?id=BkluqlSFDS",
       "review_depth": "section-reviewed",
@@ -725,7 +759,10 @@
           "url": "https://research.ibm.com/publications/federated-learning-with-matched-averaging",
           "locator": "Conference paper, ICLR 2020; complete author list; publication/code links"
         }
-      ]
+      ],
+      "historical_disposition": "已有",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Matched channels or hidden states are averaged layer by layer, with subsequent-layer retraining; correspondence and model combination are the central mechanism."
     },
     {
       "entry_id": "ref-27",
@@ -733,7 +770,6 @@
       "source_title": "Tackling the objective inconsistency problem in heterogeneous federated optimization",
       "source_url": "https://arxiv.org/pdf/2007.07481",
       "canonical_id": "fednova2020",
-      "disposition": "新增",
       "note": "NeurIPS 2020 final; FedNova is the method alias. Related aggregation foundation, not arbitrary checkpoint fusion.",
       "official_url": "https://proceedings.neurips.cc/paper/2020/hash/564127c03caab942e503ee6f810f54fd-Abstract.html",
       "review_depth": "section-reviewed",
@@ -749,7 +785,10 @@
           "url": "https://proceedings.neurips.cc/paper/2020/file/564127c03caab942e503ee6f810f54fd-Paper.pdf",
           "locator": "Final NeurIPS PDF pp.5–6, Sections 4.1–4.2: normalized update framework and objective inconsistency; p.8, Section 5 and Theorem 3: FedNova and assumptions"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "excluded",
+      "current_scope_reason": "Its contribution corrects local-solver objective inconsistency by normalizing accumulated optimization updates; it does not introduce model alignment, expert composition, distillation, or a model-reuse fusion objective."
     },
     {
       "entry_id": "ref-28",
@@ -757,7 +796,6 @@
       "source_title": "Model fusion via optimal transport",
       "source_url": "https://proceedings.neurips.cc/paper/2020/file/fb2697869f56484404c8ceee2985b01d-Paper.pdf",
       "canonical_id": "otfusion",
-      "disposition": "已有",
       "note": "Existing NeurIPS 2020 optimal-transport fusion record.",
       "official_url": "https://proceedings.nips.cc/paper_files/paper/2020/hash/fb2697869f56484404c8ceee2985b01d-Abstract.html",
       "review_depth": "section-reviewed",
@@ -773,7 +811,10 @@
           "url": "https://proceedings.neurips.cc/paper_files/paper/2020/file/fb2697869f56484404c8ceee2985b01d-Paper.pdf",
           "locator": "§§3–4.1, PDF pp.3–6"
         }
-      ]
+      ],
+      "historical_disposition": "已有",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Layerwise optimal-transport correspondences align independently trained neural weights before combining them into a fused network."
     },
     {
       "entry_id": "ref-29",
@@ -781,7 +822,6 @@
       "source_title": "Bayesian nonparametric federated learning of neural networks",
       "source_url": "https://proceedings.mlr.press/v97/yurochkin19a/yurochkin19a.pdf",
       "canonical_id": "pfnm2019",
-      "disposition": "已有",
       "note": "Existing ICML 2019 PFNM record.",
       "official_url": "https://proceedings.mlr.press/v97/yurochkin19a.html",
       "review_depth": "section-reviewed",
@@ -797,7 +837,10 @@
           "url": "https://proceedings.mlr.press/v97/yurochkin19a/yurochkin19a.pdf",
           "locator": "PDF pp.1–5, §§1–3; p.8, §5 Discussion."
         }
-      ]
+      ],
+      "historical_disposition": "已有",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Bayesian nonparametric neuron matching aligns local neural weights and infers global width to construct a fused model."
     },
     {
       "entry_id": "ref-30",
@@ -805,7 +848,6 @@
       "source_title": "Learning private neural language modeling with attentive aggregation",
       "source_url": "https://arxiv.org/pdf/1812.07108",
       "canonical_id": "fedatt2019",
-      "disposition": "新增",
       "note": "IJCNN 2019 final identity; methods read in arXiv v2. Optional noise is not a verified end-to-end privacy budget.",
       "official_url": "https://doi.org/10.1109/IJCNN.2019.8852464",
       "review_depth": "section-reviewed",
@@ -829,7 +871,10 @@
           "url": "https://arxiv.org/pdf/1812.07108v2",
           "locator": "v2 pp.3–5, III.A–D, Equations 2–6, Algorithms 1–3, IV.A"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Computes layerwise attention from server/client parameter distances and uses it to combine the selected client models into the server model."
     },
     {
       "entry_id": "ref-31",
@@ -837,7 +882,6 @@
       "source_title": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
       "source_url": "https://proceedings.mlr.press/v54/mcmahan17a/mcmahan17a.pdf",
       "canonical_id": "fedavg2017",
-      "disposition": "已有",
       "note": "Existing AISTATS 2017 FedAvg foundation record.",
       "official_url": "https://proceedings.mlr.press/v54/mcmahan17a.html",
       "review_depth": "section-reviewed",
@@ -853,7 +897,10 @@
           "url": "https://proceedings.mlr.press/v54/mcmahan17a/mcmahan17a.pdf",
           "locator": "PDF pp.1–3: problem setup and iterative averaging"
         }
-      ]
+      ],
+      "historical_disposition": "已有",
+      "current_scope_decision": "excluded",
+      "current_scope_reason": "Generic iterative local optimization and coordinate averaging is a training baseline, not a model-fusion-specific contribution under the corrected inclusion rule. Any necessary relation can be explained through a retained fusion paper rather than retaining an independent catalogue record."
     },
     {
       "entry_id": "queue-01",
@@ -861,7 +908,6 @@
       "source_title": "Buffalo: Biomedical Vision-Language Understanding with Cross-Modal Prototype and Federated Foundation Model Collaboration",
       "source_url": "https://doi.org/10.1145/3627673.3679627",
       "canonical_id": "buffalo2024",
-      "disposition": "新增",
       "note": "Include prototype collaboration; final publisher abstract-reviewed. CIKM Full Research Papers section establishes B applicability.",
       "official_url": "https://doi.org/10.1145/3627673.3679627",
       "review_depth": "abstract-reviewed",
@@ -885,7 +931,10 @@
           "url": "https://github.com/yyyanbj/Buffalo",
           "locator": "README identifies the official CIKM 2024 implementation and matching title/DOI. Code identity checked; no reproduction."
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "excluded",
+      "current_scope_reason": "The accessible publisher abstract establishes prototype imputation and federated fine-tuning, but does not establish a direct multi-model fusion operator. Move out of included records pending mechanism-level evidence rather than asserting that the paper is definitively unrelated."
     },
     {
       "entry_id": "queue-02",
@@ -893,7 +942,6 @@
       "source_title": "FedBone: Towards Large-Scale Federated Multi-Task Learning",
       "source_url": "https://doi.org/10.1007/s11390-024-3639-x",
       "canonical_id": "fedbone2024",
-      "disposition": "新增",
       "note": "Include related training-time gradient fusion; final JCST method sections reviewed, Regular Paper, B.",
       "official_url": "https://jcst.ict.ac.cn/article/doi/10.1007/s11390-024-3639-x",
       "review_depth": "section-reviewed",
@@ -913,7 +961,10 @@
           "url": "https://jcst.ict.ac.cn/fileup/1000-9000/PDF/JCST-2024-5-4-3639-1040.pdf",
           "locator": "Final 18-page PDF: p.1/printed1040 Regular Paper and metadata; pp.5–7/printed1044–1046, Sections3.2–3.5, Figure2 and Algorithm1."
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "excluded",
+      "current_scope_reason": "The inspected mechanism aggregates task gradients for a shared backbone in split training. Combining optimization gradients is not sufficient for model-fusion inclusion under the corrected scope."
     },
     {
       "entry_id": "queue-03",
@@ -921,7 +972,6 @@
       "source_title": "FairFHTL: Achieving Task-Agnostic Fairness in Federated Hetero-Task Learning",
       "source_url": "https://www.bj-yan.top/publications",
       "canonical_id": "fairfhtl2025",
-      "disposition": "新增",
       "note": "Include related governance; metadata-only plus attributed coauthor synopsis. Paper metric and full text unread; individual track/CCF pending.",
       "official_url": "https://doi.org/10.1109/ICME59968.2025.11209282",
       "review_depth": "metadata-only",
@@ -945,7 +995,10 @@
           "url": "https://www.ict.ac.cn/sourcedb/cn/jssrck/202010/t20201023_5721594.html",
           "locator": "Institute author bibliography, publication item5, confirms title, eight authors, ICME2025 and pp.1–6."
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "excluded",
+      "current_scope_reason": "Metadata and a coauthor synopsis establish task-fairness optimization over shared representations/updates, but not a direct model-fusion object or operator. Keep only as an uncounted screening lead if retained at all."
     },
     {
       "entry_id": "queue-04",
@@ -953,7 +1006,6 @@
       "source_title": "Wasserstein Barycenter-Based Model Fusion and Linear Mode Connectivity of Neural Networks",
       "source_url": "https://arxiv.org/abs/2311.03396v1",
       "canonical_id": "wbfusion2022",
-      "disposition": "新增",
       "note": "Include barycenter fusion; author evidence supports a 2022 preprint. Do not promote to an unverified venue.",
       "official_url": "https://arxiv.org/abs/2210.06671",
       "review_depth": "section-reviewed",
@@ -977,7 +1029,10 @@
           "url": "https://arxiv.org/pdf/2210.06671",
           "locator": "PDF p.1, author code footnote"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Constructs a barycenter network by alternating transport correspondences and fused layer weights across source models."
     },
     {
       "entry_id": "queue-05",
@@ -985,7 +1040,6 @@
       "source_title": "Fine-tuning Global Model via Data-free Knowledge Distillation for Non-IID Federated Learning",
       "source_url": "https://arxiv.org/abs/2311.03396v1",
       "canonical_id": "fedftg2022",
-      "disposition": "新增",
       "note": "Include synthetic-input teacher-to-global-model transfer; final CVPR 2022 method sections reviewed.",
       "official_url": "https://openaccess.thecvf.com/content/CVPR2022/html/Zhang_Fine-Tuning_Global_Model_via_Data-Free_Knowledge_Distillation_for_Non-IID_Federated_CVPR_2022_paper.html",
       "review_depth": "section-reviewed",
@@ -1005,7 +1059,10 @@
           "url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_Fine-Tuning_Global_Model_via_Data-Free_Knowledge_Distillation_for_Non-IID_Federated_CVPR_2022_paper.pdf",
           "locator": "PDF pp.3–5, §3, Algorithms 1–2"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Distills multiple client models into one global model using generated inputs and class-weighted teacher contributions."
     },
     {
       "entry_id": "queue-06",
@@ -1013,7 +1070,6 @@
       "source_title": "Breaking Privacy in Model-Heterogeneous Federated Learning",
       "source_url": "https://www.usenix.org/conference/raid2024",
       "canonical_id": "heteroflprivacy2024",
-      "disposition": "新增",
       "note": "Include RAID 2024 protocol threat evidence. Partial-submodel aggregation attacks are not a break of secure aggregation itself.",
       "official_url": "https://doi.org/10.1145/3678890.3678905",
       "review_depth": "section-reviewed",
@@ -1033,7 +1089,10 @@
           "url": "https://api.crossref.org/works/10.1145/3678890.3678905",
           "locator": "ACM-deposited metadata and final pagination; author-name shortening noted"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "excluded",
+      "current_scope_reason": "The attacks target partial-training cohort leakage and secure-aggregation protocol behavior. No specific independently trained-model fusion operator is the attack object; the prior link to fusion was too indirect."
     },
     {
       "entry_id": "followup-01",
@@ -1041,7 +1100,6 @@
       "source_title": "Task Arithmetic Through The Lens Of One-Shot Federated Learning",
       "source_url": "https://arxiv.org/abs/2411.18607",
       "canonical_id": "taskarithmeticfl2025",
-      "disposition": "新增",
       "note": "Include the one-shot FL/task-arithmetic connection; TMLR 05/2025 final identity, not an additional 2024 preprint.",
       "official_url": "https://openreview.net/forum?id=Cgyo7S7Oy0",
       "review_depth": "section-reviewed",
@@ -1061,7 +1119,10 @@
           "url": "https://openreview.net/pdf?id=Cgyo7S7Oy0",
           "locator": "Indexed final PDF first page, Published in Transactions on Machine Learning Research (05/2025)"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Analyzes when combining common-base task vectors is equivalent to a scaled one-round federated model average."
     },
     {
       "entry_id": "followup-02",
@@ -1069,7 +1130,6 @@
       "source_title": "HeteroFL: Computation and Communication Efficient Federated Learning for Heterogeneous Clients",
       "source_url": "https://thanghoang.github.io/publication/24_raid_heterofl/24_raid_heteroFL.pdf",
       "canonical_id": "heterofl2021",
-      "disposition": "新增",
       "note": "Include fixed nested-submodel aggregation; ICLR 2021 final identity, selected reading in identified arXiv v3.",
       "official_url": "https://openreview.net/forum?id=TNkPBBYFkXg",
       "review_depth": "section-reviewed",
@@ -1089,7 +1149,10 @@
           "url": "https://arxiv.org/pdf/2010.01264v3",
           "locator": "PDF pp.3–5 Sections 3.1–3.3, Equations 1–4, Algorithm 1; p.7 Section 4"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "excluded",
+      "current_scope_reason": "Its principal contribution allocates and trains nested subnetworks of one shared model. Known-coordinate averaging is infrastructure for resource-heterogeneous training, not a distinct model-fusion study under the corrected scope."
     },
     {
       "entry_id": "followup-03",
@@ -1097,7 +1160,6 @@
       "source_title": "FedRolex: Model-Heterogeneous Federated Learning with Rolling Sub-Model Extraction",
       "source_url": "https://thanghoang.github.io/publication/24_raid_heterofl/24_raid_heteroFL.pdf",
       "canonical_id": "fedrolex2022",
-      "disposition": "新增",
       "note": "Include rolling partial-model aggregation; final NeurIPS 2022 method sections reviewed.",
       "official_url": "https://papers.neurips.cc/paper_files/paper/2022/hash/bf5311df07f3efce97471921e6d2f159-Abstract-Conference.html",
       "review_depth": "section-reviewed",
@@ -1113,7 +1175,10 @@
           "url": "https://papers.neurips.cc/paper_files/paper/2022/file/bf5311df07f3efce97471921e6d2f159-Paper-Conference.pdf",
           "locator": "Final NeurIPS PDF pp.3–5, Sections 2–3.3 and Algorithm 1: static/random extraction comparison, rolling window and selective per-coordinate averaging"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "excluded",
+      "current_scope_reason": "The primary novelty is rolling submodel extraction and coverage of a shared supernetwork. Selective coordinate averaging does not on its own turn this resource-scheduling method into model-fusion research."
     },
     {
       "entry_id": "followup-04",
@@ -1121,7 +1186,6 @@
       "source_title": "DENSE: Data-Free One-Shot Federated Learning",
       "source_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/31e6e0c09325a3be16d93f84e40e0c7e-Paper-Conference.pdf",
       "canonical_id": "dense2022",
-      "disposition": "新增",
       "note": "Include one-shot ensemble distillation with server synthesis; final NeurIPS 2022 methods reviewed. Data-free does not mean model-inaccessible or formally private.",
       "official_url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/868f2266086530b2c71006ea1908b14a-Abstract-Conference.html",
       "review_depth": "section-reviewed",
@@ -1137,7 +1201,34 @@
           "url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/868f2266086530b2c71006ea1908b14a-Paper-Conference.pdf",
           "locator": "Final NeurIPS PDF pp.3–6, Sections 2.2–2.3, Equations 1–6 and Algorithm 1: generator losses, client BN statistics, ensemble distillation and explicit privacy discussion"
         }
-      ]
+      ],
+      "historical_disposition": "新增",
+      "current_scope_decision": "retained",
+      "current_scope_reason": "Synthesizes inputs from client models and normalization statistics, then distills the multi-model ensemble into a server student."
     }
-  ]
+  ],
+  "historical_counts_before_scope_correction": {
+    "baseline_master_records": 107,
+    "final_master_records": 137,
+    "source_entries": 41,
+    "distinct_screened_identities": 39,
+    "existing_identities": 9,
+    "new_identities": 30,
+    "alias_entries": 2,
+    "reference_source_rows": 31,
+    "reference_distinct_identities": 29,
+    "reference_existing_identities": 9,
+    "reference_new_identities": 20,
+    "previous_queue_identities": 6,
+    "follow_up_identities": 4
+  },
+  "current_counts": {
+    "source_rows": 41,
+    "unique_screened_identities": 39,
+    "retained_unique": 31,
+    "excluded_unique": 8,
+    "current_master_records": 120,
+    "current_federated_method_view": 42,
+    "retained_from_previous_30_additions": 23
+  }
 }

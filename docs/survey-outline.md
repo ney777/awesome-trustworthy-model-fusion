@@ -62,7 +62,7 @@ Treat task vectors, feature correspondences and model-relationship graphs as dis
 
 Begin with a decision distinction: post-hoc measurement, objective-driven optimization, constraint enforcement and explicit rejection/fallback. Then analyze privacy, security/robustness, fairness, reliability and provenance through their protected objects and assumptions. Compare privacy-related interfaces and proofs; source-aware versus merge-aware attacks; safety–utility procedures; client versus group versus contributor objectives; and the provenance of models, data-dependent statistics and decision evidence.
 
-Use RoFL to motivate access/robustness tension, MergeBackdoor and DAM for composition-specific threats, SafeMERGE and LED-Merging for safety-conditioned merging, and Ditto/AFL for fairness-object distinctions. Keep abstract-only records within their support. PrivFusion and Model Trip remain protocol candidates until their detailed assumptions are extracted in this pass.
+Use FedAUX and PrivFusion for channel-specific fusion privacy, MergeBackdoor and DAM for composition-specific threats, SafeMERGE and LED-Merging for safety-conditioned merging, and FairMerging for a fusion-specific fairness objective. Model Trip remains abstract-reviewed; PrivFusion mechanism reading is explicitly tied to its identified author version. General FL security, optimization and fairness methods are outside the method scope.
 
 **Output:** Table III, objective × protected object × threat × mechanism × decision × evidence × residual risk. **Transition:** Accepted decisions remain conditional on the model pool, task and trust assumptions.
 

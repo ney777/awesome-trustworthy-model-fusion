@@ -17,7 +17,13 @@ This collection studies the reuse, combination and coordination of existing mode
 
 ## Inclusion and exclusion
 
-Core records directly study inter-model alignment, compatibility, knowledge transfer, fusion decisions, collaboration organization, trust constraints or changes to these processes. Foundational records are retained when needed to interpret a core mechanism and explicitly marked. Surveys and evaluation tools are separate record types.
+Core records directly study inter-model alignment, compatibility, knowledge transfer, fusion decisions, collaboration organization, trust constraints or changes to these processes. Foundational records must themselves study a fusion operation or a direct connection to model fusion; a generic federated baseline or security protocol is not included merely as background. Surveys and evaluation tools are separate record types.
+
+For the federated method view, record the source models or modules, the fusion operation, and a primary-source passage establishing that fusion is a central contribution. Parameter alignment, explicit model/component combination, multi-teacher distillation, and constraints or attacks specific to these operations qualify. Training can be interleaved with fusion; training-free execution is not required.
+
+General federated optimization, client scheduling, partial-submodel allocation, gradient defenses, secure-aggregation protocols, client fairness and data sharing do not qualify by themselves. A standard weighted sum inside an FL loop is not sufficient. Model-dependent fusion-coefficient or layer/component-combination studies may qualify when that operator is the central contribution; generic client participation or contribution accounting does not establish the same scope. Evidence that only establishes a publication or application domain is insufficient for method inclusion. See the [scope correction](scope-correction.md).
+
+The explicitly requested survey comparisons remain in Related Surveys. Broader model-selection and collaboration systems remain in their established categories when supported by the original scope, but are not labeled federated fusion methods.
 
 Ordinary single-model training, a generic mixture-of-experts architecture, task delegation among agents, or a dataset sharing only an application domain is insufficient for inclusion. Medical collaboration, scientific AI and edge deployment are possible use cases, not the organizing taxonomy.
 

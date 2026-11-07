@@ -8,9 +8,9 @@ A curated research collection on how existing models are represented, governed u
 
 ## Collection status
 
-Curation snapshot: 2026-11-07. The database contains 137 records; 132 satisfy both metadata and CCF-edition verification for the ranked catalogue. Remaining records are retained as pending, not classified as CCF-None by default.
+Curation snapshot: 2026-11-07. The database contains 120 records; 116 satisfy both metadata and CCF-edition verification for the ranked catalogue. Remaining records are retained as pending, not classified as CCF-None by default.
 
-This is a staged, evidence-tracked collection, not a claim of exhaustive coverage. Venue ranks use the **CCF 2026 seventh edition** only. Findings, workshop and other excluded tracks do not inherit the main-conference rank. Publication status and review depth are separate fields.
+This is a staged, evidence-tracked collection, not a claim of exhaustive coverage. Federated learning alone is not an inclusion criterion: methods must directly concern model fusion; general FL methods are excluded from the method catalogue. See the [scope correction](docs/scope-correction.md). Venue ranks use the **CCF 2026 seventh edition** only. Findings, workshop and other excluded tracks do not inherit the main-conference rank. Publication status and review depth are separate fields.
 
 The unpublished survey manuscript is maintained locally and is not distributed in this repository.
 
@@ -31,7 +31,6 @@ The unpublished survey manuscript is maintained locally and is not distributed i
 | 2025 | **Model merging with SVD to tie the Knots** | ICLR | A | Published | [Paper](https://proceedings.iclr.cc/paper_files/paper/2025/hash/0d4f8a5109c5083b5307fcd0bddae7a7-Abstract-Conference.html) · [Code](https://github.com/gstoica27/KnOTS) |
 | 2025 | **PLeaS - Merging Models with Permutations and Least Squares** | CVPR | A | Published | [Paper](https://openaccess.thecvf.com/content/CVPR2025/html/Nasery_PLeaS_-_Merging_Models_with_Permutations_and_Least_Squares_CVPR_2025_paper.html) |
 | 2025 | **Representation Surgery in Model Merging with Probabilistic Modeling** | ICML | A | Published | [Paper](https://proceedings.mlr.press/v267/wei25c.html) |
-| 2024 | **FedBone: Towards Large-Scale Federated Multi-Task Learning** | JCST | B | Published | [Paper](https://jcst.ict.ac.cn/article/doi/10.1007/s11390-024-3639-x) |
 | 2024 | **FedFisher: Leveraging Fisher Information for One-Shot Federated Learning** | AISTATS | C | Published | [Paper](https://proceedings.mlr.press/v238/jhunjhunwala24a.html) |
 | 2024 | **FuseFL: One-Shot Federated Learning through the Lens of Causality with Progressive Model Fusion** | NeurIPS | A | Published | [Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/31e6e0c09325a3be16d93f84e40e0c7e-Abstract-Conference.html) · [Code](https://github.com/wizard1203/FuseFL) |
 | 2024 | **Local Superior Soups: A Catalyst for Model Merging in Cross-Silo Federated Learning** | NeurIPS | A | Published | [Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/24f7b98aef14fcd68acf3c941af1b59e-Abstract-Conference.html) · [Code](https://github.com/ubc-tea/Local-Superior-Soups) |
@@ -55,8 +54,6 @@ The unpublished survey manuscript is maintained locally and is not distributed i
 | 2026 | **Can Model Merging Improve Aggregation in DiLoCo?** | arXiv | None | Preprint | [Paper](https://arxiv.org/abs/2607.03011) |
 | 2025 | **Task Arithmetic Through The Lens Of One-Shot Federated Learning** | TMLR | None | Published | [Paper](https://openreview.net/forum?id=Cgyo7S7Oy0) · [Code](https://github.com/SilviaTao/one_shot_fl_task_arithmetic) |
 | 2023 | **lo-fi: distributed fine-tuning without communication** | TMLR | None | Published | [Paper](https://openreview.net/forum?id=1U0aPkBVz0) |
-| 2020 | **Tackling the Objective Inconsistency Problem in Heterogeneous Federated Optimization** | NeurIPS | A | Published | [Paper](https://proceedings.neurips.cc/paper/2020/hash/564127c03caab942e503ee6f810f54fd-Abstract.html) |
-| 2017 | **Communication-Efficient Learning of Deep Networks from Decentralized Data** | AISTATS | C | Published | [Paper](https://proceedings.mlr.press/v54/mcmahan17a.html) |
 
 ### Model Similarity and Compatibility Assessment
 
@@ -75,7 +72,6 @@ The unpublished survey manuscript is maintained locally and is not distributed i
 | Year | Paper | Venue | CCF 2026 | Status | Links |
 | --- | --- | --- | :---: | --- | --- |
 | 2025 | **Identifying and Reusing Learnwares Across Different Label Spaces** | IJCAI | B | Published | [Paper](https://ijcai.org/proceedings/2025/638) |
-| 2024 | **Buffalo: Biomedical Vision-Language Understanding with Cross-Modal Prototype and Federated Foundation Model Collaboration** | CIKM | B | Published | [Paper](https://doi.org/10.1145/3627673.3679627) · [Code](https://github.com/yyyanbj/Buffalo) |
 | 2023 | **Editing Models with Task Arithmetic** | ICLR | A | Published | [Paper](https://openreview.net/forum?id=6t0Kwf8-jrj) |
 
 ### Task–Model Association and Selection
@@ -120,9 +116,6 @@ The unpublished survey manuscript is maintained locally and is not distributed i
 | 2024 | **Here’s a Free Lunch: Sanitizing Backdoored Models with Model Merge** | Findings of ACL | None | Findings | [Paper](https://aclanthology.org/2024.findings-acl.894/) |
 | 2024 | **Model Merging and Safety Alignment: One Bad Model Spoils the Bunch** | Findings of EMNLP | None | Findings | [Paper](https://aclanthology.org/2024.findings-emnlp.762/) |
 | 2021 | **Cronus: Robust and Heterogeneous Collaborative Learning with Black-Box Knowledge Transfer** | NFFL at NeurIPS | None | Workshop | [Paper](https://neurips2021workshopfl.github.io/NFFL-2021/paper.html) |
-| 2021 | **FLTrust: Byzantine-robust Federated Learning via Trust Bootstrapping** | NDSS | A | Published | [Paper](https://www.ndss-symposium.org/ndss-paper/fltrust-byzantine-robust-federated-learning-via-trust-bootstrapping/) |
-| 2020 | **The Limitations of Federated Learning in Sybil Settings** | RAID | B | Published | [Paper](https://www.usenix.org/conference/raid2020/presentation/fung) · [Code](https://github.com/DistributedML/FoolsGold) |
-| 2017 | **Machine Learning with Adversaries: Byzantine Tolerant Gradient Descent** | NeurIPS | A | Published | [Paper](https://proceedings.neurips.cc/paper/2017/hash/f4b9ec30ad9f68f89b29639786cb62ef-Abstract.html) |
 
 ### Explainable and Auditable Fusion
 
@@ -130,11 +123,9 @@ The unpublished survey manuscript is maintained locally and is not distributed i
 | --- | --- | --- | :---: | --- | --- |
 | 2026 | **Defending Unauthorized Model Merging via Dual-Stage Weight Protection** | CVPR | A | Published | [Paper](https://openaccess.thecvf.com/content/CVPR2026/html/Chen_Defending_Unauthorized_Model_Merging_via_Dual-Stage_Weight_Protection_CVPR_2026_paper.html) |
 | 2026 | **Making Open-Source Text LLM Watermarks Durable Against Merging** | NeurIPS | A | Accepted; proceedings pending | [Paper](https://neurips.cc/virtual/2026/poster/155690) |
-| 2025 | **FedXDS: Leveraging Model Attribution Methods to counteract Data Heterogeneity in Federated Learning** | ICCV | A | Published | [Paper](https://openaccess.thecvf.com/content/ICCV2025/html/Hoefler_FedXDS_Leveraging_Model_Attribution_Methods_to_counteract_Data_Heterogeneity_in_ICCV_2025_paper.html) |
 | 2025 | **MergePrint: Merge-Resistant Fingerprints for Robust Black-box Ownership Verification of Large Language Models** | ACL | A | Published | [Paper](https://aclanthology.org/2025.acl-long.342/) |
 | 2025 | **RouteMark: A Fingerprint for Intellectual Property Attribution in Routing-based Model Merging** | arXiv | None | Preprint | [Paper](https://arxiv.org/abs/2508.01784) |
 | 2024 | **Have You Merged My Model? On The Robustness of Large Language Model IP Protection Methods Against Model Merging** | LAMPS | None | Workshop | [Paper](https://doi.org/10.1145/3689217.3690614) · [Code](https://github.com/ThuCCSLab/MergeGuard) |
-| 2023 | **ShapleyFL: Robust Federated Learning Based on Shapley Value** | KDD | A | Published | [Paper](https://doi.org/10.1145/3580305.3599500) |
 
 ### Privacy-Preserving Fusion
 
@@ -144,13 +135,10 @@ The unpublished survey manuscript is maintained locally and is not distributed i
 | 2026 | **When Privacy Hurts Mergeability: Geometry-Aware Model Merging under Differential Privacy** | arXiv | None | Preprint | [Paper](https://arxiv.org/abs/2608.26655) |
 | 2025 | **Be Cautious When Merging Unfamiliar LLMs: A Phishing Model Capable of Stealing Privacy** | Findings of ACL | None | Findings | [Paper](https://aclanthology.org/2025.findings-acl.713/) |
 | 2025 | **Personalized Language Models via Privacy-Preserving Evolutionary Model Merging** | EMNLP | B | Published | [Paper](https://aclanthology.org/2025.emnlp-main.1747/) |
-| 2024 | **Breaking Privacy in Model-Heterogeneous Federated Learning** | RAID | B | Published | [Paper](https://doi.org/10.1145/3678890.3678905) · [Code](https://github.com/vt-asaplab/model-hetero-fl-attacks) |
 | 2024 | **Complementary Knowledge Distillation for Robust and Privacy-Preserving Model Serving in Vertical Federated Learning** | AAAI | A | Published | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/29958) |
 | 2024 | **PrivFusion: Privacy-Preserving Model Fusion via Decentralized Federated Graph Matching** | TKDE | A | Published | [Paper](https://doi.org/10.1109/tkde.2024.3430819) |
 | 2023 | **FedAUX: Leveraging Unlabeled Auxiliary Data in Federated Learning** | TNNLS | B | Published | [Paper](https://doi.org/10.1109/tnnls.2021.3129371) |
-| 2023 | **RoFL: Robustness of Secure Federated Learning** | IEEE S&P | A | Published | [Paper](https://doi.org/10.1109/sp46215.2023.10179400) |
 | 2018 | **Scalable Private Learning with PATE** | ICLR | A | Published | [Paper](https://openreview.net/forum?id=rkZB1XbRZ) |
-| 2017 | **Practical Secure Aggregation for Privacy-Preserving Machine Learning** | CCS | A | Published | [Paper](https://doi.org/10.1145/3133956.3133982) |
 
 ### Fairness-Aware Fusion
 
@@ -159,8 +147,6 @@ The unpublished survey manuscript is maintained locally and is not distributed i
 | 2026 | **FairMerging: Rethinking Model Merging through the Lens of Fairness** | ICML | A | Published | [Paper](https://proceedings.mlr.press/v306/liu26dl.html) |
 | 2025 | **An Empirical Survey of Model Merging Algorithms for Social Bias Mitigation** | PACLIC | None | Published | [Paper](https://aclanthology.org/2025.paclic-1.24/) |
 | 2024 | **Model Trip: Enhancing Privacy and Fairness in Model Fusion Across Multi-Federations for Trustworthy Global Healthcare** | ICDE | A | Published | [Paper](https://doi.org/10.1109/icde60146.2024.00177) |
-| 2021 | **Ditto: Fair and Robust Federated Learning Through Personalization** | ICML | A | Published | [Paper](https://proceedings.mlr.press/v139/li21h.html) |
-| 2019 | **Agnostic Federated Learning** | ICML | A | Published | [Paper](https://proceedings.mlr.press/v97/mohri19a.html) |
 
 ### Constraint-Aware Fusion Optimization
 
@@ -174,8 +160,6 @@ The unpublished survey manuscript is maintained locally and is not distributed i
 | 2024 | **WARM: On the Benefits of Weight Averaged Reward Models** | ICML | A | Published | [Paper](https://proceedings.mlr.press/v235/rame24a.html) |
 | 2023 | **Revisiting Weighted Aggregation in Federated Learning with Neural Networks** | ICML | A | Published | [Paper](https://proceedings.mlr.press/v202/li23s.html) |
 | 2023 | **Rewarded soups: towards Pareto-optimal alignment by interpolating weights fine-tuned on diverse rewards** | NeurIPS | A | Published | [Paper](https://proceedings.neurips.cc/paper_files/paper/2023/hash/e12a3b98b67e8395f639fde4c2b03168-Abstract-Conference.html) |
-| 2022 | **FedRolex: Model-Heterogeneous Federated Learning with Rolling Sub-Model Extraction** | NeurIPS | A | Published | [Paper](https://papers.neurips.cc/paper_files/paper/2022/hash/bf5311df07f3efce97471921e6d2f159-Abstract-Conference.html) · [Code](https://github.com/AIoT-MLSys-Lab/FedRolex) |
-| 2021 | **HeteroFL: Computation and Communication Efficient Federated Learning for Heterogeneous Clients** | ICLR | A | Published | [Paper](https://openreview.net/forum?id=TNkPBBYFkXg) |
 | 2019 | **Learning Private Neural Language Modeling with Attentive Aggregation** | IJCNN | C | Published | [Paper](https://doi.org/10.1109/IJCNN.2019.8852464) · [Code](https://github.com/shaoxiongji/fed-att) |
 
 ### Trustworthy Model Selection and Orchestration
@@ -263,7 +247,6 @@ These records remain visible while the stated checks are unresolved. Reading dep
 | Year | Paper | Venue | CCF 2026 | Unresolved check | Links |
 | --- | --- | --- | :---: | --- | --- |
 | 2026 | **Knowledge transmission and fusion in large models: research advances and challenges** | Information Fusion | None | Bibliographic identity: partial | [Paper](https://www.sciencedirect.com/science/article/pii/S1566253526006950) |
-| 2025 | **FairFHTL: Achieving Task-Agnostic Fairness in Federated Hetero-Task Learning** | ICME | Pending | CCF venue/track applicability | [Paper](https://doi.org/10.1109/ICME59968.2025.11209282) |
 | 2024 | **Arcee’s MergeKit: A Toolkit for Merging Large Language Models** | EMNLP Industry | Pending | CCF venue/track applicability | [Paper](https://aclanthology.org/2024.emnlp-industry.36/) · [Code](https://github.com/arcee-ai/mergekit) |
 | 2024 | **Beimingwu: A Learnware Dock System** | KDD Applied | Pending | CCF venue/track applicability | [Paper](https://doi.org/10.1145/3637528.3671617) · [Code](https://github.com/Learnware-LAMDA/Beimingwu) |
 | 2023 | **FedTAM: Decentralized Federated Learning with a Feature Attention Based Multi-teacher Knowledge Distillation for Healthcare** | ICPADS | Pending | CCF venue/track applicability | [Paper](https://ieeexplore.ieee.org/document/10476260/) |
@@ -281,4 +264,4 @@ python scripts/export_bibtex.py
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for inclusion and verification rules. Original repository materials are released under the [MIT license](LICENSE); linked publications and third-party tools retain their respective rights.
 
-<!-- source-sha256: c5d331d1d4e3d4091cd8a311ca5661ce3aa7809906912dbd186f760ea7beec60 -->
+<!-- source-sha256: 0b5d69bf5c166e5aa4b0ca2eb9ac0ea3486a0be0e52d417c5a37033ff49089c5 -->

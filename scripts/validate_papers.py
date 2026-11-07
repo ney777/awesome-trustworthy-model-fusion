@@ -48,6 +48,8 @@ def validate(rows):
             errors.append(f'{pid}: invalid review depth')
         if p.get('review_depth') in ['full-text-reviewed','section-reviewed'] and not p.get('full_text_locators'):
             errors.append(f'{pid}: full-text/section review requires source locators')
+        if p.get('federated_view_group') and not p.get('fusion_relevance'):
+            errors.append(f'{pid}: federated method inclusion requires an explicit fusion object and operation')
     return errors
 
 if __name__ == '__main__':
@@ -57,6 +59,10 @@ if __name__ == '__main__':
     args = ap.parse_args()
     rows = load()['papers']
     errors = validate(rows)
+    exclusion_path = ROOT/'data/scope-exclusions.json'
+    if exclusion_path.exists():
+        excluded = {p['id'] for p in json.loads(exclusion_path.read_text())['excluded_records']}
+        errors += ['Excluded scope identity in active catalogue: '+p['id'] for p in rows if p['id'] in excluded]
     if args.require_all_verified and not all(formal(p) for p in rows):
         errors.append('Some records are not ready for the formal ranked catalogue.')
     report = {'structural_validation_passed':not errors,'record_count':len(rows),

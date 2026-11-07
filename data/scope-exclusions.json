@@ -1,0 +1,160 @@
+{
+  "checked_on": "2026-11-07",
+  "supersedes_commit": "e166a13feb2b4a4769597e1f454a0fa3d8487075",
+  "purpose": "Exclusion audit only. These identities are not catalogue records and are not exported to README, CSV or BibTeX.",
+  "excluded_records": [
+    {
+      "id": "ditto2021",
+      "title": "Ditto: Fair and Robust Federated Learning Through Personalization",
+      "official_url": "https://proceedings.mlr.press/v139/li21h.html",
+      "decision": "outside-fusion-method-scope",
+      "reason": "Personalized-objective regularization and client-level fairness/robustness are the core contributions; no model-fusion-specific mechanism is established.",
+      "evidence_url": "https://proceedings.mlr.press/v139/li21h/li21h.pdf",
+      "locator": "PDF pp.1–3: definitions of fairness/robustness; Section 3 objective"
+    },
+    {
+      "id": "afl2019",
+      "title": "Agnostic Federated Learning",
+      "official_url": "https://proceedings.mlr.press/v97/mohri19a.html",
+      "decision": "outside-fusion-method-scope",
+      "reason": "Optimizes a centralized training objective against mixtures of client distributions; this is a general federated objective/optimization method, not model fusion.",
+      "evidence_url": "https://proceedings.mlr.press/v97/mohri19a/mohri19a.pdf",
+      "locator": "PDF pp.1,3: motivation and agnostic loss"
+    },
+    {
+      "id": "fedavg2017",
+      "title": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
+      "official_url": "https://proceedings.mlr.press/v54/mcmahan17a.html",
+      "decision": "outside-fusion-method-scope",
+      "reason": "Generic iterative local optimization and coordinate averaging is a training baseline, not a model-fusion-specific contribution under the corrected inclusion rule. Any necessary relation can be explained through a retained fusion paper rather than retaining an independent catalogue record.",
+      "evidence_url": "https://proceedings.mlr.press/v54/mcmahan17a/mcmahan17a.pdf",
+      "locator": "PDF pp.1–3: problem setup and iterative averaging"
+    },
+    {
+      "id": "krum2017",
+      "title": "Machine Learning with Adversaries: Byzantine Tolerant Gradient Descent",
+      "official_url": "https://proceedings.neurips.cc/paper/2017/hash/f4b9ec30ad9f68f89b29639786cb62ef-Abstract.html",
+      "decision": "outside-fusion-method-scope",
+      "reason": "Selects a gradient under Byzantine distributed-optimization assumptions; the protected object and mechanism are generic gradient aggregation rather than model fusion.",
+      "evidence_url": "https://proceedings.neurips.cc/paper_files/paper/2017/file/f4b9ec30ad9f68f89b29639786cb62ef-Paper.pdf",
+      "locator": "PDF pp.1,3: abstract and system model"
+    },
+    {
+      "id": "foolsgold2020",
+      "title": "The Limitations of Federated Learning in Sybil Settings",
+      "official_url": "https://www.usenix.org/conference/raid2020/presentation/fung",
+      "decision": "outside-fusion-method-scope",
+      "reason": "Detects/downweights coordinated client updates from similarity histories; a generic Sybil defense without a model-fusion-specific contribution.",
+      "evidence_url": "https://www.usenix.org/system/files/raid20-fung.pdf",
+      "locator": "PDF pp.1–2: mechanism and threat model"
+    },
+    {
+      "id": "fltrust2021",
+      "title": "FLTrust: Byzantine-robust Federated Learning via Trust Bootstrapping",
+      "official_url": "https://www.ndss-symposium.org/ndss-paper/fltrust-byzantine-robust-federated-learning-via-trust-bootstrapping/",
+      "decision": "outside-fusion-method-scope",
+      "reason": "Uses trusted root data to score and normalize client updates for general Byzantine-robust training; not a model-fusion-specific method.",
+      "evidence_url": "https://www.ndss-symposium.org/ndss-paper/fltrust-byzantine-robust-federated-learning-via-trust-bootstrapping/",
+      "locator": "Official publication metadata and abstract"
+    },
+    {
+      "id": "rofl2023",
+      "title": "RoFL: Robustness of Secure Federated Learning",
+      "official_url": "https://doi.org/10.1109/sp46215.2023.10179400",
+      "decision": "outside-fusion-method-scope",
+      "reason": "Adds privacy-preserving proofs of update norm bounds to secure aggregation; a generic federated protocol defense, not a fusion-specific operator or constraint.",
+      "evidence_url": "https://arxiv.org/html/2107.03311v4",
+      "locator": "Sections I–III"
+    },
+    {
+      "id": "secureagg2017",
+      "title": "Practical Secure Aggregation for Privacy-Preserving Machine Learning",
+      "official_url": "https://doi.org/10.1145/3133956.3133982",
+      "decision": "outside-fusion-method-scope",
+      "reason": "A cryptographic aggregate-computation protocol protecting individual contributions; it does not itself study model fusion.",
+      "evidence_url": "https://research.google/pubs/practical-secure-aggregation-for-privacy-preserving-machine-learning/",
+      "locator": "Abstract"
+    },
+    {
+      "id": "fedxds2025",
+      "title": "FedXDS: Leveraging Model Attribution Methods to counteract Data Heterogeneity in Federated Learning",
+      "official_url": "https://openaccess.thecvf.com/content/ICCV2025/html/Hoefler_FedXDS_Leveraging_Model_Attribution_Methods_to_counteract_Data_Heterogeneity_in_ICCV_2025_paper.html",
+      "decision": "outside-fusion-method-scope",
+      "reason": "Attribution controls transformed-example sharing before ordinary FedAvg; the main contribution concerns data sharing and heterogeneity, not explaining or constructing model fusion.",
+      "evidence_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Hoefler_FedXDS_Leveraging_Model_Attribution_Methods_to_counteract_Data_Heterogeneity_in_ICCV_2025_paper.pdf",
+      "locator": "PDF pp.3–5 §4 and Algorithms 1–2: attribution-derived data sharing, aggregation and metric-privacy discussion"
+    },
+    {
+      "id": "shapleyfl2023",
+      "title": "ShapleyFL: Robust Federated Learning Based on Shapley Value",
+      "official_url": "https://doi.org/10.1145/3580305.3599500",
+      "decision": "outside-fusion-method-scope",
+      "reason": "Sequential client-contribution estimation, adaptive update weighting and importance sampling improve generic federated training; a weighted update sum alone is insufficient for inclusion as model fusion.",
+      "evidence_url": "https://par.nsf.gov/servlets/purl/10448787",
+      "locator": "PDF p.4 §4.1: validation utility, partial and surrogate federated Shapley values"
+    },
+    {
+      "id": "heteroflprivacy2024",
+      "title": "Breaking Privacy in Model-Heterogeneous Federated Learning",
+      "official_url": "https://doi.org/10.1145/3678890.3678905",
+      "decision": "outside-fusion-method-scope",
+      "reason": "The attacks target partial-training cohort leakage and secure-aggregation protocol behavior. No specific independently trained-model fusion operator is the attack object; the prior link to fusion was too indirect.",
+      "evidence_url": "https://thanghoang.github.io/publication/24_raid_heterofl/24_raid_heteroFL.pdf",
+      "locator": "Author-hosted final RAID PDF pp.4–6, §§4–5; system/threat model and two attacks"
+    },
+    {
+      "id": "fednova2020",
+      "title": "Tackling the Objective Inconsistency Problem in Heterogeneous Federated Optimization",
+      "official_url": "https://proceedings.neurips.cc/paper/2020/hash/564127c03caab942e503ee6f810f54fd-Abstract.html",
+      "decision": "outside-fusion-method-scope",
+      "reason": "Its contribution corrects local-solver objective inconsistency by normalizing accumulated optimization updates; it does not introduce model alignment, expert composition, distillation, or a model-reuse fusion objective.",
+      "evidence_url": "https://proceedings.neurips.cc/paper/2020/file/564127c03caab942e503ee6f810f54fd-Paper.pdf",
+      "locator": "Final NeurIPS PDF pp.5–6, Sections 4.1–4.2: normalized update framework and objective inconsistency; p.8, Section 5 and Theorem 3: FedNova and assumptions"
+    },
+    {
+      "id": "buffalo2024",
+      "title": "Buffalo: Biomedical Vision-Language Understanding with Cross-Modal Prototype and Federated Foundation Model Collaboration",
+      "official_url": "https://doi.org/10.1145/3627673.3679627",
+      "decision": "insufficient-fusion-evidence",
+      "reason": "The accessible publisher abstract establishes prototype imputation and federated fine-tuning, but does not establish a direct multi-model fusion operator. Move out of included records pending mechanism-level evidence rather than asserting that the paper is definitively unrelated.",
+      "evidence_url": "https://www.sigweb.sigweb.hosting.acm.org/toc/cikm24.html",
+      "locator": "Official ACM SIGWEB proceedings: Buffalo entry and abstract, within SESSION: Full Research Papers; the subsequent Short Research Papers heading begins after this entry."
+    },
+    {
+      "id": "fedbone2024",
+      "title": "FedBone: Towards Large-Scale Federated Multi-Task Learning",
+      "official_url": "https://jcst.ict.ac.cn/article/doi/10.1007/s11390-024-3639-x",
+      "decision": "outside-fusion-method-scope",
+      "reason": "The inspected mechanism aggregates task gradients for a shared backbone in split training. Combining optimization gradients is not sufficient for model-fusion inclusion under the corrected scope.",
+      "evidence_url": "https://jcst.ict.ac.cn/fileup/1000-9000/PDF/JCST-2024-5-4-3639-1040.pdf",
+      "locator": "Final JCST PDF p.1 (printed1040): complete author list, final issue, Regular Paper.; Final JCST PDF pp.5–6 (printed1044–1045), Sections3.2–3.3, Figure2 and Algorithm1: server backbone, local modules, forward/backward split and shared gradient update.; Final JCST PDF pp.6–7 (printed1045–1046), Section3.4: historical-gradient attention and projection of conflicting task gradients.; Final JCST PDF p.7 (printed1046), Section3.5: task adaptation module."
+    },
+    {
+      "id": "fairfhtl2025",
+      "title": "FairFHTL: Achieving Task-Agnostic Fairness in Federated Hetero-Task Learning",
+      "official_url": "https://doi.org/10.1109/ICME59968.2025.11209282",
+      "decision": "insufficient-fusion-evidence",
+      "reason": "Metadata and a coauthor synopsis establish task-fairness optimization over shared representations/updates, but not a direct model-fusion object or operator. Keep only as an uncounted screening lead if retained at all.",
+      "evidence_url": "https://www.bj-yan.top/publications",
+      "locator": "Coauthor entry FairFHTL, 2025: complete title/authors and short author-written description of task fairness, shared representations and allocation across updates. This is not treated as the paper abstract."
+    },
+    {
+      "id": "heterofl2021",
+      "title": "HeteroFL: Computation and Communication Efficient Federated Learning for Heterogeneous Clients",
+      "official_url": "https://openreview.net/forum?id=TNkPBBYFkXg",
+      "decision": "outside-fusion-method-scope",
+      "reason": "Its principal contribution allocates and trains nested subnetworks of one shared model. Known-coordinate averaging is infrastructure for resource-heterogeneous training, not a distinct model-fusion study under the corrected scope.",
+      "evidence_url": "https://arxiv.org/pdf/2010.01264v3",
+      "locator": "Author arXiv v3 PDF pp.3–5, Sections 3.1–3.3, Equations 1–4 and Algorithm 1: nested coordinates, aggregation, static BN and scaling; p.7, Section 4: masked class outputs and selective last-layer aggregation"
+    },
+    {
+      "id": "fedrolex2022",
+      "title": "FedRolex: Model-Heterogeneous Federated Learning with Rolling Sub-Model Extraction",
+      "official_url": "https://papers.neurips.cc/paper_files/paper/2022/hash/bf5311df07f3efce97471921e6d2f159-Abstract-Conference.html",
+      "decision": "outside-fusion-method-scope",
+      "reason": "The primary novelty is rolling submodel extraction and coverage of a shared supernetwork. Selective coordinate averaging does not on its own turn this resource-scheduling method into model-fusion research.",
+      "evidence_url": "https://papers.neurips.cc/paper_files/paper/2022/file/bf5311df07f3efce97471921e6d2f159-Paper-Conference.pdf",
+      "locator": "Final NeurIPS PDF pp.3–5, Sections 2–3.3 and Algorithm 1: static/random extraction comparison, rolling window and selective per-coordinate averaging"
+    }
+  ]
+}

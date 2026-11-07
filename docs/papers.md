@@ -546,40 +546,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | Extraction and membership attacks are trained separately; the paper proposes no corresponding defense. Its auxiliary-data and query assumptions bound the threat evidence. |
 | Evidence | [Official publication metadata and abstract](https://aclanthology.org/2025.findings-acl.713/); [PDF p.3 §§3–4: merging-specific threat model; p.9 Limitations](https://aclanthology.org/2025.findings-acl.713.pdf) |
 
-## FairFHTL: Achieving Task-Agnostic Fairness in Federated Hetero-Task Learning
-
-| Field | Details |
-| --- | --- |
-| Venue / year | 2025 IEEE International Conference on Multimedia and Expo (ICME), 2025 |
-| Publication status | Published |
-| Bibliographic verification | verified |
-| CCF 2026 | Pending verification |
-| Reading depth | metadata-only |
-| Links | [Paper](https://doi.org/10.1109/ICME59968.2025.11209282) |
-| Problem | Balance client performance when federated participants optimize different tasks. |
-| Mechanism | Author synopsis only: task-independent representations and resource allocation balance updates across tasks. No paper-level update rule or fairness metric was extracted. |
-| Contribution | A task-fairness contribution to federated shared-model collaboration, included on verified publication identity and an attributable author synopsis. |
-| Assumptions | Heterogeneous client tasks; detailed data, communication, optimization, and fairness assumptions remain unverified. |
-| Evidence boundary | Only metadata and a coauthor's short description were accessible, not the paper abstract or full text. Do not use this record to support a specific fairness metric, demographic-fairness result, formal guarantee, or experimental comparison. Publication-track verification remains open. |
-| Evidence | [IEEE-deposited final title, eight authors, ICME2025, pp.1–6 and DOI; published-print 30 June 2025. No abstract in this deposit.](https://api.crossref.org/works/10.1109/ICME59968.2025.11209282); [Publisher document identity linked by DOI; accessible response did not expose abstract or full text.](https://ieeexplore.ieee.org/document/11209282/); [Coauthor entry FairFHTL, 2025: complete title/authors and short author-written description of task fairness, shared representations and allocation across updates. This is not treated as the paper abstract.](https://www.bj-yan.top/publications); [Institute author bibliography, publication item5, confirms title, eight authors, ICME2025 and pp.1–6.](https://www.ict.ac.cn/sourcedb/cn/jssrck/202010/t20201023_5721594.html) |
-
-## FedXDS: Leveraging Model Attribution Methods to counteract Data Heterogeneity in Federated Learning
-
-| Field | Details |
-| --- | --- |
-| Venue / year | Proceedings of the IEEE/CVF International Conference on Computer Vision, 2025 |
-| Publication status | Published |
-| Bibliographic verification | verified |
-| CCF 2026 | A |
-| Reading depth | section-reviewed |
-| Links | [Paper](https://openaccess.thecvf.com/content/ICCV2025/html/Hoefler_FedXDS_Leveraging_Model_Attribution_Methods_to_counteract_Data_Heterogeneity_in_ICCV_2025_paper.html) |
-| Problem | Heterogeneous client data limit a shared federated model while unrestricted sharing creates leakage risk. |
-| Mechanism | Mask input features using a warmup model, add calibrated Gaussian noise, share transformed labeled examples, and train clients with local/shared objectives before FedAvg. |
-| Contribution | Explores attribution-guided knowledge sharing as a way to reduce federated heterogeneity. |
-| Assumptions | Shared architecture, a federated warmup model, feature attributions and a server-distributed transformed dataset. |
-| Evidence boundary | Supporting evidence rather than a direct explanation of fusion decisions. The stated guarantee is metric privacy for transformed features; shared labels and warmup/update channels require separate scrutiny before claiming end-to-end DP. |
-| Evidence | [Official publication metadata and abstract](https://openaccess.thecvf.com/content/ICCV2025/html/Hoefler_FedXDS_Leveraging_Model_Attribution_Methods_to_counteract_Data_Heterogeneity_in_ICCV_2025_paper.html); [PDF pp.3–5 §4 and Algorithms 1–2: attribution-derived data sharing, aggregation and metric-privacy discussion](https://openaccess.thecvf.com/content/ICCV2025/papers/Hoefler_FedXDS_Leveraging_Model_Attribution_Methods_to_counteract_Data_Heterogeneity_in_ICCV_2025_paper.pdf) |
-
 ## From Purity to Peril: Backdooring Merged Models From "Harmless" Benign Components
 
 | Field | Details |
@@ -766,23 +732,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Assumptions | Not yet fully extracted in this pass. |
 | Evidence boundary | Author-version abstract reviewed; final publication metadata is confirmed by Crossref; full threat-model extraction remains pending. |
 | Evidence | [Publisher-deposited bibliographic metadata](https://api.crossref.org/works/10.1145/3658644.3690284); [Abstract](https://arxiv.org/abs/2408.07362) |
-
-## Breaking Privacy in Model-Heterogeneous Federated Learning
-
-| Field | Details |
-| --- | --- |
-| Venue / year | International Symposium on Research in Attacks, Intrusions and Defenses, 2024 |
-| Publication status | Published |
-| Bibliographic verification | verified |
-| CCF 2026 | B |
-| Reading depth | section-reviewed |
-| Links | [Paper](https://doi.org/10.1145/3678890.3678905) · [Code](https://github.com/vt-asaplab/model-hetero-fl-attacks) |
-| Problem | Secure aggregation can interact with nonuniform submodel assignment to expose cohort contributions. |
-| Mechanism | Studies convergence-rate and rolling-submodel attacks by a malicious coordinator, showing leakage channels in static and changing partial-training cohorts. |
-| Contribution | Provides a counterexample to treating secure aggregation as end-to-end protection of a heterogeneous training protocol. |
-| Assumptions | Trusted clients; coordinator controls parameter values but not client submodel architectures; attack-specific convergence, overlap and distribution conditions. |
-| Evidence boundary | Not a cryptographic break of secure aggregation or a universal attack on all heterogeneous fusion. The methods target partial-training aggregation, not every distillation system; reported experiments were not reproduced. |
-| Evidence | [Official bibliographic identity](https://doi.org/10.1145/3678890.3678905); [Author-hosted final RAID PDF pp.4–6, §§4–5; system/threat model and two attacks](https://thanghoang.github.io/publication/24_raid_heterofl/24_raid_heteroFL.pdf); [ACM-deposited metadata and final pagination; author-name shortening noted](https://api.crossref.org/works/10.1145/3678890.3678905) |
 
 ## Complementary Knowledge Distillation for Robust and Privacy-Preserving Model Serving in Vertical Federated Learning
 
@@ -971,57 +920,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | Linear connectivity and Pareto coverage are working hypotheses with restricted theoretical support; proxy-reward alignment is not demographic fairness or a universal safety guarantee. |
 | Evidence | [Official proceedings metadata and abstract](https://proceedings.neurips.cc/paper_files/paper/2023/hash/e12a3b98b67e8395f639fde4c2b03168-Abstract-Conference.html); [Final PDF pp.2–4, Figure 1 and §§2.1–2.2; working hypotheses and training/selection phases](https://proceedings.neurips.cc/paper_files/paper/2023/file/e12a3b98b67e8395f639fde4c2b03168-Paper-Conference.pdf) |
 
-## RoFL: Robustness of Secure Federated Learning
-
-| Field | Details |
-| --- | --- |
-| Venue / year | 2023 IEEE Symposium on Security and Privacy (SP), 2023 |
-| Publication status | Published |
-| Bibliographic verification | verified |
-| CCF 2026 | A |
-| Reading depth | section-reviewed |
-| Links | [Paper](https://doi.org/10.1109/sp46215.2023.10179400) |
-| Problem | Encrypted updates hide information needed to enforce robustness constraints. |
-| Mechanism | Combine secure aggregation with privacy-preserving proofs of norm bounds. |
-| Contribution | Encrypted updates hide information needed to enforce robustness constraints. |
-| Assumptions | Not yet fully extracted in this pass. |
-| Evidence boundary | Norm validation addresses selected attack classes and does not make every semantically harmful update detectable. |
-| Evidence | [Publisher-deposited bibliographic metadata](https://api.crossref.org/works/10.1109/sp46215.2023.10179400); [Sections I–III](https://arxiv.org/html/2107.03311v4) |
-
-## ShapleyFL: Robust Federated Learning Based on Shapley Value
-
-| Field | Details |
-| --- | --- |
-| Venue / year | Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, 2023 |
-| Publication status | Published |
-| Bibliographic verification | verified |
-| CCF 2026 | A |
-| Reading depth | section-reviewed |
-| Links | [Paper](https://doi.org/10.1145/3580305.3599500) |
-| Problem | Size-based or uniform aggregation ignores unequal and potentially harmful client contributions. |
-| Mechanism | Model successive rounds as cooperative games, normalize/update surrogate Shapley scores, and combine adaptive aggregation with importance sampling. |
-| Contribution | Connects contribution estimation to robust aggregation and communication-aware sampling. |
-| Assumptions | Server access to client updates and a validation dataset defining coalition utility; compatible models in iterative FL. |
-| Evidence boundary | The estimated score is a training/validation-dependent surrogate, not exact global Shapley attribution, demographic fairness or cryptographically verifiable provenance. |
-| Evidence | [Official publication metadata and abstract](https://doi.org/10.1145/3580305.3599500); [PDF p.4 §4.1: validation utility, partial and surrogate federated Shapley values](https://par.nsf.gov/servlets/purl/10448787) |
-
-## FedRolex: Model-Heterogeneous Federated Learning with Rolling Sub-Model Extraction
-
-| Field | Details |
-| --- | --- |
-| Venue / year | Conference on Neural Information Processing Systems, 2022 |
-| Publication status | Published |
-| Bibliographic verification | verified |
-| CCF 2026 | A |
-| Reading depth | section-reviewed |
-| Links | [Paper](https://papers.neurips.cc/paper_files/paper/2022/hash/bf5311df07f3efce97471921e6d2f159-Abstract-Conference.html) · [Code](https://github.com/AIoT-MLSys-Lab/FedRolex) |
-| Problem | Static subnetwork allocation can leave parts of the global model trained only by high-capacity clients, while random extraction covers coordinates unevenly. |
-| Mechanism | Extract each client subnetwork using a cyclic window, train it on local data, and selectively average each returned coordinate over clients that updated it, without client weighting. Coordinates receiving no update retain their prior value. |
-| Contribution | Connects the temporal coverage of shared coordinates to resource-inclusive training, including a global model larger than any individual client model. |
-| Assumptions | A shared server model with known coordinate indices, server-coordinated rolling extraction, client capacities and local training data; selected architectures are subnetworks of the same global model. |
-| Evidence boundary | The model heterogeneity is constrained by the shared supernetwork. Coordinate subsets and contributor sets must be distinguished when analyzing secure aggregation; the method itself does not prove privacy against attacks exploiting heterogeneous participation. Device inclusiveness is not demographic fairness, and statistical coverage analysis is not a universal convergence or security guarantee. |
-| Evidence | [Official publication metadata and abstract](https://papers.neurips.cc/paper_files/paper/2022/hash/bf5311df07f3efce97471921e6d2f159-Abstract-Conference.html); [Final NeurIPS PDF pp.3–5, Sections 2–3.3 and Algorithm 1: static/random extraction comparison, rolling window and selective per-coordinate averaging](https://papers.neurips.cc/paper_files/paper/2022/file/bf5311df07f3efce97471921e6d2f159-Paper-Conference.pdf) |
-
 ## Cronus: Robust and Heterogeneous Collaborative Learning with Black-Box Knowledge Transfer
 
 | Field | Details |
@@ -1038,91 +936,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Assumptions | Shared classification task, unlabeled public data, and malicious-client/covariance conditions required by robust mean estimation. |
 | Evidence boundary | Privacy evidence is empirical, not standalone differential privacy. Robust mean bounds do not certify every downstream model or arbitrary attacks. Public-data and robust-estimation assumptions matter. |
 | Evidence | [Official publication metadata / workshop program](https://neurips2021workshopfl.github.io/NFFL-2021/paper.html); [Workshop PDF pp.1–5, §§1–4, threat models and Algorithm 1.](https://neurips2021workshopfl.github.io/NFFL-2021/papers/2021/Chang2021.pdf) |
-
-## Ditto: Fair and Robust Federated Learning Through Personalization
-
-| Field | Details |
-| --- | --- |
-| Venue / year | International Conference on Machine Learning, 2021 |
-| Publication status | Published |
-| Bibliographic verification | verified |
-| CCF 2026 | A |
-| Reading depth | section-reviewed |
-| Links | [Paper](https://proceedings.mlr.press/v139/li21h.html) |
-| Problem | Fairness and poisoning robustness can conflict across heterogeneous clients. |
-| Mechanism | Regularize personalized objectives towards a shared global model. |
-| Contribution | Connects personalization with device-performance fairness and poisoning robustness. |
-| Assumptions | Federated training with client objectives and a global reference. |
-| Evidence boundary | Fairness is dispersion across devices, not demographic parity; linear-problem theory and evaluated attacks bound the evidence. |
-| Evidence | [Official publication metadata and abstract](https://proceedings.mlr.press/v139/li21h.html); [PDF pp.1–3: definitions of fairness/robustness; Section 3 objective](https://proceedings.mlr.press/v139/li21h/li21h.pdf) |
-
-## FLTrust: Byzantine-robust Federated Learning via Trust Bootstrapping
-
-| Field | Details |
-| --- | --- |
-| Venue / year | Network and Distributed System Security Symposium, 2021 |
-| Publication status | Published |
-| Bibliographic verification | verified |
-| CCF 2026 | A |
-| Reading depth | abstract-reviewed |
-| Links | [Paper](https://www.ndss-symposium.org/ndss-paper/fltrust-byzantine-robust-federated-learning-via-trust-bootstrapping/) |
-| Problem | A server needs a trusted reference when client updates may be malicious. |
-| Mechanism | Score update direction against a server model, normalize magnitude, and aggregate by trust scores. |
-| Contribution | Introduces a trust anchor into Byzantine-robust aggregation. |
-| Assumptions | A small clean server-side root dataset. |
-| Evidence boundary | Depends on root-data quality and the assessed threat model; not a data-free or universal defense. |
-| Evidence | [Official publication metadata and abstract](https://www.ndss-symposium.org/ndss-paper/fltrust-byzantine-robust-federated-learning-via-trust-bootstrapping/) |
-
-## HeteroFL: Computation and Communication Efficient Federated Learning for Heterogeneous Clients
-
-| Field | Details |
-| --- | --- |
-| Venue / year | International Conference on Learning Representations, 2021 |
-| Publication status | Published |
-| Bibliographic verification | verified |
-| CCF 2026 | A |
-| Reading depth | section-reviewed |
-| Links | [Paper](https://openreview.net/forum?id=TNkPBBYFkXg) |
-| Problem | Clients with unequal computation and communication capacity cannot all train the same full global network. |
-| Mechanism | Extract fixed nested channel subsets from one global model, train locally using a scaling module and static batch normalization, then form the global model from coordinate-wise averages over participating owners. For label-skewed classification, masked cross-entropy and selective last-layer aggregation are additional components. |
-| Contribution | Makes partial-coordinate fusion explicit under device resource constraints and provides a reference for interpreting privacy attacks on model-heterogeneous aggregation. |
-| Assumptions | A shared global model with known coordinate correspondence, nested channel subsets, client capability information and local training data; heterogeneous models stay within one model class. |
-| Evidence boundary | Width heterogeneity is not arbitrary architecture interoperability. Different coordinates may be averaged over different client subsets. The paper explicitly notes unresolved privacy concerns in final global BN-statistic collection; neither data locality nor partial-model aggregation supplies a formal privacy guarantee. Label-skew experiments do not cover all forms of distribution shift. |
-| Evidence | [Official 2021 conference paper listing: title, all authors and OpenReview paper link; poster is the presentation format of the conference paper](https://iclr.cc/virtual/2021/poster/3165); [Complete author list, ICLR 2021 comment and v3 revision history](https://arxiv.org/abs/2010.01264); [PDF pp.3–5 Sections 3.1–3.3, Equations 1–4, Algorithm 1; p.7 Section 4](https://arxiv.org/pdf/2010.01264v3) |
-
-## The Limitations of Federated Learning in Sybil Settings
-
-| Field | Details |
-| --- | --- |
-| Venue / year | 23rd International Symposium on Research in Attacks, Intrusions and Defenses (RAID 2020), 2020 |
-| Publication status | Published |
-| Bibliographic verification | verified |
-| CCF 2026 | B |
-| Reading depth | section-reviewed |
-| Links | [Paper](https://www.usenix.org/conference/raid2020/presentation/fung) · [Code](https://github.com/DistributedML/FoolsGold) |
-| Problem | One attacker can amplify poisoning through multiple sybil clients. |
-| Mechanism | Use diversity of client updates to reduce the influence of coordinated contributors. |
-| Contribution | Studies sybil-specific poisoning defenses in iterative federated learning. |
-| Assumptions | An uncompromised server and access to individual client-update behavior. |
-| Evidence boundary | Update similarity is conditional evidence; it does not provide generic privacy protection or blanket robustness to all attacks. |
-| Evidence | [Official publication metadata and abstract](https://www.usenix.org/conference/raid2020/presentation/fung); [PDF pp.1–2: mechanism and threat model](https://www.usenix.org/system/files/raid20-fung.pdf) |
-
-## Agnostic Federated Learning
-
-| Field | Details |
-| --- | --- |
-| Venue / year | International Conference on Machine Learning, 2019 |
-| Publication status | Published |
-| Bibliographic verification | verified |
-| CCF 2026 | A |
-| Reading depth | section-reviewed |
-| Links | [Paper](https://proceedings.mlr.press/v97/mohri19a.html) |
-| Problem | A training-population average may fail under a different mixture of client distributions. |
-| Mechanism | Minimize the worst-case risk over a specified set of client mixtures. |
-| Contribution | Provides a distributionally cautious federated objective and associated learning bounds. |
-| Assumptions | Target distributions lie in the considered mixture set; optimization guarantees impose convexity conditions. |
-| Evidence boundary | Mixture robustness is not arbitrary distribution-shift protection, nor a general demographic-fairness guarantee. |
-| Evidence | [Official publication metadata and abstract](https://proceedings.mlr.press/v97/mohri19a.html); [PDF pp.1,3: motivation and agnostic loss](https://proceedings.mlr.press/v97/mohri19a/mohri19a.pdf) |
 
 ## Learning Private Neural Language Modeling with Attentive Aggregation
 
@@ -1157,40 +970,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Assumptions | Private teachers and data remain inaccessible; public unlabeled inputs support student training; each record belongs to one teacher subset. |
 | Evidence boundary | Teacher consensus, disjoint partitions and query accounting are essential. It is a controlled training protocol rather than arbitrary reuse of already-public model weights. |
 | Evidence | [Author organization publication metadata confirms ICLR 2018 and all authors](https://research.google/pubs/scalable-private-learning-with-pate/); [Author conference PDF pp.4,6 §3 and §4: private teacher aggregation, student release and GNMax](https://arxiv.org/pdf/1802.08908) |
-
-## Machine Learning with Adversaries: Byzantine Tolerant Gradient Descent
-
-| Field | Details |
-| --- | --- |
-| Venue / year | Advances in Neural Information Processing Systems, 2017 |
-| Publication status | Published |
-| Bibliographic verification | verified |
-| CCF 2026 | A |
-| Reading depth | section-reviewed |
-| Links | [Paper](https://proceedings.neurips.cc/paper/2017/hash/f4b9ec30ad9f68f89b29639786cb62ef-Abstract.html) |
-| Problem | Malicious workers can arbitrarily distort distributed gradient aggregation. |
-| Mechanism | Choose a gradient using neighborhood-distance scoring under a Byzantine-resilience criterion. |
-| Contribution | Provides a foundational alternative to linear aggregation under specified Byzantine conditions. |
-| Assumptions | Synchronous parameter-server model, a bounded adversarial fraction, and gradient-distribution assumptions. |
-| Evidence boundary | Distributed-SGD theory is not directly a guarantee for heterogeneous post-training model assets. |
-| Evidence | [Official publication metadata and abstract](https://proceedings.neurips.cc/paper/2017/hash/f4b9ec30ad9f68f89b29639786cb62ef-Abstract.html); [PDF pp.1,3: abstract and system model](https://proceedings.neurips.cc/paper_files/paper/2017/file/f4b9ec30ad9f68f89b29639786cb62ef-Paper.pdf) |
-
-## Practical Secure Aggregation for Privacy-Preserving Machine Learning
-
-| Field | Details |
-| --- | --- |
-| Venue / year | Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security, 2017 |
-| Publication status | Published |
-| Bibliographic verification | verified |
-| CCF 2026 | A |
-| Reading depth | abstract-reviewed |
-| Links | [Paper](https://doi.org/10.1145/3133956.3133982) |
-| Problem | Aggregate updates while protecting individual client contributions. |
-| Mechanism | Use a dropout-tolerant secure aggregation protocol. |
-| Contribution | Aggregate updates while protecting individual client contributions. |
-| Assumptions | Not yet fully extracted in this pass. |
-| Evidence boundary | Aggregate privacy does not itself establish protection against poisoned contributors or all inference from released aggregates. |
-| Evidence | [Publisher-deposited bibliographic metadata](https://api.crossref.org/works/10.1145/3133956.3133982); [Abstract](https://research.google/pubs/practical-secure-aggregation-for-privacy-preserving-machine-learning/) |
 
 ## Bi-level Personalization for Federated Foundation Models: A Task-vector Aggregation Approach
 
@@ -1497,40 +1276,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Assumptions | Compatible task vectors and unlabeled test samples are available. |
 | Evidence boundary | The optimization is transductive and depends on test-distribution access. Entropy is a surrogate objective, not a general reliability or safety guarantee; adaptive weights alone do not establish continual collaboration. |
 | Evidence | [Official publication metadata and abstract](https://proceedings.iclr.cc/paper_files/paper/2024/hash/62868cc2fc1eb5cdf321d05b4b88510c-Abstract-Conference.html); [§3, PDF pp.4–6; §4.1, PDF p.7](https://proceedings.iclr.cc/paper_files/paper/2024/file/62868cc2fc1eb5cdf321d05b4b88510c-Paper-Conference.pdf) |
-
-## Buffalo: Biomedical Vision-Language Understanding with Cross-Modal Prototype and Federated Foundation Model Collaboration
-
-| Field | Details |
-| --- | --- |
-| Venue / year | Proceedings of the 33rd ACM International Conference on Information and Knowledge Management, 2024 |
-| Publication status | Published |
-| Bibliographic verification | verified |
-| CCF 2026 | B |
-| Reading depth | abstract-reviewed |
-| Links | [Paper](https://doi.org/10.1145/3627673.3679627) · [Code](https://github.com/yyyanbj/Buffalo) |
-| Problem | Share biomedical model knowledge across federated clients with missing or heterogeneous modalities. |
-| Mechanism | The publisher abstract describes cross-modal prototype imputation and downstream federated fine-tuning. Exact prototype construction, aggregation, and update rules were not inspected. |
-| Contribution | Prototype-mediated collaboration evaluated on report generation and biomedical visual question answering under modality heterogeneity. |
-| Assumptions | Local biomedical data and a federated communication setting; precise modality-availability and trust assumptions require full-text review. |
-| Evidence boundary | Abstract-level evidence only. Raw-data locality does not establish formal privacy, and task-level performance does not establish clinical benefit. This is broader federated representation collaboration, not verified post-hoc weight merging. The linked code was identified but not executed. |
-| Evidence | [ACM-deposited final title, nine authors, CIKM 2024, pp.2775–2785; published-print 21 October 2024.](https://api.crossref.org/works/10.1145/3627673.3679627); [Official ACM SIGWEB proceedings: Buffalo entry and abstract, within SESSION: Full Research Papers; the subsequent Short Research Papers heading begins after this entry.](https://www.sigweb.sigweb.hosting.acm.org/toc/cikm24.html); [Buffalo publication entry links the author code repository.](https://www.bj-yan.top/publications); [README identifies the official CIKM 2024 implementation and matching title/DOI. Code identity checked; no reproduction.](https://github.com/yyyanbj/Buffalo) |
-
-## FedBone: Towards Large-Scale Federated Multi-Task Learning
-
-| Field | Details |
-| --- | --- |
-| Venue / year | Journal of Computer Science and Technology, 2024 |
-| Publication status | Published |
-| Bibliographic verification | verified |
-| CCF 2026 | B |
-| Reading depth | section-reviewed |
-| Links | [Paper](https://jcst.ict.ac.cn/article/doi/10.1007/s11390-024-3639-x) |
-| Problem | Combine heterogeneous task updates in federated training under client compute limits. |
-| Mechanism | Sections 3.2–3.5 place the shared model on a server and retain client embedding, adaptation, and prediction modules. Intermediate representations and backward signals cross the split. Historical-gradient attention reweights task gradients; projection removes opposing components before aggregation. |
-| Contribution | A split federated multi-task framework with task adaptation and conflict-aware shared-backbone gradient aggregation. |
-| Assumptions | Server access to task gradients and prior aggregate gradients; iterative client–server communication and compatible shared-model interfaces. |
-| Evidence boundary | Training-time gradient fusion is distinct from post-hoc merging of pretrained checkpoints. Exchanged representations and gradients remain potential disclosure surfaces; local raw data alone do not prove privacy. Method sections were reviewed, but experimental results were not independently reproduced. |
-| Evidence | [Publisher-deposited final metadata: JCST 39(5), 1040–1057, September 2024; six authors.](https://api.crossref.org/works/10.1007/s11390-024-3639-x); [Official final journal record.](https://jcst.ict.ac.cn/article/doi/10.1007/s11390-024-3639-x); [Final 18-page PDF: p.1/printed1040 Regular Paper and metadata; pp.5–7/printed1044–1046, Sections3.2–3.5, Figure2 and Algorithm1.](https://jcst.ict.ac.cn/fileup/1000-9000/PDF/JCST-2024-5-4-3639-1040.pdf) |
 
 ## FedFisher: Leveraging Fisher Information for One-Shot Federated Learning
 
@@ -2042,23 +1787,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Evidence boundary | The procedure is greedy by layer because joint alignment is intractable. Weight-only and activation-based variants have different data requirements; arbitrary architectural compatibility is not established. |
 | Evidence | [Official publication metadata and abstract](https://proceedings.nips.cc/paper_files/paper/2020/hash/fb2697869f56484404c8ceee2985b01d-Abstract.html); [§§3–4.1, PDF pp.3–6](https://proceedings.neurips.cc/paper_files/paper/2020/file/fb2697869f56484404c8ceee2985b01d-Paper.pdf) |
 
-## Tackling the Objective Inconsistency Problem in Heterogeneous Federated Optimization
-
-| Field | Details |
-| --- | --- |
-| Venue / year | Conference on Neural Information Processing Systems, 2020 |
-| Publication status | Published |
-| Bibliographic verification | verified |
-| CCF 2026 | A |
-| Reading depth | section-reviewed |
-| Links | [Paper](https://proceedings.neurips.cc/paper/2020/hash/564127c03caab942e503ee6f810f54fd-Abstract.html) |
-| Problem | Unequal local solver steps can make standard aggregation optimize an unintended weighted objective. |
-| Mechanism | Represent each local solver update as a weighted gradient accumulation, normalize its scale and aggregate it with the desired population weights and an effective global step size. The framework covers several local solver choices. |
-| Contribution | Provides a foundational aggregation correction that disentangles client participation or work from the intended federated objective. |
-| Assumptions | Shared parameter coordinates and access to local solver/update-normalization information; analysis uses smoothness, bounded variance/dissimilarity and suitable step sizes. |
-| Evidence boundary | A training-time optimizer using local-update metadata is not a merger for arbitrary independently trained checkpoints. Objective consistency does not imply demographic fairness, Byzantine robustness or privacy. |
-| Evidence | [Official publication metadata and abstract](https://proceedings.neurips.cc/paper/2020/hash/564127c03caab942e503ee6f810f54fd-Abstract.html); [Final NeurIPS PDF pp.5–6, Sections 4.1–4.2: normalized update framework and objective inconsistency; p.8, Section 5 and Theorem 3: FedNova and assumptions](https://proceedings.neurips.cc/paper/2020/file/564127c03caab942e503ee6f810f54fd-Paper.pdf) |
-
 ## Bayesian Nonparametric Federated Learning of Neural Networks
 
 | Field | Details |
@@ -2109,23 +1837,6 @@ Generated from `data/papers.json`. Pending ranks and incomplete reading are expl
 | Assumptions | Labeled examples and a specified probe architecture are available. |
 | Evidence boundary | Probe choice and task collection affect the representation; the authors identify broader real-world task coverage as an open question. This is selection infrastructure, not evidence that selected models can safely be fused. |
 | Evidence | [Official publication metadata and abstract](https://openaccess.thecvf.com/content_ICCV_2019/html/Achille_Task2Vec_Task_Embedding_for_Meta-Learning_ICCV_2019_paper.html); [§§3–4; §4.1; §5 Discussion, PDF pp.3–8](http://openaccess.thecvf.com/content_ICCV_2019/papers/Achille_Task2Vec_Task_Embedding_for_Meta-Learning_ICCV_2019_paper.pdf) |
-
-## Communication-Efficient Learning of Deep Networks from Decentralized Data
-
-| Field | Details |
-| --- | --- |
-| Venue / year | Artificial Intelligence and Statistics, 2017 |
-| Publication status | Published |
-| Bibliographic verification | verified |
-| CCF 2026 | C |
-| Reading depth | section-reviewed |
-| Links | [Paper](https://proceedings.mlr.press/v54/mcmahan17a.html) |
-| Problem | Frequent centralized synchronization is expensive when training data remain on devices. |
-| Mechanism | Alternate local optimization with server-side averaging of compatible updates. |
-| Contribution | Establishes a communication-oriented aggregation baseline for federated training. |
-| Assumptions | Shared model coordinates and an iterative client/server training protocol. |
-| Evidence boundary | A foundational background method; keeping raw data local does not itself protect updates or establish post-training asset reuse. |
-| Evidence | [Official publication metadata and abstract](https://proceedings.mlr.press/v54/mcmahan17a.html); [PDF pp.1–3: problem setup and iterative averaging](https://proceedings.mlr.press/v54/mcmahan17a/mcmahan17a.pdf) |
 
 ## Deep Model Fusion: A Survey
 
