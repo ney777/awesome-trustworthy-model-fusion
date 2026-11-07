@@ -1,23 +1,23 @@
 # Literature discovery report
 
-Snapshot: 2026-11-07. The master contains **120 distinct records**, including **119 with reconciled bibliographic metadata** and **116 eligible for the ranked README catalogue**. These counts describe verified records, not all search hits. Verification of identity, CCF applicability, reading depth and experimental reproduction are separate dimensions.
+Snapshot: 2026-11-07. The master contains **140 distinct records**, including **139 with reconciled bibliographic metadata** and **135 eligible for the ranked README catalogue**. These counts describe verified records, not all search hits. Verification of identity, CCF applicability, reading depth and experimental reproduction are separate dimensions.
 
 ## Coverage
 
 | Primary category | Records |
 |---|---:|
-| benchmarks | 4 |
+| benchmarks | 5 |
 | evolution | 18 |
-| governance | 35 |
-| representation | 51 |
-| surveys | 12 |
+| governance | 37 |
+| representation | 67 |
+| surveys | 13 |
 
-Related foundations, tools and surveys are included in these counts and are distinguished in the record fields. Each study has one primary category; secondary tags do not add papers. The database includes 89 records dated 2024–2026, with exact online/issue and accepted/preprint distinctions retained where needed.
+Related foundations, tools and surveys are included in these counts and are distinguished in the record fields. Each study has one primary category; secondary tags do not add papers. The database includes 103 records dated 2024–2026, with exact online/issue and accepted/preprint distinctions retained where needed.
 
 | Reading depth | Records |
 |---|---:|
 | abstract-reviewed | 8 |
-| section-reviewed | 112 |
+| section-reviewed | 132 |
 
 Selected-section review does not mean the whole paper, proof or appendix was assessed. No experiments were independently reproduced. Code provenance and availability do not establish implementation correctness.
 
@@ -27,18 +27,18 @@ The following distribution covers all records, including bibliography candidates
 
 | Recorded rank | All records |
 |---|---:|
-| A | 73 |
-| B | 9 |
+| A | 84 |
+| B | 12 |
 | C | 4 |
-| None | 31 |
-| pending | 3 |
+| None | 36 |
+| pending | 4 |
 
 | Recorded rank | Ranked catalogue only |
 |---|---:|
-| A | 73 |
-| B | 9 |
+| A | 84 |
+| B | 12 |
 | C | 4 |
-| None | 30 |
+| None | 35 |
 
 The [venue register](../data/venues_ccf2026.json) gives seventh-edition directory evidence. A venue grade is not a scientific quality score. Unresolved special-track or full/regular-paper applicability remains pending rather than inheriting a parent-conference grade.
 
@@ -50,7 +50,7 @@ The comparative contribution is an explicit link between capability/compatibilit
 
 All six supplied survey seeds and six recent extensions are compared in [prior-surveys.md](prior-surveys.md). The nearest overlaps include From Parameters to Behaviors, MoErging, the CSUR model-merging survey, FUSE, and the unresolved Knowledge Transmission and Fusion preview. The last record is not counted as fully reconciled metadata.
 
-The [scope correction](scope-correction.md) removed 17 general-FL or insufficiently supported records from the former 137-record snapshot. The [federated table](federated-literature.md) groups 42 records by explicit fusion object and operation. The [federated audit](federated-coverage-audit.md) records a bounded reference-list crosswalk and completed candidate screening.
+The [scope correction](scope-correction.md) removed 17 general-FL or insufficiently supported records from the former 137-record snapshot. The [federated table](federated-literature.md) groups 52 records by explicit fusion object and operation. The [federated audit](federated-coverage-audit.md) records a bounded reference-list crosswalk and completed candidate screening.
 
 ## Recheck and continuation
 

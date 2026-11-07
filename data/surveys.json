@@ -1019,6 +1019,89 @@
       "ccf_verification_status": "verified",
       "ccf_edition": "CCF 2026, 7th edition",
       "ccf_basis": "Preprint without a listed formal venue"
+    },
+    {
+      "id": "liu2025oneshotguide",
+      "bibtex_key": "liu2025oneshotguide",
+      "title": "One-shot Federated Learning Methods: A Practical Guide",
+      "authors": [
+        "Xiang Liu",
+        "Zhenheng Tang",
+        "Xia Li",
+        "Yijun Song",
+        "Sijie Ji",
+        "Zemin Liu",
+        "Bo Han",
+        "Linshan Jiang",
+        "Jialin Li"
+      ],
+      "venue_full_name": "International Joint Conference on Artificial Intelligence",
+      "venue_abbreviation": "IJCAI",
+      "year": 2025,
+      "publication_type": "conference",
+      "publication_track": "survey-track",
+      "record_type": "survey",
+      "doi": "10.24963/ijcai.2025/1174",
+      "official_url": "https://www.ijcai.org/proceedings/2025/1174",
+      "pdf_url": "https://www.ijcai.org/proceedings/2025/1174.pdf",
+      "code_url": null,
+      "primary_category": "surveys",
+      "subcategory": "Scope and Taxonomy Comparisons",
+      "secondary_tags": [
+        "one-shot-federation",
+        "survey"
+      ],
+      "verification_status": "verified",
+      "checked_on": "2026-11-07",
+      "review_depth": "section-reviewed",
+      "full_text_locators": [
+        "Official Survey Track; Section 3 taxonomy, Figure 1 and Table 1; Sections 3.1–3.4 and 4; printed pp. 10575–10579"
+      ],
+      "evidence_source": [
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/1174",
+          "locator": "Official publication identity and authors"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/1174.pdf",
+          "locator": "Official Survey Track; Section 3 taxonomy, Figure 1 and Table 1; Sections 3.1–3.4 and 4; printed pp. 10575–10579"
+        }
+      ],
+      "reproduction_status": "not-applicable",
+      "relationship": "related-survey",
+      "scope_checked_on": "2026-11-07",
+      "scope_evidence": {
+        "url": "https://www.ijcai.org/proceedings/2025/1174.pdf",
+        "locator": "Official Survey Track; Section 3 taxonomy, Figure 1 and Table 1; Sections 3.1–3.4 and 4; printed pp. 10575–10579"
+      },
+      "bibtex_provenance": "https://www.ijcai.org/proceedings/2025/1174",
+      "ccf_edition": "CCF 2026, 7th edition",
+      "ccf_rank": null,
+      "ccf_verification_status": "pending-verification",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "ccf_locator": {
+        "pdf_page_1_based": 58,
+        "page_numbering": "PDF page including cover, not a printed page number",
+        "table_row": 14,
+        "category": "人工智能",
+        "table_rank": "B"
+      },
+      "ccf_basis": "IJCAI is B in the chosen CCF 2026 directory, but the official individual paper is Survey Track. Full/regular-paper eligibility for this track has not been established here; do not automatically assign B or None.",
+      "pages": "10573-10581",
+      "research_problem": "How single-round federated methods address data/model heterogeneity and communication constraints.",
+      "key_idea": "A protocol-centered taxonomy of parameter learning, knowledge distillation, generative models and ensembles, including hybrid methods.",
+      "technical_mechanism": "Comparative survey; it proposes no new model fusion operator.",
+      "assumptions": "Taxonomy covers broader one-shot federation, including data-level approaches outside the present repository's fusion-method scope.",
+      "main_contribution": "A related survey for comparing the one-shot protocol axis, synthesis/ensembling roles, and heterogeneity assumptions.",
+      "limitations": "Its four categories mix operators, auxiliary-model roles and communication protocols; copying every covered FL method would exceed the user's fusion-only scope.",
+      "primary_scope": "One-shot federated learning; broader than direct model fusion.",
+      "taxonomy": "Parameter learning, knowledge distillation, generative models, ensemble methods and their hybrids.",
+      "representation_coverage": "Parameter merging, model/data distillation, synthetic knowledge transfer and output ensembles.",
+      "governance_coverage": "Discusses privacy and data/model heterogeneity; cited constraints need paper-level evidence.",
+      "dynamic_evolution_coverage": "Focuses on a single communication round rather than persistent model-lineage evolution.",
+      "federated_or_decentralized_setting": "Client-server one-shot federation.",
+      "evaluation_framework": "Comparison table of methods and communication/model heterogeneity considerations, not a new unified benchmark.",
+      "distinction_from_proposed_survey": "Use protocol taxonomy as a comparison axis while keeping fusion operators and source/target/auxiliary model roles separate."
     }
   ]
 }

@@ -70,15 +70,15 @@
     "preprints": "The project brief separately requires arXiv-only items to be None and marked Preprint."
   },
   "counts": {
-    "requested_venues": 40,
+    "requested_venues": 42,
     "verified_listed_venue_rank": 32,
     "verified_excluded_type": 1,
-    "verified_not_listed": 7,
+    "verified_not_listed": 9,
     "pending_venue_rank": 0,
     "rank_counts": {
       "A": 17,
       "B": 10,
-      "None": 8,
+      "None": 10,
       "C": 5
     }
   },
@@ -900,6 +900,38 @@
         ]
       },
       "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office"
+    },
+    {
+      "venue_abbreviation": "CAI",
+      "candidate_full_name": "Computing and Informatics",
+      "publication_type": "journal",
+      "ccf_rank": "None",
+      "verification_status": "verified-not-listed-in-complete-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The complete CCF 2026 formal directory contains no normalized Computing and Informatics title. CAI substrings occur only inside other conference acronyms.",
+      "locator": "Full 72-page directory: normalized full-title search; no Computing and Informatics entry.",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "ccf_source_provenance": "CCF-authored formal directory, institutional mirror linked by Lishui University Research Office"
+    },
+    {
+      "venue_abbreviation": "TAG-DS",
+      "candidate_full_name": "Conference on Topology, Algebra, and Geometry in Data Science",
+      "publication_type": "conference",
+      "ccf_rank": "None",
+      "ccf_version": "CCF 2026 seventh edition, formal release 2026-03-31; correction 2026-04-09",
+      "verification_status": "verified-not-listed-in-complete-directory",
+      "verification_date": "2026-11-07",
+      "ccf_verification_source": "https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf",
+      "evidence": "The complete 72-page CCF 2026 formal directory was text-checked using normalized TAG-DS and full conference name; neither appears. A PMLR publication does not inherit the ranking of another conference.",
+      "locator": {
+        "scope": "Complete 72-page CCF 2026 directory",
+        "search_terms": [
+          "TAG-DS",
+          "Topology Algebra and Geometry in Data Science"
+        ],
+        "result": "No matching listed venue"
+      }
     }
   ],
   "access_attempts": [

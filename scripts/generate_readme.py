@@ -53,7 +53,7 @@ def federated_catalogue(rows):
     selected = [p for p in rows if p.get('federated_view_group')]
     lines = ['# Model fusion in federated and distributed settings', '',
              f"This focused view contains {len(selected)} records with an explicit model-fusion contribution. Each row identifies the models, modules or knowledge being combined and the fusion operation. General federated optimization, client scheduling, gradient defense and protocol security are excluded unless the work directly studies model fusion. Distributed merging foundations are labeled separately; inclusion does not establish privacy, fairness or institutional deployment.", '',
-             'See the [federated coverage audit](federated-coverage-audit.md) for the reference-list crosswalk, version reconciliation and disposition of the previous screening queue. [Detailed records](papers.md) retain assumptions, limitations and source locators.', '']
+             'See the [federated coverage audit](federated-coverage-audit.md) for the reference-list crosswalk, version reconciliation and disposition of the previous screening queue. [Detailed records](papers.md) retain assumptions, limitations and source locators. The [model-condition update](model-conditions-audit.md) records the latest bounded additions and exclusions.', '']
     group_order = ['Fusion weights and component combinations', 'Alignment and knowledge transfer',
                    'One-shot and decentralized fusion', 'Personalization and multi-federation collaboration',
                    'Privacy, fairness, robustness and attribution', 'Related foundations and model reuse',
@@ -76,11 +76,12 @@ def federated_catalogue(rows):
     return '\n'.join(lines)
 
 def main():
+    from generate_model_conditions import generate
     data=load(); rows=data['papers']; ready=[p for p in rows if formal(p)]
     lines=['# Awesome Trustworthy Model Fusion and Collaboration','',
            'A curated research collection on how existing models are represented, governed under explicit trust constraints, and updated through collaboration.','',
            '**Representation → Governance → Evolution**','',
-           '[Scope](docs/scope-and-definitions.md) · [Taxonomy](docs/taxonomy.md) · [Federated literature](docs/federated-literature.md) · [Detailed records](docs/papers.md) · [Related surveys](docs/prior-surveys.md) · [Benchmarks](docs/benchmarks.md) · [Search protocol](docs/search-protocol.md) · [Coverage audit](docs/coverage-audit.md) · [Audit](docs/reference-audit.md) · [Report](docs/literature-report.md) · [Contributing](CONTRIBUTING.md)','',
+           '[Scope](docs/scope-and-definitions.md) · [Taxonomy](docs/taxonomy.md) · [Federated literature](docs/federated-literature.md) · [Model conditions](docs/model-conditions.md) · [Detailed records](docs/papers.md) · [Related surveys](docs/prior-surveys.md) · [Benchmarks](docs/benchmarks.md) · [Search protocol](docs/search-protocol.md) · [Coverage audit](docs/coverage-audit.md) · [Model-condition audit](docs/model-conditions-audit.md) · [Audit](docs/reference-audit.md) · [Report](docs/literature-report.md) · [Contributing](CONTRIBUTING.md)','',
            '## Collection status','',
            f"Curation snapshot: {data.get('curation_date','not recorded')}. The database contains {len(rows)} records; {len(ready)} satisfy both metadata and CCF-edition verification for the ranked catalogue. Remaining records are retained as pending, not classified as CCF-None by default.",'',
            'This is a staged, evidence-tracked collection, not a claim of exhaustive coverage. Federated learning alone is not an inclusion criterion: methods must directly concern model fusion; general FL methods are excluded from the method catalogue. See the [scope correction](docs/scope-correction.md). Venue ranks use the **CCF 2026 seventh edition** only. Findings, workshop and other excluded tracks do not inherit the main-conference rank. Publication status and review depth are separate fields.','',
@@ -124,6 +125,7 @@ def main():
     (ROOT/'docs/federated-literature.md').write_text(federated_catalogue(rows),encoding='utf-8')
     write_csv(ROOT/'data/papers.csv',rows)
     (ROOT/'data/surveys.json').write_text(json.dumps({'generated_from':'papers.json','papers':[p for p in rows if p['record_type']=='survey']},ensure_ascii=False,indent=2)+'\n')
+    generate()
     print(f'Generated {len(ready)} ranked entries and {len(rows)} detailed records.')
 
 if __name__=='__main__':main()

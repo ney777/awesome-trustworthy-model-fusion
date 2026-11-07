@@ -5,6 +5,7 @@ Resources serve different purposes: a model pool, a replay dataset, a fusion har
 | Resource | Role | Useful evaluation | Boundary |
 |---|---|---|---|
 | [FusionBench](https://www.jmlr.org/papers/v26/25-1243.html) | Shared algorithm, model-pool and task interfaces | Repeatable fusion comparisons in the supplied configurations | No automatic coverage of every privacy, fairness, security or lifecycle property |
+| [MergeBench](https://proceedings.neurips.cc/paper_files/paper/2025/hash/91f7f71cb04699f387dc863da42a1fe3-Abstract-Datasets_and_Benchmarks_Track.html) | Defined domain-specialist LLM pools in eight compatible base configurations | Specialization, forgetting and merge/validation runtime | Merge within each base group; does not establish cross-family weight compatibility or comprehensive federated trust |
 | [RouterBench](https://arxiv.org/abs/2403.12031) | Preprint benchmark using recorded model outputs | Predictive routing and cascading cost–quality studies | Fixed responses/pricing; main objectives omit latency and throughput |
 | [MergeKit](https://aclanthology.org/2024.emnlp-industry.36/) | Merge recipes and memory-conscious execution | Reproducible candidate construction | A toolkit, not a quality/safety certificate; Industry CCF applicability remains pending |
 | [Beimingwu](https://doi.org/10.1145/3637528.3671617) | Model specifications, organization, identification and reuse system | External capability organization and supported reuse workflows | Model-market support does not certify every contributor; ADS CCF applicability pending |

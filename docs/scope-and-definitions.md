@@ -23,6 +23,8 @@ For the federated method view, record the source models or modules, the fusion o
 
 General federated optimization, client scheduling, partial-submodel allocation, gradient defenses, secure-aggregation protocols, client fairness and data sharing do not qualify by themselves. A standard weighted sum inside an FL loop is not sufficient. Model-dependent fusion-coefficient or layer/component-combination studies may qualify when that operator is the central contribution; generic client participation or contribution accounting does not establish the same scope. Evidence that only establishes a publication or application domain is insufficient for method inclusion. See the [scope correction](scope-correction.md).
 
+Class-prototype sharing alone is outside the present method catalogue, including when the shared prototypes support inference. Such methods exchange knowledge, but that fact does not by itself establish the explicit source-model/module combination or multi-model behavioral consolidation required here. This is an operational scope choice, not a claim that prototype methods perform no information fusion.
+
 The explicitly requested survey comparisons remain in Related Surveys. Broader model-selection and collaboration systems remain in their established categories when supported by the original scope, but are not labeled federated fusion methods.
 
 Ordinary single-model training, a generic mixture-of-experts architecture, task delegation among agents, or a dataset sharing only an application domain is insufficient for inclusion. Medical collaboration, scientific AI and edge deployment are possible use cases, not the organizing taxonomy.
@@ -32,3 +34,5 @@ A paper has one primary category and may have multiple secondary tags. Counts us
 ## Evidence discipline
 
 Data remaining local does not establish a privacy theorem. Parameter compatibility does not establish behavioral compatibility. A reliable component does not establish a reliable composition. A benchmark gain does not establish stability under future changes. These distinctions are analytical rules; paper-specific conclusions remain linked to the source passages in the database.
+
+Model role, output paradigm, parameter scale and compatibility are independent reporting dimensions. The [model-condition tables](model-conditions.md) cover selected evidence-linked configurations, not a full-corpus model-size census. Auxiliary data generators, merged weight sources and deployed students must be distinguished; independent configurations in one paper must not be combined into an invented experiment.

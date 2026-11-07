@@ -155,6 +155,56 @@
       "reason": "The primary novelty is rolling submodel extraction and coverage of a shared supernetwork. Selective coordinate averaging does not on its own turn this resource-scheduling method into model-fusion research.",
       "evidence_url": "https://papers.neurips.cc/paper_files/paper/2022/file/bf5311df07f3efce97471921e6d2f159-Paper-Conference.pdf",
       "locator": "Final NeurIPS PDF pp.3–5, Sections 2–3.3 and Algorithm 1: static/random extraction comparison, rolling window and selective per-coordinate averaging"
+    },
+    {
+      "id": "mocha2017",
+      "title": "Federated Multi-Task Learning",
+      "official_url": "https://papers.neurips.cc/paper_files/paper/2017/hash/6211080fa89981f66b1a0c9d55c61d0f-Abstract.html",
+      "decision": "fusion-contribution-not-established",
+      "reason": "Federated multi-task optimization; this review did not establish a direct source-model fusion contribution.",
+      "evidence_url": "https://papers.neurips.cc/paper_files/paper/2017/hash/6211080fa89981f66b1a0c9d55c61d0f-Abstract.html",
+      "locator": "Official abstract; not a full-method exclusion audit",
+      "checked_on": "2026-11-07"
+    },
+    {
+      "id": "ifca2020",
+      "title": "An Efficient Framework for Clustered Federated Learning",
+      "official_url": "https://papers.neurips.cc/paper_files/paper/2020/hash/e32cc80bf07915058ce90722ee17bb71-Abstract.html",
+      "decision": "fusion-contribution-not-established",
+      "reason": "Cluster assignment and within-cluster training are not sufficient evidence for model-fusion inclusion.",
+      "evidence_url": "https://papers.neurips.cc/paper_files/paper/2020/hash/e32cc80bf07915058ce90722ee17bb71-Abstract.html",
+      "locator": "Official abstract; not a full-method exclusion audit",
+      "checked_on": "2026-11-07"
+    },
+    {
+      "id": "fedproto2022",
+      "title": "FedProto: Federated Prototype Learning across Heterogeneous Clients",
+      "official_url": "https://ojs.aaai.org/index.php/AAAI/article/view/20819",
+      "decision": "outside-current-prototype-sharing-scope",
+      "reason": "Class-prototype sharing and prototype-regularized/predictive local models fall outside the current source-model/module fusion boundary.",
+      "evidence_url": "https://arxiv.org/html/2105.00243v4",
+      "locator": "Methodology Eqs. 3–5, Discussion / Model Inference",
+      "checked_on": "2026-11-07"
+    },
+    {
+      "id": "fedtgp2024",
+      "title": "FedTGP: Trainable Global Prototypes with Adaptive-Margin-Enhanced Contrastive Learning for Data and Model Heterogeneity in Federated Learning",
+      "official_url": "https://ojs.aaai.org/index.php/AAAI/article/view/29617",
+      "decision": "outside-current-prototype-sharing-scope",
+      "reason": "Trainable global class prototypes improve separability; no direct source-model/module fusion mechanism is established under the same rule as FedProto.",
+      "evidence_url": "https://arxiv.org/html/2401.03230v1",
+      "locator": "Method / FedTGP Framework; Eq. 11",
+      "checked_on": "2026-11-07"
+    },
+    {
+      "id": "parasite2026",
+      "title": "Parasite: planting durable backdoors against continual federated model fusion via discriminative feature pushing-pulling",
+      "official_url": "https://www.sciencedirect.com/science/article/pii/S1566253525011431",
+      "decision": "provisional-fusion-evidence-insufficient",
+      "reason": "Publisher preview shows persistent local backdoor training under ordinary FL aggregation; an independent fusion-specific operator or attack interface was not established. This is a provisional scope decision, not proof of irrelevance.",
+      "evidence_url": "https://www.sciencedirect.com/science/article/pii/S1566253525011431",
+      "locator": "Publisher preview: abstract, introduction and experimental setting; full text not assessed",
+      "checked_on": "2026-11-07"
     }
   ]
 }

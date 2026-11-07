@@ -1,5 +1,7 @@
 # Coverage correction and omission audit
 
+The latest bounded update is documented in the [model-conditions audit](model-conditions-audit.md): direct-fusion mechanisms, configuration roles and scope decisions. The historical analysis below retains its original snapshot counts.
+
 **Historical audit.** Current scope decisions are in the [scope correction](scope-correction.md). The former all-inclusion follow-up was over-broad; of the six candidates below, WB fusion and FedFTG remain included, while Buffalo, FedBone, FairFHTL and the model-heterogeneous FL attack have been removed from the catalogue. Historical counts are not current library totals.
 
 Model Trip and PrivFusion had already been found and stored, but an incorrect metadata status hid them from the ranked README and excluded them from BibTeX. The earlier extraction step marked these two papers `partial` because method reading was unfinished, even though their bibliographic identities and CCF-A venues had been confirmed. This confused bibliographic verification with reading depth. The README filter then exposed only records with verified bibliography and CCF applicability. This was a curation error, not a relevance exclusion or a failed title search.

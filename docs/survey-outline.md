@@ -2,7 +2,7 @@
 
 **Working title:** Trustworthy Model Fusion and Collaboration: A Survey of Representation, Governance, and Evolution
 
-**Status:** Phase 2 analytical outline. The comparison supports a problem-driven synthesis, not a priority claim or a validated new framework. [Prior surveys](prior-surveys.md) document substantial overlap; [research questions](research-gaps.md) distinguish observed results from proposals. The corresponding working manuscript has now been drafted locally; it is excluded from the public repository. This public outline retains the analytical plan and evidence requirements.
+**Status:** Analytical outline, updated 2026-11-07. The comparison supports a problem-driven synthesis, not a priority claim or a validated new framework. [Prior surveys](prior-surveys.md) document substantial overlap; [research questions](research-gaps.md) distinguish observed results from proposals. The corresponding working manuscript has now been drafted locally; it is excluded from the public repository. This public outline retains the analytical plan and evidence requirements.
 
 ## Central argument
 
@@ -34,7 +34,7 @@ Model-internal feature or tensor alignment and external task–model relationshi
 
 Build the motivation from three contrasts: individual utility versus joint compatibility; component evaluation versus composed behavior; per-query adaptation versus continuing system improvement. Use the reviewed representation, merging-security and routing/continual examples, with source-specific bounds. Compare the nearest surveys positively before stating the scope difference. Contributions should promise comparative taxonomy, conditional technical synthesis and an evidence-grounded evaluation agenda, without “first” or “unified framework” priority claims.
 
-**Output:** Table I, survey comparison; a short scope statement. **Transition:** Reuse requires an explicit comparison unit and information contract.
+**Output:** Survey comparison table, survey comparison; a short scope statement. **Transition:** Reuse requires an explicit comparison unit and information contract.
 
 ### II. Foundations and problem formulation
 
@@ -44,7 +44,7 @@ Define source models, optional target model, persistent system, available inform
 
 Distinguish federated aggregation from independent checkpoint reuse, compressed fusion from source-retaining inference, and property measurement from a formal guarantee. Explain the search, version, inclusion and evidence-depth protocol. Do not label the corpus systematic or exhaustive without executing such a protocol.
 
-**Output:** Terminology/setting table and inclusion rules. **Transition:** Different interfaces expose different evidence about capability and compatibility.
+**Output:** Terminology/setting table and inclusion rules, orthogonal model-condition table, and representative source/target/auxiliary configurations. These are configuration-level comparisons, not paper-level large/small labels. **Transition:** Different interfaces expose different evidence about capability and compatibility.
 
 ### III. Fusion Representation
 
@@ -54,7 +54,9 @@ Organize the analysis by external capability characterization, task–model asso
 
 Treat task vectors, feature correspondences and model-relationship graphs as distinct representations. A similarity score or successful individual transfer does not establish safe combination. Compare source-independent target models with partially shared or routed systems when output structure changes cost.
 
-**Output:** Table II, representation purpose × access × compatibility × cost × demonstrated decision. **Transition:** Available evidence describes possibilities; governance determines which possibilities are acceptable.
+**Output:** Representation table, representation purpose × access × compatibility × cost × demonstrated decision. **Transition:** Available evidence describes possibilities; governance determines which possibilities are acceptable.
+
+Separate parameter correspondence from behavioral knowledge transfer. Compare FedHydra/FedSD2C/FedTAD by released interfaces; FedFomo/FedAMP/FedPAC/FED-PUB by the evidence determining explicit mixtures. Distinguish internal computation graphs, model-relation graphs and interaction/logit graphs. A generic graph representation or prototype exchange alone does not qualify as model fusion.
 
 ### IV. Trustworthy Fusion Governance
 
@@ -64,7 +66,7 @@ Begin with a decision distinction: post-hoc measurement, objective-driven optimi
 
 Use FedAUX and PrivFusion for channel-specific fusion privacy, MergeBackdoor and DAM for composition-specific threats, SafeMERGE and LED-Merging for safety-conditioned merging, and FairMerging for a fusion-specific fairness objective. Model Trip remains abstract-reviewed; PrivFusion mechanism reading is explicitly tied to its identified author version. General FL security, optimization and fairness methods are outside the method scope.
 
-**Output:** Table III, objective × protected object × threat × mechanism × decision × evidence × residual risk. **Transition:** Accepted decisions remain conditional on the model pool, task and trust assumptions.
+**Output:** Governance table, objective × protected object × threat × mechanism × decision × evidence × residual risk. **Transition:** Accepted decisions remain conditional on the model pool, task and trust assumptions.
 
 ### V. Collaborative Evolution
 
@@ -72,19 +74,19 @@ Use FedAUX and PrivFusion for channel-specific fusion privacy, MergeBackdoor and
 
 Separate fixed input-dependent routing, feedback-conditioned selection, sequential incorporation of experts and continuing updates to representations or policies. Compare RouteLLM, GraphRouter and MetaRouter with LoRM, TIME, OPCM and DOP using explicit state, feedback, update and evaluation horizons. An evolutionary search algorithm for a single merge is not automatically a long-running collaborative system.
 
-Discuss retention, order effects, new-source adaptation and resource growth within demonstrated settings. Treat dynamic topology, source withdrawal, rollback and revalidation according to evidence status; do not portray all as solved by continual merging. Attribute any proposed event-based evaluation to this survey's agenda.
+Distinguish consolidating agent capabilities through MAGDi or AgentMerge from demonstrated recursive improvement. Larger trajectory teachers are auxiliary roles, not necessarily merged models. Discuss retention, order effects, new-source adaptation and resource growth within demonstrated settings. Treat dynamic topology, source withdrawal, rollback and revalidation according to evidence status; do not portray all as solved by continual merging. Attribute any proposed event-based evaluation to this survey's agenda.
 
-**Output:** Table IV, change event × persistent state × feedback × update × retention/risk evidence. **Transition:** Different histories and interfaces demand condition-matched evaluation.
+**Output:** Evolution table, change event × persistent state × feedback × update × retention/risk evidence. **Transition:** Different histories and interfaces demand condition-matched evaluation.
 
 ### VI. Evaluation, benchmarks and applications
 
 **Question:** Under what conditions do comparisons support a meaningful conclusion?
 
-Distinguish a task dataset, a source-model pool, a merger benchmark, a router benchmark and a deployment toolkit. Use FusionBench, RouterBench and method-specific protocols to analyze model/task access, labels, query cost, candidate selection and data separation. Report target inference cost alongside teacher, calibration, search and update costs. Discuss per-task or per-source retention, group losses when defined, threat-specific outcomes and uncertainty rather than one aggregate trust score.
+Distinguish a task dataset, a source-model pool, a merger benchmark, a router benchmark and a deployment toolkit. Use FusionBench, MergeBench, RouterBench and method-specific protocols to analyze model/task access, labels, query cost, candidate selection and data separation. Report target inference cost alongside teacher, calibration, search and update costs. Discuss per-task or per-source retention, group losses when defined, threat-specific outcomes and uncertainty rather than one aggregate trust score.
 
 Propose an event-indexed extension for arrivals, replacements, shifts, compromise and withdrawal, explicitly labeled unimplemented. Applications should expose constraints: medical centers, scientific collaboration and edge/cloud systems are illustrative settings, not claims of clinical benefit or real federation without protocol evidence.
 
-**Output:** Table V, benchmark capabilities and limits; a separate proposed-protocol panel. **Transition:** The gaps follow from mismatches between needed decisions and available evidence.
+**Output:** Evaluation table, benchmark capabilities and limits; a separate proposed-protocol panel. **Transition:** The gaps follow from mismatches between needed decisions and available evidence.
 
 ### VII. Open challenges and research agenda
 
@@ -105,11 +107,12 @@ Summarize which information supports which decisions and why later changes can r
 | Figure 1: Representation → Governance → Evolution | Show information, decisions and feedback, including reject/fallback possibilities | Mark the drawing as the survey's conceptual synthesis |
 | Figure 2: Research taxonomy | Distinguish model-internal alignment from external capability/relationship descriptions and link both to decisions | Every populated branch has primary examples and boundaries |
 | Figure 3: Collaboration configurations | Compare static composition, persistent inference and history-dependent update | Conceptual configurations, not a universal chronological progression |
-| Table I: Related surveys | Give prior work positive coverage and exact scope differences | Version-specific locators; unknown is not absence |
-| Table II: Representation methods | Compare what the representation predicts and what it cannot justify | Inputs, costs, shared-base/architecture assumptions |
-| Table III: Governance | Distinguish measured properties, optimization and guarantees | Protected object, threat, premises and decision consequence |
-| Table IV: Evolution | Separate runtime selection from learned continuing change | Persistent state, feedback and evaluation horizon |
-| Table V: Evaluation | Separate existing resources from proposed extensions | Source pools, tasks, budgets, metrics and unsupported events |
+| Survey comparison table: Related surveys | Give prior work positive coverage and exact scope differences | Version-specific locators; unknown is not absence |
+| Model-condition tables | Separate source/target/auxiliary models, output interfaces, scale and compatibility | Configuration-specific evidence; NR/N/A; no cross-experiment pooling |
+| Representation table: Methods | Compare what the representation predicts and what it cannot justify | Inputs, costs, shared-base/architecture assumptions |
+| Governance table | Distinguish measured properties, optimization and guarantees | Protected object, threat, premises and decision consequence |
+| Evolution table | Separate runtime selection from learned continuing change | Persistent state, feedback and evaluation horizon |
+| Evaluation table | Separate existing resources from proposed extensions | Source pools, tasks, budgets, metrics and unsupported events |
 
 ## Drafting prerequisites
 
